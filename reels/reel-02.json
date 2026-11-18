@@ -1,0 +1,31 @@
+{
+  "tipo": "tips",
+  "hook": "3 frases para que nadie pase tu anuncio",
+  "hookSub": "Cópialas hoy mismo.",
+  "idea": "Tu primera frase decide si te ven o te saltan",
+  "tips": [
+    {
+      "titulo": "Una pregunta que duela",
+      "detalle": "“¿Publicas todos los días y nadie te escribe?”"
+    },
+    {
+      "titulo": "El resultado primero",
+      "detalle": "“Así llené mi agenda en una semana”"
+    },
+    {
+      "titulo": "“Esto es para ti si…”",
+      "detalle": "Describe a tu cliente exacto: si se reconoce, se queda"
+    }
+  ],
+  "resumen": "Pregunta, resultado o filtro. Elige una y pruébala.",
+  "scenes": [
+    0,
+    3.411,
+    8.572,
+    15.744,
+    23.309,
+    30.716,
+    37.0,
+    42.85
+  ]
+}

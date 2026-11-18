@@ -31,6 +31,7 @@ Idioma de trabajo con el usuario: español.
 - Temas: usar `LISTADO-VIDEOS.md` para ambos tipos. En los de tips, el "secreto" de la tabla se convierte en el tip 3.
 
 ## Producir un reel
+0. Si ya existe un `videos/reel-NN.mp4` que no figura en `publicados.json`, publicar ese y no crear otro.
 1. Tomar el siguiente tema de `LISTADO-VIDEOS.md` que no esté en `publicados.json`.
 2. Escribir `guiones/reel-NN.txt` (7 líneas, habladas, naturales) y `reels/reel-NN.json`.
    El secreto NO se revela en el video: se dice que existe y se pide comentar la palabra clave.
