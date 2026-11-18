@@ -1,0 +1,65 @@
+{
+  "marca": "@almonte.suarez",
+  "titulos": [
+    "3 frases que te salvan",
+    "La primera frase",
+    "1 · Pregunta que duela",
+    "2 · Resultado primero",
+    "3 · “Esto es para ti si…”",
+    "En resumen",
+    "📌 Guárdalo y sígueme"
+  ],
+  "lineas": [
+    {
+      "text": "Tres frases para que nadie pase tu anuncio.",
+      "start": 0.0,
+      "duration": 3.161
+    },
+    {
+      "text": "Tu primera frase decide si te ven o te saltan. Copia estas.",
+      "start": 3.411,
+      "duration": 4.911
+    },
+    {
+      "text": "Uno: una pregunta que duela. Por ejemplo: ¿Publicas todos los días y nadie te escribe?",
+      "start": 8.572,
+      "duration": 6.922
+    },
+    {
+      "text": "Dos: el resultado primero. Empieza por el después: Así llené mi agenda en una semana.",
+      "start": 15.744,
+      "duration": 7.314
+    },
+    {
+      "text": "Tres: esto es para ti si... Y describes a tu cliente exacto. Si se reconoce, se queda.",
+      "start": 23.309,
+      "duration": 7.158
+    },
+    {
+      "text": "Pregunta, resultado o filtro. Elige una y pruébala en tu próximo anuncio.",
+      "start": 30.716,
+      "duration": 6.034
+    },
+    {
+      "text": "Guarda este video para cuando lo necesites, y sígueme para más tips.",
+      "start": 37.0,
+      "duration": 4.598
+    }
+  ],
+  "resaltar": [
+    "frases",
+    "anuncio",
+    "pregunta",
+    "duela",
+    "resultado",
+    "después",
+    "cliente",
+    "exacto",
+    "guarda",
+    "sígueme",
+    "tips"
+  ],
+  "audio": "narracion-02.wav",
+  "fin": 42.85,
+  "tipo": "podcast"
+}

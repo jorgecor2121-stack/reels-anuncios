@@ -8,13 +8,13 @@ TMP=$(mktemp -d)
 CHROME=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome
 
 # Duración = fin de la última escena (incluye ~1 s de cola tras la voz)
-D=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['scenes'][-1])" "$PROPS")
+D=$(python3 -c "import json,sys;p=json.load(open(sys.argv[1]));print(p['fin'] if 'fin' in p else p['scenes'][-1])" "$PROPS")
 
 # 1) Voz normalizada a archivo aparte (loudnorm en línea retrasa y corta el final)
 ffmpeg -y -loglevel error -i "$NARR" -af "aresample=44100,loudnorm=I=-16:TP=-1.5" -ar 44100 "$TMP/voz.wav"
 
 # 2) Video
-COMP=$(python3 -c "import json,sys;print('ReelTips' if json.load(open(sys.argv[1])).get('tipo')=='tips' else 'Reel')" "$PROPS")
+COMP=$(python3 -c "import json,sys;t=json.load(open(sys.argv[1])).get('tipo');print({'tips':'ReelTips','podcast':'ReelPodcast'}.get(t,'Reel'))" "$PROPS")
 npx remotion render "$COMP" "$TMP/video.mp4" --props="$PROPS" --browser-executable="$CHROME" --codec=h264 --log=error
 
 # 3) Mezcla: voz + bombo suave, con fade al final
