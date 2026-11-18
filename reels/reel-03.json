@@ -1,0 +1,104 @@
+{
+  "tipo": "motion",
+  "marca": "@almonte.suarez",
+  "lineas": [
+    {
+      "text": "Si tu video empieza con \"Hola, soy...\", ya perdiste.",
+      "start": 0.0,
+      "duration": 4.362
+    },
+    {
+      "text": "La gente decide en un segundo si se queda o sigue deslizando. Y tu nombre no le importa todavía.",
+      "start": 4.612,
+      "duration": 7.158
+    },
+    {
+      "text": "Paso uno: empieza por su problema. En vez de \"Hola, soy Juan\", di: \"¿Tus anuncios no te traen clientes?\".",
+      "start": 12.02,
+      "duration": 8.359
+    },
+    {
+      "text": "Paso dos: movimiento desde el primer segundo. Un acercamiento, un gesto, algo que cambie en pantalla.",
+      "start": 20.629,
+      "duration": 8.202
+    },
+    {
+      "text": "Paso tres: un gancho visual sin palabras. Muestra el resultado o algo inesperado antes de hablar.",
+      "start": 29.082,
+      "duration": 7.001
+    },
+    {
+      "text": "Problema, movimiento y algo que sorprenda. Así se detiene el dedo.",
+      "start": 36.332,
+      "duration": 5.486
+    },
+    {
+      "text": "Guarda este video para tu próxima grabación, y sígueme para más tips.",
+      "start": 42.068,
+      "duration": 4.676
+    }
+  ],
+  "fin": 47.99,
+  "resaltar": [
+    "perdiste",
+    "segundo",
+    "deslizando",
+    "nombre",
+    "problema",
+    "clientes",
+    "movimiento",
+    "primer",
+    "acercamiento",
+    "gancho",
+    "visual",
+    "resultado",
+    "inesperado",
+    "sorprenda",
+    "dedo",
+    "guarda",
+    "sígueme",
+    "tips"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Hola, soy Juan y hoy les quiero contar…",
+      "sello": "YA PERDISTE",
+      "deslizar": true
+    },
+    {
+      "tipo": "contador",
+      "numero": "1s",
+      "etiqueta": "para decidir si se queda"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "PASO 1 · Su problema",
+      "antes": "Hola, soy Juan…",
+      "despues": "¿Tus anuncios no te traen clientes?"
+    },
+    {
+      "tipo": "movimiento",
+      "badge": "PASO 2 · Movimiento",
+      "etiqueta": "Algo cambia en el segundo 1"
+    },
+    {
+      "tipo": "sorpresa",
+      "badge": "PASO 3 · Gancho visual",
+      "emoji": "🤯",
+      "etiqueta": "Sin decir una palabra"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Problema",
+        "Movimiento",
+        "Sorpresa"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte.suarez"
+    }
+  ]
+}
