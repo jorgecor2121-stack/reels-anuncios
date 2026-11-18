@@ -63,8 +63,7 @@ y ver si escribió después de nuestro mensaje (`INSTAGRAM_LIST_ALL_MESSAGES`). 
    "image_url":"https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/portada-TEMA.png",
    "buttons":[{"type":"web_url","url":"ENLACE_GUIA","title":"Ver la guía 🔗"}]}]}}}}
 ```
-ENLACE_GUIA: `https://jorgecor2121-stack.github.io/reels-anuncios/guias/guia-TEMA.pdf` si GitHub Pages está activo
-(comprobar que responde 200); si no, `https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/guia-TEMA.pdf`.
+ENLACE_GUIA: `https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/guia-TEMA.pdf`.
 Si la tarjeta falla, enviar texto + enlace. Marcar `guia_enviada: true` y hacer push.
 
 ### Paso 3 — Si vuelve a escribir después de la guía
