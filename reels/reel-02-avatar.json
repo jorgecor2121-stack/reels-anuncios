@@ -61,5 +61,9 @@
   ],
   "audio": "narracion-02.wav",
   "fin": 42.85,
-  "tipo": "podcast"
+  "tipo": "podcast",
+  "avatarImg": "avatar.png",
+  "bocaX": 538,
+  "bocaY": 1080,
+  "bocaW": 135
 }
