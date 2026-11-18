@@ -2,7 +2,7 @@
   "tipo": "avatar",
   "entorno": "atardecer",
   "vestimenta": "blazer",
-  "marca": "@almonte.suarez",
+  "marca": "@almonte_suarez.ia",
   "audio": "narracion-06.wav",
   "lineas": [
     {
@@ -115,7 +115,7 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "almonte.suarez"
+      "usuario": "almonte_suarez.ia"
     }
   ],
   "chips": [

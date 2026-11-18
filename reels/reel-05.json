@@ -1,7 +1,7 @@
 {
   "tipo": "avatar",
   "entorno": "neon",
-  "marca": "@almonte.suarez",
+  "marca": "@almonte_suarez.ia",
   "audio": "narracion-05.wav",
   "lineas": [
     {
@@ -117,7 +117,7 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "almonte.suarez"
+      "usuario": "almonte_suarez.ia"
     }
   ],
   "chips": [

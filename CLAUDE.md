@@ -1,4 +1,4 @@
-# Reels educativos de anuncios — @almonte.suarez
+# Reels educativos de anuncios — @almonte_suarez.ia
 
 Este repositorio produce y publica reels animados en Instagram, narrados con la voz clonada del dueño de la cuenta.
 Idioma de trabajo con el usuario: español.
@@ -55,7 +55,7 @@ Todos los reels usan `"tipo": "avatar"` + `"entorno": "neon"` → composición `
 5. Verificar que el audio llega completo hasta el final (por ejemplo, transcribiendo con whisper).
 6. Commit y push del guion, props y video a `main`.
 
-## Publicar en Instagram (Composio, toolkit `instagram`, cuenta almonte.suarez)
+## Publicar en Instagram (Composio, toolkit `instagram`, cuenta almonte_suarez.ia)
 1. `INSTAGRAM_POST_IG_USER_MEDIA` con `ig_user_id: "me"`, `media_type: "REELS"`, `video_url` (enlace raw de arriba), `caption`, `share_to_feed: true`.
 2. `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con `creation_id`, `max_wait_seconds: 180`.
 3. Anotar en `publicados.json` y hacer push.
