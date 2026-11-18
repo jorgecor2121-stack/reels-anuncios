@@ -1,0 +1,85 @@
+{
+  "marca": "",
+  "audio": "narracion-promo.wav",
+  "fin": 48.77,
+  "lineas": [
+    {
+      "text": "¿Tus PROMOCIONES ya no funcionan como antes?",
+      "start": 0,
+      "duration": 2.268
+    },
+    {
+      "text": "¿Inviertes dinero en publicidad, recibes mensajes, pero las VENTAS simplemente no llegan?",
+      "start": 2.348,
+      "duration": 5.353
+    },
+    {
+      "text": "Pero, ¿sabías que Meta cambió las reglas del juego con ANDRÓMEDA, su nueva tecnología de INTELIGENCIA ARTIFICIAL para la publicidad?",
+      "start": 7.781,
+      "duration": 6.672
+    },
+    {
+      "text": "Ya no se trata simplemente de poner dinero y darle a promocionar. Necesitas creatividades estratégicas, diferentes ángulos publicitarios, una estructura de campañas adecuada, y aprender a darle a la INTELIGENCIA ARTIFICIAL las señales correctas para encontrar compradores.",
+      "start": 14.533,
+      "duration": 15.195
+    },
+    {
+      "text": "¿Quieres aprender a promocionar correctamente y dejar de desperdiciar tu presupuesto publicitario?",
+      "start": 29.808,
+      "duration": 5.043
+    },
+    {
+      "text": "Te enseñaré todo esto en un taller en vivo por Zoom. Aprende conmigo por tan solo RD$2,000.",
+      "start": 34.93,
+      "duration": 5.675
+    },
+    {
+      "text": "Sábado 21 o jueves 26, a las 7:30 de la noche. ¡Escríbeme ahora y reserva tu participación!",
+      "start": 40.686,
+      "duration": 6.703
+    }
+  ],
+  "escenas": [],
+  "resaltar": [
+    "promociones",
+    "andrómeda",
+    "inteligencia",
+    "artificial",
+    "ventas",
+    "RD$2,000"
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "doubt"
+    },
+    {
+      "start": 3.0,
+      "pose": "facepalm"
+    },
+    {
+      "start": 6.2,
+      "pose": "shrug"
+    },
+    {
+      "start": 29.808,
+      "pose": "idea"
+    },
+    {
+      "start": 32.208,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 34.93,
+      "pose": "explain"
+    },
+    {
+      "start": 38.53,
+      "pose": "you"
+    },
+    {
+      "start": 43.986,
+      "pose": "down"
+    }
+  ]
+}

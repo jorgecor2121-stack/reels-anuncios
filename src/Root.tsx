@@ -3,6 +3,7 @@ import { TipsComposition } from "./Tips";
 import { PodcastComposition } from "./Podcast";
 import { MotionComposition } from "./Motion";
 import { AvatarMotionComposition } from "./AvatarMotion";
+import { PromoComposition } from "./Promo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ export const RemotionRoot: React.FC = () => {
       <PodcastComposition />
       <MotionComposition />
       <AvatarMotionComposition />
+      <PromoComposition />
     </>
   );
 };

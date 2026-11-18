@@ -9,8 +9,11 @@ from pathlib import Path
 
 VOICE_ID = json.loads((Path(__file__).parent / "elevenlabs-voice.json").read_text())["voice_id"]
 MODEL = "eleven_v4"
-GAP_S = 0.25
+GAP_S = float(__import__("os").environ.get("PAUSA", "0.25"))
+import os
 SETTINGS = {"stability": 0.5, "similarity_boost": 0.5}
+if os.environ.get("VELOCIDAD"):
+    SETTINGS["speed"] = float(os.environ["VELOCIDAD"])  # p. ej. 1.08 para anuncios con más energía
 
 guion, out = Path(sys.argv[1]), Path(sys.argv[2])
 out.mkdir(parents=True, exist_ok=True)
