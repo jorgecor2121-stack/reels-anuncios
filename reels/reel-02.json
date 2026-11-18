@@ -1,31 +1,159 @@
 {
-  "tipo": "tips",
-  "hook": "3 frases para que nadie pase tu anuncio",
-  "hookSub": "Cópialas hoy mismo.",
-  "idea": "Tu primera frase decide si te ven o te saltan",
-  "tips": [
+  "tipo": "avatar",
+  "marca": "@almonte.suarez",
+  "audio": "narracion-02.wav",
+  "lineas": [
     {
-      "titulo": "Una pregunta que duela",
-      "detalle": "“¿Publicas todos los días y nadie te escribe?”"
+      "text": "Tres frases para que nadie pase tu anuncio.",
+      "start": 0.0,
+      "duration": 3.161
     },
     {
-      "titulo": "El resultado primero",
-      "detalle": "“Así llené mi agenda en una semana”"
+      "text": "Tu primera frase decide si te ven o te saltan. Copia estas.",
+      "start": 3.411,
+      "duration": 4.911
     },
     {
-      "titulo": "“Esto es para ti si…”",
-      "detalle": "Describe a tu cliente exacto: si se reconoce, se queda"
+      "text": "Uno: una pregunta que duela. Por ejemplo: ¿Publicas todos los días y nadie te escribe?",
+      "start": 8.572,
+      "duration": 6.922
+    },
+    {
+      "text": "Dos: el resultado primero. Empieza por el después: Así llené mi agenda en una semana.",
+      "start": 15.744,
+      "duration": 7.314
+    },
+    {
+      "text": "Tres: esto es para ti si... Y describes a tu cliente exacto. Si se reconoce, se queda.",
+      "start": 23.309,
+      "duration": 7.158
+    },
+    {
+      "text": "Pregunta, resultado o filtro. Elige una y pruébala en tu próximo anuncio.",
+      "start": 30.716,
+      "duration": 6.034
+    },
+    {
+      "text": "Guarda este video para cuando lo necesites, y sígueme para más tips.",
+      "start": 37.0,
+      "duration": 4.598
     }
   ],
-  "resumen": "Pregunta, resultado o filtro. Elige una y pruébala.",
-  "scenes": [
-    0,
-    3.411,
-    8.572,
-    15.744,
-    23.309,
-    30.716,
-    37.0,
-    42.85
+  "fin": 42.85,
+  "resaltar": [
+    "frases",
+    "anuncio",
+    "primera",
+    "saltan",
+    "pregunta",
+    "duela",
+    "nadie",
+    "resultado",
+    "después",
+    "agenda",
+    "cliente",
+    "exacto",
+    "reconoce",
+    "filtro",
+    "guarda",
+    "sígueme",
+    "tips"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Compra mi producto, es el mejor del mercado",
+      "sello": "SALTADO",
+      "deslizar": true
+    },
+    {
+      "tipo": "contador",
+      "numero": "3",
+      "etiqueta": "frases que detienen el dedo"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "FRASE 1 · Pregunta que duela",
+      "antes": "Vendo cursos de marketing",
+      "despues": "¿Publicas todos los días y nadie te escribe?"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "FRASE 2 · El resultado primero",
+      "antes": "Tenemos 10 años de experiencia",
+      "despues": "Así llené mi agenda en una semana"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "FRASE 3 · Esto es para ti si…",
+      "antes": "Para todo el que quiera vender",
+      "despues": "Esto es para ti si vendes por Instagram y nadie te compra"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Pregunta",
+        "Resultado",
+        "Filtro"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte.suarez"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "three"
+    },
+    {
+      "start": 1.8,
+      "pose": "idea"
+    },
+    {
+      "start": 3.411,
+      "pose": "explain"
+    },
+    {
+      "start": 6.211,
+      "pose": "you"
+    },
+    {
+      "start": 8.572,
+      "pose": "one"
+    },
+    {
+      "start": 11.171999999999999,
+      "pose": "doubt"
+    },
+    {
+      "start": 15.744,
+      "pose": "two"
+    },
+    {
+      "start": 18.744,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 23.309,
+      "pose": "three"
+    },
+    {
+      "start": 26.309,
+      "pose": "you"
+    },
+    {
+      "start": 30.716,
+      "pose": "crossed"
+    },
+    {
+      "start": 37.0,
+      "pose": "down"
+    },
+    {
+      "start": 39.6,
+      "pose": "wave"
+    }
   ]
 }
