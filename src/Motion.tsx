@@ -215,7 +215,7 @@ const EscSeguir: React.FC<{ e: Extract<Escena, { tipo: "seguir" }> }> = ({ e }) 
   );
 };
 
-const Esc: React.FC<{ e: Escena }> = ({ e }) => {
+export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
   switch (e.tipo) {
     case "telefono": return <EscTelefono e={e} />;
     case "contador": return <EscContador e={e} />;
@@ -228,8 +228,8 @@ const Esc: React.FC<{ e: Escena }> = ({ e }) => {
 };
 
 // ---------- subtítulos ----------
-type Pal = { w: string; start: number; end: number; line: number };
-const palabras = (p: MotionProps): Pal[] => {
+export type Pal = { w: string; start: number; end: number; line: number };
+export const palabras = (p: MotionProps): Pal[] => {
   const out: Pal[] = [];
   p.lineas.forEach((l, li) => {
     const ws = l.text.split(/\s+/).filter(Boolean);
@@ -239,7 +239,7 @@ const palabras = (p: MotionProps): Pal[] => {
   });
   return out;
 };
-const Subs: React.FC<{ p: MotionProps; t: number; ws: Pal[] }> = ({ p, t, ws }) => {
+export const Subs: React.FC<{ p: MotionProps; t: number; ws: Pal[] }> = ({ p, t, ws }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const i = ws.findIndex((x) => t >= x.start && t < x.end + 0.15);
