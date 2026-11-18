@@ -1,6 +1,6 @@
 {
   "tipo": "avatar",
-  "entorno": "neon",
+  "entorno": "atardecer",
   "marca": "@almonte_suarez.ia",
   "audio": "narracion-04.wav",
   "lineas": [
@@ -64,83 +64,71 @@
   "escenas": [
     {
       "tipo": "grafica",
-      "titulo": "Ejemplo: anuncio con muchos likes",
+      "titulo": "Ejemplo",
       "barras": [
         {
-          "etiqueta": "Likes",
+          "etiqueta": "❤️",
           "valor": 1200
         },
         {
-          "etiqueta": "Mensajes",
+          "etiqueta": "💬",
           "valor": 3
         },
         {
-          "etiqueta": "Ventas",
+          "etiqueta": "💰",
           "valor": 0,
           "destacar": true
         }
       ]
     },
     {
-      "tipo": "embudo",
-      "badge": "Lo que de verdad importa",
-      "pasos": [
-        {
-          "etiqueta": "👀 Lo vieron",
-          "valor": 10000
-        },
-        {
-          "etiqueta": "👆 Clic",
-          "valor": 300
-        },
-        {
-          "etiqueta": "💬 Te escriben",
-          "valor": 40
-        },
-        {
-          "etiqueta": "💰 Compran",
-          "valor": 8
-        }
+      "tipo": "trio",
+      "iconos": [
+        "👏",
+        "🤔",
+        "💰"
+      ],
+      "letras": [
+        "LIKES",
+        "¿Y?",
+        "VENTAS"
       ]
     },
     {
       "tipo": "stat",
-      "badge": "PASO 1 · Acciones reales",
       "icono": "💬",
       "valor": 40,
       "prefijo": "+",
-      "etiqueta": "mensajes valen más que 1,000 likes"
+      "etiqueta": "mensajes"
     },
     {
       "tipo": "stat",
-      "badge": "PASO 2 · Tu número de verdad",
       "icono": "🧮",
       "valor": 125,
       "prefijo": "RD$",
-      "etiqueta": "te cuesta cada mensaje (ejemplo: RD$5,000 ÷ 40)"
+      "etiqueta": "por mensaje (ejemplo)"
     },
     {
       "tipo": "carrera",
-      "badge": "PASO 3 · Compara",
-      "titulo": "Mismo presupuesto (ejemplo)",
+      "titulo": "Ejemplo",
       "a": {
-        "etiqueta": "Anuncio A",
+        "etiqueta": "A",
         "valor": 12
       },
       "b": {
-        "etiqueta": "Anuncio B",
+        "etiqueta": "B",
         "valor": 48
       },
-      "sufijo": " mensajes",
-      "nota": "Apaga el A, sube el B"
+      "sufijo": " 💬"
     },
     {
-      "tipo": "checklist",
-      "items": [
-        "Mensajes y clics",
-        "Costo por resultado",
-        "Compara y apaga"
-      ]
+      "tipo": "puzzle",
+      "piezas": [
+        "❤️",
+        "💬",
+        "💰"
+      ],
+      "palabra": "NEGOCIO"
     },
     {
       "tipo": "seguir",
@@ -149,22 +137,10 @@
   ],
   "chips": [
     {
-      "start": 0.6,
-      "texto": "❤️ 1,200 likes",
-      "lado": "izq",
-      "color": "#FF3B5C"
-    },
-    {
-      "start": 1.8,
+      "start": 1.6,
       "texto": "💸 0 ventas",
       "lado": "der",
       "color": "#FF3B5C"
-    },
-    {
-      "start": 12.828,
-      "texto": "💬 +40 mensajes",
-      "lado": "der",
-      "color": "#2BD576"
     },
     {
       "start": 19.648,
@@ -173,16 +149,10 @@
       "color": "#FFD23F"
     },
     {
-      "start": 28.133,
-      "texto": "📈 4x más clientes",
+      "start": 28.233,
+      "texto": "📈 4x",
       "lado": "der",
       "color": "#2BD576"
-    },
-    {
-      "start": 33.340999999999994,
-      "texto": "🧠 Ego ≠ negocio",
-      "lado": "izq",
-      "color": "#A855F7"
     }
   ],
   "reacciones": [
@@ -191,66 +161,100 @@
       "emoji": "❤️"
     },
     {
-      "start": 34.840999999999994,
+      "start": 13.128,
+      "emoji": "💬"
+    },
+    {
+      "start": 35.041,
       "emoji": "💰"
     }
   ],
   "gestos": [
     {
-      "start": 0,
-      "pose": "doubt"
+      "start": 0.0,
+      "pose": "skeptic"
     },
     {
-      "start": 2.6,
-      "pose": "facepalm"
+      "start": 1.87,
+      "pose": "ohNo"
     },
     {
-      "start": 5.579,
+      "start": 3.73,
+      "pose": "facepalmTurn"
+    },
+    {
+      "start": 5.58,
       "pose": "explain"
     },
     {
-      "start": 7.978999999999999,
-      "pose": "idea"
+      "start": 7.61,
+      "pose": "smart"
     },
     {
-      "start": 11.628,
-      "pose": "one"
+      "start": 9.64,
+      "pose": "wagNo"
     },
     {
-      "start": 14.428,
-      "pose": "you"
+      "start": 11.63,
+      "pose": "oneRaised"
     },
     {
-      "start": 18.148,
+      "start": 13.82,
+      "pose": "phoneLook"
+    },
+    {
+      "start": 16.02,
+      "pose": "youTilt"
+    },
+    {
+      "start": 18.15,
       "pose": "two"
     },
     {
-      "start": 20.948,
-      "pose": "phone"
+      "start": 20.68,
+      "pose": "thinking"
     },
     {
-      "start": 25.633,
+      "start": 23.21,
+      "pose": "ok"
+    },
+    {
+      "start": 25.63,
       "pose": "three"
     },
     {
-      "start": 28.833,
+      "start": 28.14,
+      "pose": "pointLeft"
+    },
+    {
+      "start": 30.64,
       "pose": "thumbsUp"
     },
     {
-      "start": 33.041,
-      "pose": "crossed"
+      "start": 33.04,
+      "pose": "crossedTilt"
     },
     {
-      "start": 35.041,
+      "start": 34.49,
       "pose": "laugh"
     },
     {
-      "start": 37.418,
-      "pose": "down"
+      "start": 35.93,
+      "pose": "proud"
     },
     {
-      "start": 39.818,
-      "pose": "wave"
+      "start": 37.42,
+      "pose": "downLook"
+    },
+    {
+      "start": 38.74,
+      "pose": "heart"
+    },
+    {
+      "start": 40.07,
+      "pose": "waveBoth"
     }
-  ]
+  ],
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78
 }

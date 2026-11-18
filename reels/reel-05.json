@@ -1,6 +1,6 @@
 {
   "tipo": "avatar",
-  "entorno": "neon",
+  "entorno": "atardecer",
   "marca": "@almonte_suarez.ia",
   "audio": "narracion-05.wav",
   "lineas": [
@@ -63,34 +63,37 @@
   "escenas": [
     {
       "tipo": "telefono",
-      "texto": "Batería 5000 mAh, cámara 48 MP, 128 GB…",
+      "texto": "5000 mAh · 48 MP · 128 GB",
       "sello": "ABURRIDO",
       "deslizar": true
     },
     {
-      "tipo": "antesDespues",
-      "badge": "Lo que de verdad importa",
-      "antes": "Lo que TIENE tu producto",
-      "despues": "Lo que HACE por tu cliente"
+      "tipo": "trio",
+      "iconos": [
+        "📦",
+        "🎁",
+        "😍"
+      ],
+      "letras": [
+        "TIENE",
+        "HACE",
+        "SIENTE"
+      ]
     },
     {
       "tipo": "antesDespues",
-      "badge": "PASO 1 · Beneficios",
-      "antes": "Batería de 5000 mAh",
-      "despues": "Todo el día sin buscar enchufe 🔋"
+      "antes": "5000 mAh",
+      "despues": "Todo el día sin cargar 🔋"
     },
     {
-      "tipo": "antesDespues",
-      "badge": "PASO 2 · Antes y después",
-      "antes": "Llega cansado y sin energía",
-      "despues": "Sube las escaleras sin parar 💪"
+      "tipo": "amanecer",
+      "palabra": "DESPUÉS"
     },
     {
       "tipo": "embudo",
-      "badge": "PASO 3 · ¿Y eso para qué?",
       "pasos": [
         {
-          "etiqueta": "📷 Cámara de 48 MP",
+          "etiqueta": "📷 48 MP",
           "valor": 0
         },
         {
@@ -108,12 +111,13 @@
       ]
     },
     {
-      "tipo": "checklist",
-      "items": [
-        "Característica",
-        "Beneficio",
-        "Deseo"
-      ]
+      "tipo": "puzzle",
+      "piezas": [
+        "⚙️",
+        "✨",
+        "❤️"
+      ],
+      "palabra": "¡VENDE!"
     },
     {
       "tipo": "seguir",
@@ -128,33 +132,15 @@
       "color": "#FF3B5C"
     },
     {
-      "start": 13.985,
-      "texto": "🔋 5000 mAh ❌",
-      "lado": "izq",
-      "color": "#FF3B5C"
-    },
-    {
-      "start": 15.985,
-      "texto": "😌 Todo el día ✅",
-      "lado": "der",
-      "color": "#2BD576"
-    },
-    {
       "start": 29.402,
       "texto": "❓ ¿Y eso para qué?",
       "lado": "izq",
       "color": "#FF8A3D"
     },
     {
-      "start": 31.402,
-      "texto": "❓ ¿Y eso para qué?",
-      "lado": "der",
-      "color": "#FF8A3D"
-    },
-    {
       "start": 36.244,
       "texto": "💡 Vende el deseo",
-      "lado": "izq",
+      "lado": "der",
       "color": "#FFD23F"
     }
   ],
@@ -164,66 +150,100 @@
       "emoji": "😴"
     },
     {
+      "start": 22.502,
+      "emoji": "✨"
+    },
+    {
       "start": 37.444,
       "emoji": "🔥"
     }
   ],
   "gestos": [
     {
-      "start": 0,
+      "start": 0.0,
       "pose": "doubt"
     },
     {
-      "start": 3.0,
+      "start": 1.92,
+      "pose": "tired"
+    },
+    {
+      "start": 3.84,
       "pose": "facepalm"
     },
     {
-      "start": 5.736,
+      "start": 5.74,
       "pose": "explain"
     },
     {
-      "start": 8.336,
-      "pose": "you"
+      "start": 7.77,
+      "pose": "youTilt"
     },
     {
-      "start": 11.785,
-      "pose": "one"
+      "start": 9.8,
+      "pose": "heart"
     },
     {
-      "start": 14.385,
-      "pose": "idea"
+      "start": 11.79,
+      "pose": "oneRaised"
     },
     {
-      "start": 20.002,
-      "pose": "two"
+      "start": 14.57,
+      "pose": "wagNo"
     },
     {
-      "start": 22.602,
-      "pose": "explain"
-    },
-    {
-      "start": 27.802,
-      "pose": "three"
-    },
-    {
-      "start": 30.002,
-      "pose": "thinking"
-    },
-    {
-      "start": 35.444,
-      "pose": "crossed"
-    },
-    {
-      "start": 37.244,
+      "start": 17.36,
       "pose": "thumbsUp"
     },
     {
-      "start": 40.449,
-      "pose": "down"
+      "start": 20.0,
+      "pose": "two"
     },
     {
-      "start": 42.849,
-      "pose": "wave"
+      "start": 22.64,
+      "pose": "sad"
+    },
+    {
+      "start": 25.29,
+      "pose": "excited"
+    },
+    {
+      "start": 27.8,
+      "pose": "three"
+    },
+    {
+      "start": 30.39,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 32.98,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 35.44,
+      "pose": "crossed"
+    },
+    {
+      "start": 37.11,
+      "pose": "love"
+    },
+    {
+      "start": 38.77,
+      "pose": "fistPump"
+    },
+    {
+      "start": 40.45,
+      "pose": "downLook"
+    },
+    {
+      "start": 41.72,
+      "pose": "heart"
+    },
+    {
+      "start": 42.99,
+      "pose": "waveBoth"
     }
-  ]
+  ],
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78
 }
