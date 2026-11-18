@@ -2,12 +2,12 @@
   "marca": "@almonte.suarez",
   "titulos": [
     "3 frases que te salvan",
-    "La primera frase",
+    "Tu primera frase",
     "1 · Pregunta que duela",
     "2 · Resultado primero",
     "3 · “Esto es para ti si…”",
     "En resumen",
-    "📌 Guárdalo y sígueme"
+    "Guárdalo y sígueme"
   ],
   "lineas": [
     {
@@ -65,5 +65,14 @@
   "avatarImg": "avatar.png",
   "bocaX": 542,
   "bocaY": 1082,
-  "bocaW": 125
+  "bocaW": 125,
+  "iconos": [
+    "🚫",
+    "👀",
+    "😣",
+    "🏆",
+    "🎯",
+    "✅",
+    "📌"
+  ]
 }
