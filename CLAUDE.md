@@ -36,27 +36,43 @@ Idioma de trabajo con el usuario: español.
 
 Caption: primera línea = gancho; 2–3 líneas de valor sin revelar el secreto; "👉 Comenta PALABRA y te lo envío por mensaje"; 5–10 hashtags de `GUIA-MARCA.md`.
 
-## Responder comentarios con mensaje privado
-Para cada reel de `publicados.json` de los últimos 7 días:
-1. Leer comentarios (`INSTAGRAM_GET_IG_MEDIA_COMMENTS`).
-2. Si el texto contiene la palabra clave (sin distinguir mayúsculas, tolerando errores leves) y el comentario no está en `respondidos.json`:
-   - Mensaje privado: `POST /me/messages` con `{"recipient":{"comment_id":ID},"message":{"text":...}}` (Private Replies; 1 por comentario, dentro de 7 días).
-   - Respuesta pública al comentario: "¡Te lo envié por mensaje! 📩" (`INSTAGRAM_POST_IG_COMMENT_REPLIES`).
-   - Guardar en `respondidos.json`: comment_id, usuario, palabra, fecha, `"guia_enviada": false`.
-3. Nunca enviar dos veces al mismo comentario.
+## Responder comentarios (estilo botones, como pidió el usuario)
+Todas las llamadas de mensajes van por `COMPOSIO_PROXY_EXECUTE` (toolkit `instagram`), `POST https://graph.instagram.com/v21.0/me/messages`.
 
-## Cuando la persona responde al primer mensaje → enviar la guía PDF
-En la misma revisión, para cada entrada de `respondidos.json` con `guia_enviada: false`:
-1. Buscar su conversación (`INSTAGRAM_LIST_ALL_CONVERSATIONS` con `user_id`, o listando y comparando el usuario) y ver si escribió DESPUÉS de nuestro mensaje (`INSTAGRAM_LIST_ALL_MESSAGES`).
-2. Si respondió y han pasado menos de 24 h desde su mensaje:
-   - Texto corto y cercano que reaccione a lo que dijo (1–2 líneas) + "Te dejo la guía completa de [tema] 👇".
-   - Enviar el PDF: `POST /me/messages` con `{"recipient":{"id":PSID},"message":{"attachment":{"type":"file","payload":{"url":RAW_PDF}}}}`.
-     Si el adjunto falla, enviar el enlace directo: `https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/guia-TEMA.pdf`.
-   - Marcar `guia_enviada: true` y hacer push.
-3. Después de la guía no se automatiza nada más: si vuelve a escribir, avisar al usuario en el resumen ("X respondió: …") para que lo atienda él.
+### Paso 1 — Alguien comenta la palabra clave
+Para cada reel de `publicados.json` de los últimos 7 días, leer comentarios (`INSTAGRAM_GET_IG_MEDIA_COMMENTS`).
+Si contiene la palabra clave (sin distinguir mayúsculas, tolerando errores leves) y el comentario no está en `respondidos.json`:
+- Mensaje privado con botón de respuesta rápida:
+```json
+{"recipient":{"comment_id":"ID_COMENTARIO"},
+ "message":{"text":"👋 ¡Hola! Gracias por comentar PALABRA. Ya tengo lista la guía que te prometí en el video. Toca el botón de abajo para recibirla 👇",
+            "quick_replies":[{"content_type":"text","title":"📩 Quiero la guía ✨","payload":"GUIA_PALABRA"}]}}
+```
+- Respuesta pública al comentario: "¡Te lo envié por mensaje! 📩" (`INSTAGRAM_POST_IG_COMMENT_REPLIES`).
+- Guardar en `respondidos.json`: comment_id, usuario, usuario_id (= `from.id` del comentario), reel, palabra, fechas, `"guia_enviada": false`.
+- Nunca enviar dos veces al mismo comentario (Instagram solo permite 1 respuesta privada por comentario, dentro de 7 días).
+
+### Paso 2 — La persona toca el botón (o responde cualquier cosa)
+Para cada entrada con `guia_enviada: false`: buscar su conversación (`INSTAGRAM_LIST_ALL_CONVERSATIONS` con `user_id` = usuario_id)
+y ver si escribió después de nuestro mensaje (`INSTAGRAM_LIST_ALL_MESSAGES`). Si escribió hace menos de 24 h, enviar la tarjeta:
+```json
+{"recipient":{"id":"USUARIO_ID"},
+ "message":{"attachment":{"type":"template","payload":{"template_type":"generic","elements":[{
+   "title":"📥 Aquí tienes tu guía: TÍTULO DE LA GUÍA",
+   "subtitle":"Toca el botón para verla completa 👇",
+   "image_url":"https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/portada-TEMA.png",
+   "buttons":[{"type":"web_url","url":"ENLACE_GUIA","title":"Ver la guía 🔗"}]}]}}}}
+```
+ENLACE_GUIA: `https://jorgecor2121-stack.github.io/reels-anuncios/guias/guia-TEMA.pdf` si GitHub Pages está activo
+(comprobar que responde 200); si no, `https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/guias/guia-TEMA.pdf`.
+Si la tarjeta falla, enviar texto + enlace. Marcar `guia_enviada: true` y hacer push.
+
+### Paso 3 — Si vuelve a escribir después de la guía
+No responder automáticamente: avisar al usuario en el resumen ("@usuario escribió: …") para que lo atienda él.
 
 ## Guías PDF
-Cada reel tiene su guía: `guias/src/TEMA.html` → `node scripts/hacer_guia.js TEMA` → `guias/guia-TEMA.pdf`
+Cada reel tiene su guía: `guias/src/TEMA.html` → `node scripts/hacer_guia.js TEMA` → `guias/guia-TEMA.pdf`,
+y su portada para la tarjeta del mensaje: `node scripts/portada_guia.js TEMA` → `guias/portada-TEMA.png`
 (usar `NODE_PATH=$(npm root -g)` para encontrar playwright). Copiar el diseño de `guias/src/gancho.html`: 7 páginas
 1080x1350 — portada, lo básico, los errores (incluido el secreto del reel), plantillas, ejemplos antes/después, checklist, "tu turno".
 Al producir un reel nuevo, crear también su guía y anotarla en `publicados.json` (campo `guia`).
