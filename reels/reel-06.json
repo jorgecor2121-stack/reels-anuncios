@@ -1,0 +1,221 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "blazer",
+  "marca": "@almonte.suarez",
+  "audio": "narracion-06.wav",
+  "lineas": [
+    {
+      "text": "¿Te sientas a escribir un anuncio y no sabes ni por dónde empezar?",
+      "start": 0.0,
+      "duration": 4.127
+    },
+    {
+      "text": "Usa esta fórmula de tres pasos. Es una de las más usadas en publicidad.",
+      "start": 4.377,
+      "duration": 5.251
+    },
+    {
+      "text": "Paso uno, problema: nombra el dolor exacto de tu cliente, con sus propias palabras.",
+      "start": 9.878,
+      "duration": 6.609
+    },
+    {
+      "text": "Paso dos, agitación: muéstrale lo que le está costando no resolverlo.",
+      "start": 16.737,
+      "duration": 5.721
+    },
+    {
+      "text": "Paso tres, solución: ahí entra tu producto, como la salida natural.",
+      "start": 22.708,
+      "duration": 5.721
+    },
+    {
+      "text": "Problema, agitación, solución. Tres frases, y tu anuncio ya conecta.",
+      "start": 28.679,
+      "duration": 6.269
+    },
+    {
+      "text": "Guarda este video y sígueme para más tips de anuncios.",
+      "start": 35.198,
+      "duration": 3.709
+    }
+  ],
+  "fin": 40.16,
+  "resaltar": [
+    "anuncio",
+    "empezar",
+    "fórmula",
+    "tres",
+    "problema",
+    "dolor",
+    "palabras",
+    "agitación",
+    "costando",
+    "solución",
+    "producto",
+    "natural",
+    "conecta",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Escribe tu anuncio aquí…",
+      "sello": "¿Y AHORA?",
+      "deslizar": false
+    },
+    {
+      "tipo": "contador",
+      "numero": "3",
+      "etiqueta": "pasos: Problema · Agitación · Solución"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "PASO 1 · Problema",
+      "antes": "Vendemos colchones ortopédicos",
+      "despues": "¿Te levantas con dolor de espalda?"
+    },
+    {
+      "tipo": "stat",
+      "badge": "PASO 2 · Agitación",
+      "icono": "😣",
+      "valor": 365,
+      "etiqueta": "mañanas al año con dolor (ejemplo)",
+      "sube": false
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "PASO 3 · Solución",
+      "antes": "Compra nuestro colchón",
+      "despues": "Duerme 8 horas y despierta sin dolor"
+    },
+    {
+      "tipo": "embudo",
+      "badge": "La fórmula P · A · S",
+      "pasos": [
+        {
+          "etiqueta": "😣 Problema",
+          "valor": 0
+        },
+        {
+          "etiqueta": "🔥 Agitación",
+          "valor": 0
+        },
+        {
+          "etiqueta": "✅ Solución",
+          "valor": 0
+        },
+        {
+          "etiqueta": "💰 Venta",
+          "valor": 0
+        }
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte.suarez"
+    }
+  ],
+  "chips": [
+    {
+      "start": 1.2,
+      "texto": "🤯 Hoja en blanco",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 12.278,
+      "texto": "🎯 Con SUS palabras",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 18.537,
+      "texto": "⏰ 365 mañanas",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 24.708,
+      "texto": "😴 8 horas de sueño",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 29.479,
+      "texto": "📝 Solo 3 frases",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 17.337,
+      "emoji": "🔥"
+    },
+    {
+      "start": 30.878999999999998,
+      "emoji": "💰"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "ohNo"
+    },
+    {
+      "start": 2.4,
+      "pose": "doubtTurn"
+    },
+    {
+      "start": 4.377,
+      "pose": "explain"
+    },
+    {
+      "start": 6.377,
+      "pose": "three"
+    },
+    {
+      "start": 9.878,
+      "pose": "oneRaised"
+    },
+    {
+      "start": 12.478,
+      "pose": "youTilt"
+    },
+    {
+      "start": 16.737,
+      "pose": "two"
+    },
+    {
+      "start": 18.936999999999998,
+      "pose": "sad"
+    },
+    {
+      "start": 22.708,
+      "pose": "three"
+    },
+    {
+      "start": 24.907999999999998,
+      "pose": "presentRight"
+    },
+    {
+      "start": 28.679,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 31.279,
+      "pose": "fistPump"
+    },
+    {
+      "start": 35.198,
+      "pose": "downLook"
+    },
+    {
+      "start": 37.598,
+      "pose": "waveBoth"
+    }
+  ]
+}

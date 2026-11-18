@@ -6,6 +6,8 @@ import { loadFont } from "@remotion/google-fonts/Montserrat";
 import { Esc, MotionProps, Subs, palabras } from "./Motion";
 import { Studio } from "./scenes/Studio";
 import { StudioNeon } from "./scenes/StudioNeon";
+import { StudioSunset } from "./scenes/StudioSunset";
+import { OutfitProvider, Vestimenta } from "./avatar2d/outfit";
 import { poseAtFrame, Segment } from "./avatar2d/timeline";
 
 const { fontFamily } = loadFont("normal", { weights: ["700", "800", "900"], subsets: ["latin"] });
@@ -16,7 +18,8 @@ const BAJAR = 330; // cuánto se baja el estudio para dejar arriba el espacio de
 export type AvatarMotionProps = MotionProps & {
   audio: string; // narración en public/ (solo para mover la boca; el audio se mezcla aparte)
   gestos: Segment[]; // poses del avatar por segundo
-  entorno?: "clasico" | "neon";
+  entorno?: "clasico" | "neon" | "atardecer";
+  vestimenta?: Vestimenta;
   // Datos que aparecen flotando a los lados del avatar mientras hablas
   chips?: { start: number; texto: string; lado: "izq" | "der"; color?: string; dur?: number }[];
   // Ráfagas de emojis que suben (likes, fuego, dinero…)
@@ -95,7 +98,11 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
   const glow = 0.85 + Math.min(0.3, (volume ?? 0) * 1.5);
   return (
     <div style={{ position: "absolute", left: 0, top: BAJAR, width: 1080, height: 1920 }}>
-      {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} /> : <Studio pose={pose} glow={glow} />}
+      <OutfitProvider vestimenta={p.vestimenta}>
+        {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : p.entorno === "atardecer" ? <StudioSunset pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : <Studio pose={pose} glow={glow} />}
+      </OutfitProvider>
     </div>
   );
 };
@@ -110,11 +117,11 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
   return (
     <AbsoluteFill style={{ background: "#0A0503", fontFamily, color: "#fff", overflow: "hidden" }}>
       <Personaje p={p} />
-      {p.entorno === "neon" ? <Figuras /> : null}
+      {p.entorno === "neon" || p.entorno === "atardecer" ? <Figuras /> : null}
       {(p.reacciones ?? []).map((r, i) => <Reaccion key={i} r={r} />)}
       {(p.chips ?? []).map((c, i) => <Chip key={i} c={c} i={i} />)}
       {/* oscurece arriba para que las escenas se lean */}
-      <AbsoluteFill style={{ background: p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
+      <AbsoluteFill style={{ background: p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
       {/* barra de progreso + marca */}
       <div style={{ position: "absolute", top: 110, left: 90, right: 90, height: 8, borderRadius: 4, background: "rgba(255,255,255,.12)" }}>
         <div style={{ width: `${Math.min(1, t / p.fin) * 100}%`, height: "100%", borderRadius: 4, background: "linear-gradient(90deg,#FF8A3D,#FFD23F)" }} />

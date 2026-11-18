@@ -71,6 +71,39 @@ export const HandShape: React.FC<{ type: HandType }> = ({ type }) => {
       return fist([0, 1]);
     case "three":
       return fist([0, 1, 2]);
+    case "four": // cuatro dedos arriba, pulgar doblado
+      return (
+        <>
+          {[0, 1, 2, 3].map((i) => (
+            <Finger key={i} i={i} />
+          ))}
+          <Palm />
+          <rect x={-4} y={-40} width={36} height={17} rx={8.5} transform="rotate(-10 14 -32)" {...sk} />
+        </>
+      );
+    case "peace": // V: índice y medio separados
+      return (
+        <>
+          <rect x={14} y={-118} width={17} height={66} rx={8.5} transform="rotate(14 22 -60)" {...sk} />
+          <rect x={-3} y={-122} width={17} height={70} rx={8.5} transform="rotate(-10 5 -60)" {...sk} />
+          <Palm top={-62} />
+          {[2, 3].map((i) => (
+            <Knuckle key={i} i={i} />
+          ))}
+          <FistThumb />
+        </>
+      );
+    case "ok": // pulgar e índice en círculo, tres dedos arriba
+      return (
+        <>
+          {[1, 2, 3].map((i) => (
+            <Finger key={i} i={i} />
+          ))}
+          <Palm />
+          <circle cx={28} cy={-68} r={17} fill="none" stroke={C.outline} strokeWidth={17 + SW * 2} />
+          <circle cx={28} cy={-68} r={17} fill="none" stroke={C.skin} strokeWidth={17} />
+        </>
+      );
     case "pointFront":
       return (
         <>

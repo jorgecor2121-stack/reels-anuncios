@@ -1,9 +1,21 @@
 import { POSE_BY_ID } from "./poses";
 import { ArmPose, Mouth, Pose, Pt } from "./types";
 import { forward, mixJoints, solveArm } from "./ik";
+import { mouthAt } from "./lipsync";
 
 /** Un tramo del guion: desde `start` (segundos) el personaje hace la pose `pose`. */
-export type Segment = { start: number; pose: string; talk?: boolean; text?: string };
+export type Segment = {
+  start: number;
+  pose: string;
+  /** boca de habla automática (sin audio ni `say`) */
+  talk?: boolean;
+  /** subtítulo que se muestra */
+  text?: string;
+  /** lo que dice: la boca sigue cada letra */
+  say?: string;
+  /** letra grande para el subtítulo (diálogo del abecedario) */
+  letter?: string;
+};
 
 const TRANSITION = 9; // frames que tarda en pasar de una pose a otra
 
@@ -41,6 +53,7 @@ export const blendPose = (a: Pose, b: Pose, t: number): Pose => {
     left: mixArm(a.left, b.left, t, [818, 790 - la], [818, 790 - lb]),
     face: t < 0.5 ? a.face : b.face,
     headTilt: mix(a.headTilt ?? 0, b.headTilt ?? 0, t),
+    headTurn: mix(a.headTurn ?? 0, b.headTurn ?? 0, t),
     headY: mix(a.headY ?? 0, b.headY ?? 0, t),
     shoulderLift: mix(la, lb, t),
   };
@@ -97,8 +110,23 @@ export const poseAtFrame = (
   let mouth = pose.face.mouth;
   if (!LOCKED_MOUTHS.includes(mouth)) {
     if (opts.volume !== undefined) mouth = mouthFromVolume(opts.volume, frame);
+    else if (seg.say) mouth = mouthAt(seg.say, since / fps - 0.12) ?? (since / fps < 0.12 ? "M" : pose.face.mouth);
     else if (seg.talk) mouth = fakeTalkMouth(frame);
   }
-  const blink = isBlinking(frame, fps) && pose.face.eyes !== "happy" && pose.face.eyes !== "closed";
-  return { ...pose, face: { ...pose.face, mouth, eyes: blink ? "closed" : pose.face.eyes } };
+  const blink = isBlinking(frame, fps) && !["happy", "closed", "half"].includes(pose.face.eyes);
+
+  // Movimiento "vivo": la cabeza se balancea un poco y la mirada se mueve de vez en cuando
+  const sec = frame / fps;
+  const sway = Math.sin(sec * 1.7) * 1.6 + Math.sin(sec * 0.9 + 1) * 1.1;
+  const talkingNow = mouth !== pose.face.mouth;
+  const bob = talkingNow ? Math.sin(sec * 9) * 1.5 : 0; // pequeño cabeceo al hablar
+  let eyes = blink ? "closed" : pose.face.eyes;
+  if (eyes === "open" && hash(Math.floor(sec / 1.4) + 7) > 0.78) eyes = hash(Math.floor(sec / 1.4)) > 0.5 ? "left" : "right";
+
+  return {
+    ...pose,
+    headTilt: (pose.headTilt ?? 0) + sway,
+    headY: (pose.headY ?? 0) + bob,
+    face: { ...pose.face, mouth, eyes: eyes as Pose["face"]["eyes"] },
+  };
 };

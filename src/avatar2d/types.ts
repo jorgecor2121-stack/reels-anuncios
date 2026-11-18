@@ -9,7 +9,10 @@ export type HandType =
   | "three"
   | "thumbsUp"
   | "phone"
-  | "claw";
+  | "claw"
+  | "ok"
+  | "peace"
+  | "four";
 
 export type ArmPose = {
   shoulder?: Pt;
@@ -23,8 +26,8 @@ export type ArmPose = {
   front?: boolean;
 };
 
-export type Eyes = "open" | "closed" | "happy" | "wide" | "up" | "wink" | "side";
-export type Brows = "normal" | "raised" | "doubt" | "confident" | "worried";
+export type Eyes = "open" | "closed" | "happy" | "wide" | "up" | "wink" | "side" | "left" | "right" | "down" | "half";
+export type Brows = "normal" | "raised" | "doubt" | "confident" | "worried" | "angry";
 export type Mouth =
   | "smile"
   | "grin"
@@ -36,7 +39,13 @@ export type Mouth =
   | "laugh"
   | "surprise"
   | "shh"
-  | "flat";
+  | "flat"
+  | "I"
+  | "U"
+  | "F"
+  | "L"
+  | "S"
+  | "sad";
 
 export type Face = { eyes: Eyes; brows: Brows; mouth: Mouth };
 
@@ -47,6 +56,8 @@ export type Pose = {
   left: ArmPose;
   face: Face;
   headTilt?: number;
+  /** Giro de cabeza: -1 = mira a la izquierda de la pantalla, 1 = a la derecha */
+  headTurn?: number;
   headY?: number;
   shoulderLift?: number;
 };

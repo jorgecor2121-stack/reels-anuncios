@@ -20,7 +20,8 @@ const Eye: React.FC<{ cx: number; type: Eyes; side: -1 | 1 }> = ({ cx, type, sid
     return <path d={`M ${cx - 20} ${cy + 6} Q ${cx} ${cy - 14} ${cx + 20} ${cy + 6}`} fill="none" stroke={C.pupil} strokeWidth={6} strokeLinecap="round" />;
   }
   const k = type === "wide" ? 1.15 : 1; // sorpresa: mismo ojo, un poco más grande
-  const [lx, ly] = type === "up" ? [side * 2 + 3, -7] : type === "side" ? [6, 0] : [0, 0];
+  const [lx, ly] =
+    type === "up" ? [side * 2 + 3, -7] : type === "side" || type === "right" ? [7, 0] : type === "left" ? [-7, 0] : type === "down" ? [0, 7] : [0, 0];
   // Ojo como en tu avatar: óvalo negro grande con brillo y línea de pestañas
   return (
     <g>
@@ -30,6 +31,12 @@ const Eye: React.FC<{ cx: number; type: Eyes; side: -1 | 1 }> = ({ cx, type, sid
         <circle cx={cx + lx + 7} cy={cy + ly - 8} r={6.5} fill="#FFF" />
         <circle cx={cx + lx - 5} cy={cy + ly + 8} r={2.8} fill="#FFF" opacity={0.85} />
         <path d={`M ${cx - 24} ${cy - 10} Q ${cx} ${cy - 31} ${cx + 24} ${cy - 13}`} fill="none" stroke={C.pupil} strokeWidth={4.5} strokeLinecap="round" />
+        {type === "half" && (
+          <>
+            <path d={`M ${cx - 27} ${cy - 30} L ${cx + 27} ${cy - 30} L ${cx + 27} ${cy + 1} Q ${cx} ${cy + 6} ${cx - 27} ${cy + 1} Z`} fill={C.skin} />
+            <path d={`M ${cx - 24} ${cy + 1} Q ${cx} ${cy + 7} ${cx + 24} ${cy + 1}`} fill="none" stroke={C.pupil} strokeWidth={5} strokeLinecap="round" />
+          </>
+        )}
       </g>
     </g>
   );
@@ -41,6 +48,7 @@ const Brow: React.FC<{ cx: number; side: -1 | 1; type: Brows }> = ({ cx, side, t
   if (type === "raised") (dyIn = -12), (dyOut = -10);
   if (type === "confident") (dyIn = 5), (dyOut = -2);
   if (type === "worried") (dyIn = -12), (dyOut = 5);
+  if (type === "angry") (dyIn = 12), (dyOut = -6);
   if (type === "doubt") side === -1 ? ((dyIn = -16), (dyOut = -18)) : ((dyIn = 6), (dyOut = 2));
   const inner = cx - side * 26;
   const outer = cx + side * 38;
@@ -71,6 +79,44 @@ const MouthShape: React.FC<{ type: Mouth }> = ({ type }) => {
       );
     case "grin":
       return <path d={`M ${x - 42} ${y - 8} Q ${x} ${y - 2} ${x + 42} ${y - 8} Q ${x} ${y + 32} ${x - 42} ${y - 8} Z`} fill={C.teeth} {...ol} />;
+    case "S": // dientes juntos (s, z, c)
+      return (
+        <g>
+          <path d={`M ${x - 32} ${y - 4} Q ${x} ${y - 8} ${x + 32} ${y - 4} Q ${x + 28} ${y + 14} ${x} ${y + 15} Q ${x - 28} ${y + 14} ${x - 32} ${y - 4} Z`} fill={C.teeth} {...ol} />
+          <path d={`M ${x - 28} ${y + 5} Q ${x} ${y + 3} ${x + 28} ${y + 5}`} fill="none" stroke="#C9C9C9" strokeWidth={3} />
+        </g>
+      );
+    case "I": // boca estirada, poco abierta
+      return (
+        <g>
+          <path d={`M ${x - 40} ${y - 4} Q ${x} ${y - 10} ${x + 40} ${y - 4} Q ${x + 36} ${y + 18} ${x} ${y + 19} Q ${x - 36} ${y + 18} ${x - 40} ${y - 4} Z`} fill={C.mouth} {...ol} />
+          <path d={`M ${x - 34} ${y - 3} Q ${x} ${y - 8} ${x + 34} ${y - 3} L ${x + 32} ${y + 6} Q ${x} ${y + 3} ${x - 32} ${y + 6} Z`} fill={C.teeth} />
+        </g>
+      );
+    case "U": // labios redondos y adelantados
+      return (
+        <g>
+          <ellipse cx={x} cy={y + 6} rx={17} ry={16} fill={C.lip} stroke={C.outline} strokeWidth={4} />
+          <ellipse cx={x} cy={y + 6} rx={8} ry={8} fill={C.mouth} />
+        </g>
+      );
+    case "F": // dientes de arriba sobre el labio de abajo (f, v)
+      return (
+        <g>
+          <path d={`M ${x - 30} ${y + 6} Q ${x} ${y + 22} ${x + 30} ${y + 6}`} fill="none" stroke={C.lip} strokeWidth={12} strokeLinecap="round" />
+          <path d={`M ${x - 30} ${y - 4} Q ${x} ${y - 8} ${x + 30} ${y - 4} L ${x + 26} ${y + 8} Q ${x} ${y + 12} ${x - 26} ${y + 8} Z`} fill={C.teeth} {...ol} />
+        </g>
+      );
+    case "L": // boca abierta con la lengua arriba (l, n, t, d)
+      return (
+        <g>
+          <path d={`M ${x - 30} ${y - 6} Q ${x} ${y - 12} ${x + 30} ${y - 6} Q ${x + 26} ${y + 30} ${x} ${y + 32} Q ${x - 26} ${y + 30} ${x - 30} ${y - 6} Z`} fill={C.mouth} {...ol} />
+          <path d={`M ${x - 24} ${y - 5} Q ${x} ${y - 10} ${x + 24} ${y - 5} L ${x + 22} ${y + 4} Q ${x} ${y + 1} ${x - 22} ${y + 4} Z`} fill={C.teeth} />
+          <ellipse cx={x} cy={y + 10} rx={14} ry={9} fill={C.tongue} />
+        </g>
+      );
+    case "sad":
+      return <path d={`M ${x - 30} ${y + 12} Q ${x} ${y - 6} ${x + 30} ${y + 12}`} fill="none" stroke={C.lip} strokeWidth={7} strokeLinecap="round" />;
     case "M":
       return (
         <>
@@ -190,13 +236,15 @@ const Hair: React.FC = () => (
   </g>
 );
 
-export const Head: React.FC<{ face: Face }> = ({ face }) => {
+export const Head: React.FC<{ face: Face; turn?: number }> = ({ face, turn = 0 }) => {
   const { eyes, brows, mouth } = face;
+  const fx = turn * 20; // los rasgos se corren hacia donde mira
+  const earScale = (s: number) => 1 - s * turn * 0.28;
   return (
     <g>
       {/* orejas */}
       {[-1, 1].map((s) => (
-        <g key={s}>
+        <g key={s} transform={`translate(${540 + s * 136} 404) scale(${earScale(s)} 1) translate(${-(540 + s * 136)} -404)`}>
           <ellipse cx={540 + s * 136} cy={404} rx={22} ry={38} fill={C.skin} stroke={C.outline} strokeWidth={SW} />
           <path d={`M ${540 + s * 140} ${388} q ${s * 8} 16 0 32`} fill="none" stroke={C.skinShade} strokeWidth={5} strokeLinecap="round" />
         </g>
@@ -212,19 +260,21 @@ export const Head: React.FC<{ face: Face }> = ({ face }) => {
         strokeWidth={SW}
         strokeLinejoin="round"
       />
+      <g transform={`translate(${fx} 0)`}>
       {/* bigote */}
       <path d="M 484 500 Q 510 476 540 486 Q 570 476 596 500 Q 570 492 540 496 Q 510 492 484 500 Z" fill={C.hair} stroke={C.hair} strokeWidth={3} />
       {/* piel bajo el labio + perilla */}
       <path d="M 520 548 Q 540 542 560 548 L 553 570 Q 540 576 527 570 Z" fill={C.skin} />
       <path d="M 531 558 L 549 558 L 540 578 Z" fill={C.hair} />
       {/* nariz */}
-      <path d="M 552 404 Q 562 436 556 452" fill="none" stroke={C.skinShade} strokeWidth={5} strokeLinecap="round" />
+      <path transform={`translate(${turn * 8} 0)`} d="M 552 404 Q 562 436 556 452" fill="none" stroke={C.skinShade} strokeWidth={5} strokeLinecap="round" />
       <path d="M 522 458 Q 540 468 558 458" fill="none" stroke={C.skinShade} strokeWidth={5} strokeLinecap="round" />
       <Eye cx={EYE_L} type={eyes} side={-1} />
       <Eye cx={EYE_R} type={eyes} side={1} />
       <Brow cx={EYE_L} side={-1} type={brows} />
       <Brow cx={EYE_R} side={1} type={brows} />
       <MouthShape type={mouth} />
+      </g>
     </g>
   );
 };

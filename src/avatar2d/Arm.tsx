@@ -1,6 +1,7 @@
 import React from "react";
 import { C, SW } from "./colors";
 import { Hand } from "./Hand";
+import { useOutfit } from "./outfit";
 import { ArmPose, Pt } from "./types";
 
 /**
@@ -34,6 +35,7 @@ export const Arm: React.FC<{ pose: ArmPose; shoulder: Pt; mirror?: boolean; watc
 
   const end = onCurve(s, c, w, 0.98);
   const handAng = pose.handAngle ?? armAngle(end.a, end.b);
+  const o = useOutfit();
   const wt = onCurve(s, c, w, 0.86);
 
   return (
@@ -44,10 +46,10 @@ export const Arm: React.FC<{ pose: ArmPose; shoulder: Pt; mirror?: boolean; watc
       {/* manga del polo */}
       <circle cx={s[0]} cy={s[1]} r={SLEEVE_W / 2 + SW} fill={C.outline} />
       <path d={sleeveD} fill="none" stroke={C.outline} strokeWidth={SLEEVE_W + SW * 2} strokeLinecap="butt" />
-      <circle cx={s[0]} cy={s[1]} r={SLEEVE_W / 2} fill={C.shirt} />
-      <path d={sleeveD} fill="none" stroke={C.shirt} strokeWidth={SLEEVE_W} strokeLinecap="butt" />
+      <circle cx={s[0]} cy={s[1]} r={SLEEVE_W / 2} fill={o.shirt} />
+      <path d={sleeveD} fill="none" stroke={o.shirt} strokeWidth={SLEEVE_W} strokeLinecap="butt" />
       <g transform={`translate(${sl.p[0]} ${sl.p[1]}) rotate(${sleeveAng})`}>
-        <line x1={-SLEEVE_W / 2 + 6} y1={-14} x2={SLEEVE_W / 2 - 6} y2={-14} stroke={C.shirtLine} strokeWidth={4} />
+        <line x1={-SLEEVE_W / 2 + 6} y1={-14} x2={SLEEVE_W / 2 - 6} y2={-14} stroke={o.tipo === "blazer" ? o.inner : o.shirtLine} strokeWidth={o.tipo === "blazer" ? 8 : 4} />
       </g>
       <Hand x={w[0]} y={w[1]} angle={handAng} type={pose.hand} mirror={mirror} scale={pose.handScale} />
       {watch && (
