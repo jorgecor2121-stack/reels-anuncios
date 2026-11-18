@@ -10,7 +10,7 @@ Videos animados (reels verticales 1080x1920, 15–30 s) sobre:
 2. **Idea clave**: una sola idea, en grande.
 3. **Valor real**: 2 tips concretos y útiles.
 4. **Incógnito**: el tip más valioso queda oculto o borroso ("hay un 3er error que casi nadie ve…").
-5. **Llamado a la acción**: "Escríbeme por DM la palabra CLAVE y te lo cuento".
+5. **Llamado a la acción**: "Comenta la palabra CLAVE y te lo envío por mensaje".
    - Una palabra clave distinta por reel (GANCHO, VENDER, IDEA, COPY…), para saber qué video trae cada mensaje.
 
 ## Estilo

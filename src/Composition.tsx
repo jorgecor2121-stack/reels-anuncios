@@ -161,13 +161,13 @@ const CtaScene: React.FC<{ p: ReelProps }> = ({ p }) => {
   return (
     <Stage>
       <Pop><div style={{ fontSize: 76, fontWeight: 800, lineHeight: 1.15 }}>¿Quieres saberlo?</div></Pop>
-      <Pop delay={15}><div style={{ fontSize: 64, fontWeight: 600, color: C.muted, marginTop: 30 }}>Escríbeme por DM la palabra</div></Pop>
+      <Pop delay={15}><div style={{ fontSize: 64, fontWeight: 600, color: C.muted, marginTop: 30 }}>Comenta la palabra 👇</div></Pop>
       <Pop delay={30}>
         <div style={{ marginTop: 40, display: "inline-block", background: C.accent, color: C.bg, fontSize: 130, fontWeight: 900, padding: "20px 60px", borderRadius: 40, transform: `scale(${pulse})`, boxShadow: `0 0 80px ${C.accent}88` }}>
           {p.keyword}
         </div>
       </Pop>
-      <Pop delay={50}><div style={{ fontSize: 56, fontWeight: 700, marginTop: 50 }}>y te lo cuento 📩</div></Pop>
+      <Pop delay={50}><div style={{ fontSize: 56, fontWeight: 700, marginTop: 50 }}>y te lo envío por mensaje 📩</div></Pop>
     </Stage>
   );
 };
