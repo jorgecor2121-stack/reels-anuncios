@@ -5,7 +5,8 @@
 #   Genera la voz con ElevenLabs, sincroniza escenas y deja videos/reel-02.mp4
 #
 # Las 7 líneas del guion corresponden, en orden, a las escenas:
-#   1 gancho · 2 idea · 3 cuenta regresiva · 4 tip 1 · 5 tip 2 · 6 secreto · 7 llamado a la acción
+#   Reel de palabra clave ("tipo" ausente): 1 gancho · 2 idea · 3 cuenta regresiva · 4 tip 1 · 5 tip 2 · 6 secreto · 7 comenta PALABRA
+#   Reel de tips ("tipo": "tips"):          1 gancho · 2 idea · 3 tip 1 · 4 tip 2 · 5 tip 3 · 6 resumen · 7 guarda y sígueme
 set -euo pipefail
 N=$1
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -22,7 +23,11 @@ python3 - "$NARR/tiempos.json" "$PROPS" <<'EOF'
 import json, sys
 t = json.load(open(sys.argv[1])); L = [l["start"] for l in t["lines"]]
 p = json.load(open(sys.argv[2]))
-p["scenes"] = [0, L[1], L[2], L[3], L[5], L[6], round(t["total"] + 1.0, 2)]
+fin = round(t["total"] + 1.0, 2)
+if p.get("tipo") == "tips":
+    p["scenes"] = [0, L[1], L[2], L[3], L[4], L[5], L[6], fin]
+else:
+    p["scenes"] = [0, L[1], L[2], L[3], L[5], L[6], fin]
 json.dump(p, open(sys.argv[2], "w"), ensure_ascii=False, indent=2)
 EOF
 

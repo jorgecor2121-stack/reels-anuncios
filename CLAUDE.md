@@ -20,6 +20,16 @@ Idioma de trabajo con el usuario: español.
 - La clave la inyecta el proxy del entorno (host `api.elevenlabs.io`); en el código va el marcador `proxy-injected`.
 - Plan Starter: ~39k créditos/mes, ~450 por reel.
 
+## Plan semanal (decidido por el usuario el 18-nov-2026)
+- **Reels de tips (todos los turnos salvo uno a la semana):** `"tipo": "tips"` en `reels/reel-NN.json`, plantilla `src/Tips.tsx`.
+  Guion de 7 líneas: gancho · idea · tip 1 · tip 2 · tip 3 · resumen · "Guarda este video y sígueme para más tips".
+  Los 3 tips se explican COMPLETOS (pinceladas útiles de cómo ser bueno en el tema), nada oculto, sin palabra clave, sin guía PDF,
+  sin ManyChat. Caption: gancho + los 3 tips en una línea cada uno + "📌 Guárdalo y sígueme para más" + hashtags.
+  Props: `hook`, `hookSub`, `idea`, `tips` (3 × {`titulo` ≤ 4 palabras, `detalle` ≤ 12 palabras}), `resumen`, `tipo`.
+- **Reel de palabra clave (1 por semana, domingo 6:46 p.m. RD salvo que el usuario diga otro día):** formato `Reel` de siempre,
+  con secreto, "Comenta PALABRA", guía PDF + portada, y el bloque de textos para ManyChat en el resumen.
+- Temas: usar `LISTADO-VIDEOS.md` para ambos tipos. En los de tips, el "secreto" de la tabla se convierte en el tip 3.
+
 ## Producir un reel
 1. Tomar el siguiente tema de `LISTADO-VIDEOS.md` que no esté en `publicados.json`.
 2. Escribir `guiones/reel-NN.txt` (7 líneas, habladas, naturales) y `reels/reel-NN.json`.

@@ -14,7 +14,8 @@ D=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['scenes'][-1]
 ffmpeg -y -loglevel error -i "$NARR" -af "aresample=44100,loudnorm=I=-16:TP=-1.5" -ar 44100 "$TMP/voz.wav"
 
 # 2) Video
-npx remotion render Reel "$TMP/video.mp4" --props="$PROPS" --browser-executable="$CHROME" --codec=h264 --log=error
+COMP=$(python3 -c "import json,sys;print('ReelTips' if json.load(open(sys.argv[1])).get('tipo')=='tips' else 'Reel')" "$PROPS")
+npx remotion render "$COMP" "$TMP/video.mp4" --props="$PROPS" --browser-executable="$CHROME" --codec=h264 --log=error
 
 # 3) Mezcla: voz + bombo suave, con fade al final
 FADE=$(python3 -c "print(max(0, $D - 1.5))")
