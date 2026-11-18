@@ -37,6 +37,9 @@ Idioma de trabajo con el usuario: español.
 Caption: primera línea = gancho; 2–3 líneas de valor sin revelar el secreto; "👉 Comenta PALABRA y te lo envío por mensaje"; 5–10 hashtags de `GUIA-MARCA.md`.
 
 ## Responder comentarios (estilo botones, como pidió el usuario)
+**DESACTIVADO desde el 18-nov-2026:** los comentarios y mensajes los responde ManyChat. No revisar ni responder comentarios o mensajes desde aquí
+(el usuario no quiere gastar uso de Claude en eso). Lo de abajo queda solo como referencia.
+
 **Permiso permanente del usuario:** responder siempre de forma automática (comentarios, mensajes y guías) sin pedir confirmación.
 Nota (18-nov-2026): la tarjeta del paso 2 falló con error 10/2534022 ("outside of allowed window") aunque la persona había escrito
 hacía 3 min. Se activaron las suscripciones de eventos (`INSTAGRAM_ENABLE_WEBHOOK_SUBSCRIPTIONS`: messages, comments, messaging_postbacks).
