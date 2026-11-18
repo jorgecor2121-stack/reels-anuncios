@@ -9,6 +9,8 @@ import { StudioNeon } from "./scenes/StudioNeon";
 import { StudioSunset } from "./scenes/StudioSunset";
 import { OutfitProvider, Vestimenta } from "./avatar2d/outfit";
 import { poseAtFrame, Segment } from "./avatar2d/timeline";
+import { mouthAt, speechDuration } from "./avatar2d/lipsync";
+import { Mouth } from "./avatar2d/types";
 
 const { fontFamily } = loadFont("normal", { weights: ["700", "800", "900"], subsets: ["latin"] });
 const FPS = 30;
@@ -20,6 +22,7 @@ export type AvatarMotionProps = MotionProps & {
   gestos: Segment[]; // poses del avatar por segundo
   entorno?: "clasico" | "neon" | "atardecer";
   vestimenta?: Vestimenta;
+  escalaEscena?: number; // tamaño de las escenas de arriba (0.6 por defecto)
   // Datos que aparecen flotando a los lados del avatar mientras hablas
   chips?: { start: number; texto: string; lado: "izq" | "der"; color?: string; dur?: number }[];
   // Ráfagas de emojis que suben (likes, fuego, dinero…)
@@ -94,7 +97,22 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
     const bins = visualizeAudio({ fps, frame, audioData, numberOfSamples: 32, optimizeFor: "speed", dataOffsetInSeconds });
     volume = bins.slice(1, 10).reduce((a, b) => a + b, 0) / 9;
   }
-  const pose = poseAtFrame(p.gestos, frame, fps, { volume });
+  // Boca: sigue cada letra del texto (A, E, I, O, U, M, F, L, S…), estirada al tiempo real de tu voz;
+  // en las pausas (volumen bajo) se cierra. Las bocas propias del gesto (risa, shh, sorpresa) se respetan.
+  const base = poseAtFrame(p.gestos.map((g) => ({ ...g, talk: false })), frame, fps);
+  const t = frame / fps;
+  const li = p.lineas.findIndex((l) => t >= l.start && t < l.start + l.duration);
+  let mouth: Mouth = base.face.mouth;
+  const locked: Mouth[] = ["laugh", "shh", "surprise"];
+  let hablando = false;
+  if (li >= 0 && !locked.includes(mouth)) {
+    const l = p.lineas[li];
+    const factor = speechDuration(l.text) / Math.max(0.3, l.duration);
+    const m = mouthAt(l.text, (t - l.start) * factor);
+    const silencio = volume !== undefined && volume < 0.025;
+    if (m && !silencio) { mouth = m; hablando = true; } else if (silencio) mouth = "M";
+  }
+  const pose = { ...base, headY: (base.headY ?? 0) + (hablando ? Math.sin(t * 9) * 2 + Math.min(4, (volume ?? 0) * 25) : 0), face: { ...base.face, mouth } };
   const glow = 0.85 + Math.min(0.3, (volume ?? 0) * 1.5);
   return (
     <div style={{ position: "absolute", left: 0, top: BAJAR, width: 1080, height: 1920 }}>
@@ -129,7 +147,7 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
       <div style={{ position: "absolute", top: 140, width: "100%", textAlign: "center", fontSize: 34, fontWeight: 800, color: "#A9A6B8", letterSpacing: 2 }}>{p.marca}</div>
       {/* escena de la frase, reducida al espacio de arriba */}
       <div style={{ position: "absolute", top: 190, height: 640, left: 0, right: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: out }}>
-        <div key={li} style={{ transform: "scale(0.6)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div key={li} style={{ transform: `scale(${p.escalaEscena ?? 0.6})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Sequence from={S(ls)} layout="none"><Esc e={p.escenas[Math.min(li, p.escenas.length - 1)]} /></Sequence>
         </div>
       </div>

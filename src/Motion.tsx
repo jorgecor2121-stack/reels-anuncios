@@ -21,6 +21,12 @@ export type Escena =
   | { tipo: "stat"; valor: number; etiqueta: string; icono?: string; prefijo?: string; sufijo?: string; decimales?: number; sube?: boolean; badge?: string }
   | { tipo: "embudo"; pasos: { etiqueta: string; valor: number }[]; badge?: string }
   | { tipo: "dona"; porcentaje: number; etiqueta: string; badge?: string }
+  | { tipo: "papeles"; palabra: string }
+  | { tipo: "trio"; iconos: string[]; letras: string[] }
+  | { tipo: "dolor"; palabra: string }
+  | { tipo: "calendario"; hasta: number; palabra: string }
+  | { tipo: "amanecer"; palabra: string }
+  | { tipo: "puzzle"; piezas: string[]; palabra: string }
   | { tipo: "carrera"; a: { etiqueta: string; valor: number }; b: { etiqueta: string; valor: number }; sufijo?: string; titulo?: string; badge?: string; nota?: string };
 export type MotionProps = { lineas: Linea[]; escenas: Escena[]; resaltar: string[]; marca: string; fin: number; tipo?: string };
 
@@ -359,6 +365,134 @@ const EscCarrera: React.FC<{ e: Extract<Escena, { tipo: "carrera" }> }> = ({ e }
   );
 };
 
+
+// ---------- ILUSTRACIONES (casi sin texto) ----------
+const Palabra: React.FC<{ texto: string; color?: string; delay?: number }> = ({ texto, color = C.y, delay = 0 }) => {
+  const p = useSpring(delay, 9, 220);
+  return <div style={{ fontSize: 110, fontWeight: 900, color, transform: `scale(${interpolate(p, [0, 1], [2, 1])})`, opacity: Math.min(1, p * 2), textShadow: `0 0 50px ${color}88`, marginTop: 20 }}>{texto}</div>;
+};
+
+// Hoja en blanco con cursor parpadeando y bolas de papel volando a la papelera
+const EscPapeles: React.FC<{ e: Extract<Escena, { tipo: "papeles" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const hoja = useSpring(0);
+  return (
+    <div style={{ position: "relative", width: 900, height: 760, display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ width: 440, height: 560, background: "#F4F1EA", borderRadius: 18, transform: `rotate(-4deg) scale(${hoja})`, boxShadow: "0 30px 80px rgba(0,0,0,.5)", position: "relative" }}>
+        {[0, 1, 2, 3, 4, 5, 6].map((i) => <div key={i} style={{ position: "absolute", left: 40, right: 40, top: 70 + i * 62, height: 3, background: "#D9D3C4" }} />)}
+        <div style={{ position: "absolute", left: 50, top: 50, width: 8, height: 50, background: "#222", opacity: Math.floor(frame / 12) % 2 }} />
+      </div>
+      {[0, 1, 2, 3].map((i) => {
+        const t = ((frame - 15 - i * 18) % 72) / 50;
+        if (frame < 15 + i * 18 || t < 0 || t > 1) return null;
+        const x = interpolate(t, [0, 1], [-60, 300]), y = -Math.sin(t * Math.PI) * 260 + t * 260;
+        return <div key={i} style={{ position: "absolute", left: 330 + x, top: 250 + y, width: 70, height: 70, borderRadius: "45%", background: "#E8E2D3", border: "4px solid #B9B1A0", transform: `rotate(${t * 720}deg)` }} />;
+      })}
+      <div style={{ position: "absolute", right: 60, bottom: 120, fontSize: 150 }}>🗑️</div>
+      {[0, 1].map((i) => <div key={i} style={{ position: "absolute", left: 150 + i * 520, top: 120 + Math.sin(frame / 5 + i) * 12, fontSize: 80 }}>💧</div>)}
+      <Palabra texto={e.palabra} color={C.red} delay={S(1)} />
+    </div>
+  );
+};
+
+// Tres iconos gigantes que aparecen en fila, unidos por flechas que se dibujan
+const EscTrio: React.FC<{ e: Extract<Escena, { tipo: "trio" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        {e.iconos.map((ic, i) => {
+          const p = useSpring(S(0.35 * i), 8, 200);
+          const arrow = interpolate(frame, [S(0.35 * i + 0.25), S(0.35 * i + 0.55)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          return (
+            <div key={i} style={{ display: "flex", alignItems: "center" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", transform: `scale(${p}) translateY(${Math.sin(frame / 10 + i) * 10}px)` }}>
+                <div style={{ width: 230, height: 230, borderRadius: "50%", background: `${[C.red, C.o, C.green][i % 3]}22`, border: `6px solid ${[C.red, C.o, C.green][i % 3]}`,
+                  display: "flex", alignItems: "center", justifyContent: "center", fontSize: 130, boxShadow: `0 0 60px ${[C.red, C.o, C.green][i % 3]}55` }}>{ic}</div>
+                <div style={{ fontSize: 64, fontWeight: 900, marginTop: 14, color: [C.red, C.o, C.green][i % 3] }}>{e.letras[i]}</div>
+              </div>
+              {i < e.iconos.length - 1 ? <div style={{ width: 70 * arrow, height: 10, background: C.t, borderRadius: 5, margin: "0 6px 80px" }} /> : null}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// Persona en la cama con dolor: despertador que vibra y rayos en la espalda
+const EscDolor: React.FC<{ e: Extract<Escena, { tipo: "dolor" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const p = useSpring(0);
+  const shake = Math.sin(frame * 2.2) * 8;
+  return (
+    <div style={{ position: "relative", width: 900, height: 760, display: "flex", flexDirection: "column", alignItems: "center", transform: `scale(${p})` }}>
+      <div style={{ position: "absolute", top: 280, width: 760, height: 200, borderRadius: 40, background: "linear-gradient(180deg,#5B6CFF,#3442B8)", border: "6px solid #1B2366" }} />
+      <div style={{ position: "absolute", top: 250, left: 120, width: 220, height: 120, borderRadius: 40, background: "#F4F1EA" }} />
+      <div style={{ position: "absolute", top: 150, left: 150, fontSize: 190, transform: `rotate(${-10 + Math.sin(frame / 6) * 5}deg)` }}>😫</div>
+      {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", top: 120 + i * 50, left: 420 + i * 90, fontSize: 90, opacity: (Math.sin(frame / 3 + i * 2) + 1) / 2 }}>⚡</div>)}
+      <div style={{ position: "absolute", top: 40, right: 60, fontSize: 150, transform: `rotate(${shake}deg)` }}>⏰</div>
+      <div style={{ position: "absolute", top: 520 }}><Palabra texto={e.palabra} color={C.red} delay={S(0.8)} /></div>
+    </div>
+  );
+};
+
+// Calendario que pasa hojas solo, cada vez más rápido
+const EscCalendario: React.FC<{ e: Extract<Escena, { tipo: "calendario" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const p = useSpring(0);
+  const n = Math.min(e.hasta, Math.floor(Math.pow(Math.max(0, frame - 8) / 70, 2.2) * e.hasta));
+  const flip = (frame * 3) % 30;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", transform: `scale(${p})` }}>
+      <div style={{ position: "relative", width: 460, height: 500 }}>
+        <div style={{ position: "absolute", inset: 0, borderRadius: 30, background: "#F4F1EA", boxShadow: "0 30px 80px rgba(0,0,0,.5)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 120, borderRadius: "30px 30px 0 0", background: C.red }} />
+        <div style={{ position: "absolute", top: 150, width: "100%", textAlign: "center", fontSize: 230, fontWeight: 900, color: "#1A1A22" }}>{n}</div>
+        {n < e.hasta ? <div style={{ position: "absolute", left: 0, right: 0, top: 120, height: 380, background: "#E6E1D4", transformOrigin: "top", transform: `rotateX(${flip * 6}deg)`, opacity: 0.7, borderRadius: "0 0 30px 30px" }} /> : null}
+      </div>
+      <Palabra texto={e.palabra} color={C.red} delay={S(1.6)} />
+    </div>
+  );
+};
+
+// Duerme (Zzz) y amanece feliz con sol y destellos
+const EscAmanecer: React.FC<{ e: Extract<Escena, { tipo: "amanecer" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const sun = interpolate(frame, [S(1), S(2.4)], [260, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => 1 - Math.pow(1 - x, 3) });
+  const awake = frame > S(2);
+  return (
+    <div style={{ position: "relative", width: 900, height: 760, display: "flex", flexDirection: "column", alignItems: "center", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: 60 + sun, left: 330, width: 240, height: 240, borderRadius: "50%", background: "radial-gradient(circle,#FFF3C4,#FFC15E 60%,transparent 72%)", boxShadow: "0 0 120px #FFC15E" }} />
+      <div style={{ position: "absolute", top: 300, fontSize: 230, transform: `scale(${awake ? 1.1 : 1})` }}>{awake ? "😄" : "😴"}</div>
+      {!awake ? [0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", top: 260 - ((frame + i * 15) % 45) * 3, left: 560 + i * 30, fontSize: 60 + i * 12, fontWeight: 900, color: "#22D3EE", opacity: 1 - ((frame + i * 15) % 45) / 45 }}>Z</div>) : null}
+      {awake ? Array.from({ length: 8 }).map((_, i) => <div key={i} style={{ position: "absolute", top: 380 + Math.sin(i) * 200, left: 440 + Math.cos(i * 0.8) * 300, fontSize: 60, opacity: (Math.sin(frame / 4 + i) + 1) / 2 }}>✨</div>) : null}
+      <div style={{ position: "absolute", top: 580 }}><Palabra texto={e.palabra} color={C.green} delay={S(2.1)} /></div>
+    </div>
+  );
+};
+
+// Piezas de rompecabezas que se unen y explotan en monedas
+const EscPuzzle: React.FC<{ e: Extract<Escena, { tipo: "puzzle" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const join = interpolate(frame, [S(0.3), S(1.6)], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => 1 - Math.pow(1 - x, 3) });
+  const boom = frame > S(1.7);
+  const cols = [C.red, C.o, C.green];
+  return (
+    <div style={{ position: "relative", width: 900, height: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>
+      {e.piezas.map((pz, i) => (
+        <div key={i} style={{ position: "absolute", width: 210, height: 210, borderRadius: 30, background: cols[i % 3], border: "6px solid rgba(0,0,0,.35)",
+          display: "flex", alignItems: "center", justifyContent: "center", fontSize: 110, transform: `translate(${(i - 1) * 215 + (i - 1) * 260 * join}px, ${Math.sin(i * 2) * 160 * join}px) rotate(${(i - 1) * 25 * join}deg)` }}>{pz}</div>
+      ))}
+      {boom ? Array.from({ length: 14 }).map((_, i) => {
+        const t = Math.min(1, (frame - S(1.7)) / 25), a = (i / 14) * Math.PI * 2;
+        return <div key={i} style={{ position: "absolute", fontSize: 70, transform: `translate(${Math.cos(a) * 380 * t}px, ${Math.sin(a) * 300 * t - 40}px)`, opacity: 1 - t * 0.4 }}>💰</div>;
+      }) : null}
+      <div style={{ position: "absolute", bottom: 0 }}>{boom ? <Palabra texto={e.palabra} color={C.y} /> : null}</div>
+    </div>
+  );
+};
+
 export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
   switch (e.tipo) {
     case "telefono": return <EscTelefono e={e} />;
@@ -373,6 +507,12 @@ export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
     case "embudo": return <EscEmbudo e={e} />;
     case "dona": return <EscDona e={e} />;
     case "carrera": return <EscCarrera e={e} />;
+    case "papeles": return <EscPapeles e={e} />;
+    case "trio": return <EscTrio e={e} />;
+    case "dolor": return <EscDolor e={e} />;
+    case "calendario": return <EscCalendario e={e} />;
+    case "amanecer": return <EscAmanecer e={e} />;
+    case "puzzle": return <EscPuzzle e={e} />;
   }
 };
 

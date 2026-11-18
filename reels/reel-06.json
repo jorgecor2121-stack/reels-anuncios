@@ -61,57 +61,43 @@
   ],
   "escenas": [
     {
-      "tipo": "telefono",
-      "texto": "Escribe tu anuncio aquí…",
-      "sello": "¿Y AHORA?",
-      "deslizar": false
+      "tipo": "papeles",
+      "palabra": "😩"
     },
     {
-      "tipo": "contador",
-      "numero": "3",
-      "etiqueta": "pasos: Problema · Agitación · Solución"
-    },
-    {
-      "tipo": "antesDespues",
-      "badge": "PASO 1 · Problema",
-      "antes": "Vendemos colchones ortopédicos",
-      "despues": "¿Te levantas con dolor de espalda?"
-    },
-    {
-      "tipo": "stat",
-      "badge": "PASO 2 · Agitación",
-      "icono": "😣",
-      "valor": 365,
-      "etiqueta": "mañanas al año con dolor (ejemplo)",
-      "sube": false
-    },
-    {
-      "tipo": "antesDespues",
-      "badge": "PASO 3 · Solución",
-      "antes": "Compra nuestro colchón",
-      "despues": "Duerme 8 horas y despierta sin dolor"
-    },
-    {
-      "tipo": "embudo",
-      "badge": "La fórmula P · A · S",
-      "pasos": [
-        {
-          "etiqueta": "😣 Problema",
-          "valor": 0
-        },
-        {
-          "etiqueta": "🔥 Agitación",
-          "valor": 0
-        },
-        {
-          "etiqueta": "✅ Solución",
-          "valor": 0
-        },
-        {
-          "etiqueta": "💰 Venta",
-          "valor": 0
-        }
+      "tipo": "trio",
+      "iconos": [
+        "😣",
+        "🔥",
+        "✅"
+      ],
+      "letras": [
+        "P",
+        "A",
+        "S"
       ]
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "PROBLEMA"
+    },
+    {
+      "tipo": "calendario",
+      "hasta": 365,
+      "palabra": "AGITACIÓN"
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": "SOLUCIÓN"
+    },
+    {
+      "tipo": "puzzle",
+      "piezas": [
+        "😣",
+        "🔥",
+        "✅"
+      ],
+      "palabra": "¡VENDE!"
     },
     {
       "tipo": "seguir",
@@ -120,69 +106,77 @@
   ],
   "chips": [
     {
-      "start": 1.2,
-      "texto": "🤯 Hoja en blanco",
-      "lado": "der",
-      "color": "#FF3B5C"
-    },
-    {
       "start": 12.278,
-      "texto": "🎯 Con SUS palabras",
+      "texto": "🎯 Sus palabras",
       "lado": "izq",
       "color": "#FFD23F"
     },
     {
       "start": 18.537,
-      "texto": "⏰ 365 mañanas",
+      "texto": "⏰ 365 días",
       "lado": "der",
       "color": "#FF3B5C"
     },
     {
       "start": 24.708,
-      "texto": "😴 8 horas de sueño",
+      "texto": "😴 8 horas",
       "lado": "izq",
       "color": "#2BD576"
-    },
-    {
-      "start": 29.479,
-      "texto": "📝 Solo 3 frases",
-      "lado": "der",
-      "color": "#FFD23F"
     }
   ],
   "reacciones": [
     {
-      "start": 17.337,
+      "start": 2.0,
+      "emoji": "😩"
+    },
+    {
+      "start": 17.537,
       "emoji": "🔥"
     },
     {
-      "start": 30.878999999999998,
+      "start": 25.208,
+      "emoji": "✨"
+    },
+    {
+      "start": 31.078999999999997,
       "emoji": "💰"
     }
   ],
   "gestos": [
     {
       "start": 0,
+      "pose": "tired"
+    },
+    {
+      "start": 1.44,
       "pose": "ohNo"
     },
     {
-      "start": 2.4,
+      "start": 2.89,
       "pose": "doubtTurn"
     },
     {
       "start": 4.377,
-      "pose": "explain"
+      "pose": "smart"
     },
     {
-      "start": 6.377,
+      "start": 6.21,
       "pose": "three"
+    },
+    {
+      "start": 8.05,
+      "pose": "excited"
     },
     {
       "start": 9.878,
       "pose": "oneRaised"
     },
     {
-      "start": 12.478,
+      "start": 12.19,
+      "pose": "listen"
+    },
+    {
+      "start": 14.5,
       "pose": "youTilt"
     },
     {
@@ -190,23 +184,35 @@
       "pose": "two"
     },
     {
-      "start": 18.936999999999998,
+      "start": 18.74,
       "pose": "sad"
+    },
+    {
+      "start": 20.74,
+      "pose": "facepalmTurn"
     },
     {
       "start": 22.708,
       "pose": "three"
     },
     {
-      "start": 24.907999999999998,
+      "start": 24.71,
       "pose": "presentRight"
+    },
+    {
+      "start": 26.71,
+      "pose": "love"
     },
     {
       "start": 28.679,
       "pose": "countOnHand"
     },
     {
-      "start": 31.279,
+      "start": 31.19,
+      "pose": "proud"
+    },
+    {
+      "start": 33.38,
       "pose": "fistPump"
     },
     {
@@ -214,8 +220,13 @@
       "pose": "downLook"
     },
     {
-      "start": 37.598,
+      "start": 36.87,
+      "pose": "heart"
+    },
+    {
+      "start": 37.98,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "escalaEscena": 0.78
 }
