@@ -20,20 +20,22 @@ Idioma de trabajo con el usuario: español.
 - La clave la inyecta el proxy del entorno (host `api.elevenlabs.io`); en el código va el marcador `proxy-injected`.
 - Plan Starter: ~39k créditos/mes, ~450 por reel.
 
-## Estilo visual por defecto (desde el 18-nov-2026, aprobado por el usuario)
-Todos los reels usan `"tipo": "avatar"` + `"entorno": "neon"` → composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`):
-- Abajo: avatar 2D del usuario (`src/avatar2d/`, 25 poses; ids en la tabla de abajo) en el estudio neón (`src/scenes/StudioNeon.tsx`),
-  boca sincronizada con la voz (la narración se copia a `public/narracion-NN.wav`, prop `audio`).
-- Arriba: una escena animada por frase (`escenas`, tipos en `src/Motion.tsx`): telefono, contador, antesDespues, movimiento, sorpresa,
-  checklist, seguir, grafica, stat, embudo, dona, carrera. Usar escenas de DATOS siempre que se pueda.
-- `gestos`: 1–2 poses por frase (start en segundos, desde `narracion/reel-NN/tiempos.json`).
-- `chips`: 4–6 datos flotando junto al avatar; `reacciones`: 1–2 ráfagas de emojis.
-- Las cifras son EJEMPLOS ilustrativos: marcarlas como "ejemplo", nunca presentarlas como estadísticas reales. Formato RD: 1,200 · RD$5,000.
-- Modelo a copiar: `reels/reel-04.json` y `reels/reel-05.json`.
+## Estilo visual por defecto (actualizado el 18-nov-2026, aprobado por el usuario: "con este estilo van")
+Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`) con:
+`"tipo": "avatar"`, `"entorno": "atardecer"` (oficina con ventanal, `src/scenes/StudioSunset.tsx`), `"vestimenta": "blazer"`,
+`"escalaEscena": 0.78`, `"marca": "@almonte_suarez.ia"`.
+- **Pocas letras, muchas ilustraciones**: una escena por frase, preferir las ilustradas de `src/Motion.tsx`
+  (papeles, trio, dolor, calendario, amanecer, puzzle, telefono) y las de datos (grafica, stat, carrera, embudo, dona).
+  Textos de 1–3 palabras; nada de frases largas en pantalla.
+- **Avatar emotivo**: 3 gestos por frase (al 0 %, 35 % y 70 % de la frase), mezclando emociones y gestos de las 100 poses
+  (`src/avatar2d/poses.ts`: p. ej. tired, ohNo, skeptic, smart, excited, sad, love, proud, fistPump, heart, waveBoth, youTilt, thinkUp…).
+- La boca sigue cada sonido del texto ajustado al tiempo real de la voz (automático) y se cierra en las pausas.
+- `chips`: 3 datos cortos; `reacciones`: 3–4 ráfagas de emojis.
+- Cifras = EJEMPLOS ("ejemplo"), formato RD: 1,200 · RD$5,000.
 - Pasos: guion → `python3 scripts/narrar_el.py guiones/reel-NN.txt narracion/reel-NN` → `cp narracion/reel-NN/narracion.wav public/narracion-NN.wav`
-  → escribir `reels/reel-NN.json` → `scripts/armar_reel.sh reels/reel-NN.json narracion/reel-NN/narracion.wav videos/reel-NN.mp4`
+  → `reels/reel-NN.json` → `scripts/armar_reel.sh reels/reel-NN.json narracion/reel-NN/narracion.wav videos/reel-NN.mp4`
   → revisar 5–6 fotogramas y transcribir el audio antes de publicar.
-- Poses: base A O E M blink wave idea you doubt thumbsUp explain facepalm crossed surprised one two three phone laugh shrug thinking clap shh down.
+- En los resúmenes al usuario, referirse a los reels por su TÍTULO, no por número.
 
 ## Plan semanal (decidido por el usuario el 18-nov-2026)
 - **Reels de tips (todos los turnos salvo uno a la semana):** `"tipo": "tips"` en `reels/reel-NN.json`, plantilla `src/Tips.tsx`.
