@@ -37,6 +37,11 @@ Idioma de trabajo con el usuario: español.
 Caption: primera línea = gancho; 2–3 líneas de valor sin revelar el secreto; "👉 Comenta PALABRA y te lo envío por mensaje"; 5–10 hashtags de `GUIA-MARCA.md`.
 
 ## Responder comentarios (estilo botones, como pidió el usuario)
+**Permiso permanente del usuario:** responder siempre de forma automática (comentarios, mensajes y guías) sin pedir confirmación.
+Nota (18-nov-2026): la tarjeta del paso 2 falló con error 10/2534022 ("outside of allowed window") aunque la persona había escrito
+hacía 3 min. Se activaron las suscripciones de eventos (`INSTAGRAM_ENABLE_WEBHOOK_SUBSCRIPTIONS`: messages, comments, messaging_postbacks).
+Si vuelve a fallar con ese error con un mensaje recibido DESPUÉS de esa fecha, no reintentar: marcar `"error": "ventana"` en
+`respondidos.json` y avisar al usuario en el resumen.
 Todas las llamadas de mensajes van por `COMPOSIO_PROXY_EXECUTE` (toolkit `instagram`), `POST https://graph.instagram.com/v21.0/me/messages`.
 
 ### Paso 1 — Alguien comenta la palabra clave
