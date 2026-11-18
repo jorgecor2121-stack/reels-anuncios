@@ -20,6 +20,21 @@ Idioma de trabajo con el usuario: español.
 - La clave la inyecta el proxy del entorno (host `api.elevenlabs.io`); en el código va el marcador `proxy-injected`.
 - Plan Starter: ~39k créditos/mes, ~450 por reel.
 
+## Estilo visual por defecto (desde el 18-nov-2026, aprobado por el usuario)
+Todos los reels usan `"tipo": "avatar"` + `"entorno": "neon"` → composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`):
+- Abajo: avatar 2D del usuario (`src/avatar2d/`, 25 poses; ids en la tabla de abajo) en el estudio neón (`src/scenes/StudioNeon.tsx`),
+  boca sincronizada con la voz (la narración se copia a `public/narracion-NN.wav`, prop `audio`).
+- Arriba: una escena animada por frase (`escenas`, tipos en `src/Motion.tsx`): telefono, contador, antesDespues, movimiento, sorpresa,
+  checklist, seguir, grafica, stat, embudo, dona, carrera. Usar escenas de DATOS siempre que se pueda.
+- `gestos`: 1–2 poses por frase (start en segundos, desde `narracion/reel-NN/tiempos.json`).
+- `chips`: 4–6 datos flotando junto al avatar; `reacciones`: 1–2 ráfagas de emojis.
+- Las cifras son EJEMPLOS ilustrativos: marcarlas como "ejemplo", nunca presentarlas como estadísticas reales. Formato RD: 1,200 · RD$5,000.
+- Modelo a copiar: `reels/reel-04.json` y `reels/reel-05.json`.
+- Pasos: guion → `python3 scripts/narrar_el.py guiones/reel-NN.txt narracion/reel-NN` → `cp narracion/reel-NN/narracion.wav public/narracion-NN.wav`
+  → escribir `reels/reel-NN.json` → `scripts/armar_reel.sh reels/reel-NN.json narracion/reel-NN/narracion.wav videos/reel-NN.mp4`
+  → revisar 5–6 fotogramas y transcribir el audio antes de publicar.
+- Poses: base A O E M blink wave idea you doubt thumbsUp explain facepalm crossed surprised one two three phone laugh shrug thinking clap shh down.
+
 ## Plan semanal (decidido por el usuario el 18-nov-2026)
 - **Reels de tips (todos los turnos salvo uno a la semana):** `"tipo": "tips"` en `reels/reel-NN.json`, plantilla `src/Tips.tsx`.
   Guion de 7 líneas: gancho · idea · tip 1 · tip 2 · tip 3 · resumen · "Guarda este video y sígueme para más tips".
@@ -31,7 +46,7 @@ Idioma de trabajo con el usuario: español.
 - Temas: usar `LISTADO-VIDEOS.md` para ambos tipos. En los de tips, el "secreto" de la tabla se convierte en el tip 3.
 
 ## Producir un reel
-0. Si ya existe un `videos/reel-NN.mp4` que no figura en `publicados.json`, publicar ese y no crear otro.
+0. Si ya existe un `videos/reel-NN.mp4` que no figura en `publicados.json`, publicar ese (el de número más bajo) y no crear otro.
 1. Tomar el siguiente tema de `LISTADO-VIDEOS.md` que no esté en `publicados.json`.
 2. Escribir `guiones/reel-NN.txt` (7 líneas, habladas, naturales) y `reels/reel-NN.json`.
    El secreto NO se revela en el video: se dice que existe y se pide comentar la palabra clave.

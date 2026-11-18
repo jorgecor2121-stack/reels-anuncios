@@ -1,10 +1,11 @@
 // Reel completo: estudio de pódcast con el avatar 2D (gestos + boca con la voz) abajo,
 // escena animada que ilustra cada frase arriba y subtítulos palabra a palabra en medio.
-import { AbsoluteFill, Composition, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Composition, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { useWindowedAudioData, visualizeAudio } from "@remotion/media-utils";
 import { loadFont } from "@remotion/google-fonts/Montserrat";
 import { Esc, MotionProps, Subs, palabras } from "./Motion";
 import { Studio } from "./scenes/Studio";
+import { StudioNeon } from "./scenes/StudioNeon";
 import { poseAtFrame, Segment } from "./avatar2d/timeline";
 
 const { fontFamily } = loadFont("normal", { weights: ["700", "800", "900"], subsets: ["latin"] });
@@ -15,6 +16,70 @@ const BAJAR = 330; // cuánto se baja el estudio para dejar arriba el espacio de
 export type AvatarMotionProps = MotionProps & {
   audio: string; // narración en public/ (solo para mover la boca; el audio se mezcla aparte)
   gestos: Segment[]; // poses del avatar por segundo
+  entorno?: "clasico" | "neon";
+  // Datos que aparecen flotando a los lados del avatar mientras hablas
+  chips?: { start: number; texto: string; lado: "izq" | "der"; color?: string; dur?: number }[];
+  // Ráfagas de emojis que suben (likes, fuego, dinero…)
+  reacciones?: { start: number; emoji: string }[];
+};
+
+const Chip: React.FC<{ c: NonNullable<AvatarMotionProps["chips"]>[number]; i: number }> = ({ c, i }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const f0 = S(c.start);
+  const dur = S(c.dur ?? 2.6);
+  if (frame < f0 || frame > f0 + dur + 10) return null;
+  const p = spring({ frame: frame - f0, fps, config: { damping: 10, stiffness: 180 } });
+  const outP = interpolate(frame - f0 - dur, [0, 10], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const float = Math.sin((frame + i * 20) / 12) * 10;
+  const left = c.lado === "izq";
+  const col = c.color ?? "#22D3EE";
+  return (
+    <div style={{ position: "absolute", top: 1060 + (i % 3) * 120 + float, [left ? "left" : "right"]: 30,
+      transform: `translateX(${interpolate(p, [0, 1], [left ? -300 : 300, 0])}px) scale(${interpolate(p, [0, 1], [0.6, 1])})`, opacity: outP,
+      background: "rgba(10,8,22,.82)", border: `3px solid ${col}`, borderRadius: 26, padding: "16px 26px", fontSize: 40, fontWeight: 900,
+      color: "#fff", boxShadow: `0 0 30px ${col}66`, whiteSpace: "nowrap" }}>{c.texto}</div>
+  );
+};
+
+const Reaccion: React.FC<{ r: { start: number; emoji: string } }> = ({ r }) => {
+  const frame = useCurrentFrame();
+  const f0 = S(r.start);
+  if (frame < f0 || frame > f0 + 60) return null;
+  return (
+    <>
+      {Array.from({ length: 7 }).map((_, k) => {
+        const t = (frame - f0 - k * 3) / 50;
+        if (t < 0 || t > 1) return null;
+        const x = 540 + Math.sin(k * 2.3) * 300 + Math.sin(t * 6 + k) * 30;
+        const y = 1500 - t * 700;
+        return <div key={k} style={{ position: "absolute", left: x, top: y, fontSize: 70 + (k % 3) * 20, opacity: 1 - t, transform: `rotate(${Math.sin(k + t * 4) * 20}deg)` }}>{r.emoji}</div>;
+      })}
+    </>
+  );
+};
+
+// Figuras geométricas que flotan en el fondo (alrededor del avatar)
+const Figuras: React.FC = () => {
+  const frame = useCurrentFrame();
+  const cols = ["#22D3EE", "#A855F7", "#FF8A3D", "#FFD23F"];
+  return (
+    <>
+      {Array.from({ length: 9 }).map((_, i) => {
+        const x = i % 2 === 0 ? 20 + ((i * 53) % 200) : 860 + ((i * 47) % 190);
+        const y = 980 + ((i * 97 + frame * (0.8 + (i % 3) * 0.4)) % 520);
+        const rot = frame * (i % 2 ? 1.5 : -1.2) + i * 40;
+        const sz = 26 + (i % 4) * 10;
+        const col = cols[i % 4];
+        const shape = i % 3;
+        return (
+          <div key={i} style={{ position: "absolute", left: x, top: 2480 - y, width: sz, height: sz, opacity: 0.55,
+            border: shape === 2 ? `5px solid ${col}` : "none", background: shape === 2 ? "transparent" : col,
+            borderRadius: shape === 0 ? "50%" : 6, transform: `rotate(${rot}deg)` }} />
+        );
+      })}
+    </>
+  );
 };
 
 const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
@@ -30,7 +95,7 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
   const glow = 0.85 + Math.min(0.3, (volume ?? 0) * 1.5);
   return (
     <div style={{ position: "absolute", left: 0, top: BAJAR, width: 1080, height: 1920 }}>
-      <Studio pose={pose} glow={glow} />
+      {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} /> : <Studio pose={pose} glow={glow} />}
     </div>
   );
 };
@@ -45,8 +110,11 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
   return (
     <AbsoluteFill style={{ background: "#0A0503", fontFamily, color: "#fff", overflow: "hidden" }}>
       <Personaje p={p} />
+      {p.entorno === "neon" ? <Figuras /> : null}
+      {(p.reacciones ?? []).map((r, i) => <Reaccion key={i} r={r} />)}
+      {(p.chips ?? []).map((c, i) => <Chip key={i} c={c} i={i} />)}
       {/* oscurece arriba para que las escenas se lean */}
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
+      <AbsoluteFill style={{ background: p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
       {/* barra de progreso + marca */}
       <div style={{ position: "absolute", top: 110, left: 90, right: 90, height: 8, borderRadius: 4, background: "rgba(255,255,255,.12)" }}>
         <div style={{ width: `${Math.min(1, t / p.fin) * 100}%`, height: "100%", borderRadius: 4, background: "linear-gradient(90deg,#FF8A3D,#FFD23F)" }} />

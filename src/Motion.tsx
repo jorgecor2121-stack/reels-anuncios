@@ -16,7 +16,12 @@ export type Escena =
   | { tipo: "movimiento"; badge?: string; etiqueta: string }
   | { tipo: "sorpresa"; emoji: string; etiqueta: string; badge?: string }
   | { tipo: "checklist"; items: string[] }
-  | { tipo: "seguir"; usuario: string };
+  | { tipo: "seguir"; usuario: string }
+  | { tipo: "grafica"; titulo: string; barras: { etiqueta: string; valor: number; destacar?: boolean }[]; sufijo?: string; badge?: string; nota?: string }
+  | { tipo: "stat"; valor: number; etiqueta: string; icono?: string; prefijo?: string; sufijo?: string; decimales?: number; sube?: boolean; badge?: string }
+  | { tipo: "embudo"; pasos: { etiqueta: string; valor: number }[]; badge?: string }
+  | { tipo: "dona"; porcentaje: number; etiqueta: string; badge?: string }
+  | { tipo: "carrera"; a: { etiqueta: string; valor: number }; b: { etiqueta: string; valor: number }; sufijo?: string; titulo?: string; badge?: string; nota?: string };
 export type MotionProps = { lineas: Linea[]; escenas: Escena[]; resaltar: string[]; marca: string; fin: number; tipo?: string };
 
 const norm = (w: string) => w.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ]/g, "");
@@ -215,6 +220,145 @@ const EscSeguir: React.FC<{ e: Extract<Escena, { tipo: "seguir" }> }> = ({ e }) 
   );
 };
 
+
+// ---------- escenas de datos ----------
+const fmt = (n: number, dec = 0) => n.toLocaleString("es-DO", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+const useCount = (to: number, delay = 0, dur = 1.4) => {
+  const frame = useCurrentFrame();
+  const p = interpolate(frame - delay, [0, S(dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => 1 - Math.pow(1 - x, 3) });
+  return to * p;
+};
+
+const EscGrafica: React.FC<{ e: Extract<Escena, { tipo: "grafica" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const max = Math.max(...e.barras.map((b) => b.valor));
+  const H = 520;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      {e.badge ? <Badge text={e.badge} /> : null}
+      <div style={{ background: C.card, border: `3px solid ${C.line}`, borderRadius: 40, padding: "40px 50px 30px", width: 900 }}>
+        <div style={{ fontSize: 40, fontWeight: 900, marginBottom: 20, color: C.m }}>{e.titulo}</div>
+        <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-around", height: H, borderBottom: `4px solid ${C.line}`, position: "relative" }}>
+          {[0.25, 0.5, 0.75].map((g) => <div key={g} style={{ position: "absolute", left: 0, right: 0, bottom: H * g, borderTop: `2px dashed ${C.line}` }} />)}
+          {e.barras.map((b, i) => {
+            const d = S(0.3 + i * 0.35);
+            const grow = interpolate(frame - d, [0, S(0.9)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => 1 - Math.pow(1 - x, 3) });
+            const v = b.valor * grow;
+            const hi = b.destacar;
+            return (
+              <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", width: 150 }}>
+                <div style={{ fontSize: 46, fontWeight: 900, color: hi ? C.y : C.t, marginBottom: 10, opacity: grow }}>{fmt(v)}{e.sufijo ?? ""}</div>
+                <div style={{ width: 120, height: (H - 90) * (v / max), borderRadius: "18px 18px 6px 6px",
+                  background: hi ? `linear-gradient(180deg, ${C.y}, ${C.o})` : "linear-gradient(180deg,#4B4766,#2A2838)",
+                  boxShadow: hi ? `0 0 50px ${C.o}88` : "none" }} />
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-around", marginTop: 16 }}>
+          {e.barras.map((b, i) => <div key={i} style={{ width: 170, textAlign: "center", fontSize: 32, fontWeight: 800, color: b.destacar ? C.y : C.m }}>{b.etiqueta}</div>)}
+        </div>
+      </div>
+      {e.nota ? <div style={{ fontSize: 30, color: C.m, marginTop: 18, fontWeight: 700 }}>{e.nota}</div> : null}
+    </div>
+  );
+};
+
+const EscStat: React.FC<{ e: Extract<Escena, { tipo: "stat" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const p = useSpring(0, 11);
+  const v = useCount(e.valor, 6, 1.6);
+  const pts = Array.from({ length: 12 }).map((_, i) => {
+    const prog = interpolate(frame, [S(0.2), S(1.8)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const shown = i / 11 <= prog;
+    const y = 160 - (i / 11) * 140 * (e.sube === false ? -0.3 : 1) - Math.sin(i * 1.7) * 18;
+    return shown ? `${i * 70},${y}` : null;
+  }).filter(Boolean).join(" ");
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", transform: `scale(${p})` }}>
+      {e.badge ? <Badge text={e.badge} /> : null}
+      <div style={{ fontSize: 60, marginBottom: 6 }}>{e.icono}</div>
+      <div style={{ fontSize: 240, fontWeight: 900, lineHeight: 1, color: e.sube === false ? C.red : C.y, textShadow: `0 0 60px ${e.sube === false ? C.red : C.o}66` }}>
+        {e.prefijo ?? ""}{fmt(v, e.decimales ?? 0)}{e.sufijo ?? ""}
+      </div>
+      <div style={{ fontSize: 52, fontWeight: 800, marginTop: 10, textAlign: "center", maxWidth: 900 }}>{e.etiqueta}</div>
+      <svg width="780" height="200" style={{ marginTop: 26 }}>
+        <polyline points={pts} fill="none" stroke={e.sube === false ? C.red : C.green} strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
+};
+
+const EscEmbudo: React.FC<{ e: Extract<Escena, { tipo: "embudo" }> }> = ({ e }) => (
+  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
+    {e.badge ? <Badge text={e.badge} /> : null}
+    {e.pasos.map((s, i) => <PasoEmbudo key={i} s={s} i={i} n={e.pasos.length} />)}
+  </div>
+);
+const PasoEmbudo: React.FC<{ s: { etiqueta: string; valor: number }; i: number; n: number }> = ({ s, i, n }) => {
+  const p = useSpring(S(0.45 * i));
+  const v = useCount(s.valor, S(0.45 * i) + 4, 1);
+  const w = 940 - (i * 520) / Math.max(1, n - 1);
+  const last = i === n - 1;
+  return (
+    <div style={{ width: w, height: 128, borderRadius: 26, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 40px",
+      background: last ? `linear-gradient(90deg, ${C.o}, ${C.y})` : `rgba(255,255,255,${0.06 + i * 0.03})`, border: `3px solid ${last ? C.y : C.line}`,
+      color: last ? "#1A0A00" : C.t, transform: `scaleX(${p})`, opacity: p, boxShadow: last ? `0 0 60px ${C.o}77` : "none" }}>
+      <span style={{ fontSize: 42, fontWeight: 900 }}>{s.etiqueta}</span>
+      {s.valor ? <span style={{ fontSize: 56, fontWeight: 900 }}>{fmt(v)}</span> : null}
+    </div>
+  );
+};
+
+const EscDona: React.FC<{ e: Extract<Escena, { tipo: "dona" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const prog = interpolate(frame, [S(0.2), S(1.6)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => 1 - Math.pow(1 - x, 3) });
+  const R = 200, L = 2 * Math.PI * R;
+  const v = e.porcentaje * prog;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      {e.badge ? <Badge text={e.badge} /> : null}
+      <div style={{ position: "relative", width: 520, height: 520 }}>
+        <svg width="520" height="520">
+          <circle cx="260" cy="260" r={R} stroke={C.line} strokeWidth="60" fill="none" />
+          <circle cx="260" cy="260" r={R} stroke={C.o} strokeWidth="60" fill="none" strokeDasharray={L} strokeDashoffset={L * (1 - v / 100)} transform="rotate(-90 260 260)" strokeLinecap="round" />
+        </svg>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 140, fontWeight: 900, color: C.y }}>{fmt(v)}%</div>
+      </div>
+      <div style={{ fontSize: 50, fontWeight: 800, marginTop: 16, textAlign: "center", maxWidth: 900 }}>{e.etiqueta}</div>
+    </div>
+  );
+};
+
+const EscCarrera: React.FC<{ e: Extract<Escena, { tipo: "carrera" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const max = Math.max(e.a.valor, e.b.valor);
+  const row = (x: { etiqueta: string; valor: number }, i: number, good: boolean) => {
+    const g = interpolate(frame - S(0.3 + i * 0.4), [0, S(1.1)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
+    return (
+      <div style={{ width: 900, marginBottom: 40 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 42, fontWeight: 900, marginBottom: 12 }}>
+          <span style={{ color: good ? C.green : C.red }}>{good ? "✅" : "❌"} {x.etiqueta}</span>
+          <span style={{ color: good ? C.y : C.m }}>{fmt(x.valor * g)}{e.sufijo ?? ""}</span>
+        </div>
+        <div style={{ height: 70, borderRadius: 35, background: C.card, border: `3px solid ${C.line}`, overflow: "hidden" }}>
+          <div style={{ width: `${(x.valor / max) * 100 * g}%`, height: "100%", borderRadius: 35,
+            background: good ? `linear-gradient(90deg, ${C.green}, #9BF2C4)` : "linear-gradient(90deg,#5A2230,#FF3B5C)" }} />
+        </div>
+      </div>
+    );
+  };
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      {e.badge ? <Badge text={e.badge} /> : null}
+      {e.titulo ? <div style={{ fontSize: 46, fontWeight: 900, marginBottom: 30, color: C.m }}>{e.titulo}</div> : null}
+      {row(e.a, 0, false)}
+      {row(e.b, 1, true)}
+      {e.nota ? <div style={{ fontSize: 30, color: C.m, fontWeight: 700 }}>{e.nota}</div> : null}
+    </div>
+  );
+};
+
 export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
   switch (e.tipo) {
     case "telefono": return <EscTelefono e={e} />;
@@ -224,6 +368,11 @@ export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
     case "sorpresa": return <EscSorpresa e={e} />;
     case "checklist": return <EscChecklist e={e} />;
     case "seguir": return <EscSeguir e={e} />;
+    case "grafica": return <EscGrafica e={e} />;
+    case "stat": return <EscStat e={e} />;
+    case "embudo": return <EscEmbudo e={e} />;
+    case "dona": return <EscDona e={e} />;
+    case "carrera": return <EscCarrera e={e} />;
   }
 };
 

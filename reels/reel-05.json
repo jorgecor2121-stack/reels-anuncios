@@ -1,0 +1,229 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "marca": "@almonte.suarez",
+  "audio": "narracion-05.wav",
+  "lineas": [
+    {
+      "text": "¿Por qué tu anuncio lo explica todo y nadie compra? Porque vendes características.",
+      "start": 0.0,
+      "duration": 5.486
+    },
+    {
+      "text": "A la gente no le importa lo que tiene tu producto. Le importa lo que hace por ella.",
+      "start": 5.736,
+      "duration": 5.799
+    },
+    {
+      "text": "Uno: cambia características por beneficios. No es batería de cinco mil, es todo el día sin cargar.",
+      "start": 11.785,
+      "duration": 7.967
+    },
+    {
+      "text": "Dos: muestra el antes y el después. Cómo vivía tu cliente sin ti, y cómo vive con tu producto.",
+      "start": 20.002,
+      "duration": 7.549
+    },
+    {
+      "text": "Tres: hazte la pregunta mágica. ¿Y eso para qué? Repítela hasta llegar a lo que de verdad desea.",
+      "start": 27.802,
+      "duration": 7.393
+    },
+    {
+      "text": "Característica, beneficio, deseo. Así se vende.",
+      "start": 35.444,
+      "duration": 4.754
+    },
+    {
+      "text": "Guarda este video y sígueme para más tips de anuncios.",
+      "start": 40.449,
+      "duration": 3.631
+    }
+  ],
+  "fin": 45.33,
+  "resaltar": [
+    "compra",
+    "características",
+    "importa",
+    "hace",
+    "beneficios",
+    "batería",
+    "día",
+    "antes",
+    "después",
+    "cliente",
+    "mágica",
+    "para",
+    "desea",
+    "deseo",
+    "vende",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Batería 5000 mAh, cámara 48 MP, 128 GB…",
+      "sello": "ABURRIDO",
+      "deslizar": true
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "Lo que de verdad importa",
+      "antes": "Lo que TIENE tu producto",
+      "despues": "Lo que HACE por tu cliente"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "PASO 1 · Beneficios",
+      "antes": "Batería de 5000 mAh",
+      "despues": "Todo el día sin buscar enchufe 🔋"
+    },
+    {
+      "tipo": "antesDespues",
+      "badge": "PASO 2 · Antes y después",
+      "antes": "Llega cansado y sin energía",
+      "despues": "Sube las escaleras sin parar 💪"
+    },
+    {
+      "tipo": "embudo",
+      "badge": "PASO 3 · ¿Y eso para qué?",
+      "pasos": [
+        {
+          "etiqueta": "📷 Cámara de 48 MP",
+          "valor": 0
+        },
+        {
+          "etiqueta": "✨ Fotos nítidas",
+          "valor": 0
+        },
+        {
+          "etiqueta": "😎 Te ves increíble",
+          "valor": 0
+        },
+        {
+          "etiqueta": "🚀 Más clientes",
+          "valor": 0
+        }
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Característica",
+        "Beneficio",
+        "Deseo"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte.suarez"
+    }
+  ],
+  "chips": [
+    {
+      "start": 1.5,
+      "texto": "😴 Nadie lee esto",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 13.985,
+      "texto": "🔋 5000 mAh ❌",
+      "lado": "izq",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 15.985,
+      "texto": "😌 Todo el día ✅",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 29.402,
+      "texto": "❓ ¿Y eso para qué?",
+      "lado": "izq",
+      "color": "#FF8A3D"
+    },
+    {
+      "start": 31.402,
+      "texto": "❓ ¿Y eso para qué?",
+      "lado": "der",
+      "color": "#FF8A3D"
+    },
+    {
+      "start": 36.244,
+      "texto": "💡 Vende el deseo",
+      "lado": "izq",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 3.0,
+      "emoji": "😴"
+    },
+    {
+      "start": 37.444,
+      "emoji": "🔥"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "doubt"
+    },
+    {
+      "start": 3.0,
+      "pose": "facepalm"
+    },
+    {
+      "start": 5.736,
+      "pose": "explain"
+    },
+    {
+      "start": 8.336,
+      "pose": "you"
+    },
+    {
+      "start": 11.785,
+      "pose": "one"
+    },
+    {
+      "start": 14.385,
+      "pose": "idea"
+    },
+    {
+      "start": 20.002,
+      "pose": "two"
+    },
+    {
+      "start": 22.602,
+      "pose": "explain"
+    },
+    {
+      "start": 27.802,
+      "pose": "three"
+    },
+    {
+      "start": 30.002,
+      "pose": "thinking"
+    },
+    {
+      "start": 35.444,
+      "pose": "crossed"
+    },
+    {
+      "start": 37.244,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 40.449,
+      "pose": "down"
+    },
+    {
+      "start": 42.849,
+      "pose": "wave"
+    }
+  ]
+}

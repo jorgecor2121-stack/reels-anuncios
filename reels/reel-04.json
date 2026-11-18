@@ -1,0 +1,256 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "marca": "@almonte.suarez",
+  "audio": "narracion-04.wav",
+  "lineas": [
+    {
+      "text": "¿Tu anuncio tiene muchos likes pero no vende? Los likes te están engañando.",
+      "start": 0.0,
+      "duration": 5.329
+    },
+    {
+      "text": "Un anuncio no se mide por aplausos. Se mide por lo que pasa después.",
+      "start": 5.579,
+      "duration": 5.799
+    },
+    {
+      "text": "Uno: mira cuántas personas te escriben o hacen clic, no cuántas le dan me gusta.",
+      "start": 11.628,
+      "duration": 6.269
+    },
+    {
+      "text": "Dos: calcula cuánto te cuesta cada mensaje o cada venta. Ese es tu número de verdad.",
+      "start": 18.148,
+      "duration": 7.236
+    },
+    {
+      "text": "Tres: compara dos anuncios con el mismo presupuesto. Si uno te trae más clientes, apaga el otro.",
+      "start": 25.633,
+      "duration": 7.158
+    },
+    {
+      "text": "Likes para el ego. Mensajes y ventas para el negocio.",
+      "start": 33.041,
+      "duration": 4.127
+    },
+    {
+      "text": "Guarda este video y sígueme para más tips de anuncios.",
+      "start": 37.418,
+      "duration": 3.788
+    }
+  ],
+  "fin": 42.46,
+  "resaltar": [
+    "likes",
+    "engañando",
+    "aplausos",
+    "después",
+    "escriben",
+    "clic",
+    "cuesta",
+    "mensaje",
+    "venta",
+    "verdad",
+    "compara",
+    "presupuesto",
+    "clientes",
+    "apaga",
+    "ego",
+    "negocio",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "grafica",
+      "titulo": "Ejemplo: anuncio con muchos likes",
+      "barras": [
+        {
+          "etiqueta": "Likes",
+          "valor": 1200
+        },
+        {
+          "etiqueta": "Mensajes",
+          "valor": 3
+        },
+        {
+          "etiqueta": "Ventas",
+          "valor": 0,
+          "destacar": true
+        }
+      ]
+    },
+    {
+      "tipo": "embudo",
+      "badge": "Lo que de verdad importa",
+      "pasos": [
+        {
+          "etiqueta": "👀 Lo vieron",
+          "valor": 10000
+        },
+        {
+          "etiqueta": "👆 Clic",
+          "valor": 300
+        },
+        {
+          "etiqueta": "💬 Te escriben",
+          "valor": 40
+        },
+        {
+          "etiqueta": "💰 Compran",
+          "valor": 8
+        }
+      ]
+    },
+    {
+      "tipo": "stat",
+      "badge": "PASO 1 · Acciones reales",
+      "icono": "💬",
+      "valor": 40,
+      "prefijo": "+",
+      "etiqueta": "mensajes valen más que 1,000 likes"
+    },
+    {
+      "tipo": "stat",
+      "badge": "PASO 2 · Tu número de verdad",
+      "icono": "🧮",
+      "valor": 125,
+      "prefijo": "RD$",
+      "etiqueta": "te cuesta cada mensaje (ejemplo: RD$5,000 ÷ 40)"
+    },
+    {
+      "tipo": "carrera",
+      "badge": "PASO 3 · Compara",
+      "titulo": "Mismo presupuesto (ejemplo)",
+      "a": {
+        "etiqueta": "Anuncio A",
+        "valor": 12
+      },
+      "b": {
+        "etiqueta": "Anuncio B",
+        "valor": 48
+      },
+      "sufijo": " mensajes",
+      "nota": "Apaga el A, sube el B"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Mensajes y clics",
+        "Costo por resultado",
+        "Compara y apaga"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte.suarez"
+    }
+  ],
+  "chips": [
+    {
+      "start": 0.6,
+      "texto": "❤️ 1,200 likes",
+      "lado": "izq",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 1.8,
+      "texto": "💸 0 ventas",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 12.828,
+      "texto": "💬 +40 mensajes",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 19.648,
+      "texto": "🧮 RD$5,000 ÷ 40",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 28.133,
+      "texto": "📈 4x más clientes",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 33.340999999999994,
+      "texto": "🧠 Ego ≠ negocio",
+      "lado": "izq",
+      "color": "#A855F7"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 0.4,
+      "emoji": "❤️"
+    },
+    {
+      "start": 34.840999999999994,
+      "emoji": "💰"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "doubt"
+    },
+    {
+      "start": 2.6,
+      "pose": "facepalm"
+    },
+    {
+      "start": 5.579,
+      "pose": "explain"
+    },
+    {
+      "start": 7.978999999999999,
+      "pose": "idea"
+    },
+    {
+      "start": 11.628,
+      "pose": "one"
+    },
+    {
+      "start": 14.428,
+      "pose": "you"
+    },
+    {
+      "start": 18.148,
+      "pose": "two"
+    },
+    {
+      "start": 20.948,
+      "pose": "phone"
+    },
+    {
+      "start": 25.633,
+      "pose": "three"
+    },
+    {
+      "start": 28.833,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 33.041,
+      "pose": "crossed"
+    },
+    {
+      "start": 35.041,
+      "pose": "laugh"
+    },
+    {
+      "start": 37.418,
+      "pose": "down"
+    },
+    {
+      "start": 39.818,
+      "pose": "wave"
+    }
+  ]
+}
