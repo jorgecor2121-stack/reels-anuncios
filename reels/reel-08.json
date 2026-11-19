@@ -1,0 +1,235 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@almonte_suarez.ia",
+  "audio": "narracion-08.wav",
+  "lineas": [
+    {
+      "text": "¿No sabes cómo empezar tu anuncio? Copia esta estructura de gancho, sirve para cualquier negocio.",
+      "start": 0.0,
+      "duration": 6.426
+    },
+    {
+      "text": "Un buen gancho tiene tres piezas, y se arma en menos de un minuto.",
+      "start": 6.676,
+      "duration": 4.989
+    },
+    {
+      "text": "Pieza uno: el problema. Di en voz alta lo que le duele a tu cliente, por ejemplo: ¿tus anuncios no te traen clientes?",
+      "start": 11.916,
+      "duration": 8.751
+    },
+    {
+      "text": "Pieza dos: la promesa. Lo que va a conseguir, con un número concreto: en siete días, o en tres pasos.",
+      "start": 20.917,
+      "duration": 8.829
+    },
+    {
+      "text": "Pieza tres: la curiosidad. Deja algo abierto, como: y el tercer paso es el que nadie hace.",
+      "start": 29.996,
+      "duration": 8.202
+    },
+    {
+      "text": "Problema, promesa y curiosidad. Guárdala como plantilla y úsala en tu próximo anuncio.",
+      "start": 38.448,
+      "duration": 6.531
+    },
+    {
+      "text": "Guarda este video, y sígueme para más tips de anuncios.",
+      "start": 45.229,
+      "duration": 3.788
+    }
+  ],
+  "fin": 50.27,
+  "resaltar": [
+    "gancho",
+    "estructura",
+    "negocio",
+    "tres",
+    "piezas",
+    "minuto",
+    "problema",
+    "duele",
+    "promesa",
+    "número",
+    "siete",
+    "curiosidad",
+    "abierto",
+    "plantilla",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "papeles",
+      "palabra": "🤯"
+    },
+    {
+      "tipo": "puzzle",
+      "piezas": [
+        "😣",
+        "🎯",
+        "🤔"
+      ],
+      "palabra": "GANCHO"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "PROBLEMA"
+    },
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "PROMESA"
+    },
+    {
+      "tipo": "telefono",
+      "texto": "…y el 3er paso es el que nadie hace",
+      "sello": "¿CUÁL?",
+      "deslizar": false
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "😣",
+        "🎯",
+        "🤔"
+      ],
+      "letras": [
+        "PROBLEMA",
+        "PROMESA",
+        "CURIOSIDAD"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 8.676,
+      "texto": "⏱️ < 1 minuto",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 23.517000000000003,
+      "texto": "📅 7 días",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 32.396,
+      "texto": "👀 ¿Cuál será?",
+      "lado": "der",
+      "color": "#FF8A3D"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.0,
+      "emoji": "🤯"
+    },
+    {
+      "start": 14.416,
+      "emoji": "😣"
+    },
+    {
+      "start": 32.995999999999995,
+      "emoji": "👀"
+    },
+    {
+      "start": 40.948,
+      "emoji": "🔥"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "doubtTurn"
+    },
+    {
+      "start": 2.25,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.5,
+      "pose": "smart"
+    },
+    {
+      "start": 6.68,
+      "pose": "three"
+    },
+    {
+      "start": 8.42,
+      "pose": "explain"
+    },
+    {
+      "start": 10.17,
+      "pose": "proud"
+    },
+    {
+      "start": 11.92,
+      "pose": "oneRaised"
+    },
+    {
+      "start": 14.98,
+      "pose": "sad"
+    },
+    {
+      "start": 18.04,
+      "pose": "youTilt"
+    },
+    {
+      "start": 20.92,
+      "pose": "two"
+    },
+    {
+      "start": 24.01,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 27.1,
+      "pose": "excited"
+    },
+    {
+      "start": 30.0,
+      "pose": "three"
+    },
+    {
+      "start": 32.87,
+      "pose": "shh"
+    },
+    {
+      "start": 35.74,
+      "pose": "peaceWink"
+    },
+    {
+      "start": 38.45,
+      "pose": "crossedTilt"
+    },
+    {
+      "start": 40.73,
+      "pose": "ok"
+    },
+    {
+      "start": 43.02,
+      "pose": "fistPump"
+    },
+    {
+      "start": 45.23,
+      "pose": "downLook"
+    },
+    {
+      "start": 46.55,
+      "pose": "heart"
+    },
+    {
+      "start": 47.88,
+      "pose": "waveBoth"
+    }
+  ]
+}
