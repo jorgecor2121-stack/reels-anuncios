@@ -1,0 +1,240 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@almonte_suarez.ia",
+  "audio": "narracion-09.wav",
+  "lineas": [
+    {
+      "text": "¿Por qué tu anuncio suena a anuncio? Porque la gente lo detecta en un segundo, y se va.",
+      "start": 0.0,
+      "duration": 5.878
+    },
+    {
+      "text": "Nadie quiere que le vendan. Pero a todos nos gusta que nos hablen claro.",
+      "start": 6.128,
+      "duration": 5.146
+    },
+    {
+      "text": "Uno: habla como persona, no como empresa. En vez de \"ofrecemos soluciones\", di \"te ayudo a vender más\".",
+      "start": 11.524,
+      "duration": 8.908
+    },
+    {
+      "text": "Dos: frases cortas. Una idea por frase. Si tienes que respirar dos veces para leerla, está muy larga.",
+      "start": 20.681,
+      "duration": 8.516
+    },
+    {
+      "text": "Tres: léelo en voz alta. Si no lo dirías así en una conversación, cámbialo.",
+      "start": 29.447,
+      "duration": 6.034
+    },
+    {
+      "text": "Persona, frases cortas y voz alta. Así tu anuncio suena a ti.",
+      "start": 35.732,
+      "duration": 5.407
+    },
+    {
+      "text": "Guarda este video, y sígueme para más tips de anuncios.",
+      "start": 41.389,
+      "duration": 3.866
+    }
+  ],
+  "fin": 46.51,
+  "resaltar": [
+    "anuncio",
+    "segundo",
+    "vendan",
+    "claro",
+    "persona",
+    "empresa",
+    "ayudo",
+    "cortas",
+    "idea",
+    "respirar",
+    "voz",
+    "alta",
+    "conversación",
+    "ti",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Ofrecemos soluciones integrales de calidad",
+      "sello": "ROBOT 🤖",
+      "deslizar": true
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🤖",
+        "➡️",
+        "🙂"
+      ],
+      "letras": [
+        "VENDER",
+        "",
+        "HABLAR"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Ofrecemos soluciones",
+      "despues": "Te ayudo a vender más"
+    },
+    {
+      "tipo": "puzzle",
+      "piezas": [
+        "1",
+        "💡",
+        "✂️"
+      ],
+      "palabra": "CORTO"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🗣️",
+      "etiqueta": "Léelo en voz alta"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Persona",
+        "Frases cortas",
+        "Voz alta"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 2.6,
+      "texto": "⚡ 1 segundo",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 14.924,
+      "texto": "🙂 Te ayudo a vender",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 23.281000000000002,
+      "texto": "✂️ 1 idea = 1 frase",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "🤖"
+    },
+    {
+      "start": 14.524,
+      "emoji": "🙂"
+    },
+    {
+      "start": 31.447,
+      "emoji": "🗣️"
+    },
+    {
+      "start": 38.132,
+      "emoji": "🔥"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.06,
+      "pose": "oops"
+    },
+    {
+      "start": 4.11,
+      "pose": "shrugSide"
+    },
+    {
+      "start": 6.13,
+      "pose": "explain"
+    },
+    {
+      "start": 7.93,
+      "pose": "wagNo"
+    },
+    {
+      "start": 9.73,
+      "pose": "heart"
+    },
+    {
+      "start": 11.52,
+      "pose": "oneRaised"
+    },
+    {
+      "start": 14.64,
+      "pose": "stop"
+    },
+    {
+      "start": 17.76,
+      "pose": "youTilt"
+    },
+    {
+      "start": 20.68,
+      "pose": "two"
+    },
+    {
+      "start": 23.66,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 26.64,
+      "pose": "tired"
+    },
+    {
+      "start": 29.45,
+      "pose": "three"
+    },
+    {
+      "start": 31.56,
+      "pose": "listen"
+    },
+    {
+      "start": 33.67,
+      "pose": "excited"
+    },
+    {
+      "start": 35.73,
+      "pose": "crossedTilt"
+    },
+    {
+      "start": 37.62,
+      "pose": "proud"
+    },
+    {
+      "start": 39.52,
+      "pose": "thumbsBoth"
+    },
+    {
+      "start": 41.39,
+      "pose": "downLook"
+    },
+    {
+      "start": 42.74,
+      "pose": "heart"
+    },
+    {
+      "start": 44.1,
+      "pose": "waveBoth"
+    }
+  ]
+}

@@ -32,9 +32,39 @@ const Blazer: React.FC<{ lift: number }> = ({ lift }) => {
   );
 };
 
+// Sudadera con capucha: capucha caída alrededor del cuello, cordones, bolsillo canguro
+const Hoodie: React.FC<{ lift: number }> = ({ lift }) => {
+  const L = lift;
+  const o = useOutfit();
+  return (
+    <g>
+      <path d={`M 170 ${860 - L} Q 190 ${700 - L} 420 ${672 - L} L 660 ${672 - L} Q 890 ${700 - L} 910 ${860 - L} L 930 1090 L 150 1090 Z`} fill={o.shirt} stroke={C.outline} strokeWidth={SW} />
+      {/* capucha caída */}
+      <path d={`M 400 ${676 - L} Q 330 ${700 - L} 350 ${770 - L} Q 450 ${850 - L} 540 ${820 - L} Q 630 ${850 - L} 730 ${770 - L} Q 750 ${700 - L} 680 ${676 - L} Q 540 ${760 - L} 400 ${676 - L} Z`} fill={o.lapel} stroke={C.outline} strokeWidth={SW} strokeLinejoin="round" />
+      <path d={`M 440 ${690 - L} Q 540 ${770 - L} 640 ${690 - L}`} fill="none" stroke={o.shirtLine} strokeWidth={6} />
+      {/* cordones con puntas */}
+      {[505, 575].map((x, i) => (
+        <g key={x}>
+          <path d={`M ${x} ${740 - L} Q ${x + (i ? 6 : -6)} 860 ${x + (i ? 4 : -4)} 930`} fill="none" stroke={o.inner} strokeWidth={9} strokeLinecap="round" />
+          <rect x={x + (i ? -2 : -10)} y={922} width={12} height={26} rx={4} fill="#C9C4B8" stroke={C.outline} strokeWidth={3} />
+        </g>
+      ))}
+      {/* bolsillo canguro */}
+      <path d="M 330 1000 Q 340 950 400 945 L 680 945 Q 740 950 750 1000 L 760 1090 L 320 1090 Z" fill={o.shirt} stroke={o.shirtLine} strokeWidth={6} />
+      {/* logo pequeño */}
+      <circle cx={700} cy={860} r={22} fill="none" stroke={o.inner} strokeWidth={5} />
+      <path d="M 690 860 L 700 848 L 710 860 L 700 872 Z" fill={o.inner} />
+      {/* cadena dorada asomando */}
+      <path d={`M 474 ${700 - L} Q 540 ${790 - L} 606 ${700 - L}`} fill="none" stroke={C.goldDark} strokeWidth={14} strokeLinecap="round" />
+      <path d={`M 474 ${700 - L} Q 540 ${790 - L} 606 ${700 - L}`} fill="none" stroke={C.gold} strokeWidth={9} strokeDasharray="10 5" strokeLinecap="round" />
+    </g>
+  );
+};
+
 const Torso: React.FC<{ lift: number }> = ({ lift }) => {
   const L = lift;
   if (useOutfit().tipo === "blazer") return <Blazer lift={lift} />;
+  if (useOutfit().tipo === "hoodie") return <Hoodie lift={lift} />;
   return (
     <g>
       <path
