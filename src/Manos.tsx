@@ -5,7 +5,7 @@ import { loadFont } from "@remotion/google-fonts/Montserrat";
 const { fontFamily } = loadFont("normal", { weights: ["800", "900"], subsets: ["latin"] });
 const FPS = 30;
 type Lado = "izq" | "der";
-type Item = { s: number; e: number; tipo: string; lado?: Lado };
+type Item = { s: number; e: number; tipo: string; lado?: Lado; mano?: boolean };
 
 // Orden del guion (tiempos del video ya recortado)
 export const ITEMS: Item[] = [
@@ -14,13 +14,13 @@ export const ITEMS: Item[] = [
   { s: 5.0, e: 8.5, tipo: "noventa" },
   { s: 8.6, e: 10.2, tipo: "preguntas" },
   { s: 10.3, e: 11.6, tipo: "doble" },
-  { s: 11.7, e: 16.5, tipo: "chat" },
+  { s: 11.7, e: 16.5, tipo: "chat", mano: true },
   { s: 16.7, e: 19.5, tipo: "nocampana" },
   { s: 19.7, e: 24.8, tipo: "ia" },
   { s: 24.9, e: 27.0, tipo: "libro" },
   { s: 27.7, e: 31.5, tipo: "envivo" },
   { s: 31.7, e: 34.8, tipo: "calendario" },
-  { s: 34.9, e: 36.4, tipo: "precio" },
+  { s: 34.9, e: 36.4, tipo: "precio", mano: true },
   { s: 36.5, e: 38.9, tipo: "cohete" },
 ];
 
@@ -169,32 +169,48 @@ const Objeto: React.FC<{ tipo: string; f: number }> = ({ tipo, f }) => {
   return null;
 };
 
-export const EnMano: React.FC<{ it: Item }> = ({ it }) => {
+export const EnMano: React.FC<{ it: Item; idx?: number }> = ({ it, idx = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const a = Math.round(it.s * fps), b = Math.round(it.e * fps);
   if (frame < a || frame > b) return null;
-  const lado = ladoDe(it);
-  const [x, y] = P[lado][Math.min(P[lado].length - 1, frame)];
   const pin = spring({ frame: frame - a, fps, config: { damping: 11, stiffness: 160 } });
   const pout = interpolate(frame, [b - 6, b], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const s = pin * pout;
   const flot = Math.sin(frame / 9) * 8;
+  if (it.mano) {
+    const lado = ladoDe(it);
+    const [x, y] = P[lado][Math.min(P[lado].length - 1, frame)];
+    return (
+      <>
+        {/* brillo en la palma */}
+        <div style={{ position: "absolute", left: x - 90, top: y - 90, width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,220,120,.55), rgba(255,220,120,0) 70%)", opacity: s }} />
+        <div style={{ position: "absolute", left: x, top: y - 40 + flot, transform: `translate(-50%, -100%) scale(${s * 1.15})`, transformOrigin: "50% 100%" }}>
+          <Objeto tipo={it.tipo} f={frame - a} />
+        </div>
+      </>
+    );
+  }
+  // presentada: entra desde un lado, girando en 3D, con un barrido de luz, al costado de la cabeza
+  const izq = idx % 2 === 0;
+  const x = izq ? 205 : 875;
+  const slide = interpolate(pin, [0, 1], [izq ? -420 : 420, 0]);
+  const giro = interpolate(pin, [0, 1], [izq ? -60 : 60, izq ? 8 : -8]);
+  const barrido = interpolate(frame - a, [6, 22], [-120, 420], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <>
-      {/* brillo en la palma */}
-      <div style={{ position: "absolute", left: x - 90, top: y - 90, width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,220,120,.55), rgba(255,220,120,0) 70%)", opacity: s }} />
-      <div style={{ position: "absolute", left: x, top: y - 40 + flot, transform: `translate(-50%, -100%) scale(${s * 1.15})`, transformOrigin: "50% 100%" }}>
+    <div style={{ position: "absolute", left: x, top: 900 + flot, perspective: 900, opacity: pout }}>
+      <div style={{ transform: `translate(-50%, -100%) translateX(${slide}px) rotateY(${giro}deg) scale(${1.05 + (1 - pout) * 0.2})`, transformOrigin: "50% 100%", position: "relative" }}>
         <Objeto tipo={it.tipo} f={frame - a} />
+        <div style={{ position: "absolute", top: -40, bottom: -40, left: barrido, width: 70, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0))", transform: "skewX(-20deg)", mixBlendMode: "screen", pointerEvents: "none" }} />
       </div>
-    </>
+    </div>
   );
 };
 
 export const ReelManos: React.FC<{ pos: Pos }> = ({ pos }) => { P = pos; return (
   <AbsoluteFill style={{ fontFamily, background: "#000" }}>
     <OffthreadVideo src={staticFile("prueba/manos.mp4")} />
-    {ITEMS.map((it, i) => <EnMano key={i} it={it} />)}
+    {ITEMS.map((it, i) => <EnMano key={i} it={it} idx={i} />)}
   </AbsoluteFill>
 ); };
 

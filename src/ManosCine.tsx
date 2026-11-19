@@ -102,7 +102,7 @@ export const ReelManosCine: React.FC<ManosCineProps> = (p) => {
         </div>
         <OffthreadVideo src={staticFile(p.video)} transparent muted
           style={{ position: "absolute", inset: 0, width: 1080, height: 1920, filter: `drop-shadow(0 0 14px ${sec.c2}aa) drop-shadow(0 30px 40px rgba(0,0,0,.6))` }} />
-        {ITEMS.map((it, i) => <EnMano key={i} it={it} />)}
+        <div style={{ fontFamily: mont }}>{ITEMS.map((it, i) => <EnMano key={i} it={it} idx={i} />)}</div>
       </AbsoluteFill>
       {/* destello en cada cambio + viñeta + grano */}
       <AbsoluteFill style={{ background: `radial-gradient(circle at 80% 20%, ${sec.c2}, #fff 40%, transparent 70%)`, opacity: flash, mixBlendMode: "screen" }} />
@@ -114,8 +114,6 @@ export const ReelManosCine: React.FC<ManosCineProps> = (p) => {
       <Subtitulo words={p.words} t={t} />
       {/* franjas de cine con marca y barra de progreso */}
       <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: BARRA, background: "#000" }}>
-        <div style={{ position: "absolute", bottom: 26, left: 50, fontFamily: mont, fontWeight: 800, fontSize: 30, color: "#bbb", letterSpacing: 3 }}>@almonte_suarez.ia</div>
-        <div style={{ position: "absolute", bottom: 30, right: 50, fontFamily: mont, fontWeight: 800, fontSize: 26, color: "#E11D48", letterSpacing: 3, opacity: Math.sin(f / 6) > 0 ? 1 : 0.35 }}>● TALLER</div>
       </div>
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: BARRA, background: "#000" }}>
         <div style={{ position: "absolute", top: 0, left: 0, height: 6, width: `${(t / p.fin) * 100}%`, background: `linear-gradient(90deg, ${sec.c2}, #fff)` }} />
