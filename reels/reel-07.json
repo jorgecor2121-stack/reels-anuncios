@@ -1,0 +1,113 @@
+{
+  "audio": "narracion-07.wav",
+  "lineas": [
+    {
+      "text": "Un segundo. Eso es todo lo que tienes antes de que te salten.",
+      "start": 0.0,
+      "duration": 4.127
+    },
+    {
+      "text": "Y casi todos lo pierden con el mismo error: un comienzo quieto, lento, sin nada que ver.",
+      "start": 4.377,
+      "duration": 7.471
+    },
+    {
+      "text": "Primero: pon texto grande en pantalla. Mucha gente ve sin sonido, y el texto les dice por qué quedarse.",
+      "start": 12.098,
+      "duration": 7.967
+    },
+    {
+      "text": "Segundo: tu cara en primer plano. Una cara cerca de la cámara detiene el dedo más que cualquier logo.",
+      "start": 20.316,
+      "duration": 7.549
+    },
+    {
+      "text": "Tercero: rompe el patrón. Algo inesperado en el primer segundo: un movimiento, un sonido, un objeto fuera de lugar.",
+      "start": 28.115,
+      "duration": 9.091
+    },
+    {
+      "text": "Texto, cara y sorpresa. El primer segundo decide todo lo demás.",
+      "start": 37.456,
+      "duration": 5.642
+    },
+    {
+      "text": "Guarda este video, y sígueme para más tips de anuncios.",
+      "start": 43.348,
+      "duration": 3.788
+    }
+  ],
+  "fin": 48.89,
+  "planos": [
+    {
+      "tipo": "reloj",
+      "titulo": "UN SEGUNDO"
+    },
+    {
+      "tipo": "feed",
+      "titulo": "EL ERROR"
+    },
+    {
+      "tipo": "avatar",
+      "encuadre": "medio",
+      "titulo": "TEXTO GRANDE",
+      "detalle": "muchos ven sin sonido"
+    },
+    {
+      "tipo": "avatar",
+      "encuadre": "rostro",
+      "titulo": "PRIMER PLANO",
+      "detalle": "la cara detiene el dedo"
+    },
+    {
+      "tipo": "patron",
+      "titulo": "ROMPE EL PATRÓN"
+    },
+    {
+      "tipo": "creditos",
+      "palabras": [
+        "TEXTO",
+        "CARA",
+        "SORPRESA"
+      ]
+    },
+    {
+      "tipo": "final",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "base"
+    },
+    {
+      "start": 12.098,
+      "pose": "oneRaised"
+    },
+    {
+      "start": 14.89,
+      "pose": "explain"
+    },
+    {
+      "start": 17.67,
+      "pose": "smart"
+    },
+    {
+      "start": 20.316,
+      "pose": "two"
+    },
+    {
+      "start": 22.58,
+      "pose": "youTilt"
+    },
+    {
+      "start": 25.22,
+      "pose": "proud"
+    },
+    {
+      "start": 28.115,
+      "pose": "three"
+    }
+  ]
+}
