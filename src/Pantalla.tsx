@@ -94,7 +94,7 @@ const RotuloGrande: React.FC<{ r: Rotulo; t: number }> = ({ r, t }) => {
   const out = interpolate(t, [r.e - 0.05, r.e + 0.15], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   let texto = r.grande;
   if (r.contar) {
-    const v = Math.round(interpolate(lt, [0, 0.9], [0, r.contar], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }));
+    const v = Math.round(interpolate(lt, [0, Math.min(0.9, (r.e - r.s) * 0.45)], [0, r.contar], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }));
     texto = v.toLocaleString("en-US");
   }
   const size = Math.min(300, 900 / (r.grande.length * 0.42));
