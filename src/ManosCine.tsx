@@ -93,7 +93,7 @@ export const ReelManosCine: React.FC<ManosCineProps> = (p) => {
   const fc = p.face[Math.min(p.face.length - 1, f)] ?? [540, 700, 200];
   const ox = fc[0], oy = fc[1];
   const shake = (t - sec.s) < 0.25 ? Math.sin(f * 3) * 6 * (1 - (t - sec.s) / 0.25) : 0;
-  const flash = interpolate(t - sec.s, [0, 0.05, 0.25], [0, 0.7, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const flash = interpolate(t - sec.s, [0, 0.05, 0.25], [0, 0.35, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `translate(${shake}px, 0) scale(${z})`, transformOrigin: `${ox}px ${oy}px`, filter: last ? `blur(0px)` : undefined }}>
@@ -101,11 +101,11 @@ export const ReelManosCine: React.FC<ManosCineProps> = (p) => {
           <Fondo sec={sec} t={t} f={f} />
         </div>
         <OffthreadVideo src={staticFile(p.video)} transparent muted
-          style={{ position: "absolute", inset: 0, width: 1080, height: 1920, filter: `drop-shadow(0 0 14px ${sec.c2}aa) drop-shadow(0 30px 40px rgba(0,0,0,.6))` }} />
+          style={{ position: "absolute", inset: 0, width: 1080, height: 1920, filter: `drop-shadow(0 0 6px ${sec.c2}66) drop-shadow(0 30px 40px rgba(0,0,0,.6))` }} />
         <div style={{ fontFamily: mont }}>{ITEMS.map((it, i) => <EnMano key={i} it={it} idx={i} />)}</div>
       </AbsoluteFill>
       {/* destello en cada cambio + viñeta + grano */}
-      <AbsoluteFill style={{ background: `radial-gradient(circle at 80% 20%, ${sec.c2}, #fff 40%, transparent 70%)`, opacity: flash, mixBlendMode: "screen" }} />
+      <AbsoluteFill style={{ background: `radial-gradient(circle at 100% 0%, ${sec.c2}, transparent 45%)`, opacity: flash, mixBlendMode: "screen" }} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0,0,0,.75) 100%)" }} />
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 0.12, mixBlendMode: "overlay" }}>
         <filter id={`gr${f % 6}`}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed={f % 6} /><feColorMatrix type="saturate" values="0" /></filter>

@@ -201,7 +201,9 @@ export const EnMano: React.FC<{ it: Item; idx?: number }> = ({ it, idx = 0 }) =>
     <div style={{ position: "absolute", left: x, top: 900 + flot, perspective: 900, opacity: pout }}>
       <div style={{ transform: `translate(-50%, -100%) translateX(${slide}px) rotateY(${giro}deg) scale(${1.05 + (1 - pout) * 0.2})`, transformOrigin: "50% 100%", position: "relative" }}>
         <Objeto tipo={it.tipo} f={frame - a} />
+        <div style={{ position: "absolute", inset: 0, overflow: "hidden", borderRadius: 28, pointerEvents: "none" }}>
         <div style={{ position: "absolute", top: -40, bottom: -40, left: barrido, width: 70, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0))", transform: "skewX(-20deg)", mixBlendMode: "screen", pointerEvents: "none" }} />
+        </div>
       </div>
     </div>
   );
