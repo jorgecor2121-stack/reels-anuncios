@@ -8,6 +8,7 @@ import { PruebaComposition } from "./Prueba";
 import { CineComposition, PortadaComposition } from "./Cine";
 import { ManosComposition } from "./Manos";
 import { ManosCineComposition } from "./ManosCine";
+import { PantallaComposition } from "./Pantalla";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ export const RemotionRoot: React.FC = () => {
       <PortadaComposition />
       <ManosComposition />
       <ManosCineComposition />
+      <PantallaComposition />
     </>
   );
 };
