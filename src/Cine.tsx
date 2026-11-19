@@ -4,7 +4,7 @@ import { AbsoluteFill, Composition, Sequence, interpolate, staticFile, useCurren
 import { useWindowedAudioData, visualizeAudio } from "@remotion/media-utils";
 import { loadFont as loadBebas } from "@remotion/google-fonts/BebasNeue";
 import { loadFont as loadCormorant } from "@remotion/google-fonts/CormorantGaramond";
-import { StudioSunset } from "./scenes/StudioSunset";
+import { StudioCafe } from "./scenes/StudioCafe";
 import { OutfitProvider } from "./avatar2d/outfit";
 import { poseAtFrame, Segment } from "./avatar2d/timeline";
 import { mouthAt, speechDuration } from "./avatar2d/lipsync";
@@ -25,7 +25,9 @@ type Plano =
   | { tipo: "avatar"; encuadre: "medio" | "cerca" | "rostro"; titulo: string; detalle?: string }
   | { tipo: "patron"; titulo: string }
   | { tipo: "creditos"; palabras: string[] }
-  | { tipo: "final"; usuario: string };
+  | { tipo: "final"; usuario: string }
+  | { tipo: "tachar"; palabra: string; cambio?: string; numero?: string }
+  | { tipo: "apertura"; lineas: string[]; rojo: string };
 export type CineProps = { lineas: Linea[]; planos: Plano[]; gestos: Segment[]; audio: string; fin: number };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -49,8 +51,8 @@ const Avatar: React.FC<{ p: CineProps }> = ({ p }) => {
     mouth = m && !silencio ? m : "M";
   }
   return (
-    <OutfitProvider vestimenta="blazer">
-      <StudioSunset pose={{ ...base, face: { ...base.face, mouth } }} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+    <OutfitProvider vestimenta="hoodie">
+      <StudioCafe pose={{ ...base, face: { ...base.face, mouth } }} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
     </OutfitProvider>
   );
 };
@@ -168,6 +170,43 @@ const PlanoCreditos: React.FC<{ palabras: string[] }> = ({ palabras }) => {
   );
 };
 
+const PlanoTachar: React.FC<{ palabra: string; cambio?: string; numero?: string; dur: number }> = ({ palabra, cambio, numero, dur }) => {
+  const f = useCurrentFrame();
+  const parpadeo = f < 14 ? (f % 4 < 2 ? 0.35 : 1) : 0.92 + 0.08 * Math.sin(f / 3);
+  const z = 1 + 0.08 * ease(interpolate(f, [0, dur], [0, 1], clamp));
+  const raya = interpolate(f, [30, 44], [0, 1], { ...clamp, easing: ease });
+  const cambioA = interpolate(f, [50, 70], [0, 1], clamp);
+  return (
+    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 45%, rgba(140,20,20,${0.35 * parpadeo}) 0%, #050405 65%)`, alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+      {numero ? <div style={{ fontFamily: corm, fontStyle: "italic", fontSize: 60, color: "#B9B2A6", marginBottom: 10, opacity: parpadeo }}>{numero}</div> : null}
+      <div style={{ position: "relative", transform: `scale(${z})` }}>
+        <div style={{ fontFamily: bebas, fontSize: palabra.length > 8 ? 190 : 250, color: "#F4EFE6", letterSpacing: 10, opacity: parpadeo, textShadow: "0 0 60px rgba(255,60,60,.35)", lineHeight: 1 }}>{palabra}</div>
+        <div style={{ position: "absolute", left: -20, top: "48%", height: 18, width: `calc(${raya * 100}% + 40px)`, background: "#D42B2B", transform: "rotate(-4deg)", boxShadow: "0 0 30px #D42B2B" }} />
+      </div>
+      {cambio ? <div style={{ fontFamily: corm, fontStyle: "italic", fontWeight: 600, fontSize: 70, color: ORO, marginTop: 40, opacity: cambioA, transform: `translateY(${(1 - cambioA) * 30}px)` }}>{cambio}</div> : null}
+    </AbsoluteFill>
+  );
+};
+
+// Apertura tipo póster: líneas de título que entran una a una, una palabra en rojo
+const PlanoApertura: React.FC<{ lineas: string[]; rojo: string; p: CineProps; dur: number }> = ({ lineas, rojo, p, dur }) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ background: "#050405" }}>
+      <AbsoluteFill style={{ opacity: 0.55 }}><Camara p={p} encuadre="rostro" dur={dur} /></AbsoluteFill>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(5,4,5,.2) 0%, rgba(5,4,5,.85) 70%), radial-gradient(circle at 50% 40%, rgba(180,20,20,.35), transparent 60%)" }} />
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: 300 }}>
+        {lineas.map((l, i) => {
+          const a = interpolate(f, [8 + i * 10, 22 + i * 10], [0, 1], clamp);
+          const rojoL = l === rojo;
+          return <div key={i} style={{ fontFamily: bebas, fontSize: rojoL ? 230 : 140, lineHeight: 0.95, color: rojoL ? "#E23434" : "#F4EFE6", letterSpacing: interpolate(f, [8 + i * 10, 80], [26, 8], clamp),
+            opacity: a, transform: `scale(${1 + (1 - a) * 0.2})`, textShadow: rojoL ? "0 0 60px rgba(226,52,52,.7)" : "0 6px 30px rgba(0,0,0,.8)" }}>{l}</div>;
+        })}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 const PlanoFinal: React.FC<{ usuario: string }> = ({ usuario }) => {
   const f = useCurrentFrame();
   const a = interpolate(f, [0, 24], [0, 1], clamp);
@@ -238,6 +277,8 @@ export const ReelCine: React.FC<CineProps> = (p) => {
                 )
                 : pl.tipo === "patron" ? <PlanoPatron titulo={pl.titulo} />
                 : pl.tipo === "creditos" ? <PlanoCreditos palabras={pl.palabras} />
+                : pl.tipo === "tachar" ? <PlanoTachar palabra={pl.palabra} cambio={pl.cambio} numero={pl.numero} dur={dur} />
+                : pl.tipo === "apertura" ? <Sequence from={-desde} layout="none"><PlanoApertura lineas={pl.lineas} rojo={pl.rojo} p={p} dur={dur} /></Sequence>
                 : <PlanoFinal usuario={pl.usuario} />}
             </AbsoluteFill>
           </Sequence>
@@ -254,8 +295,38 @@ export const ReelCine: React.FC<CineProps> = (p) => {
   );
 };
 
+// Portada tipo póster de película (imagen fija para Instagram)
+export const PortadaCine: React.FC<CineProps & { portada: { lineas: string[]; rojo: string; tagline: string; usuario: string } }> = (p) => {
+  const t = p.portada;
+  return (
+    <AbsoluteFill style={{ background: "#050405" }}>
+      {/* rostro en la mitad de arriba */}
+      <AbsoluteFill style={{ transform: "translate(0px, -330px)" }}><Camara p={p} encuadre="rostro" dur={1} /></AbsoluteFill>
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 28%, rgba(210,30,30,.38), transparent 45%)", mixBlendMode: "screen" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(5,4,5,.55) 0%, rgba(5,4,5,0) 18%, rgba(5,4,5,0) 36%, rgba(5,4,5,.92) 52%, #050405 64%)" }} />
+      <div style={{ position: "absolute", top: 90, left: 0, right: 0, textAlign: "center", fontFamily: corm, fontStyle: "italic", fontSize: 52, color: "#E9E1D6", textShadow: "0 2px 12px #000" }}>{t.tagline}</div>
+      <div style={{ position: "absolute", top: 1000, left: 40, right: 40, textAlign: "center" }}>
+        {t.lineas.map((l, i) => (
+          <div key={i} style={{ fontFamily: bebas, fontSize: l === t.rojo ? 280 : 140, lineHeight: 0.9, color: l === t.rojo ? "#E23434" : "#F4EFE6", letterSpacing: 8,
+            textShadow: l === t.rojo ? "0 0 70px rgba(226,52,52,.8)" : "0 8px 40px rgba(0,0,0,.9)" }}>{l}</div>
+        ))}
+      </div>
+      <div style={{ position: "absolute", bottom: 90, left: 0, right: 0, textAlign: "center" }}>
+        <div style={{ height: 3, width: 260, background: ORO, margin: "0 auto 18px" }} />
+        <div style={{ fontFamily: bebas, fontSize: 60, color: "#F4EFE6", letterSpacing: 8 }}>@{t.usuario}</div>
+      </div>
+      <Grano />
+    </AbsoluteFill>
+  );
+};
+
 export const CineComposition = () => (
   <Composition id="ReelCine" component={ReelCine} durationInFrames={S(10)} fps={FPS} width={1080} height={1920}
     defaultProps={{ lineas: [], planos: [], gestos: [{ start: 0, pose: "base" }], audio: "narracion.wav", fin: 10 } as CineProps}
     calculateMetadata={({ props }) => ({ durationInFrames: S(props.fin) })} />
+);
+
+export const PortadaComposition = () => (
+  <Composition id="PortadaCine" component={PortadaCine} durationInFrames={1} fps={FPS} width={1080} height={1920}
+    defaultProps={{ lineas: [], planos: [], gestos: [{ start: 0, pose: "base" }], audio: "narracion.wav", fin: 1, portada: { lineas: [], rojo: "", tagline: "", usuario: "" } } as CineProps & { portada: { lineas: string[]; rojo: string; tagline: string; usuario: string } }} />
 );

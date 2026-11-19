@@ -22,7 +22,7 @@ Idioma de trabajo con el usuario: español.
 
 ## Estilo visual por defecto (actualizado el 18-nov-2026, aprobado por el usuario: "con este estilo van")
 Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`) con:
-`"tipo": "avatar"`, `"entorno": "atardecer"` (oficina con ventanal, `src/scenes/StudioSunset.tsx`), `"vestimenta": "blazer"`,
+`"tipo": "avatar"`, `"entorno": "cafe"` (cafetería, `src/scenes/StudioCafe.tsx`; desde el 19-nov, antes "atardecer"), `"vestimenta": "hoodie"` (sudadera verde oliva; antes "blazer"),
 `"escalaEscena": 0.78`, `"marca": "@almonte_suarez.ia"`.
 - **Pocas letras, muchas ilustraciones**: una escena por frase, preferir las ilustradas de `src/Motion.tsx`
   (papeles, trio, dolor, calendario, amanecer, puzzle, telefono) y las de datos (grafica, stat, carrera, embudo, dona).
@@ -36,6 +36,10 @@ Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvat
   → `reels/reel-NN.json` → `scripts/armar_reel.sh reels/reel-NN.json narracion/reel-NN/narracion.wav videos/reel-NN.mp4`
   → revisar 5–6 fotogramas y transcribir el audio antes de publicar.
 - En los resúmenes al usuario, referirse a los reels por su TÍTULO, no por número.
+
+## Reels de cine
+Composición `ReelCine` (`src/Cine.tsx`), modelo `reels/reel-10.json`; portada con `PortadaCine` → `portadas/reel-NN.jpg`;
+música `scripts/musica_cine.py`. Úsala cuando el usuario pida un reel "cinematográfico".
 
 ## Plan semanal (decidido por el usuario el 18-nov-2026)
 - **Reels de tips (todos los turnos salvo uno a la semana):** `"tipo": "tips"` en `reels/reel-NN.json`, plantilla `src/Tips.tsx`.
@@ -59,6 +63,8 @@ Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvat
 
 ## Publicar en Instagram (Composio, toolkit `instagram`, cuenta almonte_suarez.ia)
 1. `INSTAGRAM_POST_IG_USER_MEDIA` con `ig_user_id: "me"`, `media_type: "REELS"`, `video_url` (enlace raw de arriba), `caption`, `share_to_feed: true`.
+   Si existe `portadas/reel-NN.jpg`, añade `cover_url: https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/portadas/reel-NN.jpg`.
+   Si `publicar/reel-NN.txt` existe, úsalo tal cual como caption.
 2. `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con `creation_id`, `max_wait_seconds: 180`.
 3. Anotar en `publicados.json` y hacer push.
 

@@ -1,0 +1,124 @@
+{
+  "audio": "narracion-10.wav",
+  "lineas": [
+    {
+      "text": "Hay tres palabras que están matando tus ventas. Y seguro usas por lo menos una.",
+      "start": 0.0,
+      "duration": 5.564
+    },
+    {
+      "text": "Suenan bien, pero tu cliente ya las escuchó mil veces, y ya no las cree.",
+      "start": 5.814,
+      "duration": 5.407
+    },
+    {
+      "text": "La primera: calidad. Todos dicen que tienen calidad. No lo digas, muéstralo: un detalle, una foto, un antes y después.",
+      "start": 11.471,
+      "duration": 10.109
+    },
+    {
+      "text": "La segunda: los mejores. Si no lo puedes probar, no lo digas. Cambia esa frase por un número real.",
+      "start": 21.831,
+      "duration": 7.889
+    },
+    {
+      "text": "La tercera: barato. Atrae al cliente que regatea. Habla de lo que gana, no de lo poco que paga.",
+      "start": 29.97,
+      "duration": 7.549
+    },
+    {
+      "text": "Calidad, los mejores, barato. Cámbialas, y tu anuncio vuelve a vender.",
+      "start": 37.769,
+      "duration": 6.191
+    },
+    {
+      "text": "Guarda este video, y sígueme para más tips de anuncios.",
+      "start": 44.21,
+      "duration": 3.788
+    }
+  ],
+  "fin": 49.75,
+  "planos": [
+    {
+      "tipo": "apertura",
+      "lineas": [
+        "3 PALABRAS",
+        "QUE",
+        "MATAN",
+        "TUS VENTAS"
+      ],
+      "rojo": "MATAN"
+    },
+    {
+      "tipo": "avatar",
+      "encuadre": "medio",
+      "titulo": "MIL VECES",
+      "detalle": "y ya nadie las cree"
+    },
+    {
+      "tipo": "tachar",
+      "numero": "la primera",
+      "palabra": "CALIDAD",
+      "cambio": "muéstrala"
+    },
+    {
+      "tipo": "tachar",
+      "numero": "la segunda",
+      "palabra": "LOS MEJORES",
+      "cambio": "pruébalo con un número"
+    },
+    {
+      "tipo": "tachar",
+      "numero": "la tercera",
+      "palabra": "BARATO",
+      "cambio": "habla de lo que gana"
+    },
+    {
+      "tipo": "avatar",
+      "encuadre": "rostro",
+      "titulo": "CÁMBIALAS",
+      "detalle": "y tu anuncio vuelve a vender"
+    },
+    {
+      "tipo": "final",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 5.814,
+      "pose": "explain"
+    },
+    {
+      "start": 7.98,
+      "pose": "shrugSide"
+    },
+    {
+      "start": 9.87,
+      "pose": "wagNo"
+    },
+    {
+      "start": 37.769,
+      "pose": "smart"
+    },
+    {
+      "start": 40.86,
+      "pose": "proud"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "3 PALABRAS",
+      "QUE",
+      "MATAN",
+      "TUS VENTAS"
+    ],
+    "rojo": "MATAN",
+    "tagline": "¿usas alguna de estas?",
+    "usuario": "almonte_suarez.ia"
+  }
+}
