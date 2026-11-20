@@ -34,7 +34,7 @@ const Grafica: React.FC<{ lt: number; cae: number }> = ({ lt, cae }) => {
 };
 
 const Contenido: React.FC<{ t: number }> = ({ t }) => {
-  const txt = (s: string, c = "#fff", size = 46) => <div style={{ fontFamily: mont, fontWeight: 900, fontSize: size, color: c, textShadow: `0 0 18px ${c}` }}>{s}</div>;
+  const txt = (s: string, c = "#fff", size = 54) => <div style={{ fontFamily: mont, fontWeight: 900, fontSize: size, color: c, textShadow: `0 0 18px ${c}` }}>{s}</div>;
   if (t < PZ.intro) return <><Grafica lt={t} cae={0} />{txt("VENDÍAS ✅", C.verde)}</>;
   if (t < PZ.cuerpo1) {
     const cae = interpolate(t, [PZ.intro + 0.2, PZ.intro + 1.2], [0, 1], clamp);
@@ -123,7 +123,7 @@ const Holo: React.FC<{ t: number; izq: Mano; der: Mano; face: number[] }> = ({ t
   // centro entre las manos (o sobre la mano visible), siempre por debajo de la cara
   const mx = ambos ? (izq[0] + der[0]) / 2 : izq[2] > 0.5 ? izq[0] + 200 : der[0] - 200;
   const my = ambos ? Math.min(izq[1], der[1]) : izq[2] > 0.5 ? izq[1] : der[1];
-  const ancho = Math.max(460, Math.min(780, ambos ? Math.abs(der[0] - izq[0]) + 140 : 520));
+  const ancho = Math.max(600, Math.min(860, ambos ? Math.abs(der[0] - izq[0]) + 200 : 640));
   const minTop = face[1] + face[2] * 0.95;
   const cx = Math.max(ancho / 2 + 20, Math.min(1060 - ancho / 2, mx));
   const bottom = Math.max(minTop + 300, my - 40);
@@ -139,11 +139,11 @@ const Holo: React.FC<{ t: number; izq: Mano; der: Mano; face: number[] }> = ({ t
           <polygon key={i} points={`${h[0] - 18},${h[1]} ${h[0] + 18},${h[1]} ${cx + (i ? ancho / 2 : -ancho / 2) * 0.9},${bottom} ${cx + (i ? ancho / 2 - 120 : -ancho / 2 + 120)},${bottom}`} fill="url(#haz)" opacity={enc * p} />
         ))}
       </svg>
-      <div style={{ position: "absolute", left: cx - ancho / 2, top: bottom, width: ancho, transform: `translateY(-100%) scale(${interpolate(p, [0, 1], [0.6, 1])}) perspective(900px) rotateX(8deg)`, transformOrigin: "50% 100%", opacity: enc,
-        background: "linear-gradient(180deg, rgba(56,232,255,.18), rgba(30,80,160,.28))", border: `3px solid ${C.cyan}`, borderRadius: 26, boxShadow: `0 0 40px ${C.cyan}88, inset 0 0 40px ${C.cyan}33`,
-        padding: "18px 20px", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: cx - ancho / 2, top: bottom, width: ancho, transform: `translateY(-100%) scale(${interpolate(p, [0, 1], [0.6, 1])})`, transformOrigin: "50% 100%", opacity: enc,
+        background: "linear-gradient(180deg, rgba(6,24,48,.82), rgba(8,30,70,.86))", backdropFilter: "blur(6px)", border: `3px solid ${C.cyan}`, borderRadius: 26, boxShadow: `0 0 40px ${C.cyan}88, inset 0 0 40px ${C.cyan}33`,
+        padding: "22px 24px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
         {/* líneas de escaneo */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0 2px, transparent 2px 6px)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", inset: 0, borderRadius: 24, backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0 2px, transparent 2px 6px)", pointerEvents: "none" }} />
         <Contenido t={t} />
       </div>
     </>
@@ -205,7 +205,7 @@ const Subtitulos: React.FC<{ words: Palabra[]; t: number }> = ({ words, t }) => 
     <div style={{ position: "absolute", left: 40, right: 40, bottom: 150, textAlign: "center", fontFamily: mont, fontWeight: 900, fontSize: 58, textTransform: "uppercase" }}>
       {words.slice(g, g + 3).map((w, k) => {
         const on = t >= w.s, clave = CLAVE.test(w.w.replace(/[.,¿?¡!]+$/g, ""));
-        return <span key={k} style={{ display: "inline-block", margin: "0 10px", opacity: on ? 1 : 0, color: clave ? C.cyan : "#fff", transform: `scale(${on ? interpolate(sp(t, w.s, 10, 240), [0, 1], [1.4, 1]) : 1})`,
+        return <span key={k} style={{ display: "inline-block", margin: "0 14px", opacity: on ? 1 : 0, color: clave ? C.cyan : "#fff", transform: `scale(${on ? interpolate(sp(t, w.s, 10, 240), [0, 1], [1.15, 1]) : 1})`,
           WebkitTextStroke: "3px #000", paintOrder: "stroke", textShadow: clave ? `0 0 20px ${C.cyan}` : "0 6px 16px rgba(0,0,0,.8)" }}>{w.w.replace(/[.,]+$/, "")}</span>;
       })}
     </div>
