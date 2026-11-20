@@ -1,0 +1,127 @@
+{
+  "lineas": [
+    {
+      "text": "Estás quemando dinero en Meta… y ni siquiera lo sabes.",
+      "start": 0.0,
+      "duration": 4.127
+    },
+    {
+      "text": "En menos de un minuto te digo los tres errores que hacen que tus anuncios no vendan. Quédate.",
+      "start": 4.277,
+      "duration": 6.034
+    },
+    {
+      "text": "Error uno: hacer una campaña por cada anuncio. Mete varios anuncios en un mismo conjunto, con un solo presupuesto.",
+      "start": 10.462,
+      "duration": 8.908
+    },
+    {
+      "text": "Pero ese no es el error que más dinero te cuesta…",
+      "start": 19.519,
+      "duration": 3.474
+    },
+    {
+      "text": "Error dos: segmentar a mano por intereses. Hoy Andrómeda, la inteligencia artificial de Meta, encuentra a tu cliente mejor que tú.",
+      "start": 23.144,
+      "duration": 9.639
+    },
+    {
+      "text": "Y el tercero… lo comete casi todo el mundo.",
+      "start": 32.933,
+      "duration": 3.553
+    },
+    {
+      "text": "Error tres: usar un solo creativo. La inteligencia artificial necesita variedad: distintos ángulos y distintos ganchos para saber a quién mostrárselo.",
+      "start": 36.636,
+      "duration": 11.311
+    },
+    {
+      "text": "¿Te diste cuenta? Llegaste hasta aquí porque este video tiene la estructura de un buen anuncio. Guárdalo y sígueme para más.",
+      "start": 48.097,
+      "duration": 8.438
+    }
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "DINERO"
+    },
+    {
+      "tipo": "contador",
+      "numero": "3",
+      "etiqueta": "errores que no te dejan vender"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📢",
+        "➡️",
+        "📦"
+      ],
+      "letras": [
+        "VARIOS ANUNCIOS",
+        "",
+        "1 CONJUNTO"
+      ]
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤔",
+      "etiqueta": "¿Cuál cuesta más?",
+      "badge": "Espera…"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Intereses a mano",
+      "despues": "Andrómeda lo encuentra",
+      "badge": "ERROR 2"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤫",
+      "etiqueta": "El error #3",
+      "badge": "Casi todos"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🎨",
+        "🎯",
+        "🪝"
+      ],
+      "letras": [
+        "CREATIVOS",
+        "ÁNGULOS",
+        "GANCHOS"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "resaltar": [
+    "quemando",
+    "dinero",
+    "tres",
+    "errores",
+    "quédate",
+    "uno",
+    "conjunto",
+    "presupuesto",
+    "dos",
+    "intereses",
+    "andrómeda",
+    "inteligencia",
+    "artificial",
+    "tercero",
+    "variedad",
+    "ángulos",
+    "ganchos",
+    "guárdalo",
+    "sígueme"
+  ],
+  "marca": "@almonte_suarez.ia",
+  "fin": 57.88,
+  "tipo": "aurora"
+}

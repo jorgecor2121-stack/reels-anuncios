@@ -14,7 +14,7 @@ D=$(python3 -c "import json,sys;p=json.load(open(sys.argv[1]));print(p['fin'] if
 ffmpeg -y -loglevel error -i "$NARR" -af "aresample=44100,acompressor=threshold=-18dB:ratio=2.5:attack=5:release=120,loudnorm=I=-12:TP=-1" -ar 44100 "$TMP/voz.wav"
 
 # 2) Video
-COMP=$(python3 -c "import json,sys;t=json.load(open(sys.argv[1])).get('tipo');print({'tips':'ReelTips','podcast':'ReelPodcast','motion':'ReelMotion','avatar':'ReelAvatarMotion'}.get(t,'Reel'))" "$PROPS")
+COMP=$(python3 -c "import json,sys;t=json.load(open(sys.argv[1])).get('tipo');print({'tips':'ReelTips','podcast':'ReelPodcast','motion':'ReelMotion','avatar':'ReelAvatarMotion','aurora':'ReelAurora'}.get(t,'Reel'))" "$PROPS")
 npx remotion render "$COMP" "$TMP/video.mp4" --props="$PROPS" --browser-executable="$CHROME" --codec=h264 --log=error
 
 # 3) Mezcla: voz + bombo suave, con fade al final
