@@ -1,6 +1,6 @@
 // Anuncio de 8 piezas (gancho, introducción, cuerpo, bucle abierto, cuerpo, bucle, expectativa, llamado a la acción)
 // con la caricatura y la voz del usuario abajo, y arriba escenas tecnológicas tipo agencia.
-import { AbsoluteFill, Composition, Easing, interpolate, spring, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Composition, interpolate, spring, useCurrentFrame } from "remotion";
 import { loadFont as loadMont } from "@remotion/google-fonts/Montserrat";
 import { loadFont as loadBebas } from "@remotion/google-fonts/BebasNeue";
 import { AvatarMotionProps, ReelAvatarMotion } from "./AvatarMotion";
