@@ -196,7 +196,7 @@ export const ReelTestimonio: React.FC<TestimonioProps> = (p) => {
       {cola > 0 ? (
         <div style={{ position: "absolute", top: 170, left: 50, right: 50, textAlign: "center", opacity: cola, transform: `scale(${interpolate(cola, [0, 1], [0.7, 1])})` }}>
           <div style={{ fontFamily: bebas, fontSize: 120, lineHeight: 0.95, color: "#fff", textShadow: "0 6px 20px rgba(0,0,0,.8)" }}>¿TÚ ERES EL PRÓXIMO?</div>
-          <div style={{ display: "inline-block", marginTop: 10, fontWeight: 900, fontSize: 48, color: "#0A0A0A", background: "#FFD23F", padding: "10px 28px", borderRadius: 18 }}>📩 ESCRÍBEME "TALLER"</div>
+          <div style={{ display: "inline-block", marginTop: 10, fontWeight: 900, fontSize: 48, color: "#0A0A0A", background: "#FFD23F", padding: "10px 28px", borderRadius: 18 }}>📩 INSCRÍBETE AL TALLER</div>
           <div style={{ marginTop: 10, fontWeight: 800, fontSize: 36, color: "#fff", textShadow: "0 3px 12px rgba(0,0,0,.8)" }}>{p.marca}</div>
         </div>
       ) : null}
