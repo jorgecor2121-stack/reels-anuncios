@@ -115,63 +115,22 @@ const Contenido: React.FC<{ t: number }> = ({ t }) => {
 // cambia de "tarjeta" en cada pieza (para el parpadeo de encendido)
 const cortes = [PZ.gancho, PZ.intro, PZ.cuerpo1, 11.5, PZ.bucle, PZ.cuerpo2, PZ.bucle2, PZ.expect, PZ.cta];
 
-const Holo: React.FC<{ t: number; izq: Mano; der: Mano; face: number[] }> = ({ t, izq, der, face }) => {
+const Holo: React.FC<{ t: number }> = ({ t }) => {
   const s = Math.max(...cortes.filter((c) => c <= t));
   const lt = t - s;
-  const enc = lt < 0.3 ? (Math.floor(lt * 40) % 2 ? 0.3 : 1) : 1; // parpadeo al encender
-  const ambos = izq[2] > 0.5 && der[2] > 0.5;
-  // centro entre las manos (o sobre la mano visible), siempre por debajo de la cara
-  const mx = ambos ? (izq[0] + der[0]) / 2 : izq[2] > 0.5 ? izq[0] + 200 : der[0] - 200;
-  const my = ambos ? Math.min(izq[1], der[1]) : izq[2] > 0.5 ? izq[1] : der[1];
-  const ancho = Math.max(600, Math.min(860, ambos ? Math.abs(der[0] - izq[0]) + 200 : 640));
-  const minTop = face[1] + face[2] * 0.95;
-  const cx = Math.max(ancho / 2 + 20, Math.min(1060 - ancho / 2, mx));
-  const bottom = Math.max(minTop + 300, my - 40);
+  const enc = lt < 0.25 ? (Math.floor(lt * 40) % 2 ? 0.4 : 1) : 1; // parpadeo al encender
   const p = sp(t, s, 12, 180);
   return (
-    <>
-      {/* haces de luz desde las manos hacia la pantalla */}
-      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
-        <defs>
-          <linearGradient id="haz" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stopColor={C.cyan} stopOpacity={0.55} /><stop offset="100%" stopColor={C.cyan} stopOpacity={0.05} /></linearGradient>
-        </defs>
-        {[izq, der].filter((h) => h[2] > 0.5).map((h, i) => (
-          <polygon key={i} points={`${h[0] - 18},${h[1]} ${h[0] + 18},${h[1]} ${cx + (i ? ancho / 2 : -ancho / 2) * 0.9},${bottom} ${cx + (i ? ancho / 2 - 120 : -ancho / 2 + 120)},${bottom}`} fill="url(#haz)" opacity={enc * p} />
-        ))}
-      </svg>
-      <div style={{ position: "absolute", left: cx - ancho / 2, top: bottom, width: ancho, transform: `translateY(-100%) scale(${interpolate(p, [0, 1], [0.6, 1])})`, transformOrigin: "50% 100%", opacity: enc,
-        background: "linear-gradient(180deg, rgba(6,24,48,.82), rgba(8,30,70,.86))", backdropFilter: "blur(6px)", border: `3px solid ${C.cyan}`, borderRadius: 26, boxShadow: `0 0 40px ${C.cyan}88, inset 0 0 40px ${C.cyan}33`,
-        padding: "22px 24px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
-        {/* líneas de escaneo */}
-        <div style={{ position: "absolute", inset: 0, borderRadius: 24, backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0 2px, transparent 2px 6px)", pointerEvents: "none" }} />
+    <div style={{ position: "absolute", left: 90, right: 90, bottom: 260, display: "flex", justifyContent: "center", opacity: enc,
+      transform: `translateY(${interpolate(p, [0, 1], [60, 0])}px) scale(${interpolate(p, [0, 1], [0.85, 1])})` }}>
+      <div style={{ position: "relative", minWidth: 640, maxWidth: 900, background: "linear-gradient(180deg, rgba(6,24,48,.86), rgba(8,30,70,.9))", border: `3px solid ${C.cyan}`, borderRadius: 26,
+        boxShadow: `0 0 34px ${C.cyan}77`, padding: "22px 26px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
+        <div style={{ position: "absolute", inset: 0, borderRadius: 24, backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 2px, transparent 2px 6px)", pointerEvents: "none" }} />
         <Contenido t={t} />
       </div>
-    </>
+    </div>
   );
 };
-
-// estelas de luz y chispas en las manos
-const Estelas: React.FC<{ f: number; izq: Mano[]; der: Mano[] }> = ({ f, izq, der }) => (
-  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
-    {[izq, der].map((arr, k) => {
-      const pts = [];
-      for (let j = Math.max(0, f - 10); j <= f; j++) if (arr[j] && arr[j][2] > 0.5) pts.push(`${arr[j][0]},${arr[j][1]}`);
-      const v = arr[f]?.[3] ?? 0;
-      const col = k ? C.cyan : C.morado;
-      const chispas = v > 22 ? Array.from({ length: 8 }).map((_, i) => {
-        const a = i * 0.8 + f * 0.3, r = 20 + ((f * 7 + i * 13) % 50);
-        return <circle key={i} cx={arr[f][0] + Math.cos(a) * r} cy={arr[f][1] + Math.sin(a) * r} r={4} fill="#fff" opacity={0.9} style={{ filter: `drop-shadow(0 0 6px ${col})` }} />;
-      }) : null;
-      return (
-        <g key={k}>
-          {pts.length > 1 ? <polyline points={pts.join(" ")} fill="none" stroke={col} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" opacity={0.55} style={{ filter: `blur(3px) drop-shadow(0 0 10px ${col})` }} /> : null}
-          {arr[f]?.[2] > 0.5 ? <circle cx={arr[f][0]} cy={arr[f][1]} r={16 + Math.sin(f / 4) * 4} fill={col} opacity={0.35} style={{ filter: "blur(6px)" }} /> : null}
-          {chispas}
-        </g>
-      );
-    })}
-  </svg>
-);
 
 // palabras gigantes detrás de la persona
 const DETRAS = [
@@ -202,7 +161,7 @@ const Subtitulos: React.FC<{ words: Palabra[]; t: number }> = ({ words, t }) => 
   if (i < 0) return null;
   const g = Math.floor(i / 3) * 3;
   return (
-    <div style={{ position: "absolute", left: 40, right: 40, bottom: 150, textAlign: "center", fontFamily: mont, fontWeight: 900, fontSize: 58, textTransform: "uppercase" }}>
+    <div style={{ position: "absolute", left: 40, right: 40, bottom: 120, textAlign: "center", fontFamily: mont, fontWeight: 900, fontSize: 58, textTransform: "uppercase" }}>
       {words.slice(g, g + 3).map((w, k) => {
         const on = t >= w.s, clave = CLAVE.test(w.w.replace(/[.,¿?¡!]+$/g, ""));
         return <span key={k} style={{ display: "inline-block", margin: "0 14px", opacity: on ? 1 : 0, color: clave ? C.cyan : "#fff", transform: `scale(${on ? interpolate(sp(t, w.s, 10, 240), [0, 1], [1.15, 1]) : 1})`,
@@ -215,26 +174,12 @@ const Subtitulos: React.FC<{ words: Palabra[]; t: number }> = ({ words, t }) => 
 export const ReelHolograma: React.FC<HoloProps> = (p) => {
   const f = useCurrentFrame();
   const t = f / FPS;
-  const fc = p.face[Math.min(p.face.length - 1, f)] ?? [540, 520, 220];
-  const izq = p.izq[Math.min(p.izq.length - 1, f)] ?? [300, 1300, 0, 0];
-  const der = p.der[Math.min(p.der.length - 1, f)] ?? [780, 1300, 0, 0];
-  const corte = Math.max(...cortes.filter((c) => c <= t));
-  const flash = interpolate(t - corte, [0, 0.04, 0.22], [0, 0.45, 0], clamp);
-  const punch = interpolate(t - corte, [0, 0.1, 0.6], [1.08, 1.04, 1], clamp);
-  const z = Math.max(punch, interpolate(t, [PZ.cta, p.fin], [1, 1.18], clamp));
-  // tono de sala: un poco más frío y oscuro el fondo, la persona intacta
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
-      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${fc[0]}px ${fc[1]}px` }}>
-        <OffthreadVideo src={staticFile(p.video)} muted style={{ width: 1080, height: 1920, filter: "brightness(.55) saturate(.8)" }} />
-        <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, rgba(56,232,255,.18), rgba(10,10,30,.55) 75%)" }} />
-        <Detras t={t} />
-        <OffthreadVideo src={staticFile(p.persona)} transparent muted style={{ position: "absolute", inset: 0, width: 1080, height: 1920 }} />
-        <Estelas f={f} izq={p.izq} der={p.der} />
-        <Holo t={t} izq={izq} der={der} face={fc} />
-      </AbsoluteFill>
-      <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 30%, ${C.cyan}, transparent 60%)`, opacity: flash, mixBlendMode: "screen" }} />
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, transparent 60%, rgba(0,0,0,.6) 100%)" }} />
+      <OffthreadVideo src={staticFile(p.video)} muted style={{ width: 1080, height: 1920 }} />
+      <Detras t={t} />
+      <OffthreadVideo src={staticFile(p.persona)} transparent muted style={{ position: "absolute", inset: 0, width: 1080, height: 1920 }} />
+      <Holo t={t} />
       <Subtitulos words={p.words} t={t} />
       <div style={{ position: "absolute", top: 0, left: 0, height: 8, width: `${(t / p.fin) * 100}%`, background: `linear-gradient(90deg, ${C.morado}, ${C.cyan})` }} />
     </AbsoluteFill>
