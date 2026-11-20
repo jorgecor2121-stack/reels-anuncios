@@ -436,48 +436,38 @@
    "e": 44.02
   },
   {
-   "w": "Comenta",
-   "s": 44.78,
-   "e": 45.18
+   "w": "Sígueme",
+   "s": 44.9,
+   "e": 45.4
   },
   {
-   "w": "385",
-   "s": 45.18,
-   "e": 46.7
+   "w": "para",
+   "s": 45.4,
+   "e": 45.7
   },
   {
-   "w": "y",
-   "s": 46.7,
-   "e": 47.06
+   "w": "que",
+   "s": 45.7,
+   "e": 45.84
   },
   {
-   "w": "te",
-   "s": 47.06,
-   "e": 47.2
+   "w": "aprendas",
+   "s": 45.84,
+   "e": 46.38
   },
   {
-   "w": "envío",
-   "s": 47.2,
-   "e": 47.54
+   "w": "cómo",
+   "s": 46.38,
+   "e": 46.72
   },
   {
-   "w": "la",
-   "s": 47.54,
-   "e": 47.66
-  },
-  {
-   "w": "estructura",
-   "s": 47.66,
-   "e": 48.2
-  },
-  {
-   "w": "exacta.",
-   "s": 48.2,
-   "e": 48.8
+   "w": "resolverlo.",
+   "s": 46.72,
+   "e": 47.46
   }
  ],
- "fin": 50.0,
- "marca": "@almonte_suarez.ia",
+ "fin": 49.2,
+ "marca": "@jorgealmonteia",
  "clave": [
   "385",
   "19¢",
@@ -492,6 +482,10 @@
   "decida",
   "llena",
   "comenta",
-  "exacta"
- ]
+  "exacta",
+  "sígueme",
+  "resolverlo.",
+  "resolverlo"
+ ],
+ "usuario": "jorgealmonteia"
 }

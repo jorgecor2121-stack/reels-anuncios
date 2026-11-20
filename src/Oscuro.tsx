@@ -10,7 +10,7 @@ const sp = (t: number, s: number, d = 14, k = 120) => spring({ frame: Math.round
 const lin = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
 
 type Palabra = { w: string; s: number; e: number };
-export type OscuroProps = { words: Palabra[]; fin: number; marca: string; clave: string[] };
+export type OscuroProps = { words: Palabra[]; fin: number; marca: string; clave: string[]; usuario?: string };
 
 // Escenas (inicio en segundos)
 const E = [0, 7.5, 9.0, 15.3, 20.6, 28.0, 33.2, 38.8, 44.7];
@@ -87,7 +87,7 @@ const Bandeja: React.FC<{ t: number; s: number; lleno: number; c: string; numero
   );
 };
 
-const Escena: React.FC<{ i: number; t: number; f: number }> = ({ i, t, f }) => {
+const Escena: React.FC<{ i: number; t: number; f: number; props: OscuroProps }> = ({ i, t, f, props }) => {
   const s = E[i];
   const lt = t - s;
   const p = sp(t, s);
@@ -226,17 +226,24 @@ const Escena: React.FC<{ i: number; t: number; f: number }> = ({ i, t, f }) => {
       const n = Math.round(interpolate(t, [42.2, 43.4], [0, 385], { ...clamp, easing: Easing.out(Easing.cubic) }));
       return <Bandeja t={t} s={s} lleno={0.2 + 0.8 * lin(t, 39.5, 42.5)} c="#22E39A" numero={t < 42.2 ? 0 : n} />;
     }
-    case 8: { // comenta 385
-      const escribe = Math.floor(interpolate(t, [45.2, 46.0], [0, 3], clamp));
-      const env = sp(t, 46.5, 9, 180);
+    case 8: { // cierre: sígueme
+      const card = sp(t, s + 0.1, 12, 140);
+      const sigue = t > s + 2.0;
+      const btn = sp(t, s + 2.0, 8, 200);
       return (
         <>
           <Bandeja t={t} s={s} lleno={1} c="#22E39A" numero={385} />
-          <div style={{ position: "absolute", left: 90, right: 90, top: 1340, display: "flex", alignItems: "center", gap: 18, background: "rgba(20,20,30,.95)", border: "3px solid #22E39A",
-            borderRadius: 60, padding: "22px 30px", boxShadow: "0 0 40px #22E39A88", transform: `scale(${sp(t, s, 12)})` }}>
-            <div style={{ width: 56, height: 56, borderRadius: 28, background: "linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)" }} />
-            <div style={{ fontFamily, fontWeight: 800, fontSize: 44, color: "#fff", flex: 1 }}>{"385".slice(0, escribe)}<span style={{ opacity: Math.sin(f / 4) > 0 ? 1 : 0 }}>|</span></div>
-            <div style={{ fontFamily, fontWeight: 900, fontSize: 34, color: "#05040A", background: "#22E39A", padding: "10px 22px", borderRadius: 30, transform: `scale(${1 + env * 0.1})` }}>{env > 0.5 ? "✓ Enviado" : "Publicar"}</div>
+          <div style={{ position: "absolute", left: 170, right: 170, top: 1310, display: "flex", alignItems: "center", gap: 18, background: "rgba(16,16,26,.96)", border: "3px solid #22E39A",
+            borderRadius: 36, padding: "26px 30px", boxShadow: "0 0 50px #22E39A88", transform: `translateY(${interpolate(card, [0, 1], [300, 0])}px) scale(${interpolate(card, [0, 1], [0.8, 1])})`, opacity: card }}>
+            <div style={{ width: 96, height: 96, borderRadius: 48, padding: 5, background: "linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)" }}>
+              <div style={{ width: "100%", height: "100%", borderRadius: "50%", background: "#1B1B26", display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 900, fontSize: 38, color: "#fff" }}>JA</div>
+            </div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily, fontWeight: 900, fontSize: 40, color: "#fff" }}>@{props.usuario}</div>
+              <div style={{ fontFamily, fontWeight: 600, fontSize: 26, color: "#9EF5CF" }}>Aprende cómo resolverlo</div>
+            </div>
+            <div style={{ fontFamily, fontWeight: 900, fontSize: 32, color: sigue ? "#fff" : "#05040A", background: sigue ? "#2A2A3A" : "#22E39A", padding: "14px 26px", borderRadius: 20,
+              transform: `scale(${sigue ? 0.9 + btn * 0.1 : 1})` }}>{sigue ? "Siguiendo ✓" : "Seguir"}</div>
           </div>
         </>
       );
@@ -274,7 +281,7 @@ export const ReelOscuro: React.FC<OscuroProps> = (p) => {
     <AbsoluteFill style={{ background: "#05040A", overflow: "hidden" }}>
       <Escenario c={COLOR[i]} f={f} />
       <AbsoluteFill style={{ transform: cam, opacity: Math.min(entra * 1.5, sale), filter: `blur(${(1 - Math.min(1, entra * 1.3)) * 10}px)` }}>
-        <Escena i={i} t={t} f={f} />
+        <Escena i={i} t={t} f={f} props={p} />
       </AbsoluteFill>
       <Subtitulo words={p.words} t={t} clave={p.clave} />
       <div style={{ position: "absolute", top: 170, right: 70, fontFamily, fontWeight: 700, fontSize: 24, color: "rgba(255,255,255,.4)" }}>{p.marca}</div>
@@ -284,6 +291,6 @@ export const ReelOscuro: React.FC<OscuroProps> = (p) => {
 
 export const OscuroComposition = () => (
   <Composition id="ReelOscuro" component={ReelOscuro} fps={FPS} width={1080} height={1920} durationInFrames={FPS * 50}
-    defaultProps={{ words: [], fin: 50, marca: "", clave: [] } as OscuroProps}
+    defaultProps={{ words: [], fin: 50, marca: "", clave: [], usuario: "" } as OscuroProps}
     calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.fin * FPS) })} />
 );
