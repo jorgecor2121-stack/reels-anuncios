@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Guía FUGA — Las 4 fugas que te quitan ventas</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: 1080px 1350px; margin: 0; }
+  :root { --bg:#0B0B14; --bg2:#1A1030; --y:#FFD23F; --p:#FF3E7F; --t:#fff; --m:#B9B4D0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Montserrat, sans-serif; color: var(--t); background: var(--bg); }
+  .page { width: 1080px; height: 1350px; padding: 110px 100px; position: relative; overflow: hidden;
+          background: linear-gradient(150deg, var(--bg) 0%, var(--bg2) 100%); page-break-after: always; }
+  .page::before { content:""; position:absolute; width:700px; height:700px; border-radius:50%; background:var(--p);
+          filter: blur(160px); opacity:.25; top:-250px; left:-250px; }
+  .page::after { content:""; position:absolute; width:700px; height:700px; border-radius:50%; background:var(--y);
+          filter: blur(160px); opacity:.18; bottom:-300px; right:-250px; }
+  .page > * { position: relative; z-index: 1; }
+  .tag { display:inline-block; background:var(--p); color:#fff; font-weight:800; font-size:26px; padding:10px 24px; border-radius:40px; letter-spacing:2px; }
+  h1 { font-size: 112px; font-weight: 900; line-height: 1.02; margin-top: 50px; }
+  h2 { font-size: 66px; font-weight: 900; line-height: 1.08; margin: 30px 0 40px; }
+  .hl { background: var(--y); color: var(--bg); padding: 0 18px; border-radius: 14px; }
+  p, li { font-size: 34px; line-height: 1.5; color: var(--m); font-weight: 500; }
+  p b, li b { color: var(--t); font-weight: 800; }
+  .big { font-size: 44px; color: var(--t); font-weight: 700; line-height: 1.35; }
+  .card { background: rgba(255,255,255,.07); border: 3px solid rgba(255,255,255,.12); border-radius: 32px; padding: 36px 40px; margin-bottom: 28px; }
+  .card.y { border-color: var(--y); }
+  .card.p { border-color: var(--p); }
+  .card h3 { font-size: 38px; font-weight: 900; margin-bottom: 12px; }
+  .card.y h3 { color: var(--y); } .card.p h3 { color: var(--p); }
+  .num { font-size: 200px; font-weight: 900; color: var(--y); line-height: 1; }
+  ol.tpl { list-style: none; counter-reset: c; }
+  ol.tpl li { counter-increment: c; background: rgba(255,255,255,.06); border-radius: 22px; padding: 20px 28px 20px 96px; margin-bottom: 16px; position: relative; font-size: 31px; color: var(--t); font-weight: 600; }
+  ol.tpl li::before { content: counter(c); position: absolute; left: 26px; top: 14px; font-size: 44px; font-weight: 900; color: var(--y); }
+  .check li { list-style: none; padding-left: 70px; position: relative; margin-bottom: 26px; }
+  .check li::before { content: "☐"; position: absolute; left: 0; top: -6px; font-size: 48px; color: var(--y); }
+  .ba { display: grid; grid-template-columns: 1fr; gap: 24px; }
+  .foot { position: absolute; bottom: 70px; left: 100px; right: 100px; display: flex; justify-content: space-between; font-size: 26px; color: var(--m); font-weight: 700; }
+</style>
+</head>
+<body>
+<section class="page">
+  <span class="tag">DIAGNÓSTICO GRATIS</span>
+  <h1>Las 4 <span class="hl">fugas</span> que te quitan ventas</h1>
+  <p class="big" style="margin-top:60px">Tienes seguidores, pero nadie te compra. No es el precio: el dinero se escapa por alguno de estos 4 huecos.</p>
+  <div style="margin-top:80px">
+    <p>✅ Test de 1 minuto: ¿cuál es tu fuga?</p>
+    <p>✅ Las 4 fugas explicadas, de menor a mayor costo</p>
+    <p>✅ Cómo tapar cada una hoy mismo</p>
+    <p>✅ Plantillas para tu bio y tus respuestas por DM</p>
+    <p>✅ Checklist final</p>
+  </div>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>1 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">TEST DE 1 MINUTO</span>
+  <h2 style="margin:20px 0 24px">¿Cuál es <span class="hl">tu</span> fuga?</h2>
+  <p class="big" style="margin-bottom:24px;font-size:38px">Responde con honestidad. Cada "NO" es una fuga abierta.</p>
+  <div class="card" style="padding:22px 32px;margin-bottom:16px"><h3 style="font-size:33px">1. ¿Tu último post muestra tu producto en uso?</h3><p style="font-size:28px">Si solo entretiene o solo explica → <b>Fuga 1</b></p></div>
+  <div class="card" style="padding:22px 32px;margin-bottom:16px"><h3 style="font-size:33px">2. ¿Tu último post termina diciendo qué hacer?</h3><p style="font-size:28px">"Escríbeme", "comenta", "toca el enlace"… Si no → <b>Fuga 2</b></p></div>
+  <div class="card" style="padding:22px 32px;margin-bottom:16px"><h3 style="font-size:33px">3. ¿Tu bio dice qué vendes y a quién en 1 línea?</h3><p style="font-size:28px">Si alguien entra y tiene que adivinar → <b>Fuga 3</b></p></div>
+  <div class="card p" style="padding:22px 32px;margin-bottom:16px"><h3 style="font-size:33px">4. ¿Respondes los DMs en menos de 15 minutos?</h3><p style="font-size:28px">Y con algo más que un precio. Si no → <b>Fuga 4, la más cara</b></p></div>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>2 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">FUGAS 1 Y 2</span>
+  <h2>El contenido que <span class="hl">no vende</span></h2>
+  <div class="card y"><h3>Fuga 1 · Entretienes, pero no muestras</h3>
+    <p>La gente te ve, se ríe, aprende… y no sabe qué vendes.</p>
+    <p style="margin-top:14px"><b>Tápala:</b> 1 de cada 3 posts muestra tu producto <b>trabajando</b>: el antes y después, un cliente usándolo, el resultado en pantalla.</p></div>
+  <div class="card y"><h3>Fuga 2 · No les dices qué hacer</h3>
+    <p>Si no pides nada, nadie hace nada.</p>
+    <p style="margin-top:14px"><b>Tápala:</b> cada post termina con <b>un solo</b> siguiente paso: "Comenta X", "Escríbeme PRECIO", "Toca el enlace de mi perfil". Uno, no tres.</p></div>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>3 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">FUGAS 3 Y 4</span>
+  <h2>Donde se pierde <span class="hl">la venta</span></h2>
+  <div class="card y"><h3>Fuga 3 · Tu bio no dice qué vendes</h3>
+    <p>Quien entra a tu perfil decide en 3 segundos. Si duda, se va.</p>
+    <p style="margin-top:14px"><b>Tápala:</b> "Ayudo a [quién] a [resultado] con [qué]" + un llamado: "Escríbeme VENDER 👇".</p></div>
+  <div class="card p"><h3>Fuga 4 · El DM (la más cara)</h3>
+    <p>Te escriben "¿precio?" y respondes tarde, o solo con un número. Ahí se muere la venta.</p>
+    <p style="margin-top:14px"><b>Tápala:</b> responde rápido y con una <b>pregunta</b>. Primero entiende qué busca; después das el precio con su beneficio.</p></div>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>4 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">PLANTILLAS</span>
+  <h2>Copia y <span class="hl">pega</span></h2>
+  <p class="big" style="margin-bottom:24px">Bio (fuga 3):</p>
+  <ol class="tpl">
+    <li>Ayudo a emprendedores a vender por Instagram sin pagar más anuncios 📈</li>
+    <li>👇 Escríbeme VENDER y te digo por dónde empezar</li>
+  </ol>
+  <p class="big" style="margin:30px 0 24px">Respuesta a "¿precio?" (fuga 4):</p>
+  <ol class="tpl">
+    <li>¡Hola! 😊 Claro que sí. Para darte el precio exacto, ¿lo buscas para ti o para regalo?</li>
+    <li>Perfecto. Ese modelo cuesta RD$X e incluye [beneficio]. ¿Te lo aparto?</li>
+  </ol>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>5 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">ANTES Y DESPUÉS</span>
+  <h2>La misma venta, <span class="hl">dos finales</span></h2>
+  <div class="card p"><h3>❌ Antes</h3><p>Cliente: "¿precio?"<br>(3 horas después) Tú: "RD$2,500"<br>Cliente: … <b>(nunca respondió)</b></p></div>
+  <div class="card y"><h3>✅ Después</h3><p>Cliente: "¿precio?"<br>(2 minutos después) Tú: "¡Hola! ¿Lo buscas para ti o para regalo?"<br>Cliente: "Para mí"<br>Tú: "Te va a encantar: RD$2,500 con envío gratis hoy. ¿Te lo aparto?"<br>Cliente: <b>"¡Sí!"</b></p></div>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>6 / 7</span></div>
+</section>
+
+<section class="page">
+  <span class="tag">TU TURNO</span>
+  <h2>Tapa tus fugas <span class="hl">hoy</span></h2>
+  <ul class="check">
+    <li><b>Fuga 1:</b> tu próximo post muestra el producto trabajando</li>
+    <li><b>Fuga 2:</b> termina con un solo siguiente paso</li>
+    <li><b>Fuga 3:</b> cambia tu bio con la plantilla</li>
+    <li><b>Fuga 4:</b> guarda la respuesta a "¿precio?" y responde en menos de 15 min</li>
+  </ul>
+  <p class="big" style="margin-top:50px">¿Quieres que te ayude a montar todo esto con anuncios que traigan clientes? 👉 Escríbeme <span class="hl">TALLER</span> por DM.</p>
+  <div class="foot"><span>@almonte_suarez.ia</span><span>7 / 7</span></div>
+</section>
+</body></html>
