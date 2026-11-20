@@ -1,0 +1,222 @@
+{
+ "tipo": "avatar",
+ "entorno": "neon",
+ "vestimenta": "blazer",
+ "escalaEscena": 0.01,
+ "marca": "",
+ "audio": "narracion-promo8.wav",
+ "lineas": [
+  {
+   "text": "¿Tus promociones ya no funcionan como antes?",
+   "start": 0.0,
+   "duration": 2.521
+  },
+  {
+   "text": "Inviertes, recibes mensajes, pero las ventas no llegan.",
+   "start": 2.618,
+   "duration": 4.151
+  },
+  {
+   "text": "Es que Meta cambió el juego con Andrómeda, su nueva inteligencia artificial.",
+   "start": 6.867,
+   "duration": 4.732
+  },
+  {
+   "text": "Ya no basta con darle a promocionar. Hay tres cosas que deciden si vendes.",
+   "start": 11.696,
+   "duration": 4.649
+  },
+  {
+   "text": "Creatividades estratégicas, nuevos ángulos y una buena estructura de campañas.",
+   "start": 16.442,
+   "duration": 5.45
+  },
+  {
+   "text": "¿Y lo más importante? Darle a la inteligencia artificial las señales correctas.",
+   "start": 21.989,
+   "duration": 4.8
+  },
+  {
+   "text": "¿Quieres dejar de desperdiciar tu presupuesto?",
+   "start": 26.885,
+   "duration": 2.497
+  },
+  {
+   "text": "Te lo enseño en vivo por Zoom, por solo dos mil pesos. Sábado 21 o jueves 26, siete y treinta de la noche. ¡Escríbeme y reserva tu cupo!",
+   "start": 29.48,
+   "duration": 9.765
+  }
+ ],
+ "fin": 40.3,
+ "resaltar": [
+  "promociones",
+  "ventas",
+  "andrómeda",
+  "antrómeda",
+  "inteligencia",
+  "artificial",
+  "dos",
+  "mil",
+  "zoom",
+  "escríbeme"
+ ],
+ "escenas": [
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  },
+  {
+   "tipo": "amanecer",
+   "palabra": ""
+  }
+ ],
+ "chips": [],
+ "reacciones": [
+  {
+   "start": 4.0,
+   "emoji": "💸"
+  },
+  {
+   "start": 8.6,
+   "emoji": "🤖"
+  },
+  {
+   "start": 31.7,
+   "emoji": "🔥"
+  },
+  {
+   "start": 37.1,
+   "emoji": "📩"
+  }
+ ],
+ "gestos": [
+  {
+   "start": 0.0,
+   "pose": "tired"
+  },
+  {
+   "start": 0.84,
+   "pose": "ohNo"
+  },
+  {
+   "start": 1.68,
+   "pose": "sad"
+  },
+  {
+   "start": 2.62,
+   "pose": "explain"
+  },
+  {
+   "start": 4.0,
+   "pose": "facepalm"
+  },
+  {
+   "start": 5.39,
+   "pose": "shrug"
+  },
+  {
+   "start": 6.87,
+   "pose": "surprised"
+  },
+  {
+   "start": 8.44,
+   "pose": "smart"
+  },
+  {
+   "start": 10.02,
+   "pose": "idea"
+  },
+  {
+   "start": 11.7,
+   "pose": "wagNo"
+  },
+  {
+   "start": 13.25,
+   "pose": "thinkUp"
+  },
+  {
+   "start": 14.8,
+   "pose": "three"
+  },
+  {
+   "start": 16.44,
+   "pose": "one"
+  },
+  {
+   "start": 18.26,
+   "pose": "two"
+  },
+  {
+   "start": 20.08,
+   "pose": "three"
+  },
+  {
+   "start": 21.99,
+   "pose": "doubt"
+  },
+  {
+   "start": 23.59,
+   "pose": "idea"
+  },
+  {
+   "start": 25.19,
+   "pose": "smart"
+  },
+  {
+   "start": 26.89,
+   "pose": "you"
+  },
+  {
+   "start": 27.72,
+   "pose": "youTilt"
+  },
+  {
+   "start": 28.55,
+   "pose": "thinkUp"
+  },
+  {
+   "start": 29.48,
+   "pose": "excited"
+  },
+  {
+   "start": 31.43,
+   "pose": "phone"
+  },
+  {
+   "start": 33.39,
+   "pose": "fistPump"
+  },
+  {
+   "start": 35.34,
+   "pose": "thumbsUp"
+  },
+  {
+   "start": 37.29,
+   "pose": "waveBoth"
+  }
+ ]
+}

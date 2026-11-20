@@ -13,6 +13,7 @@ import { DetrasComposition } from "./Detras";
 import { AnuncioTenisComposition } from "./AnuncioTenis";
 import { TestimonioComposition } from "./Testimonio";
 import { MontanaComposition } from "./Montana";
+import { Andromeda8Composition } from "./Andromeda8";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ export const RemotionRoot: React.FC = () => {
       <AnuncioTenisComposition />
       <TestimonioComposition />
       <MontanaComposition />
+      <Andromeda8Composition />
     </>
   );
 };
