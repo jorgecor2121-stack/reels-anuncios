@@ -12,6 +12,7 @@ import { PantallaComposition } from "./Pantalla";
 import { DetrasComposition } from "./Detras";
 import { AnuncioTenisComposition } from "./AnuncioTenis";
 import { TestimonioComposition } from "./Testimonio";
+import { MontanaComposition } from "./Montana";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ export const RemotionRoot: React.FC = () => {
       <DetrasComposition />
       <AnuncioTenisComposition />
       <TestimonioComposition />
+      <MontanaComposition />
     </>
   );
 };

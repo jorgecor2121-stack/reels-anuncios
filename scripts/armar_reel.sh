@@ -11,7 +11,7 @@ CHROME=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome
 D=$(python3 -c "import json,sys;p=json.load(open(sys.argv[1]));print(p['fin'] if 'fin' in p else p['scenes'][-1])" "$PROPS")
 
 # 1) Voz normalizada a archivo aparte (loudnorm en línea retrasa y corta el final)
-ffmpeg -y -loglevel error -i "$NARR" -af "aresample=44100,loudnorm=I=-16:TP=-1.5" -ar 44100 "$TMP/voz.wav"
+ffmpeg -y -loglevel error -i "$NARR" -af "aresample=44100,acompressor=threshold=-18dB:ratio=2.5:attack=5:release=120,loudnorm=I=-12:TP=-1" -ar 44100 "$TMP/voz.wav"
 
 # 2) Video
 COMP=$(python3 -c "import json,sys;t=json.load(open(sys.argv[1])).get('tipo');print({'tips':'ReelTips','podcast':'ReelPodcast','motion':'ReelMotion','avatar':'ReelAvatarMotion'}.get(t,'Reel'))" "$PROPS")
@@ -22,7 +22,7 @@ FADE=$(python3 -c "print(max(0, $D - 1.5))")
 ffmpeg -y -loglevel error \
   -f lavfi -i "aevalsrc='0.9*sin(2*PI*55*t)*exp(-12*mod(t,0.5))+0.08*sin(2*PI*220*t)*(0.6+0.4*sin(2*PI*0.25*t))':s=44100:d=$D" \
   -i "$TMP/voz.wav" -i "$TMP/video.mp4" \
-  -filter_complex "[0:a]volume=0.12,afade=t=out:st=$FADE:d=1.5[bg];[1:a]adelay=150|150,apad[v];[v][bg]amix=inputs=2:duration=shortest:normalize=0[a]" \
+  -filter_complex "[0:a]volume=0.08,afade=t=out:st=$FADE:d=1.5[bg];[1:a]adelay=150|150,apad[v];[v][bg]amix=inputs=2:duration=shortest:normalize=0[a]" \
   -map 2:v -map "[a]" -c:v copy -c:a aac -b:a 160k -t "$D" -movflags +faststart "$OUT"
 rm -rf "$TMP"
 echo "$OUT ($D s)"

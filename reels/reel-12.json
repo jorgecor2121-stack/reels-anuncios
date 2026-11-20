@@ -1,0 +1,270 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@almonte_suarez.ia",
+  "audio": "narracion-12.wav",
+  "lineas": [
+    {
+      "text": "¿Sabías que la forma en que armas tu campaña decide si vendes… o botas tu dinero?",
+      "start": 0.0,
+      "duration": 5.642
+    },
+    {
+      "text": "Mira estos resultados reales: trescientas ochenta y cinco conversaciones, a solo diecinueve centavos cada una.",
+      "start": 5.892,
+      "duration": 8.046
+    },
+    {
+      "text": "Uno: no hagas una campaña por cada anuncio. Mete cuatro anuncios en un mismo conjunto, con un solo presupuesto.",
+      "start": 14.188,
+      "duration": 8.673
+    },
+    {
+      "text": "Dos: deja que Andrómeda, la inteligencia artificial de Meta, los pruebe todos. Con siete anuncios salieron ciento noventa y tres conversaciones a menos de siete centavos.",
+      "start": 23.111,
+      "duration": 12.121
+    },
+    {
+      "text": "Tres: haz ocho anuncios. Aunque cuatro no funcionen, los otros cuatro te escalan el negocio.",
+      "start": 35.482,
+      "duration": 7.236
+    },
+    {
+      "text": "Un conjunto, varios anuncios y un presupuesto. Así dejas de botar dinero.",
+      "start": 42.968,
+      "duration": 5.799
+    },
+    {
+      "text": "Guarda este video y sígueme para más tips de publicidad.",
+      "start": 49.017,
+      "duration": 3.709
+    }
+  ],
+  "fin": 54.18,
+  "resaltar": [
+    "campaña",
+    "vendes",
+    "dinero",
+    "385",
+    "conversaciones",
+    "centavos",
+    "conjunto",
+    "presupuesto",
+    "Andrómeda",
+    "193",
+    "ocho",
+    "escalan",
+    "negocio",
+    "guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "💸",
+      "etiqueta": "¿Vendes o botas dinero?"
+    },
+    {
+      "tipo": "stat",
+      "valor": 385,
+      "etiqueta": "conversaciones",
+      "icono": "💬",
+      "badge": "$0.19 c/u"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📢",
+        "➡️",
+        "📦"
+      ],
+      "letras": [
+        "4 ANUNCIOS",
+        "",
+        "1 CONJUNTO"
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Andrómeda reparte",
+      "barras": [
+        {
+          "etiqueta": "A1",
+          "valor": 40
+        },
+        {
+          "etiqueta": "A2",
+          "valor": 95,
+          "destacar": true
+        },
+        {
+          "etiqueta": "A3",
+          "valor": 55
+        },
+        {
+          "etiqueta": "A4",
+          "valor": 30
+        }
+      ],
+      "sufijo": "%",
+      "badge": "193 chats",
+      "nota": "7 anuncios · 1 presupuesto"
+    },
+    {
+      "tipo": "embudo",
+      "pasos": [
+        {
+          "etiqueta": "Anuncios",
+          "valor": 8
+        },
+        {
+          "etiqueta": "Ganadores",
+          "valor": 4
+        },
+        {
+          "etiqueta": "Escalan",
+          "valor": 4
+        }
+      ],
+      "badge": "8 → 4 🚀"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "1 conjunto",
+        "Varios anuncios",
+        "1 presupuesto"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "almonte_suarez.ia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 9.392,
+      "texto": "💬 $0.19 c/u",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 19.688000000000002,
+      "texto": "💰 1 presupuesto",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 30.611,
+      "texto": "📊 193 chats",
+      "lado": "der",
+      "color": "#22D3EE"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.0,
+      "emoji": "💸"
+    },
+    {
+      "start": 8.392,
+      "emoji": "🤯"
+    },
+    {
+      "start": 39.982,
+      "emoji": "🚀"
+    },
+    {
+      "start": 45.968,
+      "emoji": "🔥"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 1.97,
+      "pose": "skeptic"
+    },
+    {
+      "start": 3.95,
+      "pose": "you"
+    },
+    {
+      "start": 5.89,
+      "pose": "explain"
+    },
+    {
+      "start": 8.71,
+      "pose": "surprised"
+    },
+    {
+      "start": 11.52,
+      "pose": "excited"
+    },
+    {
+      "start": 14.19,
+      "pose": "one"
+    },
+    {
+      "start": 17.22,
+      "pose": "wagNo"
+    },
+    {
+      "start": 20.26,
+      "pose": "four"
+    },
+    {
+      "start": 23.11,
+      "pose": "two"
+    },
+    {
+      "start": 27.35,
+      "pose": "smart"
+    },
+    {
+      "start": 31.6,
+      "pose": "clap"
+    },
+    {
+      "start": 35.48,
+      "pose": "three"
+    },
+    {
+      "start": 38.01,
+      "pose": "ohNo"
+    },
+    {
+      "start": 40.55,
+      "pose": "fistPump"
+    },
+    {
+      "start": 42.97,
+      "pose": "crossed"
+    },
+    {
+      "start": 45.0,
+      "pose": "proud"
+    },
+    {
+      "start": 47.03,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 49.02,
+      "pose": "down"
+    },
+    {
+      "start": 50.32,
+      "pose": "heart"
+    },
+    {
+      "start": 51.61,
+      "pose": "waveBoth"
+    }
+  ]
+}
