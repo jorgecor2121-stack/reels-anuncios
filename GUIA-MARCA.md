@@ -1,4 +1,4 @@
-# Guía de contenido — @almonte_suarez.ia
+# Guía de contenido — @jorgealmonteia
 
 ## Qué es la cuenta
 Videos animados (reels verticales 1080x1920, 15–30 s) sobre:

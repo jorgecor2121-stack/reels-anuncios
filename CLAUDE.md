@@ -1,4 +1,4 @@
-# Reels educativos de anuncios — @almonte_suarez.ia
+# Reels educativos de anuncios — @jorgealmonteia (antes @almonte_suarez.ia)
 
 Este repositorio produce y publica reels animados en Instagram, narrados con la voz clonada del dueño de la cuenta.
 Idioma de trabajo con el usuario: español.
@@ -23,7 +23,7 @@ Idioma de trabajo con el usuario: español.
 ## Estilo visual por defecto (actualizado el 18-nov-2026, aprobado por el usuario: "con este estilo van")
 Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`) con:
 `"tipo": "avatar"`, `"entorno": "cafe"` (cafetería, `src/scenes/StudioCafe.tsx`; desde el 19-nov, antes "atardecer"), `"vestimenta": "hoodie"` (sudadera verde oliva; antes "blazer"),
-`"escalaEscena": 0.78`, `"marca": "@almonte_suarez.ia"`.
+`"escalaEscena": 0.78`, `"marca": "@jorgealmonteia"` (usuario nuevo desde el 20-nov-2026; en la escena `seguir` usar `"usuario": "jorgealmonteia"`).
 - **Pocas letras, muchas ilustraciones**: una escena por frase, preferir las ilustradas de `src/Motion.tsx`
   (papeles, trio, dolor, calendario, amanecer, puzzle, telefono) y las de datos (grafica, stat, carrera, embudo, dona).
   Textos de 1–3 palabras; nada de frases largas en pantalla.
@@ -61,7 +61,7 @@ música `scripts/musica_cine.py`. Úsala cuando el usuario pida un reel "cinemat
 5. Verificar que el audio llega completo hasta el final (por ejemplo, transcribiendo con whisper).
 6. Commit y push del guion, props y video a `main`.
 
-## Publicar en Instagram (Composio, toolkit `instagram`, cuenta almonte_suarez.ia)
+## Publicar en Instagram (Composio, toolkit `instagram`, cuenta del usuario, ahora @jorgealmonteia)
 1. `INSTAGRAM_POST_IG_USER_MEDIA` con `ig_user_id: "me"`, `media_type: "REELS"`, `video_url` (enlace raw de arriba), `caption`, `share_to_feed: true`.
    Si existe `portadas/reel-NN.jpg`, añade `cover_url: https://raw.githubusercontent.com/jorgecor2121-stack/reels-anuncios/main/portadas/reel-NN.jpg`.
    Si `publicar/reel-NN.txt` existe, úsalo tal cual como caption.
