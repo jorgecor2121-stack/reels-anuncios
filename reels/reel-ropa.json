@@ -2,7 +2,7 @@
   "tipo": "avatar",
   "entorno": "boutique",
   "vestimenta": "denim",
-  "escalaEscena": 0.78,
+  "escalaEscena": 0.58,
   "marca": "@jorgealmonteia",
   "audio": "narracion-ropa.wav",
   "lineas": [
@@ -195,5 +195,6 @@
       "start": 40.76,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "arriba": true
 }

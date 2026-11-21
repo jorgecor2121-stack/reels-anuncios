@@ -29,6 +29,7 @@ export type AvatarMotionProps = MotionProps & {
   chips?: { start: number; texto: string; lado: "izq" | "der"; color?: string; dur?: number }[];
   // Ráfagas de emojis que suben (likes, fuego, dinero…)
   reacciones?: { start: number; emoji: string }[];
+  arriba?: boolean; // avatar más grande y más arriba (ojos sobre la mitad de la pantalla)
 };
 
 const Chip: React.FC<{ c: NonNullable<AvatarMotionProps["chips"]>[number]; i: number }> = ({ c, i }) => {
@@ -117,7 +118,7 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
   const pose = { ...base, headY: (base.headY ?? 0) + (hablando ? Math.sin(t * 9) * 2 + Math.min(4, (volume ?? 0) * 25) : 0), face: { ...base.face, mouth } };
   const glow = 0.85 + Math.min(0.3, (volume ?? 0) * 1.5);
   return (
-    <div style={{ position: "absolute", left: 0, top: BAJAR, width: 1080, height: 1920 }}>
+    <div style={{ position: "absolute", left: 0, top: p.arriba ? -311 : BAJAR, width: 1080, height: 1920, transform: p.arriba ? "scale(1.25)" : undefined, transformOrigin: "540px 0" }}>
       <OutfitProvider vestimenta={p.vestimenta}>
         {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
           : p.entorno === "atardecer" ? <StudioSunset pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
@@ -143,20 +144,20 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
       {(p.reacciones ?? []).map((r, i) => <Reaccion key={i} r={r} />)}
       {(p.chips ?? []).map((c, i) => <Chip key={i} c={c} i={i} />)}
       {/* oscurece arriba para que las escenas se lean */}
-      <AbsoluteFill style={{ background: p.entorno === "boutique" ? "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 32%, rgba(58,30,36,0) 48%)" : p.entorno === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
+      <AbsoluteFill style={{ background: p.entorno === "boutique" ? (p.arriba ? "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 26%, rgba(58,30,36,0) 38%)" : "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 32%, rgba(58,30,36,0) 48%)") : p.entorno === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
       {/* barra de progreso + marca */}
       <div style={{ position: "absolute", top: 110, left: 90, right: 90, height: 8, borderRadius: 4, background: "rgba(255,255,255,.12)" }}>
         <div style={{ width: `${Math.min(1, t / p.fin) * 100}%`, height: "100%", borderRadius: 4, background: "linear-gradient(90deg,#FF8A3D,#FFD23F)" }} />
       </div>
       <div style={{ position: "absolute", top: 140, width: "100%", textAlign: "center", fontSize: 34, fontWeight: 800, color: "#A9A6B8", letterSpacing: 2 }}>{p.marca}</div>
       {/* escena de la frase, reducida al espacio de arriba */}
-      <div style={{ position: "absolute", top: 190, height: 640, left: 0, right: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: out }}>
+      <div style={{ position: "absolute", top: p.arriba ? 150 : 190, height: p.arriba ? 430 : 640, left: 0, right: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: out }}>
         <div key={li} style={{ transform: `scale(${p.escalaEscena ?? 0.6})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Sequence from={S(ls)} layout="none"><Esc e={p.escenas[Math.min(li, p.escenas.length - 1)]} /></Sequence>
         </div>
       </div>
       {/* subtítulos entre la escena y la cabeza */}
-      <div style={{ position: "absolute", top: 850, left: 30, right: 30, textAlign: "center" }}><Subs p={p} t={t} ws={ws} /></div>
+      <div style={{ position: "absolute", top: p.arriba ? 1690 : 850, left: 30, right: 30, textAlign: "center", ...(p.arriba ? { background: "rgba(40,18,24,.82)", borderRadius: 28, padding: "14px 10px" } : {}) }}><Subs p={p} t={t} ws={ws} /></div>
     </AbsoluteFill>
   );
 };
