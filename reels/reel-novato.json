@@ -1,0 +1,191 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "denim",
+  "escalaEscena": 0.01,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-novato.wav",
+  "lineas": [
+    {
+      "text": "Ronda uno: así anuncia un novato. Le da a promocionar a una sola foto, con todos los intereses, y quinientos pesos.",
+      "start": 0.0,
+      "duration": 8.594
+    },
+    {
+      "text": "Resultado: dos mensajes. Así se quema el presupuesto.",
+      "start": 8.744,
+      "duration": 4.676
+    },
+    {
+      "text": "Ahora mira cómo lo hace un experto.",
+      "start": 13.57,
+      "duration": 2.586
+    },
+    {
+      "text": "Ronda dos: objetivo mensajes, cuatro anuncios distintos en un solo conjunto, y los mismos quinientos pesos.",
+      "start": 16.306,
+      "duration": 8.673
+    },
+    {
+      "text": "Meta prueba los cuatro y le pasa el dinero al ganador. Treinta y ocho mensajes.",
+      "start": 25.129,
+      "duration": 5.564
+    },
+    {
+      "text": "El novato promociona un post. El experto le da a Meta opciones para escoger.",
+      "start": 30.843,
+      "duration": 6.034
+    },
+    {
+      "text": "¿Cuál de los dos eres tú? Guárdalo, y sígueme.",
+      "start": 37.027,
+      "duration": 3.553
+    }
+  ],
+  "fin": 41.73,
+  "resaltar": [
+    "novato",
+    "promocionar",
+    "intereses",
+    "quema",
+    "presupuesto",
+    "experto",
+    "mensajes",
+    "conjunto",
+    "ganador",
+    "opciones",
+    "guárdalo",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    },
+    {
+      "tipo": "amanecer",
+      "palabra": ""
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 11.2,
+      "emoji": "🔥"
+    },
+    {
+      "start": 29.0,
+      "emoji": "🎉"
+    },
+    {
+      "start": 37.0,
+      "emoji": "🤔"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "explain"
+    },
+    {
+      "start": 3.01,
+      "pose": "skeptic"
+    },
+    {
+      "start": 6.02,
+      "pose": "shrug"
+    },
+    {
+      "start": 8.74,
+      "pose": "ohNo"
+    },
+    {
+      "start": 10.38,
+      "pose": "facepalm"
+    },
+    {
+      "start": 12.02,
+      "pose": "sad"
+    },
+    {
+      "start": 13.57,
+      "pose": "youTilt"
+    },
+    {
+      "start": 14.48,
+      "pose": "idea"
+    },
+    {
+      "start": 15.38,
+      "pose": "smart"
+    },
+    {
+      "start": 16.31,
+      "pose": "explain"
+    },
+    {
+      "start": 19.34,
+      "pose": "one"
+    },
+    {
+      "start": 22.38,
+      "pose": "excited"
+    },
+    {
+      "start": 25.13,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 27.08,
+      "pose": "surprised"
+    },
+    {
+      "start": 29.02,
+      "pose": "fistPump"
+    },
+    {
+      "start": 30.84,
+      "pose": "wagNo"
+    },
+    {
+      "start": 32.95,
+      "pose": "proud"
+    },
+    {
+      "start": 35.07,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 37.03,
+      "pose": "you"
+    },
+    {
+      "start": 38.27,
+      "pose": "doubt"
+    },
+    {
+      "start": 39.51,
+      "pose": "waveBoth"
+    }
+  ]
+}
