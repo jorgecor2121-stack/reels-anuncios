@@ -8,6 +8,7 @@ import { Studio } from "./scenes/Studio";
 import { StudioNeon } from "./scenes/StudioNeon";
 import { StudioSunset } from "./scenes/StudioSunset";
 import { StudioCafe } from "./scenes/StudioCafe";
+import { StudioBoutique } from "./scenes/StudioBoutique";
 import { OutfitProvider, Vestimenta } from "./avatar2d/outfit";
 import { poseAtFrame, Segment } from "./avatar2d/timeline";
 import { mouthAt, speechDuration } from "./avatar2d/lipsync";
@@ -21,7 +22,7 @@ const BAJAR = 330; // cuánto se baja el estudio para dejar arriba el espacio de
 export type AvatarMotionProps = MotionProps & {
   audio: string; // narración en public/ (solo para mover la boca; el audio se mezcla aparte)
   gestos: Segment[]; // poses del avatar por segundo
-  entorno?: "clasico" | "neon" | "atardecer" | "cafe";
+  entorno?: "clasico" | "neon" | "atardecer" | "cafe" | "boutique";
   vestimenta?: Vestimenta;
   escalaEscena?: number; // tamaño de las escenas de arriba (0.6 por defecto)
   // Datos que aparecen flotando a los lados del avatar mientras hablas
@@ -121,6 +122,7 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
         {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
           : p.entorno === "atardecer" ? <StudioSunset pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
           : p.entorno === "cafe" ? <StudioCafe pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : p.entorno === "boutique" ? <StudioBoutique pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
           : <Studio pose={pose} glow={glow} />}
       </OutfitProvider>
     </div>
@@ -137,11 +139,11 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
   return (
     <AbsoluteFill style={{ background: "#0A0503", fontFamily, color: "#fff", overflow: "hidden" }}>
       <Personaje p={p} />
-      {p.entorno === "neon" || p.entorno === "atardecer" || p.entorno === "cafe" ? <Figuras /> : null}
+      {p.entorno === "neon" || p.entorno === "atardecer" || p.entorno === "cafe" || p.entorno === "boutique" ? <Figuras /> : null}
       {(p.reacciones ?? []).map((r, i) => <Reaccion key={i} r={r} />)}
       {(p.chips ?? []).map((c, i) => <Chip key={i} c={c} i={i} />)}
       {/* oscurece arriba para que las escenas se lean */}
-      <AbsoluteFill style={{ background: p.entorno === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
+      <AbsoluteFill style={{ background: p.entorno === "boutique" ? "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 32%, rgba(58,30,36,0) 48%)" : p.entorno === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
       {/* barra de progreso + marca */}
       <div style={{ position: "absolute", top: 110, left: 90, right: 90, height: 8, borderRadius: 4, background: "rgba(255,255,255,.12)" }}>
         <div style={{ width: `${Math.min(1, t / p.fin) * 100}%`, height: "100%", borderRadius: 4, background: "linear-gradient(90deg,#FF8A3D,#FFD23F)" }} />

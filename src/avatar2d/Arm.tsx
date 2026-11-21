@@ -8,8 +8,8 @@ import { ArmPose, Pt } from "./types";
  * Brazo estilo caricatura ("rubber hose"): una sola pieza curva que sale del hombro,
  * SIN codo marcado. El punto `elbow` de la pose solo sirve como control de la curva.
  */
-const ARM_W = 104;
-const SLEEVE_W = ARM_W + 34;
+const ARM_W = 84; // brazos más delgados (antes 104)
+const SLEEVE_W = ARM_W + 28;
 const SLEEVE_T = 0.3; // fracción del brazo cubierta por la manga
 
 export const armAngle = (a: Pt, b: Pt) => (Math.atan2(b[0] - a[0], -(b[1] - a[1])) * 180) / Math.PI;

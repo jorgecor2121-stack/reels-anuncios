@@ -6,8 +6,8 @@ import { useOutfit } from "./outfit";
 import { Pose, Pt } from "./types";
 
 export const SIZE = 1080;
-export const R_SHOULDER: Pt = [262, 790];
-export const L_SHOULDER: Pt = [818, 790];
+export const R_SHOULDER: Pt = [334, 790]; // delgado (antes 262)
+export const L_SHOULDER: Pt = [746, 790]; // delgado (antes 818)
 
 const Blazer: React.FC<{ lift: number }> = ({ lift }) => {
   const L = lift;
@@ -61,10 +61,48 @@ const Hoodie: React.FC<{ lift: number }> = ({ lift }) => {
   );
 };
 
+// Chaqueta de mezclilla abierta sobre camiseta blanca: cuello, bolsillos con tapa, costuras y botones metálicos
+const Denim: React.FC<{ lift: number }> = ({ lift }) => {
+  const L = lift;
+  const o = useOutfit();
+  const costura = { fill: "none", stroke: "#F2C27A", strokeWidth: 4, strokeDasharray: "9 7" } as const;
+  return (
+    <g>
+      <path d={`M 170 ${860 - L} Q 190 ${700 - L} 420 ${672 - L} L 660 ${672 - L} Q 890 ${700 - L} 910 ${860 - L} L 930 1090 L 150 1090 Z`} fill={o.shirt} stroke={C.outline} strokeWidth={SW} />
+      {/* camiseta blanca al centro */}
+      <path d={`M 448 ${676 - L} Q 540 ${735 - L} 632 ${676 - L} L 618 1090 L 462 1090 Z`} fill={o.inner} stroke={C.outline} strokeWidth={SW} />
+      <path d={`M 466 ${688 - L} Q 540 ${740 - L} 614 ${688 - L}`} fill="none" stroke="#DAD6CC" strokeWidth={6} />
+      {/* bordes de la chaqueta abierta con costura */}
+      <path d={`M 452 ${680 - L} L 470 1090`} {...costura} />
+      <path d={`M 628 ${680 - L} L 610 1090`} {...costura} />
+      {/* cuello de mezclilla */}
+      <path d={`M 420 ${670 - L} L 470 ${684 - L} L 470 ${770 - L} L 384 ${740 - L} Z`} fill={o.lapel} stroke={C.outline} strokeWidth={SW} strokeLinejoin="round" />
+      <path d={`M 660 ${670 - L} L 610 ${684 - L} L 610 ${770 - L} L 696 ${740 - L} Z`} fill={o.lapel} stroke={C.outline} strokeWidth={SW} strokeLinejoin="round" />
+      {/* bolsillos de pecho con tapa y botón */}
+      {[[250, 860], [710, 860]].map(([x, y], i) => (
+        <g key={i}>
+          <path d={`M ${x} ${y} L ${x + 120} ${y} L ${x + 120} ${y + 90} Q ${x + 60} ${y + 110} ${x} ${y + 90} Z`} fill={o.shirt} stroke={o.shirtLine} strokeWidth={5} />
+          <path d={`M ${x - 6} ${y - 4} L ${x + 126} ${y - 4} L ${x + 120} ${y + 34} Q ${x + 60} ${y + 46} ${x} ${y + 34} Z`} fill={o.lapel} stroke={C.outline} strokeWidth={4} />
+          <circle cx={x + 60} cy={y + 30} r={9} fill="#C9A05A" stroke="#6B4E1E" strokeWidth={3} />
+        </g>
+      ))}
+      {/* costuras horizontales del canesú */}
+      <path d={`M 190 ${800 - L} Q 300 ${780 - L} 440 ${790 - L}`} {...costura} />
+      <path d={`M 890 ${800 - L} Q 780 ${780 - L} 640 ${790 - L}`} {...costura} />
+      {/* botones metálicos del frente */}
+      {[960, 1040].map((y) => <circle key={y} cx={440} cy={y} r={10} fill="#C9A05A" stroke="#6B4E1E" strokeWidth={3} />)}
+      {/* cadena dorada sobre la camiseta */}
+      <path d={`M 474 ${700 - L} Q 540 ${820 - L} 606 ${700 - L}`} fill="none" stroke={C.goldDark} strokeWidth={15} strokeLinecap="round" />
+      <path d={`M 474 ${700 - L} Q 540 ${820 - L} 606 ${700 - L}`} fill="none" stroke={C.gold} strokeWidth={10} strokeDasharray="10 5" strokeLinecap="round" />
+    </g>
+  );
+};
+
 const Torso: React.FC<{ lift: number }> = ({ lift }) => {
   const L = lift;
   if (useOutfit().tipo === "blazer") return <Blazer lift={lift} />;
   if (useOutfit().tipo === "hoodie") return <Hoodie lift={lift} />;
+  if (useOutfit().tipo === "denim") return <Denim lift={lift} />;
   return (
     <g>
       <path
@@ -111,7 +149,7 @@ export const CharacterLayer: React.FC<{ pose: Pose; layer?: Layer }> = ({ pose, 
         <>
           {/* cuello (detrás del polo y la cadena) */}
           <path d={`M 462 ${560 - hy} L 462 ${720 - lift} L 618 ${720 - lift} L 618 ${560 - hy} Z`} fill={C.skinShade} stroke={C.outline} strokeWidth={SW} />
-          <Torso lift={lift} />
+          <g transform="translate(540 0) scale(0.74 1) translate(-540 0)"><Torso lift={lift} /></g>
           <g transform={`translate(0 ${-hy}) rotate(${tilt} 540 600) translate(540 652) scale(1.28) translate(-540 -612)`}>
             <Head face={pose.face} turn={pose.headTurn ?? 0} />
           </g>

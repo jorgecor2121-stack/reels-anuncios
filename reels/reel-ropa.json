@@ -1,0 +1,199 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-ropa.wav",
+  "lineas": [
+    {
+      "text": "¿Vendes ropa y nadie te escribe? Graba estos tres videos esta semana. El tercero es el que más te va a vender en diciembre.",
+      "start": 0.0,
+      "duration": 8.281
+    },
+    {
+      "text": "Uno: pruébatela de frente y de espalda, en cinco segundos. Nadie la toca por la pantalla, pero sí se la imagina puesta.",
+      "start": 8.481,
+      "duration": 8.829
+    },
+    {
+      "text": "Dos: dos combinaciones lado a lado, y pregunta: ¿la uno o la dos? La gente comenta, y Meta te muestra a más personas.",
+      "start": 17.51,
+      "duration": 10.031
+    },
+    {
+      "text": "Tres: grábate empacando un pedido real, con el nombre tapado, y escribe: sale hoy para Santiago. Eso es prueba de que vendes.",
+      "start": 27.741,
+      "duration": 9.326
+    },
+    {
+      "text": "Guárdalo para grabarlos esta semana, y sígueme para que tus anuncios vendan.",
+      "start": 37.267,
+      "duration": 4.989
+    }
+  ],
+  "fin": 43.66,
+  "resaltar": [
+    "ropa",
+    "escribe",
+    "tres",
+    "tercero",
+    "diciembre",
+    "frente",
+    "espalda",
+    "imagina",
+    "dos",
+    "comenta",
+    "más",
+    "empacando",
+    "pedido",
+    "prueba",
+    "vendes",
+    "guárdalo",
+    "sígueme",
+    "vendan"
+  ],
+  "escenas": [
+    {
+      "tipo": "contador",
+      "numero": "3",
+      "etiqueta": "videos esta semana"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🧍",
+        "🔄",
+        "⏱️"
+      ],
+      "letras": [
+        "FRENTE",
+        "ESPALDA",
+        "5 SEG"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Mira mi colección",
+      "despues": "¿La 1 o la 2?",
+      "badge": "VIDEO 2"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📦",
+        "🙈",
+        "🚚"
+      ],
+      "letras": [
+        "EMPACA",
+        "NOMBRE TAPADO",
+        "SALE HOY"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 5.5,
+      "texto": "📅 Diciembre",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 22.01,
+      "texto": "💬 ¿La 1 o la 2?",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 33.741,
+      "texto": "✅ Prueba de venta",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.2,
+      "emoji": "😶"
+    },
+    {
+      "start": 12.481,
+      "emoji": "👗"
+    },
+    {
+      "start": 22.51,
+      "emoji": "💬"
+    },
+    {
+      "start": 32.741,
+      "emoji": "📦"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "ohNo"
+    },
+    {
+      "start": 2.9,
+      "pose": "skeptic"
+    },
+    {
+      "start": 5.8,
+      "pose": "three"
+    },
+    {
+      "start": 8.48,
+      "pose": "one"
+    },
+    {
+      "start": 11.57,
+      "pose": "explain"
+    },
+    {
+      "start": 14.66,
+      "pose": "love"
+    },
+    {
+      "start": 17.51,
+      "pose": "two"
+    },
+    {
+      "start": 21.02,
+      "pose": "doubt"
+    },
+    {
+      "start": 24.53,
+      "pose": "excited"
+    },
+    {
+      "start": 27.74,
+      "pose": "three"
+    },
+    {
+      "start": 31.01,
+      "pose": "smart"
+    },
+    {
+      "start": 34.27,
+      "pose": "proud"
+    },
+    {
+      "start": 37.27,
+      "pose": "down"
+    },
+    {
+      "start": 39.01,
+      "pose": "heart"
+    },
+    {
+      "start": 40.76,
+      "pose": "waveBoth"
+    }
+  ]
+}
