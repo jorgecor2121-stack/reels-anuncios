@@ -19,6 +19,7 @@ import { AuroraComposition } from "./Aurora";
 import { OscuroComposition } from "./Oscuro";
 import { AvatarSoloComposition } from "./AvatarSolo";
 import { NovatoComposition } from "./Novato";
+import { VentaAutoComposition } from "./VentaAuto";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -45,6 +46,7 @@ export const RemotionRoot: React.FC = () => {
       <OscuroComposition />
       <AvatarSoloComposition />
       <NovatoComposition />
+      <VentaAutoComposition />
     </>
   );
 };
