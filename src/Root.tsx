@@ -21,6 +21,7 @@ import { AvatarSoloComposition } from "./AvatarSolo";
 import { NovatoComposition } from "./Novato";
 import { VentaAutoComposition } from "./VentaAuto";
 import { MarketplaceComposition } from "./Marketplace";
+import { KabodComposition } from "./Kabod";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -49,6 +50,7 @@ export const RemotionRoot: React.FC = () => {
       <NovatoComposition />
       <VentaAutoComposition />
       <MarketplaceComposition />
+      <KabodComposition />
     </>
   );
 };
