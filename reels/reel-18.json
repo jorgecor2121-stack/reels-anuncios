@@ -1,0 +1,246 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-18.wav",
+  "lineas": [
+    {
+      "text": "¿Sabías que tu anuncio más feo puede ser el que más vende?",
+      "start": 0.0,
+      "duration": 4.049
+    },
+    {
+      "text": "El anuncio pulido de estudio parece publicidad… y la gente lo salta sin pensarlo.",
+      "start": 4.249,
+      "duration": 5.721
+    },
+    {
+      "text": "El que parece grabado con el celular se siente real, y la gente se detiene.",
+      "start": 10.17,
+      "duration": 5.146
+    },
+    {
+      "text": "Por ejemplo: el de estudio, cero punto ocho por ciento de clics. El casero, tres punto dos.",
+      "start": 15.516,
+      "duration": 7.314
+    },
+    {
+      "text": "Pasa igual con la foto: tu producto en la mano vende más que en fondo blanco. Y un cliente real, más que un modelo.",
+      "start": 23.03,
+      "duration": 8.359
+    },
+    {
+      "text": "Graba uno con tu celular esta semana, y ponlo a competir en el mismo conjunto.",
+      "start": 31.589,
+      "duration": 5.146
+    },
+    {
+      "text": "Guárdalo y sígueme para más tips de anuncios.",
+      "start": 36.936,
+      "duration": 3.239
+    }
+  ],
+  "fin": 41.58,
+  "resaltar": [
+    "anuncio",
+    "anuncios",
+    "celular",
+    "cliente",
+    "competir",
+    "conjunto",
+    "detiene",
+    "ejemplo",
+    "estudio",
+    "grabado",
+    "guárdalo",
+    "pensarlo",
+    "producto",
+    "publicidad",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤳",
+      "etiqueta": "El feo vende más"
+    },
+    {
+      "tipo": "telefono",
+      "texto": "Oferta exclusiva premium de calidad",
+      "sello": "PUBLICIDAD 😴",
+      "deslizar": true
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Estudio perfecto",
+      "despues": "Celular real",
+      "badge": "SE DETIENEN"
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "Estudio",
+        "valor": 0.8
+      },
+      "b": {
+        "etiqueta": "Celular",
+        "valor": 3.2
+      },
+      "sufijo": "%",
+      "titulo": "Clics",
+      "nota": "Cifras de ejemplo"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✋",
+        "🧑",
+        "📸"
+      ],
+      "letras": [
+        "EN LA MANO",
+        "CLIENTE REAL",
+        "SIN FILTRO"
+      ]
+    },
+    {
+      "tipo": "puzzle",
+      "piezas": [
+        "📱",
+        "⚔️",
+        "🏆"
+      ],
+      "palabra": "PRUÉBALO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 12.17,
+      "texto": "📱 Se siente real",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 18.52,
+      "texto": "📈 3.2% vs 0.8%",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 33.59,
+      "texto": "⚔️ Mismo conjunto",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.0,
+      "emoji": "🤳"
+    },
+    {
+      "start": 6.25,
+      "emoji": "😴"
+    },
+    {
+      "start": 18.52,
+      "emoji": "📈"
+    },
+    {
+      "start": 33.59,
+      "emoji": "🏆"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.42,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.83,
+      "pose": "you"
+    },
+    {
+      "start": 4.25,
+      "pose": "explain"
+    },
+    {
+      "start": 6.25,
+      "pose": "one"
+    },
+    {
+      "start": 8.25,
+      "pose": "idea"
+    },
+    {
+      "start": 10.17,
+      "pose": "excited"
+    },
+    {
+      "start": 11.97,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 13.77,
+      "pose": "smart"
+    },
+    {
+      "start": 15.52,
+      "pose": "two"
+    },
+    {
+      "start": 18.08,
+      "pose": "proud"
+    },
+    {
+      "start": 20.64,
+      "pose": "fistPump"
+    },
+    {
+      "start": 23.03,
+      "pose": "idea"
+    },
+    {
+      "start": 25.96,
+      "pose": "explain"
+    },
+    {
+      "start": 28.88,
+      "pose": "youTilt"
+    },
+    {
+      "start": 31.59,
+      "pose": "three"
+    },
+    {
+      "start": 33.39,
+      "pose": "excited"
+    },
+    {
+      "start": 35.19,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 36.94,
+      "pose": "down"
+    },
+    {
+      "start": 38.07,
+      "pose": "heart"
+    },
+    {
+      "start": 39.2,
+      "pose": "waveBoth"
+    }
+  ]
+}

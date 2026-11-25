@@ -1,0 +1,248 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-17.wav",
+  "lineas": [
+    {
+      "text": "Coca-Cola quitó su nombre de las latas… y puso el tuyo.",
+      "start": 0.0,
+      "duration": 3.788
+    },
+    {
+      "text": "Cambió el logo por nombres comunes: María, José, Ana.",
+      "start": 3.988,
+      "duration": 5.146
+    },
+    {
+      "text": "La gente buscaba la lata con su nombre, le tomaba una foto y la subía a sus redes.",
+      "start": 9.334,
+      "duration": 5.564
+    },
+    {
+      "text": "Publicidad gratis, hecha por los mismos clientes. Y en Estados Unidos, sus ventas subieron por primera vez en más de diez años.",
+      "start": 15.098,
+      "duration": 9.326
+    },
+    {
+      "text": "La lección para tus anuncios: uno que le habla a una persona vende más que uno que le habla a todos.",
+      "start": 24.624,
+      "duration": 7.001
+    },
+    {
+      "text": "En Meta, haz un anuncio por cada tipo de cliente: la mamá, el estudiante, el dueño de negocio.",
+      "start": 31.824,
+      "duration": 7.393
+    },
+    {
+      "text": "Sígueme para más estrategias de marcas grandes que puedes copiar.",
+      "start": 39.417,
+      "duration": 4.284
+    }
+  ],
+  "fin": 45.1,
+  "resaltar": [
+    "anuncio",
+    "anuncios",
+    "buscaba",
+    "cliente",
+    "clientes",
+    "comunes",
+    "estados",
+    "estrategias",
+    "estudiante",
+    "grandes",
+    "lección",
+    "negocio",
+    "nombres",
+    "persona",
+    "primera",
+    "publicidad",
+    "subieron",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🥤",
+      "etiqueta": "Quitó su nombre",
+      "badge": "CASO REAL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🥤",
+        "🥤",
+        "🥤"
+      ],
+      "letras": [
+        "MARÍA",
+        "JOSÉ",
+        "ANA"
+      ]
+    },
+    {
+      "tipo": "telefono",
+      "texto": "¡Encontré la mía! 😍 #MiNombre",
+      "sello": "VIRAL 🔥"
+    },
+    {
+      "tipo": "stat",
+      "valor": 10,
+      "prefijo": "+",
+      "sufijo": " años",
+      "etiqueta": "primera subida de ventas en EE. UU.",
+      "icono": "📈",
+      "sube": true
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Le hablo a todos",
+      "despues": "Le hablo a TI",
+      "badge": "LA LECCIÓN"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "👩‍👧",
+        "🎓",
+        "🏪"
+      ],
+      "letras": [
+        "MAMÁ",
+        "ESTUDIANTE",
+        "NEGOCIO"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 11.49,
+      "texto": "🥤 Nombres en latas",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 19.1,
+      "texto": "📸 Publicidad gratis",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 34.82,
+      "texto": "🎯 1 anuncio x cliente",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.0,
+      "emoji": "🥤"
+    },
+    {
+      "start": 11.33,
+      "emoji": "📸"
+    },
+    {
+      "start": 19.1,
+      "emoji": "📈"
+    },
+    {
+      "start": 34.82,
+      "emoji": "🎯"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.33,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.65,
+      "pose": "you"
+    },
+    {
+      "start": 3.99,
+      "pose": "explain"
+    },
+    {
+      "start": 5.79,
+      "pose": "one"
+    },
+    {
+      "start": 7.59,
+      "pose": "idea"
+    },
+    {
+      "start": 9.33,
+      "pose": "excited"
+    },
+    {
+      "start": 11.28,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 13.23,
+      "pose": "smart"
+    },
+    {
+      "start": 15.1,
+      "pose": "two"
+    },
+    {
+      "start": 18.36,
+      "pose": "proud"
+    },
+    {
+      "start": 21.63,
+      "pose": "fistPump"
+    },
+    {
+      "start": 24.62,
+      "pose": "idea"
+    },
+    {
+      "start": 27.07,
+      "pose": "explain"
+    },
+    {
+      "start": 29.52,
+      "pose": "youTilt"
+    },
+    {
+      "start": 31.82,
+      "pose": "three"
+    },
+    {
+      "start": 34.41,
+      "pose": "excited"
+    },
+    {
+      "start": 37.0,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 39.42,
+      "pose": "down"
+    },
+    {
+      "start": 40.92,
+      "pose": "heart"
+    },
+    {
+      "start": 42.42,
+      "pose": "waveBoth"
+    }
+  ]
+}

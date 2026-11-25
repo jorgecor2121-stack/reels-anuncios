@@ -1,0 +1,253 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-20.wav",
+  "lineas": [
+    {
+      "text": "Doña Carmen gastó diez mil pesos en publicidad… y vendió dos bizcochos.",
+      "start": 0.0,
+      "duration": 5.564
+    },
+    {
+      "text": "Le dio a promocionar a una foto, con todos los intereses, y esperó.",
+      "start": 5.764,
+      "duration": 5.068
+    },
+    {
+      "text": "Los mensajes no llegaban. Y los que llegaban preguntaban el precio y desaparecían.",
+      "start": 11.032,
+      "duration": 5.956
+    },
+    {
+      "text": "Entonces cambió tres cosas: objetivo mensajes, cuatro anuncios distintos en un solo conjunto, y responder en menos de cinco minutos.",
+      "start": 17.188,
+      "duration": 10.684
+    },
+    {
+      "text": "Con los mismos diez mil pesos, le llegaron sesenta pedidos.",
+      "start": 28.072,
+      "duration": 4.519
+    },
+    {
+      "text": "No era su bizcocho. Era cómo lo estaba anunciando.",
+      "start": 32.791,
+      "duration": 3.971
+    },
+    {
+      "text": "Si a tu negocio le pasa lo de doña Carmen, sígueme.",
+      "start": 36.962,
+      "duration": 3.396
+    }
+  ],
+  "fin": 41.76,
+  "resaltar": [
+    "anunciando",
+    "anuncios",
+    "bizcocho",
+    "bizcochos",
+    "conjunto",
+    "desaparecían",
+    "distintos",
+    "entonces",
+    "intereses",
+    "llegaban",
+    "llegaron",
+    "mensajes",
+    "minutos",
+    "negocio",
+    "objetivo",
+    "pedidos",
+    "preguntaban",
+    "promocionar",
+    "publicidad",
+    "responder",
+    "sesenta",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "stat",
+      "valor": 10000,
+      "prefijo": "RD$",
+      "etiqueta": "en publicidad → 2 bizcochos",
+      "icono": "🎂",
+      "badge": "HISTORIA DE EJEMPLO"
+    },
+    {
+      "tipo": "telefono",
+      "texto": "Promocionar publicación",
+      "sello": "😬"
+    },
+    {
+      "tipo": "embudo",
+      "pasos": [
+        {
+          "etiqueta": "Mensajes",
+          "valor": 20
+        },
+        {
+          "etiqueta": "Preguntan precio",
+          "valor": 12
+        },
+        {
+          "etiqueta": "Compran",
+          "valor": 2
+        }
+      ],
+      "badge": "ANTES"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Objetivo: Mensajes",
+        "4 anuncios, 1 conjunto",
+        "Responder en < 5 min"
+      ]
+    },
+    {
+      "tipo": "stat",
+      "valor": 60,
+      "etiqueta": "pedidos",
+      "icono": "🎂",
+      "sube": true,
+      "badge": "DESPUÉS"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "El bizcocho",
+      "despues": "Cómo lo anuncias",
+      "badge": "EL PROBLEMA"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 3.0,
+      "texto": "😬 RD$10,000",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 23.19,
+      "texto": "⏱️ < 5 minutos",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 30.07,
+      "texto": "🎂 60 pedidos",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.0,
+      "emoji": "😱"
+    },
+    {
+      "start": 13.03,
+      "emoji": "👻"
+    },
+    {
+      "start": 30.07,
+      "emoji": "🎉"
+    },
+    {
+      "start": 34.79,
+      "emoji": "🔥"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "ohNo"
+    },
+    {
+      "start": 1.95,
+      "pose": "facepalm"
+    },
+    {
+      "start": 3.89,
+      "pose": "sad"
+    },
+    {
+      "start": 5.76,
+      "pose": "shrug"
+    },
+    {
+      "start": 7.54,
+      "pose": "wagNo"
+    },
+    {
+      "start": 9.31,
+      "pose": "skeptic"
+    },
+    {
+      "start": 11.03,
+      "pose": "three"
+    },
+    {
+      "start": 13.12,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 15.2,
+      "pose": "smart"
+    },
+    {
+      "start": 17.19,
+      "pose": "one"
+    },
+    {
+      "start": 20.93,
+      "pose": "two"
+    },
+    {
+      "start": 24.67,
+      "pose": "explain"
+    },
+    {
+      "start": 28.07,
+      "pose": "three"
+    },
+    {
+      "start": 29.65,
+      "pose": "idea"
+    },
+    {
+      "start": 31.24,
+      "pose": "you"
+    },
+    {
+      "start": 32.79,
+      "pose": "explain"
+    },
+    {
+      "start": 34.18,
+      "pose": "smart"
+    },
+    {
+      "start": 35.57,
+      "pose": "proud"
+    },
+    {
+      "start": 36.96,
+      "pose": "down"
+    },
+    {
+      "start": 38.15,
+      "pose": "heart"
+    },
+    {
+      "start": 39.34,
+      "pose": "waveBoth"
+    }
+  ]
+}

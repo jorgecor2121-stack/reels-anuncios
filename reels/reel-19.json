@@ -1,0 +1,247 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-19.wav",
+  "lineas": [
+    {
+      "text": "¡Te pagué cinco mil pesos de publicidad y no vendí nada!",
+      "start": 0.0,
+      "duration": 4.049
+    },
+    {
+      "text": "Eso lo escucho mucho. Pero el problema casi nunca es la publicidad.",
+      "start": 4.249,
+      "duration": 4.989
+    },
+    {
+      "text": "Son tres números que nadie te explicó.",
+      "start": 9.438,
+      "duration": 3.082
+    },
+    {
+      "text": "Uno: cuánto te cuesta cada mensaje. Dos: cuántos de cada cien te compran.",
+      "start": 12.721,
+      "duration": 6.766
+    },
+    {
+      "text": "Y tres: cuánto ganas en cada venta.",
+      "start": 19.687,
+      "duration": 3.631
+    },
+    {
+      "text": "Si cada mensaje cuesta veinte pesos, te compran cinco de cada cien, y ganas quinientos por venta… cada cien mensajes te costaron dos mil, y te dejaron dos mil quinientos.",
+      "start": 23.518,
+      "duration": 12.121
+    },
+    {
+      "text": "Guárdalo y revisa tus tres números hoy. Sígueme para más.",
+      "start": 35.838,
+      "duration": 4.362
+    }
+  ],
+  "fin": 41.6,
+  "resaltar": [
+    "compran",
+    "costaron",
+    "cuántos",
+    "dejaron",
+    "escucho",
+    "explicó",
+    "guárdalo",
+    "mensaje",
+    "mensajes",
+    "números",
+    "problema",
+    "publicidad",
+    "quinientos",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "NO VENDÍ"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤔",
+      "etiqueta": "¿Fue la publicidad?",
+      "badge": "CASI NUNCA"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "💬",
+        "📊",
+        "💰"
+      ],
+      "letras": [
+        "COSTO X MSJ",
+        "% QUE COMPRA",
+        "GANANCIA"
+      ]
+    },
+    {
+      "tipo": "stat",
+      "valor": 20,
+      "prefijo": "RD$",
+      "etiqueta": "por mensaje",
+      "icono": "💬",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "stat",
+      "valor": 500,
+      "prefijo": "RD$",
+      "etiqueta": "ganas por venta",
+      "icono": "💰"
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "Te costó",
+        "valor": 2000
+      },
+      "b": {
+        "etiqueta": "Te dejó",
+        "valor": 2500
+      },
+      "titulo": "Cada 100 mensajes",
+      "nota": "Cifras de ejemplo"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Costo por mensaje",
+        "% que compra",
+        "Ganancia por venta"
+      ]
+    }
+  ],
+  "chips": [
+    {
+      "start": 6.25,
+      "texto": "🙅 No es la publicidad",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 15.72,
+      "texto": "💬 RD$20 x mensaje",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 28.52,
+      "texto": "✅ +RD$500",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 0.8,
+      "emoji": "😤"
+    },
+    {
+      "start": 10.94,
+      "emoji": "🤔"
+    },
+    {
+      "start": 29.52,
+      "emoji": "💰"
+    },
+    {
+      "start": 36.84,
+      "emoji": "📌"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "ohNo"
+    },
+    {
+      "start": 1.42,
+      "pose": "facepalm"
+    },
+    {
+      "start": 2.83,
+      "pose": "sad"
+    },
+    {
+      "start": 4.25,
+      "pose": "shrug"
+    },
+    {
+      "start": 6.0,
+      "pose": "wagNo"
+    },
+    {
+      "start": 7.74,
+      "pose": "skeptic"
+    },
+    {
+      "start": 9.44,
+      "pose": "three"
+    },
+    {
+      "start": 10.52,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 11.6,
+      "pose": "smart"
+    },
+    {
+      "start": 12.72,
+      "pose": "one"
+    },
+    {
+      "start": 15.09,
+      "pose": "two"
+    },
+    {
+      "start": 17.46,
+      "pose": "explain"
+    },
+    {
+      "start": 19.69,
+      "pose": "three"
+    },
+    {
+      "start": 20.96,
+      "pose": "idea"
+    },
+    {
+      "start": 22.23,
+      "pose": "you"
+    },
+    {
+      "start": 23.52,
+      "pose": "explain"
+    },
+    {
+      "start": 27.76,
+      "pose": "smart"
+    },
+    {
+      "start": 32.0,
+      "pose": "proud"
+    },
+    {
+      "start": 35.84,
+      "pose": "down"
+    },
+    {
+      "start": 37.36,
+      "pose": "heart"
+    },
+    {
+      "start": 38.89,
+      "pose": "waveBoth"
+    }
+  ]
+}

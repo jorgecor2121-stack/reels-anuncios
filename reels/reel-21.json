@@ -1,0 +1,233 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-21.wav",
+  "lineas": [
+    {
+      "text": "¿Cuánto tienes que invertir en anuncios para vender treinta pizzas al día?",
+      "start": 0.0,
+      "duration": 4.206
+    },
+    {
+      "text": "Haz esta cuenta y deja de adivinar.",
+      "start": 4.406,
+      "duration": 2.926
+    },
+    {
+      "text": "Uno: cuánto te cuesta cada mensaje. Digamos, quince pesos.",
+      "start": 7.531,
+      "duration": 5.564
+    },
+    {
+      "text": "Dos: cuántos de cada diez te compran. Digamos, tres.",
+      "start": 13.296,
+      "duration": 5.068
+    },
+    {
+      "text": "Para treinta pizzas necesitas cien mensajes al día. Cien por quince: mil quinientos pesos diarios.",
+      "start": 18.563,
+      "duration": 7.393
+    },
+    {
+      "text": "Ahora compáralo con lo que ganas en esas treinta pizzas. Si te deja más, sube el presupuesto. Si no, mejora el anuncio primero.",
+      "start": 26.156,
+      "duration": 9.091
+    },
+    {
+      "text": "Guárdalo, haz tu cuenta hoy, y sígueme para más.",
+      "start": 35.447,
+      "duration": 3.788
+    }
+  ],
+  "fin": 40.63,
+  "resaltar": [
+    "adivinar",
+    "anuncio",
+    "anuncios",
+    "compran",
+    "compáralo",
+    "cuántos",
+    "diarios",
+    "digamos",
+    "guárdalo",
+    "invertir",
+    "mensaje",
+    "mensajes",
+    "necesitas",
+    "presupuesto",
+    "primero",
+    "quinientos",
+    "sígueme",
+    "treinta"
+  ],
+  "escenas": [
+    {
+      "tipo": "contador",
+      "numero": "30",
+      "etiqueta": "pizzas al día 🍕"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧮",
+      "etiqueta": "Haz la cuenta"
+    },
+    {
+      "tipo": "stat",
+      "valor": 15,
+      "prefijo": "RD$",
+      "etiqueta": "por mensaje",
+      "icono": "💬",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "dona",
+      "porcentaje": 30,
+      "etiqueta": "te compran (3 de 10)"
+    },
+    {
+      "tipo": "stat",
+      "valor": 1500,
+      "prefijo": "RD$",
+      "etiqueta": "al día (100 mensajes)",
+      "icono": "📅"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "¿Ganas más? Sube el presupuesto",
+        "¿No? Mejora el anuncio primero"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 10.53,
+      "texto": "💬 RD$15",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 15.3,
+      "texto": "🛒 3 de 10",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 22.56,
+      "texto": "📅 RD$1,500/día",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "🍕"
+    },
+    {
+      "start": 5.41,
+      "emoji": "🧮"
+    },
+    {
+      "start": 22.56,
+      "emoji": "💸"
+    },
+    {
+      "start": 30.16,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.47,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.94,
+      "pose": "you"
+    },
+    {
+      "start": 4.41,
+      "pose": "explain"
+    },
+    {
+      "start": 5.43,
+      "pose": "one"
+    },
+    {
+      "start": 6.45,
+      "pose": "idea"
+    },
+    {
+      "start": 7.53,
+      "pose": "excited"
+    },
+    {
+      "start": 9.48,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 11.43,
+      "pose": "smart"
+    },
+    {
+      "start": 13.3,
+      "pose": "two"
+    },
+    {
+      "start": 15.07,
+      "pose": "proud"
+    },
+    {
+      "start": 16.84,
+      "pose": "fistPump"
+    },
+    {
+      "start": 18.56,
+      "pose": "idea"
+    },
+    {
+      "start": 21.15,
+      "pose": "explain"
+    },
+    {
+      "start": 23.74,
+      "pose": "youTilt"
+    },
+    {
+      "start": 26.16,
+      "pose": "three"
+    },
+    {
+      "start": 29.34,
+      "pose": "excited"
+    },
+    {
+      "start": 32.52,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 35.45,
+      "pose": "down"
+    },
+    {
+      "start": 36.77,
+      "pose": "heart"
+    },
+    {
+      "start": 38.1,
+      "pose": "waveBoth"
+    }
+  ]
+}
