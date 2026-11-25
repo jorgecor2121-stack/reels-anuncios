@@ -16,7 +16,7 @@ const Y = "#FFC93C", R = "#F43F5E", G = "#22C55E", W = "#FFFFFF";
 
 type Palabra = { w: string; s: number; e: number };
 type Linea = { text: string; start: number; duration: number };
-export type EmbudoProps = { words: Palabra[]; lineas: Linea[]; gestos: Segment[]; fin: number; vestimenta: Vestimenta; usuario: string; clave: string[] };
+export type EmbudoProps = { words: Palabra[]; lineas: Linea[]; gestos: Segment[]; fin: number; vestimenta: Vestimenta; usuario: string; clave: string[]; sigue: string; sigueNombre: string };
 
 // bloques (inicio, color de fondo)
 const B = [
@@ -160,12 +160,20 @@ export const ReelEmbudo: React.FC<EmbudoProps> = (p) => {
         ) : null}
         {k === 6 ? (
           <div style={{ width: "100%", textAlign: "center", transform: `scale(${sp(t, 38.2, 12, 160)})` }}>
-            <div style={{ background: "rgba(255,255,255,.08)", border: `3px solid ${G}`, borderRadius: 30, padding: "30px 26px" }}>
-              <div style={{ fontWeight: 900, fontSize: 54, color: W }}>TALLER DE META ADS</div>
-              <div style={{ fontWeight: 800, fontSize: 36, color: Y, marginTop: 6 }}>con @{p.usuario}</div>
-              <div style={{ fontWeight: 600, fontSize: 32, color: "#D1D5DB", marginTop: 14 }}>Si ya inviertes en anuncios</div>
-              <div style={{ marginTop: 22, display: "inline-block", background: G, color: "#05210F", fontWeight: 900, fontSize: 44, padding: "16px 34px", borderRadius: 40, transform: `scale(${1 + Math.sin(t * 7) * 0.03})` }}>💬 Escríbeme por DM</div>
+            <div style={{ fontWeight: 800, fontSize: 40, color: "#D1D5DB", marginBottom: 18 }}>Si ya inviertes en anuncios…</div>
+            <div style={{ background: "#111318", border: `3px solid ${G}`, borderRadius: 30, padding: "28px 26px", display: "flex", alignItems: "center", gap: 22, textAlign: "left", boxShadow: `0 0 50px ${G}55` }}>
+              <div style={{ width: 120, height: 120, borderRadius: 60, padding: 6, background: "linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)", flexShrink: 0 }}>
+                <div style={{ width: "100%", height: "100%", borderRadius: "50%", background: "#1F2937", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 44, color: W }}>LD</div>
+              </div>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontWeight: 900, fontSize: 44, color: W }}>@{p.sigue}</div>
+                <div style={{ fontWeight: 700, fontSize: 30, color: "#9CA3AF" }}>{p.sigueNombre}</div>
+                <div style={{ fontWeight: 700, fontSize: 28, color: Y, marginTop: 4 }}>🎯 Meta Ads y estrategias de ventas</div>
+              </div>
             </div>
+            <div style={{ marginTop: 26, display: "inline-block", background: t > 41.0 ? "#2A2F3A" : G, color: t > 41.0 ? W : "#05210F", fontWeight: 900, fontSize: 48, padding: "16px 44px", borderRadius: 40,
+              transform: `scale(${t > 41.0 ? 0.92 + sp(t, 41.0, 8, 220) * 0.08 : 1 + Math.sin(t * 7) * 0.03})` }}>{t > 41.0 ? "Siguiendo ✓" : "➕ Seguir"}</div>
+            <div style={{ marginTop: 20, fontWeight: 800, fontSize: 36, color: W }}>…y aprende cómo resolverlo</div>
           </div>
         ) : null}
       </div>
@@ -177,6 +185,6 @@ export const ReelEmbudo: React.FC<EmbudoProps> = (p) => {
 
 export const EmbudoComposition = () => (
   <Composition id="ReelEmbudo" component={ReelEmbudo} fps={FPS} width={1080} height={1920} durationInFrames={FPS * 44}
-    defaultProps={{ words: [], lineas: [], gestos: [{ start: 0, pose: "base" }], fin: 44, vestimenta: "denim", usuario: "jorgealmonteia", clave: [] } as EmbudoProps}
+    defaultProps={{ words: [], lineas: [], gestos: [{ start: 0, pose: "base" }], fin: 44, vestimenta: "denim", usuario: "jorgealmonteia", clave: [], sigue: "", sigueNombre: "" } as EmbudoProps}
     calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.fin * FPS) })} />
 );
