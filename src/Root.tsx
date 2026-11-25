@@ -23,6 +23,7 @@ import { VentaAutoComposition } from "./VentaAuto";
 import { MarketplaceComposition } from "./Marketplace";
 import { KabodComposition } from "./Kabod";
 import { Kabod2Composition } from "./Kabod2";
+import { EmbudoComposition } from "./Embudo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -53,6 +54,7 @@ export const RemotionRoot: React.FC = () => {
       <MarketplaceComposition />
       <KabodComposition />
       <Kabod2Composition />
+      <EmbudoComposition />
     </>
   );
 };

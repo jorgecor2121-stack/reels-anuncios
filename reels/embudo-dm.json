@@ -1,0 +1,709 @@
+{
+ "words": [
+  {
+   "w": "100",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "personas",
+   "s": 0.26,
+   "e": 0.8
+  },
+  {
+   "w": "le",
+   "s": 0.8,
+   "e": 1.02
+  },
+  {
+   "w": "escriben",
+   "s": 1.02,
+   "e": 1.42
+  },
+  {
+   "w": "a",
+   "s": 1.42,
+   "e": 1.58
+  },
+  {
+   "w": "tu",
+   "s": 1.58,
+   "e": 1.66
+  },
+  {
+   "w": "negocio",
+   "s": 1.66,
+   "e": 2.06
+  },
+  {
+   "w": "por",
+   "s": 2.06,
+   "e": 2.28
+  },
+  {
+   "w": "el",
+   "s": 2.28,
+   "e": 2.4
+  },
+  {
+   "w": "anuncio,",
+   "s": 2.4,
+   "e": 2.82
+  },
+  {
+   "w": "¿cuántas",
+   "s": 3.3,
+   "e": 3.7
+  },
+  {
+   "w": "compran?",
+   "s": 3.7,
+   "e": 4.18
+  },
+  {
+   "w": "Si",
+   "s": 4.6,
+   "e": 4.74
+  },
+  {
+   "w": "no",
+   "s": 4.74,
+   "e": 4.88
+  },
+  {
+   "w": "sabes",
+   "s": 4.88,
+   "e": 5.18
+  },
+  {
+   "w": "el",
+   "s": 5.18,
+   "e": 5.34
+  },
+  {
+   "w": "número,",
+   "s": 5.34,
+   "e": 5.76
+  },
+  {
+   "w": "ya",
+   "s": 6.1,
+   "e": 6.26
+  },
+  {
+   "w": "encontraste",
+   "s": 6.26,
+   "e": 6.94
+  },
+  {
+   "w": "tu",
+   "s": 6.94,
+   "e": 7.08
+  },
+  {
+   "w": "primera",
+   "s": 7.08,
+   "e": 7.48
+  },
+  {
+   "w": "fuga.",
+   "s": 7.48,
+   "e": 7.94
+  },
+  {
+   "w": "Casi",
+   "s": 8.46,
+   "e": 8.72
+  },
+  {
+   "w": "todas",
+   "s": 8.72,
+   "e": 9.06
+  },
+  {
+   "w": "las",
+   "s": 9.06,
+   "e": 9.34
+  },
+  {
+   "w": "cuentas",
+   "s": 9.34,
+   "e": 9.74
+  },
+  {
+   "w": "que",
+   "s": 9.74,
+   "e": 9.9
+  },
+  {
+   "w": "reviso",
+   "s": 9.9,
+   "e": 10.36
+  },
+  {
+   "w": "tienen",
+   "s": 10.36,
+   "e": 10.7
+  },
+  {
+   "w": "buenos",
+   "s": 10.7,
+   "e": 11.14
+  },
+  {
+   "w": "mensajes",
+   "s": 11.14,
+   "e": 11.72
+  },
+  {
+   "w": "y",
+   "s": 11.72,
+   "e": 12.38
+  },
+  {
+   "w": "se",
+   "s": 12.38,
+   "e": 12.5
+  },
+  {
+   "w": "rompen",
+   "s": 12.5,
+   "e": 12.98
+  },
+  {
+   "w": "entre",
+   "s": 12.98,
+   "e": 13.38
+  },
+  {
+   "w": "el",
+   "s": 13.38,
+   "e": 13.56
+  },
+  {
+   "w": "precio",
+   "s": 13.56,
+   "e": 13.92
+  },
+  {
+   "w": "y",
+   "s": 13.92,
+   "e": 14.3
+  },
+  {
+   "w": "el",
+   "s": 14.3,
+   "e": 14.44
+  },
+  {
+   "w": "pago.",
+   "s": 14.44,
+   "e": 14.82
+  },
+  {
+   "w": "La",
+   "s": 15.22,
+   "e": 15.4
+  },
+  {
+   "w": "gente",
+   "s": 15.4,
+   "e": 15.56
+  },
+  {
+   "w": "pregunta,",
+   "s": 15.56,
+   "e": 16.12
+  },
+  {
+   "w": "le",
+   "s": 16.56,
+   "e": 16.64
+  },
+  {
+   "w": "contestas",
+   "s": 16.64,
+   "e": 17.14
+  },
+  {
+   "w": "tarde",
+   "s": 17.14,
+   "e": 17.58
+  },
+  {
+   "w": "y",
+   "s": 17.58,
+   "e": 18.24
+  },
+  {
+   "w": "se",
+   "s": 18.24,
+   "e": 18.4
+  },
+  {
+   "w": "va.",
+   "s": 18.4,
+   "e": 18.62
+  },
+  {
+   "w": "Y",
+   "s": 19.14,
+   "e": 19.28
+  },
+  {
+   "w": "tú",
+   "s": 19.28,
+   "e": 19.46
+  },
+  {
+   "w": "sigues",
+   "s": 19.46,
+   "e": 19.86
+  },
+  {
+   "w": "subiendo",
+   "s": 19.86,
+   "e": 20.28
+  },
+  {
+   "w": "el",
+   "s": 20.28,
+   "e": 20.42
+  },
+  {
+   "w": "presupuesto,",
+   "s": 20.42,
+   "e": 21.12
+  },
+  {
+   "w": "pensando",
+   "s": 21.4,
+   "e": 21.8
+  },
+  {
+   "w": "que",
+   "s": 21.8,
+   "e": 22.04
+  },
+  {
+   "w": "el",
+   "s": 22.04,
+   "e": 22.16
+  },
+  {
+   "w": "problema",
+   "s": 22.16,
+   "e": 22.62
+  },
+  {
+   "w": "es",
+   "s": 22.62,
+   "e": 23.04
+  },
+  {
+   "w": "el",
+   "s": 23.04,
+   "e": 23.18
+  },
+  {
+   "w": "anuncio.",
+   "s": 23.18,
+   "e": 23.7
+  },
+  {
+   "w": "Pasar",
+   "s": 23.7,
+   "e": 24.68
+  },
+  {
+   "w": "de",
+   "s": 24.68,
+   "e": 24.84
+  },
+  {
+   "w": "dos",
+   "s": 24.84,
+   "e": 25.16
+  },
+  {
+   "w": "a",
+   "s": 25.16,
+   "e": 25.48
+  },
+  {
+   "w": "cinco",
+   "s": 25.48,
+   "e": 25.82
+  },
+  {
+   "w": "ventas",
+   "s": 25.82,
+   "e": 26.32
+  },
+  {
+   "w": "por",
+   "s": 26.32,
+   "e": 26.52
+  },
+  {
+   "w": "cada",
+   "s": 26.52,
+   "e": 26.76
+  },
+  {
+   "w": "100",
+   "s": 26.76,
+   "e": 27.12
+  },
+  {
+   "w": "mensajes",
+   "s": 27.12,
+   "e": 27.76
+  },
+  {
+   "w": "es",
+   "s": 27.76,
+   "e": 28.16
+  },
+  {
+   "w": "la",
+   "s": 28.16,
+   "e": 28.28
+  },
+  {
+   "w": "diferencia",
+   "s": 28.28,
+   "e": 28.68
+  },
+  {
+   "w": "entre",
+   "s": 28.68,
+   "e": 29.02
+  },
+  {
+   "w": "perder",
+   "s": 29.02,
+   "e": 29.44
+  },
+  {
+   "w": "dinero",
+   "s": 29.44,
+   "e": 29.88
+  },
+  {
+   "w": "y",
+   "s": 29.88,
+   "e": 30.28
+  },
+  {
+   "w": "escalar.",
+   "s": 30.28,
+   "e": 30.8
+  },
+  {
+   "w": "En",
+   "s": 31.24,
+   "e": 31.6
+  },
+  {
+   "w": "mi",
+   "s": 31.6,
+   "e": 31.74
+  },
+  {
+   "w": "taller",
+   "s": 31.74,
+   "e": 31.94
+  },
+  {
+   "w": "de",
+   "s": 31.94,
+   "e": 32.2
+  },
+  {
+   "w": "Meta",
+   "s": 32.2,
+   "e": 32.46
+  },
+  {
+   "w": "Ads",
+   "s": 32.46,
+   "e": 32.88
+  },
+  {
+   "w": "te",
+   "s": 32.88,
+   "e": 33.14
+  },
+  {
+   "w": "enseño",
+   "s": 33.14,
+   "e": 33.62
+  },
+  {
+   "w": "a",
+   "s": 33.62,
+   "e": 33.7
+  },
+  {
+   "w": "encontrar",
+   "s": 33.7,
+   "e": 34.04
+  },
+  {
+   "w": "dónde",
+   "s": 34.04,
+   "e": 34.62
+  },
+  {
+   "w": "se",
+   "s": 34.62,
+   "e": 34.88
+  },
+  {
+   "w": "te",
+   "s": 34.88,
+   "e": 35.02
+  },
+  {
+   "w": "cae",
+   "s": 35.02,
+   "e": 35.3
+  },
+  {
+   "w": "la",
+   "s": 35.3,
+   "e": 35.4
+  },
+  {
+   "w": "gente,",
+   "s": 35.4,
+   "e": 35.78
+  },
+  {
+   "w": "con",
+   "s": 36.14,
+   "e": 36.36
+  },
+  {
+   "w": "el",
+   "s": 36.36,
+   "e": 36.54
+  },
+  {
+   "w": "mismo",
+   "s": 36.54,
+   "e": 37.0
+  },
+  {
+   "w": "presupuesto.",
+   "s": 37.0,
+   "e": 37.74
+  },
+  {
+   "w": "Si",
+   "s": 38.24,
+   "e": 38.4
+  },
+  {
+   "w": "ya",
+   "s": 38.4,
+   "e": 38.6
+  },
+  {
+   "w": "inviertes",
+   "s": 38.6,
+   "e": 39.1
+  },
+  {
+   "w": "en",
+   "s": 39.1,
+   "e": 39.24
+  },
+  {
+   "w": "anuncios,",
+   "s": 39.24,
+   "e": 40.0
+  },
+  {
+   "w": "escríbeme",
+   "s": 40.12,
+   "e": 40.78
+  },
+  {
+   "w": "y",
+   "s": 40.78,
+   "e": 41.06
+  },
+  {
+   "w": "te",
+   "s": 41.06,
+   "e": 41.2
+  },
+  {
+   "w": "digo",
+   "s": 41.2,
+   "e": 41.42
+  },
+  {
+   "w": "por",
+   "s": 41.42,
+   "e": 41.68
+  },
+  {
+   "w": "dónde",
+   "s": 41.68,
+   "e": 41.96
+  },
+  {
+   "w": "empezar.",
+   "s": 41.96,
+   "e": 42.36
+  }
+ ],
+ "lineas": [
+  {
+   "text": "Cien personas le escriben a tu negocio por el anuncio. ¿Cuántas compran?",
+   "start": 0.0,
+   "duration": 4.519
+  },
+  {
+   "text": "Si no sabes el número, ya encontraste tu primera fuga.",
+   "start": 4.639,
+   "duration": 3.788
+  },
+  {
+   "text": "Casi todas las cuentas que reviso tienen buenos mensajes, y se rompen entre el precio y el pago. La gente pregunta, le contestas tarde… y se va.",
+   "start": 8.547,
+   "duration": 10.606
+  },
+  {
+   "text": "Y tú sigues subiendo el presupuesto, pensando que el problema es el anuncio.",
+   "start": 19.273,
+   "duration": 5.068
+  },
+  {
+   "text": "Pasar de dos a cinco ventas por cada cien mensajes es la diferencia entre perder dinero y escalar.",
+   "start": 24.46,
+   "duration": 7.079
+  },
+  {
+   "text": "En mi taller de Meta Ads te enseño a encontrar dónde se te cae la gente, con el mismo presupuesto.",
+   "start": 31.66,
+   "duration": 6.687
+  },
+  {
+   "text": "Si ya inviertes en anuncios, escríbeme y te digo por dónde empezar.",
+   "start": 38.467,
+   "duration": 4.519
+  }
+ ],
+ "gestos": [
+  {
+   "start": 0.0,
+   "pose": "you"
+  },
+  {
+   "start": 1.58,
+   "pose": "thinkUp"
+  },
+  {
+   "start": 3.16,
+   "pose": "doubt"
+  },
+  {
+   "start": 4.64,
+   "pose": "ohNo"
+  },
+  {
+   "start": 5.96,
+   "pose": "oneRaised"
+  },
+  {
+   "start": 7.29,
+   "pose": "you"
+  },
+  {
+   "start": 8.55,
+   "pose": "explain"
+  },
+  {
+   "start": 12.26,
+   "pose": "skeptic"
+  },
+  {
+   "start": 15.97,
+   "pose": "facepalm"
+  },
+  {
+   "start": 19.27,
+   "pose": "shrug"
+  },
+  {
+   "start": 21.05,
+   "pose": "wagNo"
+  },
+  {
+   "start": 22.82,
+   "pose": "doubt"
+  },
+  {
+   "start": 24.46,
+   "pose": "idea"
+  },
+  {
+   "start": 26.94,
+   "pose": "excited"
+  },
+  {
+   "start": 29.42,
+   "pose": "fistPump"
+  },
+  {
+   "start": 31.66,
+   "pose": "proud"
+  },
+  {
+   "start": 34.0,
+   "pose": "explain"
+  },
+  {
+   "start": 36.34,
+   "pose": "thumbsUp"
+  },
+  {
+   "start": 38.47,
+   "pose": "you"
+  },
+  {
+   "start": 40.05,
+   "pose": "heart"
+  },
+  {
+   "start": 41.63,
+   "pose": "waveBoth"
+  }
+ ],
+ "fin": 43.6,
+ "vestimenta": "denim",
+ "usuario": "jorgealmonteia",
+ "clave": [
+  "100",
+  "compran",
+  "número",
+  "fuga",
+  "mensajes",
+  "precio",
+  "pago",
+  "tarde",
+  "va",
+  "presupuesto",
+  "anuncio",
+  "cinco",
+  "escalar",
+  "taller",
+  "cae",
+  "mismo",
+  "escríbeme"
+ ]
+}
