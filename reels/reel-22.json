@@ -1,0 +1,238 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-22.wav",
+  "lineas": [
+    {
+      "text": "¡Anunciar tu salón de belleza cuesta nueve mil pesos al mes… y pierdes dinero si no consigues cuatro clientas nuevas por semana!",
+      "start": 0.0,
+      "duration": 8.124
+    },
+    {
+      "text": "Antes de darle a \"Promocionar\", haz esta cuenta.",
+      "start": 8.274,
+      "duration": 3.239
+    },
+    {
+      "text": "Trescientos pesos diarios en Meta te pueden traer unos veinte mensajes al día. Es un ejemplo.",
+      "start": 11.663,
+      "duration": 6.269
+    },
+    {
+      "text": "Pero el número que decide si ganas… no es ese.",
+      "start": 18.083,
+      "duration": 3.396
+    },
+    {
+      "text": "Uno: cuántas agendan, digamos dos de cada diez. Dos: lo que te deja cada clienta, unos mil doscientos pesos. Y tres: cuántas veces vuelve. Si vuelve tres veces al año, esa clienta vale tres mil seiscientos.",
+      "start": 21.629,
+      "duration": 16.666
+    },
+    {
+      "text": "Y aquí está lo que casi nadie calcula: no pagas por un servicio, ¡pagas por una clienta que vuelve!",
+      "start": 38.445,
+      "duration": 7.471
+    },
+    {
+      "text": "Con cuatro a la semana, recuperas la publicidad en el primer mes. Guárdalo, haz tu cuenta, ¡y sígueme para más números de negocio!",
+      "start": 46.066,
+      "duration": 9.169
+    }
+  ],
+  "fin": 56.59,
+  "resaltar": [
+    "salón",
+    "belleza",
+    "nueve",
+    "pierdes",
+    "cuatro",
+    "clientas",
+    "Promocionar",
+    "cuenta",
+    "Trescientos",
+    "veinte",
+    "ejemplo",
+    "número",
+    "ganas",
+    "agendan",
+    "doscientos",
+    "vuelve",
+    "seiscientos",
+    "nadie",
+    "clienta",
+    "recuperas",
+    "Guárdalo",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "stat",
+      "valor": 9000,
+      "prefijo": "RD$",
+      "etiqueta": "al mes en anuncios",
+      "icono": "💇‍♀️",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧮",
+      "etiqueta": "Haz la cuenta"
+    },
+    {
+      "tipo": "contador",
+      "numero": "20",
+      "etiqueta": "mensajes al día 💬"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤔",
+      "etiqueta": "No es ese"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Agendan 2 de 10",
+        "Te deja RD$1,200",
+        "Vuelve 3 veces al año"
+      ]
+    },
+    {
+      "tipo": "stat",
+      "valor": 3600,
+      "prefijo": "RD$",
+      "etiqueta": "vale cada clienta",
+      "icono": "💖"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 13.54,
+      "texto": "💬 RD$300/día",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 23.3,
+      "texto": "📅 2 de 10",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 34.13,
+      "texto": "💖 RD$3,600",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "💇‍♀️"
+    },
+    {
+      "start": 9.25,
+      "emoji": "🧮"
+    },
+    {
+      "start": 34.96,
+      "emoji": "💸"
+    },
+    {
+      "start": 43.67,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.84,
+      "pose": "ohNo"
+    },
+    {
+      "start": 5.69,
+      "pose": "you"
+    },
+    {
+      "start": 8.27,
+      "pose": "explain"
+    },
+    {
+      "start": 9.41,
+      "pose": "one"
+    },
+    {
+      "start": 10.54,
+      "pose": "idea"
+    },
+    {
+      "start": 11.66,
+      "pose": "smart"
+    },
+    {
+      "start": 13.86,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 16.05,
+      "pose": "excited"
+    },
+    {
+      "start": 18.08,
+      "pose": "skeptic"
+    },
+    {
+      "start": 19.27,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 20.46,
+      "pose": "youTilt"
+    },
+    {
+      "start": 21.63,
+      "pose": "one"
+    },
+    {
+      "start": 27.46,
+      "pose": "two"
+    },
+    {
+      "start": 33.3,
+      "pose": "three"
+    },
+    {
+      "start": 38.45,
+      "pose": "idea"
+    },
+    {
+      "start": 41.06,
+      "pose": "love"
+    },
+    {
+      "start": 43.67,
+      "pose": "proud"
+    },
+    {
+      "start": 46.07,
+      "pose": "fistPump"
+    },
+    {
+      "start": 49.28,
+      "pose": "heart"
+    },
+    {
+      "start": 52.48,
+      "pose": "waveBoth"
+    }
+  ]
+}
