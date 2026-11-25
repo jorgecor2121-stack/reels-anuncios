@@ -1,0 +1,239 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-23.wav",
+  "lineas": [
+    {
+      "text": "¡Los tres números más importantes de tu anuncio son estos… y ninguno es \"me gusta\"!",
+      "start": 0.0,
+      "duration": 5.878
+    },
+    {
+      "text": "Si inviertes en Meta y no los revisas, estás manejando con los ojos cerrados.",
+      "start": 6.028,
+      "duration": 5.564
+    },
+    {
+      "text": "Número uno: el costo por mensaje. Cuánto pagas para que alguien te escriba.",
+      "start": 11.742,
+      "duration": 5.642
+    },
+    {
+      "text": "Pero el segundo es el que más dinero te está costando…",
+      "start": 17.534,
+      "duration": 3.553
+    },
+    {
+      "text": "Número dos: cuántos de cada diez que te escriben te compran. Y número tres: cuánto te deja cada venta.",
+      "start": 21.237,
+      "duration": 8.202
+    },
+    {
+      "text": "Junta los tres y vas a saber algo que tu competencia no sabe: cuánto puedes pagar por un cliente sin perder.",
+      "start": 29.589,
+      "duration": 7.967
+    },
+    {
+      "text": "Ese es tu límite para subir el presupuesto. ¡Guárdalo y sígueme para más!",
+      "start": 37.707,
+      "duration": 5.642
+    }
+  ],
+  "fin": 44.7,
+  "resaltar": [
+    "números",
+    "importantes",
+    "ninguno",
+    "Meta",
+    "cerrados",
+    "costo",
+    "mensaje",
+    "segundo",
+    "dinero",
+    "diez",
+    "compran",
+    "venta",
+    "competencia",
+    "cliente",
+    "perder",
+    "límite",
+    "presupuesto",
+    "Guárdalo",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "👍",
+      "etiqueta": "No son los likes",
+      "badge": "OLVÍDALOS"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "A CIEGAS"
+    },
+    {
+      "tipo": "stat",
+      "valor": 20,
+      "prefijo": "RD$",
+      "etiqueta": "costo por mensaje",
+      "icono": "💬",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "💸",
+      "etiqueta": "El que más cuesta"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "💬",
+        "🛒",
+        "💰"
+      ],
+      "letras": [
+        "COSTO X MSJ",
+        "DE 10, COMPRAN",
+        "GANANCIA"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Adivinar",
+      "despues": "Tu límite por cliente",
+      "badge": "LO QUE SABRÁS"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 13.43,
+      "texto": "💬 Costo x mensaje",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 22.06,
+      "texto": "🛒 De 10, ¿cuántos?",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 26.16,
+      "texto": "💰 Ganancia",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "👍"
+    },
+    {
+      "start": 7.7,
+      "emoji": "🙈"
+    },
+    {
+      "start": 27.8,
+      "emoji": "💸"
+    },
+    {
+      "start": 35.17,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.06,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.11,
+      "pose": "you"
+    },
+    {
+      "start": 6.03,
+      "pose": "explain"
+    },
+    {
+      "start": 7.98,
+      "pose": "skeptic"
+    },
+    {
+      "start": 9.92,
+      "pose": "idea"
+    },
+    {
+      "start": 11.74,
+      "pose": "smart"
+    },
+    {
+      "start": 13.72,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 15.69,
+      "pose": "excited"
+    },
+    {
+      "start": 17.53,
+      "pose": "skeptic"
+    },
+    {
+      "start": 18.78,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 20.02,
+      "pose": "youTilt"
+    },
+    {
+      "start": 21.24,
+      "pose": "one"
+    },
+    {
+      "start": 24.11,
+      "pose": "two"
+    },
+    {
+      "start": 26.98,
+      "pose": "three"
+    },
+    {
+      "start": 29.59,
+      "pose": "idea"
+    },
+    {
+      "start": 32.38,
+      "pose": "love"
+    },
+    {
+      "start": 35.17,
+      "pose": "proud"
+    },
+    {
+      "start": 37.71,
+      "pose": "fistPump"
+    },
+    {
+      "start": 39.68,
+      "pose": "heart"
+    },
+    {
+      "start": 41.66,
+      "pose": "waveBoth"
+    }
+  ]
+}

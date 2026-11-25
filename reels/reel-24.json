@@ -1,0 +1,237 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-24.wav",
+  "lineas": [
+    {
+      "text": "¡Si tu negocio vende mientras tú duermes, ya eres más próspero que muchos que facturan el doble!",
+      "start": 0.0,
+      "duration": 6.348
+    },
+    {
+      "text": "Porque la prosperidad no es cuánto entra… es cuánto depende de ti.",
+      "start": 6.498,
+      "duration": 5.329
+    },
+    {
+      "text": "El que vende solo cuando él contesta tiene un empleo, pero con más estrés.",
+      "start": 11.977,
+      "duration": 5.407
+    },
+    {
+      "text": "Y hay una forma de romper eso…",
+      "start": 17.534,
+      "duration": 2.351
+    },
+    {
+      "text": "Uno: un anuncio que trabaja todo el día. Dos: respuestas rápidas listas. Y tres: alguien o algo que cierre la venta por ti.",
+      "start": 20.035,
+      "duration": 10.841
+    },
+    {
+      "text": "Y lo mejor viene después: ese tiempo libre lo usas para pensar en crecer, no en sobrevivir.",
+      "start": 31.026,
+      "duration": 6.844
+    },
+    {
+      "text": "¡Sígueme si quieres un negocio que trabaje para ti!",
+      "start": 38.02,
+      "duration": 3.474
+    }
+  ],
+  "fin": 42.84,
+  "resaltar": [
+    "duermes",
+    "próspero",
+    "doble",
+    "prosperidad",
+    "depende",
+    "contesta",
+    "empleo",
+    "estrés",
+    "romper",
+    "anuncio",
+    "respuestas",
+    "cierre",
+    "venta",
+    "libre",
+    "crecer",
+    "sobrevivir",
+    "Sígueme",
+    "trabaje"
+  ],
+  "escenas": [
+    {
+      "tipo": "amanecer",
+      "palabra": "PRÓSPERO"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Cuánto entra",
+      "despues": "Cuánto depende de ti",
+      "badge": "PROSPERIDAD"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "ESCLAVO DEL CELULAR"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🔓",
+      "etiqueta": "Hay salida"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Anuncio 24/7",
+        "Respuestas rápidas",
+        "Alguien que cierre"
+      ]
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "Sobrevivir",
+        "valor": 20
+      },
+      "b": {
+        "etiqueta": "Crecer",
+        "valor": 80
+      },
+      "sufijo": "%",
+      "titulo": "Tu tiempo",
+      "nota": "Ilustrativo"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 21.12,
+      "texto": "📣 Anuncio 24/7",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 24.37,
+      "texto": "⚡ Respuestas listas",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 28.17,
+      "texto": "🤝 Cierre",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "😴"
+    },
+    {
+      "start": 8.1,
+      "emoji": "💸"
+    },
+    {
+      "start": 28.71,
+      "emoji": "⏰"
+    },
+    {
+      "start": 35.82,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.22,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.44,
+      "pose": "you"
+    },
+    {
+      "start": 6.5,
+      "pose": "explain"
+    },
+    {
+      "start": 8.36,
+      "pose": "skeptic"
+    },
+    {
+      "start": 10.23,
+      "pose": "idea"
+    },
+    {
+      "start": 11.98,
+      "pose": "smart"
+    },
+    {
+      "start": 13.87,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 15.76,
+      "pose": "excited"
+    },
+    {
+      "start": 17.53,
+      "pose": "skeptic"
+    },
+    {
+      "start": 18.36,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 19.18,
+      "pose": "youTilt"
+    },
+    {
+      "start": 20.04,
+      "pose": "one"
+    },
+    {
+      "start": 23.83,
+      "pose": "two"
+    },
+    {
+      "start": 27.62,
+      "pose": "three"
+    },
+    {
+      "start": 31.03,
+      "pose": "idea"
+    },
+    {
+      "start": 33.42,
+      "pose": "love"
+    },
+    {
+      "start": 35.82,
+      "pose": "proud"
+    },
+    {
+      "start": 38.02,
+      "pose": "fistPump"
+    },
+    {
+      "start": 39.24,
+      "pose": "heart"
+    },
+    {
+      "start": 40.45,
+      "pose": "waveBoth"
+    }
+  ]
+}

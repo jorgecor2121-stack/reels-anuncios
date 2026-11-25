@@ -1,0 +1,237 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-27.wav",
+  "lineas": [
+    {
+      "text": "Warren Buffett dice: \"El precio es lo que pagas; el valor es lo que recibes\". ¡Y eso aplica a tus anuncios!",
+      "start": 0.0,
+      "duration": 8.202
+    },
+    {
+      "text": "Mucha gente se queja de que el mensaje le salió caro.",
+      "start": 8.352,
+      "duration": 3.474
+    },
+    {
+      "text": "Pero un mensaje a cincuenta pesos que compra vale más que diez a diez pesos que preguntan y se van.",
+      "start": 11.977,
+      "duration": 6.687
+    },
+    {
+      "text": "Entonces, ¿cómo sabes si estás pagando caro de verdad?",
+      "start": 18.814,
+      "duration": 4.049
+    },
+    {
+      "text": "Uno: mira el costo por venta, no por mensaje. Dos: calcula lo que te deja ese cliente en un año. Tres: compáralo con lo que pagaste por conseguirlo.",
+      "start": 23.013,
+      "duration": 11.807
+    },
+    {
+      "text": "Y cuando haces esa cuenta, cambia todo: dejas de buscar lo barato y empiezas a buscar clientes buenos.",
+      "start": 34.97,
+      "duration": 7.471
+    },
+    {
+      "text": "¡Guárdalo y sígueme para invertir mejor!",
+      "start": 42.591,
+      "duration": 2.926
+    }
+  ],
+  "fin": 46.87,
+  "resaltar": [
+    "Buffett",
+    "precio",
+    "valor",
+    "anuncios",
+    "caro",
+    "cincuenta",
+    "compra",
+    "diez",
+    "verdad",
+    "venta",
+    "año",
+    "pagaste",
+    "barato",
+    "buenos",
+    "Guárdalo",
+    "sígueme",
+    "invertir"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "Precio",
+      "despues": "Valor",
+      "badge": "WARREN BUFFETT"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "¡QUÉ CARO!"
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "10 a RD$10",
+        "valor": 0
+      },
+      "b": {
+        "etiqueta": "1 a RD$50",
+        "valor": 1
+      },
+      "titulo": "Ventas",
+      "nota": "Cifras de ejemplo"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🤔",
+      "etiqueta": "¿Caro de verdad?"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Costo por venta",
+        "Lo que deja en 1 año",
+        "Compáralo"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Lo barato",
+      "despues": "Clientes buenos",
+      "badge": "EL CAMBIO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 24.19,
+      "texto": "🛒 Costo x venta",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 27.74,
+      "texto": "📅 1 año",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 31.87,
+      "texto": "⚖️ Compara",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "💎"
+    },
+    {
+      "start": 9.39,
+      "emoji": "😤"
+    },
+    {
+      "start": 32.46,
+      "emoji": "💰"
+    },
+    {
+      "start": 40.2,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.87,
+      "pose": "ohNo"
+    },
+    {
+      "start": 5.74,
+      "pose": "you"
+    },
+    {
+      "start": 8.35,
+      "pose": "explain"
+    },
+    {
+      "start": 9.57,
+      "pose": "skeptic"
+    },
+    {
+      "start": 10.78,
+      "pose": "idea"
+    },
+    {
+      "start": 11.98,
+      "pose": "smart"
+    },
+    {
+      "start": 14.32,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 16.66,
+      "pose": "excited"
+    },
+    {
+      "start": 18.81,
+      "pose": "skeptic"
+    },
+    {
+      "start": 20.23,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 21.65,
+      "pose": "youTilt"
+    },
+    {
+      "start": 23.01,
+      "pose": "one"
+    },
+    {
+      "start": 27.15,
+      "pose": "two"
+    },
+    {
+      "start": 31.28,
+      "pose": "three"
+    },
+    {
+      "start": 34.97,
+      "pose": "idea"
+    },
+    {
+      "start": 37.58,
+      "pose": "love"
+    },
+    {
+      "start": 40.2,
+      "pose": "proud"
+    },
+    {
+      "start": 42.59,
+      "pose": "fistPump"
+    },
+    {
+      "start": 43.62,
+      "pose": "heart"
+    },
+    {
+      "start": 44.64,
+      "pose": "waveBoth"
+    }
+  ]
+}

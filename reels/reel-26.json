@@ -1,0 +1,254 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-26.wav",
+  "lineas": [
+    {
+      "text": "\"Lo que no se mide, no se puede mejorar.\" ¡Esa frase de negocios te está costando dinero en tus anuncios!",
+      "start": 0.0,
+      "duration": 7.079
+    },
+    {
+      "text": "Porque la mayoría pone publicidad… y no mide nada.",
+      "start": 7.229,
+      "duration": 4.049
+    },
+    {
+      "text": "Si no sabes de qué anuncio vino cada cliente, no sabes cuál apagar.",
+      "start": 11.428,
+      "duration": 4.911
+    },
+    {
+      "text": "Y hay una forma muy simple de empezar a medir…",
+      "start": 16.489,
+      "duration": 3.239
+    },
+    {
+      "text": "Uno: pregúntale a cada cliente cómo te encontró. Dos: anota las ventas de cada anuncio. Tres: cada lunes, apaga el peor y dale más al mejor.",
+      "start": 19.878,
+      "duration": 11.964
+    },
+    {
+      "text": "Haz eso cuatro semanas y vas a ver cómo el mismo presupuesto rinde más, porque solo se queda lo que funciona.",
+      "start": 31.992,
+      "duration": 7.706
+    },
+    {
+      "text": "¡Guárdalo y sígueme para más!",
+      "start": 39.849,
+      "duration": 2.429
+    }
+  ],
+  "fin": 43.63,
+  "resaltar": [
+    "mide",
+    "mejorar",
+    "dinero",
+    "anuncios",
+    "publicidad",
+    "nada",
+    "cliente",
+    "apagar",
+    "simple",
+    "encontró",
+    "anota",
+    "lunes",
+    "peor",
+    "mejor",
+    "cuatro",
+    "rinde",
+    "funciona",
+    "Guárdalo",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "📏",
+      "etiqueta": "Lo que no se mide…",
+      "badge": "FRASE FAMOSA"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "NO MIDE NADA"
+    },
+    {
+      "tipo": "puzzle",
+      "piezas": [
+        "📣",
+        "❓",
+        "🛒"
+      ],
+      "palabra": "¿CUÁL FUE?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "📝",
+      "etiqueta": "Súper simple"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "¿Cómo me encontraste?",
+        "Ventas por anuncio",
+        "Lunes: apaga el peor"
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Mismo presupuesto",
+      "barras": [
+        {
+          "etiqueta": "Sem 1",
+          "valor": 4
+        },
+        {
+          "etiqueta": "Sem 2",
+          "valor": 6
+        },
+        {
+          "etiqueta": "Sem 3",
+          "valor": 8
+        },
+        {
+          "etiqueta": "Sem 4",
+          "valor": 11,
+          "destacar": true
+        }
+      ],
+      "sufijo": " ventas",
+      "nota": "Ejemplo"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 21.07,
+      "texto": "❓ Pregunta",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 24.66,
+      "texto": "📝 Anota",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 28.85,
+      "texto": "🔁 Cada lunes",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "📏"
+    },
+    {
+      "start": 8.44,
+      "emoji": "🙈"
+    },
+    {
+      "start": 29.45,
+      "emoji": "📝"
+    },
+    {
+      "start": 37.39,
+      "emoji": "📈"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.48,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.96,
+      "pose": "you"
+    },
+    {
+      "start": 7.23,
+      "pose": "explain"
+    },
+    {
+      "start": 8.65,
+      "pose": "skeptic"
+    },
+    {
+      "start": 10.06,
+      "pose": "idea"
+    },
+    {
+      "start": 11.43,
+      "pose": "smart"
+    },
+    {
+      "start": 13.15,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 14.87,
+      "pose": "excited"
+    },
+    {
+      "start": 16.49,
+      "pose": "skeptic"
+    },
+    {
+      "start": 17.62,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 18.76,
+      "pose": "youTilt"
+    },
+    {
+      "start": 19.88,
+      "pose": "one"
+    },
+    {
+      "start": 24.07,
+      "pose": "two"
+    },
+    {
+      "start": 28.25,
+      "pose": "three"
+    },
+    {
+      "start": 31.99,
+      "pose": "idea"
+    },
+    {
+      "start": 34.69,
+      "pose": "love"
+    },
+    {
+      "start": 37.39,
+      "pose": "proud"
+    },
+    {
+      "start": 39.85,
+      "pose": "fistPump"
+    },
+    {
+      "start": 40.7,
+      "pose": "heart"
+    },
+    {
+      "start": 41.55,
+      "pose": "waveBoth"
+    }
+  ]
+}

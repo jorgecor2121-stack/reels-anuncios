@@ -1,0 +1,258 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-25.wav",
+  "lineas": [
+    {
+      "text": "¡Si no puedes tomarte una semana libre sin que se caigan las ventas, no tienes un negocio: tienes un trabajo!",
+      "start": 0.0,
+      "duration": 7.158
+    },
+    {
+      "text": "Y no lo digo para que te sientas mal.",
+      "start": 7.308,
+      "duration": 2.351
+    },
+    {
+      "text": "La mayoría vende solo con su cara, su WhatsApp y su tiempo.",
+      "start": 9.809,
+      "duration": 4.519
+    },
+    {
+      "text": "Pero hay negocios del mismo tamaño que el tuyo que siguen vendiendo sin el dueño…",
+      "start": 14.478,
+      "duration": 4.833
+    },
+    {
+      "text": "Tienen tres cosas: clientes que llegan solos por anuncios, una forma escrita de vender, y números que revisan cada semana.",
+      "start": 19.46,
+      "duration": 8.516
+    },
+    {
+      "text": "Y la tercera es la que separa al que crece del que se cansa: lo que no mides, lo tienes que hacer tú a mano.",
+      "start": 28.126,
+      "duration": 7.706
+    },
+    {
+      "text": "¡Guárdalo y sígueme para construir el tuyo!",
+      "start": 35.982,
+      "duration": 3.239
+    }
+  ],
+  "fin": 40.57,
+  "resaltar": [
+    "semana",
+    "libre",
+    "ventas",
+    "negocio",
+    "trabajo",
+    "mal",
+    "cara",
+    "WhatsApp",
+    "tiempo",
+    "dueño",
+    "clientes",
+    "anuncios",
+    "escrita",
+    "números",
+    "crece",
+    "cansa",
+    "mides",
+    "Guárdalo",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "¿1 SEMANA LIBRE?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🫶",
+      "etiqueta": "Sin culpa"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🤳",
+        "📱",
+        "⏳"
+      ],
+      "letras": [
+        "TU CARA",
+        "WHATSAPP",
+        "TU TIEMPO"
+      ]
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🏝️",
+      "etiqueta": "Venden sin el dueño"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Clientes por anuncios",
+        "Forma escrita de vender",
+        "Números cada semana"
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Lo que mides, crece",
+      "barras": [
+        {
+          "etiqueta": "Sem 1",
+          "valor": 3
+        },
+        {
+          "etiqueta": "Sem 2",
+          "valor": 5
+        },
+        {
+          "etiqueta": "Sem 3",
+          "valor": 7
+        },
+        {
+          "etiqueta": "Sem 4",
+          "valor": 10,
+          "destacar": true
+        }
+      ],
+      "sufijo": " ventas",
+      "nota": "Ejemplo"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 20.31,
+      "texto": "📣 Anuncios",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 22.87,
+      "texto": "📝 Proceso",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 25.85,
+      "texto": "📊 Números",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "😮"
+    },
+    {
+      "start": 8.01,
+      "emoji": "📱"
+    },
+    {
+      "start": 26.27,
+      "emoji": "🏝️"
+    },
+    {
+      "start": 33.52,
+      "emoji": "📈"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.51,
+      "pose": "ohNo"
+    },
+    {
+      "start": 5.01,
+      "pose": "you"
+    },
+    {
+      "start": 7.31,
+      "pose": "explain"
+    },
+    {
+      "start": 8.13,
+      "pose": "skeptic"
+    },
+    {
+      "start": 8.95,
+      "pose": "idea"
+    },
+    {
+      "start": 9.81,
+      "pose": "smart"
+    },
+    {
+      "start": 11.39,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 12.97,
+      "pose": "excited"
+    },
+    {
+      "start": 14.48,
+      "pose": "skeptic"
+    },
+    {
+      "start": 16.17,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 17.86,
+      "pose": "youTilt"
+    },
+    {
+      "start": 19.46,
+      "pose": "one"
+    },
+    {
+      "start": 22.44,
+      "pose": "two"
+    },
+    {
+      "start": 25.42,
+      "pose": "three"
+    },
+    {
+      "start": 28.13,
+      "pose": "idea"
+    },
+    {
+      "start": 30.82,
+      "pose": "love"
+    },
+    {
+      "start": 33.52,
+      "pose": "proud"
+    },
+    {
+      "start": 35.98,
+      "pose": "fistPump"
+    },
+    {
+      "start": 37.12,
+      "pose": "heart"
+    },
+    {
+      "start": 38.25,
+      "pose": "waveBoth"
+    }
+  ]
+}
