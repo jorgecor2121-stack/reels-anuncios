@@ -235,5 +235,22 @@
       "start": 41.66,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "portada": {
+    "lineas": [
+      "Los 3 números",
+      "de tu anuncio",
+      "que más importan"
+    ],
+    "resaltar": 1,
+    "icono": "📊",
+    "satelites": [
+      "💬",
+      "💰",
+      "🛒"
+    ],
+    "badge": "NO SON LOS LIKES",
+    "pose": "surprised",
+    "color": "#22D3EE"
+  }
 }

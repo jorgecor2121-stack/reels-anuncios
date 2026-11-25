@@ -250,5 +250,22 @@
       "start": 41.55,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "portada": {
+    "lineas": [
+      "Lo que no",
+      "se mide,",
+      "no mejora"
+    ],
+    "resaltar": 2,
+    "icono": "📏",
+    "satelites": [
+      "📈",
+      "📝",
+      "🔁"
+    ],
+    "badge": "FRASE FAMOSA",
+    "pose": "smart",
+    "color": "#FF8A3D"
+  }
 }

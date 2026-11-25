@@ -233,5 +233,22 @@
       "start": 40.45,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "portada": {
+    "lineas": [
+      "Tu negocio",
+      "vende mientras",
+      "duermes"
+    ],
+    "resaltar": 2,
+    "icono": "😴",
+    "satelites": [
+      "💸",
+      "🌙",
+      "📲"
+    ],
+    "badge": "PROSPERIDAD",
+    "pose": "proud",
+    "color": "#FFD23F"
+  }
 }

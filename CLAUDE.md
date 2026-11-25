@@ -25,6 +25,10 @@ Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvat
 `"tipo": "avatar"`, `"entorno": "cafe"` (cafetería, `src/scenes/StudioCafe.tsx`; desde el 19-nov, antes "atardecer"), `"vestimenta": "hoodie"` (sudadera verde oliva; antes "blazer"),
 `"escalaEscena": 0.78`, `"marca": "@jorgealmonteia"` (usuario nuevo desde el 20-nov-2026; en la escena `seguir` usar `"usuario": "jorgealmonteia"`).
 - **Ropa (pedido del usuario, 25-nov-2026): cambiar la `vestimenta` en cada reel**, sin repetir la del reel anterior; rotar entre `"denim"`, `"blazer"`, `"hoodie"` y `"polo"` (mirar la del último `reels/reel-NN.json`).
+- **Portada ilustrada en cada reel (pedido del usuario, 25-nov-2026)**: añadir `"portada"` al `reels/reel-NN.json`
+  (`lineas` 2–4 cortas, `resaltar` = índice de la línea en caja amarilla, `icono` emoji grande, `satelites` 2–3 emojis, `badge`, `pose`, `color`)
+  y renderizar `npx remotion still PortadaAvatar portadas/reel-NN.jpg --props=reels/reel-NN.json --browser-executable=… --jpeg-quality=90`
+  (`src/PortadaAvatar.tsx`; lo importante cabe en el recorte 3:4 de la cuadrícula del perfil). Se publica como `cover_url`. Modelo: `reels/reel-23.json`.
 - **Pocas letras, muchas ilustraciones**: una escena por frase, preferir las ilustradas de `src/Motion.tsx`
   (papeles, trio, dolor, calendario, amanecer, puzzle, telefono) y las de datos (grafica, stat, carrera, embudo, dona).
   Textos de 1–3 palabras; nada de frases largas en pantalla.

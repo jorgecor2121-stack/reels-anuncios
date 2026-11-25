@@ -254,5 +254,22 @@
       "start": 38.25,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "portada": {
+    "lineas": [
+      "¿No puedes",
+      "tomar 1 semana",
+      "libre?"
+    ],
+    "resaltar": 1,
+    "icono": "🏝️",
+    "satelites": [
+      "📱",
+      "⏰",
+      "😩"
+    ],
+    "badge": "ESTO NO ES UN NEGOCIO",
+    "pose": "ohNo",
+    "color": "#2BD576"
+  }
 }

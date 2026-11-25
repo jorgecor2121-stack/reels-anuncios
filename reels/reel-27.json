@@ -233,5 +233,22 @@
       "start": 44.64,
       "pose": "waveBoth"
     }
-  ]
+  ],
+  "portada": {
+    "lineas": [
+      "Precio",
+      "vs.",
+      "valor"
+    ],
+    "resaltar": 2,
+    "icono": "💎",
+    "satelites": [
+      "💰",
+      "🛒",
+      "⚖️"
+    ],
+    "badge": "WARREN BUFFETT",
+    "pose": "thinkUp",
+    "color": "#A78BFA"
+  }
 }
