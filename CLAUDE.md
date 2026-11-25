@@ -23,7 +23,8 @@ Idioma de trabajo con el usuario: español.
 ## Estilo visual por defecto (actualizado el 18-nov-2026, aprobado por el usuario: "con este estilo van")
 Modelo a copiar: `reels/reel-06.json` (también 04 y 05). Composición `ReelAvatarMotion` (`src/AvatarMotion.tsx`) con:
 `"tipo": "avatar"`, `"entorno": "cafe"` (cafetería, `src/scenes/StudioCafe.tsx`; desde el 19-nov, antes "atardecer"), `"vestimenta": "hoodie"` (sudadera verde oliva; antes "blazer"),
-`"escalaEscena": 0.78`, `"marca": "@jorgealmonteia"` (usuario nuevo desde el 20-nov-2026; en la escena `seguir` usar `"usuario": "jorgealmonteia"`).
+`"escalaEscena": 0.78`
+- **Ropa (pedido del usuario, 25-nov-2026): cambiar la `vestimenta` en cada reel**, sin repetir la del reel anterior; rotar entre `"denim"`, `"blazer"`, `"hoodie"` y `"polo"` (mirar la del último `reels/reel-NN.json`)., `"marca": "@jorgealmonteia"` (usuario nuevo desde el 20-nov-2026; en la escena `seguir` usar `"usuario": "jorgealmonteia"`).
 - **Pocas letras, muchas ilustraciones**: una escena por frase, preferir las ilustradas de `src/Motion.tsx`
   (papeles, trio, dolor, calendario, amanecer, puzzle, telefono) y las de datos (grafica, stat, carrera, embudo, dona).
   Textos de 1–3 palabras; nada de frases largas en pantalla.
