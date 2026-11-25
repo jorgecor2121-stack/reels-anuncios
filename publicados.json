@@ -185,6 +185,43 @@
     "media_id": "18116996639127566",
     "enlace": "https://www.instagram.com/reel/DgLQj1INcQN/",
     "publicado": "2026-11-25T19:16:01Z",
-    "portada": "portadas/reel-23.jpg"
+    "portada": "portadas/reel-23.jpg",
+    "nota": "ya no aparece en Instagram (borrado el 25-nov); no republicar sin preguntar"
+  },
+  {
+    "numero": "24",
+    "tipo": "avatar",
+    "tema": "Si tu negocio vende mientras duermes, ya eres más próspero",
+    "media_id": "17887003728526406",
+    "enlace": "https://www.instagram.com/reel/DgLgz2-z3IS/",
+    "publicado": "2026-11-25T21:38:12Z",
+    "portada": "portadas/reel-24.jpg"
+  },
+  {
+    "numero": "25",
+    "tipo": "avatar",
+    "tema": "Si no puedes tomarte una semana libre, no tienes un negocio",
+    "media_id": "17969605587235048",
+    "enlace": "https://www.instagram.com/reel/DgLgz8zzgvH/",
+    "publicado": "2026-11-25T21:38:38Z",
+    "portada": "portadas/reel-25.jpg"
+  },
+  {
+    "numero": "26",
+    "tipo": "avatar",
+    "tema": "Lo que no se mide, no se puede mejorar",
+    "media_id": "18023935340936345",
+    "enlace": "https://www.instagram.com/reel/DgLgzzYBtUH/",
+    "publicado": "2026-11-25T21:38:56Z",
+    "portada": "portadas/reel-26.jpg"
+  },
+  {
+    "numero": "27",
+    "tipo": "avatar",
+    "tema": "El precio es lo que pagas; el valor es lo que recibes",
+    "media_id": "18130125007922788",
+    "enlace": "https://www.instagram.com/reel/DgLgzxohD03/",
+    "publicado": "2026-11-25T21:39:13Z",
+    "portada": "portadas/reel-27.jpg"
   }
 ]
