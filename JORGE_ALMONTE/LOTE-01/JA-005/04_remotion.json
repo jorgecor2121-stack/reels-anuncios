@@ -1,0 +1,277 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-005.wav",
+  "lineas": [
+    {
+      "text": "Tres herramientas de inteligencia artificial que pueden cambiar la forma en que trabajas.",
+      "start": 0.0,
+      "duration": 5.146
+    },
+    {
+      "text": "Y no tienes que saber de tecnología para usarlas.",
+      "start": 5.426,
+      "duration": 3.318
+    },
+    {
+      "text": "Uno: ChatGPT. Te ayuda a escribir textos, ideas y respuestas para tus clientes. Y le puedes subir fotos para que las analice.",
+      "start": 9.024,
+      "duration": 9.718
+    },
+    {
+      "text": "Dos: Canva. Tiene funciones de inteligencia artificial para crear diseños y editar imágenes. Algunas son gratis y otras de pago.",
+      "start": 19.021,
+      "duration": 9.953
+    },
+    {
+      "text": "Tres: CapCut. Genera los subtítulos de tus videos de forma automática.",
+      "start": 29.254,
+      "duration": 5.721
+    },
+    {
+      "text": "Escritura, diseño y video. Con esas tres cubres gran parte del contenido de un negocio pequeño.",
+      "start": 35.255,
+      "duration": 7.393
+    },
+    {
+      "text": "Guarda este video para probarlas, y compártelo con alguien que las necesite.",
+      "start": 42.927,
+      "duration": 4.833
+    }
+  ],
+  "fin": 49.24,
+  "resaltar": [
+    "Tres",
+    "herramientas",
+    "inteligencia",
+    "artificial",
+    "tecnología",
+    "ChatGPT",
+    "escribir",
+    "fotos",
+    "Canva",
+    "diseños",
+    "imágenes",
+    "gratis",
+    "pago",
+    "CapCut",
+    "subtítulos",
+    "automática",
+    "Escritura",
+    "diseño",
+    "video",
+    "Guarda",
+    "compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧰",
+      "etiqueta": "3 herramientas de IA"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Saber de tecnología",
+      "despues": "Saber qué quieres",
+      "badge": "NO HACE FALTA"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "💡",
+        "📸"
+      ],
+      "letras": [
+        "TEXTOS",
+        "IDEAS",
+        "FOTOS"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🎨",
+        "🖼️",
+        "💳"
+      ],
+      "letras": [
+        "DISEÑOS",
+        "EDITA",
+        "GRATIS·PAGO"
+      ]
+    },
+    {
+      "tipo": "telefono",
+      "texto": "Subtítulos automáticos",
+      "sello": "CAPCUT ✅"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "🎨",
+        "🎬"
+      ],
+      "letras": [
+        "ESCRITURA",
+        "DISEÑO",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio",
+    "primer",
+    "general",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "three"
+    },
+    {
+      "start": 1.8,
+      "pose": "excited"
+    },
+    {
+      "start": 3.6,
+      "pose": "you"
+    },
+    {
+      "start": 5.43,
+      "pose": "stop"
+    },
+    {
+      "start": 6.59,
+      "pose": "smile"
+    },
+    {
+      "start": 7.75,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 9.02,
+      "pose": "one"
+    },
+    {
+      "start": 12.43,
+      "pose": "explain"
+    },
+    {
+      "start": 15.83,
+      "pose": "phone"
+    },
+    {
+      "start": 19.02,
+      "pose": "two"
+    },
+    {
+      "start": 22.5,
+      "pose": "presentRight"
+    },
+    {
+      "start": 25.99,
+      "pose": "smart"
+    },
+    {
+      "start": 29.25,
+      "pose": "three"
+    },
+    {
+      "start": 31.26,
+      "pose": "explain"
+    },
+    {
+      "start": 33.26,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 35.26,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 37.84,
+      "pose": "proud"
+    },
+    {
+      "start": 40.43,
+      "pose": "confident"
+    },
+    {
+      "start": 42.93,
+      "pose": "down"
+    },
+    {
+      "start": 44.62,
+      "pose": "heart"
+    },
+    {
+      "start": 46.31,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 10.0,
+      "texto": "1️⃣ ChatGPT",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 20.02,
+      "texto": "2️⃣ Canva",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 29.83,
+      "texto": "3️⃣ CapCut",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.57,
+      "emoji": "🧰"
+    },
+    {
+      "start": 24.0,
+      "emoji": "🎨"
+    },
+    {
+      "start": 38.95,
+      "emoji": "🔥"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "3 herramientas",
+      "de IA",
+      "para trabajar mejor"
+    ],
+    "resaltar": 1,
+    "icono": "🧰",
+    "satelites": [
+      "✍️",
+      "🎨",
+      "🎬"
+    ],
+    "badge": "GUÁRDALO",
+    "pose": "three",
+    "color": "#FFD23F",
+    "fondo": "marino"
+  }
+}
