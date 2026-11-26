@@ -1,0 +1,285 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-001.wav",
+  "lineas": [
+    {
+      "text": "La inteligencia artificial no viene a reemplazar a todos… pero sí puede dejar atrás a quienes no aprendan a usarla.",
+      "start": 0.0,
+      "duration": 7.549
+    },
+    {
+      "text": "Y no hablo del futuro. Hoy un negocio pequeño ya puede escribir, diseñar y atender clientes con ayuda de la IA.",
+      "start": 7.829,
+      "duration": 8.516
+    },
+    {
+      "text": "La diferencia no la hace la herramienta. La hace la persona que sabe qué pedirle.",
+      "start": 16.625,
+      "duration": 5.721
+    },
+    {
+      "text": "Por eso existe este perfil. Soy Jorge Almonte, y aquí te enseño a usar la inteligencia artificial, el marketing y la automatización en tu negocio.",
+      "start": 22.626,
+      "duration": 10.188
+    },
+    {
+      "text": "Sin palabras raras y sin humo: cosas que puedes aplicar el mismo día.",
+      "start": 33.094,
+      "duration": 5.407
+    },
+    {
+      "text": "Porque la IA no reemplaza al que aprende… le da ventaja.",
+      "start": 38.781,
+      "duration": 4.754
+    },
+    {
+      "text": "Sígueme si quieres ser de los que la usan, no de los que se quedan mirando.",
+      "start": 43.816,
+      "duration": 4.598
+    }
+  ],
+  "fin": 49.89,
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "reemplazar",
+    "atrás",
+    "aprendan",
+    "futuro",
+    "escribir",
+    "diseñar",
+    "atender",
+    "diferencia",
+    "herramienta",
+    "persona",
+    "Jorge",
+    "Almonte",
+    "marketing",
+    "automatización",
+    "humo",
+    "día",
+    "ventaja",
+    "Sígueme",
+    "usan"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "Te reemplaza",
+      "despues": "Te deja atrás si no aprendes",
+      "badge": "LA VERDAD"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "🎨",
+        "💬"
+      ],
+      "letras": [
+        "ESCRIBIR",
+        "DISEÑAR",
+        "ATENDER"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "La herramienta",
+      "despues": "Quien sabe pedirle",
+      "badge": "LA DIFERENCIA"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🤖",
+        "📣",
+        "⚙️"
+      ],
+      "letras": [
+        "IA",
+        "MARKETING",
+        "AUTOMATIZAR"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Sin palabras raras",
+        "Sin humo",
+        "Para aplicar hoy"
+      ]
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "Se queda mirando",
+        "valor": 20
+      },
+      "b": {
+        "etiqueta": "Aprende y la usa",
+        "valor": 80
+      },
+      "titulo": "Ventaja",
+      "nota": "Ilustrativo"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer",
+    "medio",
+    "general"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.64,
+      "pose": "wagNo"
+    },
+    {
+      "start": 5.28,
+      "pose": "you"
+    },
+    {
+      "start": 7.83,
+      "pose": "explain"
+    },
+    {
+      "start": 10.81,
+      "pose": "one"
+    },
+    {
+      "start": 13.79,
+      "pose": "proud"
+    },
+    {
+      "start": 16.62,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 18.63,
+      "pose": "smart"
+    },
+    {
+      "start": 20.63,
+      "pose": "you"
+    },
+    {
+      "start": 22.63,
+      "pose": "welcome"
+    },
+    {
+      "start": 26.19,
+      "pose": "presentRight"
+    },
+    {
+      "start": 29.76,
+      "pose": "bigSmile"
+    },
+    {
+      "start": 33.09,
+      "pose": "stop"
+    },
+    {
+      "start": 34.99,
+      "pose": "explain"
+    },
+    {
+      "start": 36.88,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 38.78,
+      "pose": "idea"
+    },
+    {
+      "start": 40.44,
+      "pose": "confident"
+    },
+    {
+      "start": 42.11,
+      "pose": "fistPump"
+    },
+    {
+      "start": 43.82,
+      "pose": "pointFront"
+    },
+    {
+      "start": 45.43,
+      "pose": "heart"
+    },
+    {
+      "start": 47.03,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 12.09,
+      "texto": "📅 Hoy, no mañana",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 28.23,
+      "texto": "👋 Jorge Almonte",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 40.21,
+      "texto": "🚀 Ventaja",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 4.53,
+      "emoji": "🤖"
+    },
+    {
+      "start": 18.91,
+      "emoji": "💡"
+    },
+    {
+      "start": 40.68,
+      "emoji": "🚀"
+    },
+    {
+      "start": 45.2,
+      "emoji": "👋"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "La IA",
+      "no es",
+      "el futuro"
+    ],
+    "resaltar": 2,
+    "icono": "🤖",
+    "satelites": [
+      "💡",
+      "⚙️",
+      "📣"
+    ],
+    "badge": "ES HOY",
+    "pose": "confident",
+    "color": "#A78BFA",
+    "fondo": "morado"
+  }
+}
