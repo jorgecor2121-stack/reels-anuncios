@@ -1,0 +1,280 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-002.wav",
+  "lineas": [
+    {
+      "text": "¿Y si pudieras producir videos profesionales… sin tener que aparecer frente a una cámara?",
+      "start": 0.0,
+      "duration": 5.407
+    },
+    {
+      "text": "Este video está hecho así. Y este personaje soy yo, en versión animada.",
+      "start": 5.687,
+      "duration": 5.721
+    },
+    {
+      "text": "Primero, Claude me ayuda a escribir el guion y a programar cada escena.",
+      "start": 11.688,
+      "duration": 4.676
+    },
+    {
+      "text": "Después, ElevenLabs pone la voz. Mi propia voz, clonada.",
+      "start": 16.644,
+      "duration": 5.329
+    },
+    {
+      "text": "Y Remotion arma el video con código: animaciones, textos y música, cuadro por cuadro.",
+      "start": 22.253,
+      "duration": 7.079
+    },
+    {
+      "text": "Yo pongo la idea y reviso el resultado. La inteligencia artificial hace el trabajo pesado.",
+      "start": 29.612,
+      "duration": 6.191
+    },
+    {
+      "text": "Sígueme y te enseño a montar tu propio estudio de video con IA.",
+      "start": 36.083,
+      "duration": 4.676
+    }
+  ],
+  "fin": 42.24,
+  "resaltar": [
+    "producir",
+    "videos",
+    "profesionales",
+    "cámara",
+    "video",
+    "personaje",
+    "animada",
+    "Claude",
+    "guion",
+    "escena",
+    "ElevenLabs",
+    "voz",
+    "clonada",
+    "Remotion",
+    "código",
+    "animaciones",
+    "música",
+    "idea",
+    "pesado",
+    "estudio",
+    "Sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🎬",
+      "etiqueta": "¿Sin cámara?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🙋‍♂️",
+      "etiqueta": "Este soy yo",
+      "badge": "VERSIÓN ANIMADA"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "💡",
+        "✍️",
+        "🧩"
+      ],
+      "letras": [
+        "IDEA",
+        "GUION",
+        "ESCENAS"
+      ]
+    },
+    {
+      "tipo": "telefono",
+      "texto": "🎙️ Voz de Jorge · ElevenLabs",
+      "sello": "MI VOZ"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🎞️",
+        "🔤",
+        "🎵"
+      ],
+      "letras": [
+        "ANIMACIÓN",
+        "TEXTOS",
+        "MÚSICA"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Tú: idea y revisión",
+      "despues": "IA: el trabajo pesado",
+      "badge": "EL REPARTO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "primer",
+    "medio",
+    "medio",
+    "general"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 1.89,
+      "pose": "idea"
+    },
+    {
+      "start": 3.78,
+      "pose": "surprised"
+    },
+    {
+      "start": 5.69,
+      "pose": "wave"
+    },
+    {
+      "start": 7.69,
+      "pose": "you"
+    },
+    {
+      "start": 9.69,
+      "pose": "proud"
+    },
+    {
+      "start": 11.69,
+      "pose": "phone"
+    },
+    {
+      "start": 13.32,
+      "pose": "explain"
+    },
+    {
+      "start": 14.96,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 16.64,
+      "pose": "listen"
+    },
+    {
+      "start": 18.51,
+      "pose": "smart"
+    },
+    {
+      "start": 20.37,
+      "pose": "bigSmile"
+    },
+    {
+      "start": 22.25,
+      "pose": "explain"
+    },
+    {
+      "start": 24.73,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 27.21,
+      "pose": "excited"
+    },
+    {
+      "start": 29.61,
+      "pose": "proud"
+    },
+    {
+      "start": 31.78,
+      "pose": "ok"
+    },
+    {
+      "start": 33.95,
+      "pose": "fistPump"
+    },
+    {
+      "start": 36.08,
+      "pose": "pointFront"
+    },
+    {
+      "start": 37.72,
+      "pose": "heart"
+    },
+    {
+      "start": 39.36,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 13.09,
+      "texto": "🧠 Claude",
+      "lado": "der",
+      "color": "#FF8A3D"
+    },
+    {
+      "start": 18.24,
+      "texto": "🎙️ ElevenLabs",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 24.38,
+      "texto": "🎞️ Remotion",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 3.24,
+      "emoji": "🎬"
+    },
+    {
+      "start": 19.31,
+      "emoji": "🎙️"
+    },
+    {
+      "start": 32.71,
+      "emoji": "🚀"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos",
+      "sin cámara",
+      "con IA"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🎙️",
+      "💻",
+      "✨"
+    ],
+    "badge": "ASÍ LO HAGO",
+    "pose": "proud",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  },
+  "entornos": [
+    "neon",
+    "cafe",
+    "cafe",
+    "clasico",
+    "neon",
+    "atardecer",
+    "escenario"
+  ],
+  "cine": true
+}
