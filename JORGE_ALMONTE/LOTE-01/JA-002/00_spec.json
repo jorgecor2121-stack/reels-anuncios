@@ -1,0 +1,218 @@
+{
+  "modalidad": "protagonista (historia cinematográfica: Jorge produce este mismo video)",
+  "luz": "noche con neón, luego estudio cálido; look de cine",
+  "cine": true,
+  "entorno": "neon",
+  "vestimenta": "hoodie",
+  "entornos": [
+    "neon",
+    "cafe",
+    "cafe",
+    "clasico",
+    "neon",
+    "atardecer",
+    "escenario"
+  ],
+  "resaltar": [
+    "producir",
+    "videos",
+    "profesionales",
+    "cámara",
+    "video",
+    "personaje",
+    "animada",
+    "Claude",
+    "guion",
+    "escena",
+    "ElevenLabs",
+    "voz",
+    "clonada",
+    "Remotion",
+    "código",
+    "animaciones",
+    "música",
+    "idea",
+    "pesado",
+    "estudio",
+    "Sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "thinkUp",
+        "idea",
+        "surprised"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🎬",
+        "etiqueta": "¿Sin cámara?"
+      },
+      "visual": "Noche, estudio con neón. Primer plano: Jorge piensa y se le ocurre la idea.",
+      "transicion": "fundido a negro, cambio a cafetería"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "wave",
+        "you",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🙋‍♂️",
+        "etiqueta": "Este soy yo",
+        "badge": "VERSIÓN ANIMADA"
+      },
+      "visual": "Cafetería de día. Jorge saluda y se presenta como el personaje."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "phone",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "💡",
+          "✍️",
+          "🧩"
+        ],
+        "letras": [
+          "IDEA",
+          "GUION",
+          "ESCENAS"
+        ]
+      },
+      "visual": "Plano general en la cafetería: escribe con Claude (iconos idea, guion, escenas).",
+      "transicion": "fundido a negro, cambio al estudio de grabación"
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "listen",
+        "smart",
+        "bigSmile"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "🎙️ Voz de Jorge · ElevenLabs",
+        "sello": "MI VOZ"
+      },
+      "visual": "Estudio con micrófono. Primer plano: la voz clonada de Jorge.",
+      "transicion": "fundido a negro, cambio a noche"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "excited"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🎞️",
+          "🔤",
+          "🎵"
+        ],
+        "letras": [
+          "ANIMACIÓN",
+          "TEXTOS",
+          "MÚSICA"
+        ]
+      },
+      "visual": "Noche frente al computador: Remotion arma animación, textos y música."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "proud",
+        "ok",
+        "fistPump"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Tú: idea y revisión",
+        "despues": "IA: el trabajo pesado",
+        "badge": "EL REPARTO"
+      },
+      "visual": "Atardecer en la oficina: el reparto de trabajo humano + IA."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Escenario azul, cierre con tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.3,
+      "texto": "🧠 Claude",
+      "lado": "der",
+      "color": "#FF8A3D"
+    },
+    {
+      "frase": 3,
+      "en": 0.3,
+      "texto": "🎙️ ElevenLabs",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.3,
+      "texto": "🎞️ Remotion",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🎬"
+    },
+    {
+      "frase": 3,
+      "en": 0.5,
+      "emoji": "🎙️"
+    },
+    {
+      "frase": 5,
+      "en": 0.5,
+      "emoji": "🚀"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos",
+      "sin cámara",
+      "con IA"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🎙️",
+      "💻",
+      "✨"
+    ],
+    "badge": "ASÍ LO HAGO",
+    "pose": "proud",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  }
+}

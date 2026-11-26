@@ -1,0 +1,278 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-001.wav",
+  "lineas": [
+    {
+      "text": "Antes de pagar tu próximo anuncio… enséñaselo a la inteligencia artificial. Te puede ahorrar dinero.",
+      "start": 0.0,
+      "duration": 6.531
+    },
+    {
+      "text": "Uno sube el anuncio porque le gusta a uno. Pero al que le tiene que gustar es al cliente.",
+      "start": 6.811,
+      "duration": 6.034
+    },
+    {
+      "text": "Haz una captura de tu anuncio y súbela a ChatGPT. Sí, la versión gratis también acepta fotos.",
+      "start": 13.125,
+      "duration": 7.314
+    },
+    {
+      "text": "Y pregúntale: \"Si fueras mi cliente, ¿te detendrías a verlo? ¿Qué no entiendes? ¿Qué te haría comprar?\"",
+      "start": 20.719,
+      "duration": 7.079
+    },
+    {
+      "text": "Te va a decir lo que nadie te dice: el texto que no se lee, o la oferta que no se entiende.",
+      "start": 28.078,
+      "duration": 6.922
+    },
+    {
+      "text": "Eso sí: la inteligencia artificial no sustituye a tus clientes. Úsala como primer filtro, y después prueba con tu público.",
+      "start": 35.281,
+      "duration": 8.829
+    },
+    {
+      "text": "Guarda este video para tu próximo anuncio, y sígueme para más inteligencia artificial para tu negocio.",
+      "start": 44.39,
+      "duration": 6.348
+    }
+  ],
+  "fin": 52.22,
+  "resaltar": [
+    "anuncio",
+    "inteligencia",
+    "artificial",
+    "ahorrar",
+    "dinero",
+    "gusta",
+    "cliente",
+    "captura",
+    "ChatGPT",
+    "gratis",
+    "fotos",
+    "detendrías",
+    "entiendes",
+    "comprar",
+    "nadie",
+    "texto",
+    "oferta",
+    "sustituye",
+    "filtro",
+    "público",
+    "Guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "telefono",
+      "texto": "Tu próximo anuncio",
+      "sello": "¿PAGAR YA? 💸"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Me gusta a mí",
+      "despues": "Le gusta al cliente",
+      "badge": "EL ERROR"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📸",
+        "⬆️",
+        "🤖"
+      ],
+      "letras": [
+        "CAPTURA",
+        "SÚBELA",
+        "CHATGPT"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "¿Te detendrías?",
+        "¿Qué no entiendes?",
+        "¿Qué te haría comprar?"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🔍",
+        "❓",
+        "🙈"
+      ],
+      "letras": [
+        "NO SE LEE",
+        "NO SE ENTIENDE",
+        "NADIE TE LO DICE"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "La IA decide",
+      "despues": "La IA filtra, tu público decide",
+      "badge": "OJO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "general",
+    "primer",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "idea"
+    },
+    {
+      "start": 2.29,
+      "pose": "you"
+    },
+    {
+      "start": 4.57,
+      "pose": "smart"
+    },
+    {
+      "start": 6.81,
+      "pose": "proud"
+    },
+    {
+      "start": 8.92,
+      "pose": "skeptic"
+    },
+    {
+      "start": 11.03,
+      "pose": "you"
+    },
+    {
+      "start": 13.12,
+      "pose": "phone"
+    },
+    {
+      "start": 15.68,
+      "pose": "explain"
+    },
+    {
+      "start": 18.24,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 20.72,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 23.2,
+      "pose": "explain"
+    },
+    {
+      "start": 25.67,
+      "pose": "youTilt"
+    },
+    {
+      "start": 28.08,
+      "pose": "surprised"
+    },
+    {
+      "start": 30.5,
+      "pose": "one"
+    },
+    {
+      "start": 32.92,
+      "pose": "two"
+    },
+    {
+      "start": 35.28,
+      "pose": "wagNo"
+    },
+    {
+      "start": 38.37,
+      "pose": "smart"
+    },
+    {
+      "start": 41.46,
+      "pose": "explain"
+    },
+    {
+      "start": 44.39,
+      "pose": "down"
+    },
+    {
+      "start": 46.61,
+      "pose": "heart"
+    },
+    {
+      "start": 48.83,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 17.15,
+      "texto": "✅ Gratis acepta fotos",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 22.13,
+      "texto": "🎯 Tu cliente ideal",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 39.7,
+      "texto": "🧪 Luego prueba real",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.31,
+      "emoji": "💸"
+    },
+    {
+      "start": 15.32,
+      "emoji": "🤖"
+    },
+    {
+      "start": 31.54,
+      "emoji": "😮"
+    },
+    {
+      "start": 46.29,
+      "emoji": "🚀"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Revisa tu anuncio",
+      "con IA",
+      "antes de pagar"
+    ],
+    "resaltar": 1,
+    "icono": "🤖",
+    "satelites": [
+      "📸",
+      "💸",
+      "✅"
+    ],
+    "badge": "AHORRA DINERO",
+    "pose": "idea",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  }
+}

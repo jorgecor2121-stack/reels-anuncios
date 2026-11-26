@@ -1,0 +1,40 @@
+{
+  "total": 41.039,
+  "lines": [
+    {
+      "text": "¿Y si pudieras producir videos profesionales… sin tener que aparecer frente a una cámara?",
+      "start": 0.0,
+      "duration": 5.407
+    },
+    {
+      "text": "Este video está hecho así. Y este personaje soy yo, en versión animada.",
+      "start": 5.687,
+      "duration": 5.721
+    },
+    {
+      "text": "Primero, Claude me ayuda a escribir el guion y a programar cada escena.",
+      "start": 11.688,
+      "duration": 4.676
+    },
+    {
+      "text": "Después, ElevenLabs pone la voz. Mi propia voz, clonada.",
+      "start": 16.644,
+      "duration": 5.329
+    },
+    {
+      "text": "Y Remotion arma el video con código: animaciones, textos y música, cuadro por cuadro.",
+      "start": 22.253,
+      "duration": 7.079
+    },
+    {
+      "text": "Yo pongo la idea y reviso el resultado. La inteligencia artificial hace el trabajo pesado.",
+      "start": 29.612,
+      "duration": 6.191
+    },
+    {
+      "text": "Sígueme y te enseño a montar tu propio estudio de video con IA.",
+      "start": 36.083,
+      "duration": 4.676
+    }
+  ]
+}

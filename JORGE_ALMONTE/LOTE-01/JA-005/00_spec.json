@@ -1,0 +1,213 @@
+{
+  "modalidad": "presentador (lista de herramientas, valor práctico)",
+  "luz": "cafetería cálida de día",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "Tres",
+    "herramientas",
+    "inteligencia",
+    "artificial",
+    "tecnología",
+    "ChatGPT",
+    "escribir",
+    "fotos",
+    "Canva",
+    "diseños",
+    "imágenes",
+    "gratis",
+    "pago",
+    "CapCut",
+    "subtítulos",
+    "automática",
+    "Escritura",
+    "diseño",
+    "video",
+    "Guarda",
+    "compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "three",
+        "excited",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🧰",
+        "etiqueta": "3 herramientas de IA"
+      },
+      "visual": "Cafetería. Primer plano: Jorge muestra tres dedos.",
+      "transicion": "corte a plano medio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "stop",
+        "smile",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Saber de tecnología",
+        "despues": "Saber qué quieres",
+        "badge": "NO HACE FALTA"
+      },
+      "visual": "Plano medio: no necesitas saber de tecnología."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "one",
+        "explain",
+        "phone"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "💡",
+          "📸"
+        ],
+        "letras": [
+          "TEXTOS",
+          "IDEAS",
+          "FOTOS"
+        ]
+      },
+      "visual": "Plano medio. Herramienta 1: ChatGPT."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "two",
+        "presentRight",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🎨",
+          "🖼️",
+          "💳"
+        ],
+        "letras": [
+          "DISEÑOS",
+          "EDITA",
+          "GRATIS·PAGO"
+        ]
+      },
+      "visual": "Plano medio. Herramienta 2: Canva."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "three",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Subtítulos automáticos",
+        "sello": "CAPCUT ✅"
+      },
+      "visual": "Primer plano. Herramienta 3: CapCut y sus subtítulos automáticos."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "countOnHand",
+        "proud",
+        "confident"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "🎨",
+          "🎬"
+        ],
+        "letras": [
+          "ESCRITURA",
+          "DISEÑO",
+          "VIDEO"
+        ]
+      },
+      "visual": "Plano general: resumen de las tres."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "down",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Plano medio, tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.1,
+      "texto": "1️⃣ ChatGPT",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "frase": 3,
+      "en": 0.1,
+      "texto": "2️⃣ Canva",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.1,
+      "texto": "3️⃣ CapCut",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.5,
+      "emoji": "🧰"
+    },
+    {
+      "frase": 3,
+      "en": 0.5,
+      "emoji": "🎨"
+    },
+    {
+      "frase": 5,
+      "en": 0.5,
+      "emoji": "🔥"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "3 herramientas",
+      "de IA",
+      "para trabajar mejor"
+    ],
+    "resaltar": 1,
+    "icono": "🧰",
+    "satelites": [
+      "✍️",
+      "🎨",
+      "🎬"
+    ],
+    "badge": "GUÁRDALO",
+    "pose": "three",
+    "color": "#FFD23F",
+    "fondo": "marino"
+  }
+}

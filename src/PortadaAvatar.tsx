@@ -27,6 +27,7 @@ export type PortadaProps = {
     badge?: string; // etiqueta arriba (p. ej. "PROSPERIDAD")
     pose?: string;
     color?: string; // color del halo del icono
+    fondo?: "marino" | "morado"; // sistema maestro: fondo azul marino o morado
   };
 };
 
@@ -39,7 +40,7 @@ export const PortadaAvatar: React.FC<PortadaProps> = (p) => {
   const ent = p.entorno ?? "cafe";
   const pose = poseAtFrame([{ start: 0, pose: c.pose ?? "surprised", talk: false }], 30, 30);
   const halo = c.color ?? "#FFD23F";
-  const tinte = TINTE[ent] ?? TINTE.clasico;
+  const tinte = c.fondo === "morado" ? "38,14,64" : c.fondo === "marino" ? "8,14,48" : (TINTE[ent] ?? TINTE.clasico);
   const sat = c.satelites ?? [];
   const pos = [[150, 1010], [140, 1420], [950, 1440], [930, 1650]];
   if (p.limpia) return (
@@ -70,6 +71,8 @@ export const PortadaAvatar: React.FC<PortadaProps> = (p) => {
         </OutfitProvider>
       </div>
       <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(${tinte},1) 0%, rgba(${tinte},.96) 30%, rgba(${tinte},0) 44%)` }} />
+      {c.fondo ? <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 62%, rgba(${tinte},0) 30%, rgba(${tinte},.75) 85%)`, mixBlendMode: "multiply" }} /> : null}
+      {c.fondo ? <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(${tinte},.85) 0%, rgba(${tinte},0) 22%)` }} /> : null}
       {/* rayos detrás del icono */}
       <div style={{ position: "absolute", left: 850 - 300, top: 1030 - 300, width: 600, height: 600, borderRadius: "50%",
         background: `repeating-conic-gradient(from 0deg, ${halo}33 0deg 10deg, transparent 10deg 20deg)`,

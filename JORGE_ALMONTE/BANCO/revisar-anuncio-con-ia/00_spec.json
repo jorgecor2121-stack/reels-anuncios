@@ -1,0 +1,42 @@
+{
+  "modalidad": "presentador (mira a cámara y explica)",
+  "luz": "estudio de podcast cálido, contraluz naranja y relleno suave",
+  "entorno": "clasico",
+  "vestimenta": "polo",
+  "resaltar": ["anuncio", "inteligencia", "artificial", "ahorrar", "dinero", "gusta", "cliente", "captura", "ChatGPT", "gratis", "fotos", "detendrías", "entiendes", "comprar", "nadie", "texto", "oferta", "sustituye", "filtro", "público", "Guarda", "sígueme"],
+  "tomas": [
+    {"plano": "primer", "poses": ["idea", "you", "smart"],
+     "escena": {"tipo": "telefono", "texto": "Tu próximo anuncio", "sello": "¿PAGAR YA? 💸"},
+     "visual": "Primer plano. Arriba, un celular con el anuncio y el sello '¿PAGAR YA?'.", "transicion": "corte a plano medio"},
+    {"plano": "medio", "poses": ["proud", "skeptic", "you"],
+     "escena": {"tipo": "antesDespues", "antes": "Me gusta a mí", "despues": "Le gusta al cliente", "badge": "EL ERROR"},
+     "visual": "Plano medio. Tarjeta antes/después: 'Me gusta a mí' tachado, 'Le gusta al cliente'."},
+    {"plano": "general", "poses": ["phone", "explain", "thumbsUp"],
+     "escena": {"tipo": "trio", "iconos": ["📸", "⬆️", "🤖"], "letras": ["CAPTURA", "SÚBELA", "CHATGPT"]},
+     "visual": "Plano general del estudio. Tres pasos con iconos: captura, súbela, ChatGPT."},
+    {"plano": "medio", "poses": ["thinkUp", "explain", "youTilt"],
+     "escena": {"tipo": "checklist", "items": ["¿Te detendrías?", "¿Qué no entiendes?", "¿Qué te haría comprar?"]},
+     "visual": "Plano medio. Las tres preguntas aparecen una a una con check."},
+    {"plano": "general", "poses": ["surprised", "one", "two"],
+     "escena": {"tipo": "trio", "iconos": ["🔍", "❓", "🙈"], "letras": ["NO SE LEE", "NO SE ENTIENDE", "NADIE TE LO DICE"]},
+     "visual": "Plano general. Tres hallazgos típicos que señala la IA."},
+    {"plano": "primer", "poses": ["wagNo", "smart", "explain"],
+     "escena": {"tipo": "antesDespues", "antes": "La IA decide", "despues": "La IA filtra, tu público decide", "badge": "OJO"},
+     "visual": "Primer plano, tono serio. Aclaración: la IA es primer filtro, no sustituye clientes."},
+    {"plano": "medio", "poses": ["down", "heart", "waveBoth"],
+     "escena": {"tipo": "seguir", "usuario": "jorgealmonteia"},
+     "visual": "Plano medio. Tarjeta de seguir con el usuario.", "transicion": "fin"}
+  ],
+  "chips": [
+    {"frase": 2, "en": 0.55, "texto": "✅ Gratis acepta fotos", "lado": "der", "color": "#2BD576"},
+    {"frase": 3, "en": 0.2, "texto": "🎯 Tu cliente ideal", "lado": "izq", "color": "#22D3EE"},
+    {"frase": 5, "en": 0.5, "texto": "🧪 Luego prueba real", "lado": "der", "color": "#FFD23F"}
+  ],
+  "reacciones": [
+    {"frase": 0, "en": 0.2, "emoji": "💸"},
+    {"frase": 2, "en": 0.3, "emoji": "🤖"},
+    {"frase": 4, "en": 0.5, "emoji": "😮"},
+    {"frase": 6, "en": 0.3, "emoji": "🚀"}
+  ],
+  "portada": {"lineas": ["Revisa tu anuncio", "con IA", "antes de pagar"], "resaltar": 1, "icono": "🤖", "satelites": ["📸", "💸", "✅"], "badge": "AHORRA DINERO", "pose": "idea", "color": "#22D3EE", "fondo": "marino"}
+}

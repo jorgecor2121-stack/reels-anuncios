@@ -1,0 +1,222 @@
+{
+  "modalidad": "presentador (presentación de marca, mira a cámara)",
+  "luz": "escenario azul con contraluz y focos",
+  "entorno": "escenario",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "reemplazar",
+    "atrás",
+    "aprendan",
+    "futuro",
+    "escribir",
+    "diseñar",
+    "atender",
+    "diferencia",
+    "herramienta",
+    "persona",
+    "Jorge",
+    "Almonte",
+    "marketing",
+    "automatización",
+    "humo",
+    "día",
+    "ventaja",
+    "Sígueme",
+    "usan"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "skeptic",
+        "wagNo",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Te reemplaza",
+        "despues": "Te deja atrás si no aprendes",
+        "badge": "LA VERDAD"
+      },
+      "visual": "Primer plano en el escenario azul. Tarjeta: 'Te reemplaza' tachado → 'Te deja atrás si no aprendes'.",
+      "transicion": "corte a plano medio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "one",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "🎨",
+          "💬"
+        ],
+        "letras": [
+          "ESCRIBIR",
+          "DISEÑAR",
+          "ATENDER"
+        ]
+      },
+      "visual": "Plano medio. Tres iconos: escribir, diseñar, atender clientes."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "thinkUp",
+        "smart",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "La herramienta",
+        "despues": "Quien sabe pedirle",
+        "badge": "LA DIFERENCIA"
+      },
+      "visual": "Plano general del escenario. Antes/después: la herramienta vs. quien sabe pedirle."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "welcome",
+        "presentRight",
+        "bigSmile"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🤖",
+          "📣",
+          "⚙️"
+        ],
+        "letras": [
+          "IA",
+          "MARKETING",
+          "AUTOMATIZAR"
+        ]
+      },
+      "visual": "Plano medio, presentación de Jorge: los tres pilares de la marca."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "stop",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Sin palabras raras",
+          "Sin humo",
+          "Para aplicar hoy"
+        ]
+      },
+      "visual": "Primer plano. Checklist de la promesa de la marca."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "confident",
+        "fistPump"
+      ],
+      "escena": {
+        "tipo": "carrera",
+        "a": {
+          "etiqueta": "Se queda mirando",
+          "valor": 20
+        },
+        "b": {
+          "etiqueta": "Aprende y la usa",
+          "valor": 80
+        },
+        "titulo": "Ventaja",
+        "nota": "Ilustrativo"
+      },
+      "visual": "Plano medio. Barras ilustrativas: quien aprende toma ventaja."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Plano general con saludo. Tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 1,
+      "en": 0.5,
+      "texto": "📅 Hoy, no mañana",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 3,
+      "en": 0.55,
+      "texto": "👋 Jorge Almonte",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "frase": 5,
+      "en": 0.3,
+      "texto": "🚀 Ventaja",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🤖"
+    },
+    {
+      "frase": 2,
+      "en": 0.4,
+      "emoji": "💡"
+    },
+    {
+      "frase": 5,
+      "en": 0.4,
+      "emoji": "🚀"
+    },
+    {
+      "frase": 6,
+      "en": 0.3,
+      "emoji": "👋"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "La IA",
+      "no es",
+      "el futuro"
+    ],
+    "resaltar": 2,
+    "icono": "🤖",
+    "satelites": [
+      "💡",
+      "⚙️",
+      "📣"
+    ],
+    "badge": "ES HOY",
+    "pose": "confident",
+    "color": "#A78BFA",
+    "fondo": "morado"
+  }
+}

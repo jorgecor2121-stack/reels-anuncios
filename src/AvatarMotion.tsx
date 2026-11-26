@@ -31,6 +31,26 @@ export type AvatarMotionProps = MotionProps & {
   // Ráfagas de emojis que suben (likes, fuego, dinero…)
   reacciones?: { start: number; emoji: string }[];
   arriba?: boolean; // avatar más grande y más arriba (ojos sobre la mitad de la pantalla)
+  // Cámara por frase: "general" (1x), "medio" (1.12x) o "primer" (primer plano 1.3x), con acercamiento lento dentro de cada frase.
+  planos?: ("general" | "medio" | "primer")[];
+  // Modo historia: lugar distinto por frase (el personaje protagoniza) y look de cine.
+  entornos?: AvatarMotionProps["entorno"][];
+  cine?: boolean; // franjas negras, grano, viñeta, fundido a negro al cambiar de lugar y subtítulos abajo
+};
+
+const lineaEn = (p: AvatarMotionProps, t: number) => Math.max(0, p.lineas.reduce((a, l, i) => (t >= l.start ? i : a), -1));
+const entornoEn = (p: AvatarMotionProps, t: number) => (p.entornos?.length ? p.entornos[Math.min(lineaEn(p, t), p.entornos.length - 1)] : p.entorno) ?? p.entorno;
+
+const ZOOM = { general: 1, medio: 1.07, primer: 1.15 } as const;
+const zoomCamara = (p: AvatarMotionProps, t: number) => {
+  if (!p.planos?.length) return 1;
+  const z = (i: number) => ZOOM[p.planos![Math.min(i, p.planos!.length - 1)] ?? "general"];
+  const li = Math.max(0, p.lineas.reduce((a, l, i) => (t >= l.start ? i : a), -1));
+  const l = p.lineas[li];
+  const prog = l ? Math.min(1, Math.max(0, (t - l.start) / Math.max(0.5, l.duration))) : 0;
+  const entra = li > 0 ? interpolate(t - (l?.start ?? 0), [0, 0.4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
+  const base = z(Math.max(0, li - 1)) + (z(li) - z(Math.max(0, li - 1))) * (1 - Math.pow(1 - entra, 3));
+  return base * (1 + 0.035 * prog); // empuje lento de cámara
 };
 
 const Chip: React.FC<{ c: NonNullable<AvatarMotionProps["chips"]>[number]; i: number }> = ({ c, i }) => {
@@ -118,17 +138,38 @@ const Personaje: React.FC<{ p: AvatarMotionProps }> = ({ p }) => {
   }
   const pose = { ...base, headY: (base.headY ?? 0) + (hablando ? Math.sin(t * 9) * 2 + Math.min(4, (volume ?? 0) * 25) : 0), face: { ...base.face, mouth } };
   const glow = 0.85 + Math.min(0.3, (volume ?? 0) * 1.5);
+  const ent = entornoEn(p, t);
   return (
-    <div style={{ position: "absolute", left: 0, top: p.arriba ? -311 : BAJAR, width: 1080, height: 1920, transform: p.arriba ? "scale(1.25)" : undefined, transformOrigin: "540px 0" }}>
+    <div style={{ position: "absolute", left: 0, top: p.arriba ? -311 : BAJAR, width: 1080, height: 1920, transform: `${p.arriba ? "scale(1.25) " : ""}scale(${zoomCamara(p, t)})`, transformOrigin: p.planos?.length ? "540px 700px" : "540px 0" }}>
       <OutfitProvider vestimenta={p.vestimenta}>
-        {p.entorno === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
-          : p.entorno === "atardecer" ? <StudioSunset pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
-          : p.entorno === "cafe" ? <StudioCafe pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
-          : p.entorno === "escenario" ? <StudioEscenario pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
-          : p.entorno === "boutique" ? <StudioBoutique pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+        {ent === "neon" ? <StudioNeon pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : ent === "atardecer" ? <StudioSunset pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : ent === "cafe" ? <StudioCafe pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : ent === "escenario" ? <StudioEscenario pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
+          : ent === "boutique" ? <StudioBoutique pose={pose} frame={frame} energia={Math.min(1, (volume ?? 0) * 3)} />
           : <Studio pose={pose} glow={glow} />}
       </OutfitProvider>
     </div>
+  );
+};
+
+
+// Look de cine: grano, viñeta, franjas y fundido a negro cuando cambia el lugar.
+const Cine: React.FC<{ p: AvatarMotionProps; t: number }> = ({ p, t }) => {
+  const frame = useCurrentFrame();
+  const li = lineaEn(p, t);
+  const cambia = li > 0 && p.entornos && p.entornos[li] !== p.entornos[li - 1];
+  const dt = t - (p.lineas[li]?.start ?? 0);
+  const negro = (cambia ? interpolate(dt, [0, 0.35], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0)
+    + interpolate(t, [0, 0.4], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(0,0,0,0) 45%, rgba(0,0,0,.55) 100%)", pointerEvents: "none" }} />
+      <AbsoluteFill style={{ opacity: 0.09, mixBlendMode: "overlay", backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='${frame % 7}'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")` }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 70, background: "#000" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 70, background: "#000" }} />
+      <AbsoluteFill style={{ background: "#000", opacity: Math.min(1, negro) }} />
+    </>
   );
 };
 
@@ -136,17 +177,18 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
   const frame = useCurrentFrame();
   const t = frame / FPS;
   const ws = palabras(p);
+  const e = entornoEn(p, t);
   const li = Math.max(0, p.lineas.reduce((a, l, i) => (t >= l.start ? i : a), -1));
   const ls = p.lineas[li]?.start ?? 0;
   const out = interpolate(S(p.lineas[li + 1]?.start ?? p.fin) - frame, [0, 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "#0A0503", fontFamily, color: "#fff", overflow: "hidden" }}>
       <Personaje p={p} />
-      {p.entorno === "neon" || p.entorno === "atardecer" || p.entorno === "cafe" || p.entorno === "boutique" || p.entorno === "escenario" ? <Figuras /> : null}
+      {e === "neon" || e === "atardecer" || e === "cafe" || e === "boutique" || e === "escenario" ? <Figuras /> : null}
       {(p.reacciones ?? []).map((r, i) => <Reaccion key={i} r={r} />)}
       {(p.chips ?? []).map((c, i) => <Chip key={i} c={c} i={i} />)}
       {/* oscurece arriba para que las escenas se lean */}
-      <AbsoluteFill style={{ background: p.entorno === "escenario" ? "linear-gradient(180deg, rgba(6,11,34,1) 0%, rgba(6,11,34,.92) 32%, rgba(6,11,34,0) 46%)" : p.entorno === "boutique" ? (p.arriba ? "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 26%, rgba(58,30,36,0) 38%)" : "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 32%, rgba(58,30,36,0) 48%)") : p.entorno === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : p.entorno === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : p.entorno === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
+      <AbsoluteFill style={{ background: e === "escenario" ? "linear-gradient(180deg, rgba(6,11,34,1) 0%, rgba(6,11,34,.92) 32%, rgba(6,11,34,0) 46%)" : e === "boutique" ? (p.arriba ? "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 26%, rgba(58,30,36,0) 38%)" : "linear-gradient(180deg, rgba(58,30,36,1) 0%, rgba(58,30,36,.92) 32%, rgba(58,30,36,0) 48%)") : e === "cafe" ? "linear-gradient(180deg, rgba(30,16,10,1) 0%, rgba(30,16,10,.92) 32%, rgba(30,16,10,0) 48%)" : e === "atardecer" ? "linear-gradient(180deg, rgba(26,18,32,1) 0%, rgba(26,18,32,.92) 32%, rgba(26,18,32,0) 48%)" : e === "neon" ? "linear-gradient(180deg, rgba(7,6,15,1) 0%, rgba(7,6,15,.92) 32%, rgba(7,6,15,0) 50%)" : "linear-gradient(180deg, rgba(10,5,3,1) 0%, rgba(10,5,3,.9) 32%, rgba(10,5,3,0) 50%)" }} />
       {/* barra de progreso + marca */}
       <div style={{ position: "absolute", top: 110, left: 90, right: 90, height: 8, borderRadius: 4, background: "rgba(255,255,255,.12)" }}>
         <div style={{ width: `${Math.min(1, t / p.fin) * 100}%`, height: "100%", borderRadius: 4, background: "linear-gradient(90deg,#FF8A3D,#FFD23F)" }} />
@@ -159,7 +201,8 @@ export const ReelAvatarMotion: React.FC<AvatarMotionProps> = (p) => {
         </div>
       </div>
       {/* subtítulos entre la escena y la cabeza */}
-      <div style={{ position: "absolute", top: p.arriba || p.entorno === "escenario" ? 1690 : 850, left: 30, right: 30, textAlign: "center", ...(p.arriba || p.entorno === "escenario" ? { background: "rgba(40,18,24,.82)", borderRadius: 28, padding: "14px 10px" } : {}) }}><Subs p={p} t={t} ws={ws} /></div>
+      <div style={{ position: "absolute", top: p.cine ? 1620 : p.arriba || e === "escenario" ? 1690 : 850, left: 30, right: 30, textAlign: "center", ...(p.cine || p.arriba || e === "escenario" ? { background: "rgba(40,18,24,.82)", borderRadius: 28, padding: "14px 10px" } : {}) }}><Subs p={p} t={t} ws={ws} /></div>
+      {p.cine ? <Cine p={p} t={t} /> : null}
     </AbsoluteFill>
   );
 };

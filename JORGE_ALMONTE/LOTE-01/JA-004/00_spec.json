@@ -1,0 +1,218 @@
+{
+  "modalidad": "protagonista (Jorge pasa del caos manual al negocio automatizado)",
+  "luz": "noche cansada con neón; luego atardecer cálido de alivio",
+  "cine": true,
+  "entorno": "neon",
+  "vestimenta": "polo",
+  "entornos": [
+    "neon",
+    "neon",
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "atardecer"
+  ],
+  "resaltar": [
+    "tiempo",
+    "pierde",
+    "automatización",
+    "sola",
+    "misma",
+    "pregunta",
+    "pedidos",
+    "mano",
+    "cita",
+    "automatizar",
+    "programador",
+    "WhatsApp",
+    "Business",
+    "bienvenida",
+    "ausencia",
+    "rápidas",
+    "formulario",
+    "Google",
+    "hoja",
+    "Zapier",
+    "n8n",
+    "conectan",
+    "una",
+    "sola",
+    "tarea",
+    "vender",
+    "Sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "tired",
+        "facepalm",
+        "worried"
+      ],
+      "escena": {
+        "tipo": "calendario",
+        "hasta": 7,
+        "palabra": "¿CUÁNTO TIEMPO?"
+      },
+      "visual": "Noche en la oficina con neón. Jorge agotado.",
+      "transicion": "corte"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phone",
+        "tired",
+        "facepalm"
+      ],
+      "escena": {
+        "tipo": "papeles",
+        "palabra": "A MANO"
+      },
+      "visual": "Plano medio: papeles volando, tareas repetidas a mano.",
+      "transicion": "fundido a negro, mañana en la cafetería"
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "⚙️",
+        "etiqueta": "Se automatiza",
+        "badge": "SIN PROGRAMAR"
+      },
+      "visual": "Cafetería de mañana: la idea de automatizar."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phone",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Mensaje de bienvenida",
+          "Mensaje de ausencia",
+          "Respuestas rápidas"
+        ]
+      },
+      "visual": "Plano medio: funciones de WhatsApp Business.",
+      "transicion": "fundido a negro, estudio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "presentRight",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "📝",
+          "📊",
+          "🔗"
+        ],
+        "letras": [
+          "FORMULARIO",
+          "HOJA",
+          "CONECTA"
+        ]
+      },
+      "visual": "Estudio: formulario → hoja de cálculo → Zapier/n8n."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "one",
+        "ok",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Todo a la vez",
+        "despues": "Una tarea primero",
+        "badge": "EMPIEZA ASÍ"
+      },
+      "visual": "Atardecer, primer plano: empezar por una sola tarea."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "celebrate",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Atardecer, Jorge relajado. Tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 3,
+      "en": 0.3,
+      "texto": "💬 WhatsApp Business",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "frase": 4,
+      "en": 0.2,
+      "texto": "📝 Google Forms",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.65,
+      "texto": "🔗 Zapier · n8n",
+      "lado": "der",
+      "color": "#FF8A3D"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.5,
+      "emoji": "😩"
+    },
+    {
+      "frase": 2,
+      "en": 0.4,
+      "emoji": "⚙️"
+    },
+    {
+      "frase": 5,
+      "en": 0.6,
+      "emoji": "⏰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Deja de",
+      "hacerlo",
+      "todo a mano"
+    ],
+    "resaltar": 2,
+    "icono": "⚙️",
+    "satelites": [
+      "💬",
+      "📝",
+      "⏰"
+    ],
+    "badge": "AUTOMATIZA",
+    "pose": "tired",
+    "color": "#2BD576",
+    "fondo": "marino"
+  }
+}
