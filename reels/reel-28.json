@@ -1,0 +1,267 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "narracion-28.wav",
+  "lineas": [
+    {
+      "text": "¡El noventa por ciento de los emprendedores usa ChatGPT mal… y por eso no les sirve de nada!",
+      "start": 0.0,
+      "duration": 6.922
+    },
+    {
+      "text": "Le preguntan \"hazme un anuncio\" y reciben algo genérico que nadie compra.",
+      "start": 7.072,
+      "duration": 5.329
+    },
+    {
+      "text": "El secreto está en cómo le hablas.",
+      "start": 12.551,
+      "duration": 3.004
+    },
+    {
+      "text": "Uno: dale contexto. Qué vendes, a quién, en qué ciudad y a qué precio.",
+      "start": 15.706,
+      "duration": 6.348
+    },
+    {
+      "text": "Dos: pídele diez ganchos distintos, no uno. Y tres: pídele que se ponga en los zapatos de tu cliente y te diga por qué no compraría.",
+      "start": 22.203,
+      "duration": 10.031
+    },
+    {
+      "text": "Con eso tienes anuncios, respuestas para tus clientes y hasta el plan de la semana… en cinco minutos.",
+      "start": 32.384,
+      "duration": 7.471
+    },
+    {
+      "text": "¡Guárdalo y sígueme para más trucos de inteligencia artificial para tu negocio!",
+      "start": 40.005,
+      "duration": 4.833
+    }
+  ],
+  "fin": 46.19,
+  "resaltar": [
+    "noventa",
+    "ChatGPT",
+    "mal",
+    "nada",
+    "genérico",
+    "nadie",
+    "secreto",
+    "hablas",
+    "contexto",
+    "vendes",
+    "precio",
+    "diez",
+    "ganchos",
+    "zapatos",
+    "cliente",
+    "compraría",
+    "anuncios",
+    "semana",
+    "cinco",
+    "Guárdalo",
+    "sígueme",
+    "inteligencia"
+  ],
+  "escenas": [
+    {
+      "tipo": "dona",
+      "porcentaje": 90,
+      "etiqueta": "lo usa mal",
+      "badge": "CHATGPT"
+    },
+    {
+      "tipo": "telefono",
+      "texto": "hazme un anuncio",
+      "sello": "GENÉRICO 😴"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🗝️",
+      "etiqueta": "Cómo le hablas"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🛍️",
+        "👥",
+        "📍"
+      ],
+      "letras": [
+        "QUÉ VENDES",
+        "A QUIÉN",
+        "DÓNDE"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "10 ganchos, no 1",
+        "Ponte en sus zapatos",
+        "¿Por qué no compraría?"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📣",
+        "💬",
+        "📅"
+      ],
+      "letras": [
+        "ANUNCIOS",
+        "RESPUESTAS",
+        "PLAN"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "chips": [
+    {
+      "start": 17.61,
+      "texto": "🧠 Contexto",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 23.21,
+      "texto": "🎣 10 ganchos",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 28.22,
+      "texto": "👟 Tu cliente",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 1.5,
+      "emoji": "🤖"
+    },
+    {
+      "start": 8.67,
+      "emoji": "😴"
+    },
+    {
+      "start": 30.23,
+      "emoji": "💡"
+    },
+    {
+      "start": 37.61,
+      "emoji": "🚀"
+    }
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 2.42,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.85,
+      "pose": "you"
+    },
+    {
+      "start": 7.07,
+      "pose": "skeptic"
+    },
+    {
+      "start": 8.94,
+      "pose": "shrug"
+    },
+    {
+      "start": 10.8,
+      "pose": "sad"
+    },
+    {
+      "start": 12.55,
+      "pose": "smart"
+    },
+    {
+      "start": 13.6,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 14.65,
+      "pose": "idea"
+    },
+    {
+      "start": 15.71,
+      "pose": "one"
+    },
+    {
+      "start": 17.93,
+      "pose": "explain"
+    },
+    {
+      "start": 20.15,
+      "pose": "excited"
+    },
+    {
+      "start": 22.2,
+      "pose": "two"
+    },
+    {
+      "start": 25.71,
+      "pose": "three"
+    },
+    {
+      "start": 29.22,
+      "pose": "proud"
+    },
+    {
+      "start": 32.38,
+      "pose": "excited"
+    },
+    {
+      "start": 35.0,
+      "pose": "love"
+    },
+    {
+      "start": 37.61,
+      "pose": "fistPump"
+    },
+    {
+      "start": 40.01,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 41.7,
+      "pose": "heart"
+    },
+    {
+      "start": 43.39,
+      "pose": "waveBoth"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "ChatGPT",
+      "para",
+      "emprender"
+    ],
+    "resaltar": 0,
+    "icono": "🤖",
+    "satelites": [
+      "💡",
+      "📣",
+      "🚀"
+    ],
+    "badge": "LO USAS MAL",
+    "pose": "surprised",
+    "color": "#A78BFA"
+  }
+}
