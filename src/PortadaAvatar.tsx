@@ -18,6 +18,7 @@ export type PortadaProps = {
   entorno?: "clasico" | "neon" | "atardecer" | "cafe" | "boutique" | "escenario";
   vestimenta?: Vestimenta;
   marca: string;
+  limpia?: boolean; // solo estudio + caricatura (para animar con IA)
   portada: {
     lineas: string[]; // 2–4 líneas cortas
     resaltar?: number; // índice de la línea que va en caja amarilla
@@ -41,6 +42,20 @@ export const PortadaAvatar: React.FC<PortadaProps> = (p) => {
   const tinte = TINTE[ent] ?? TINTE.clasico;
   const sat = c.satelites ?? [];
   const pos = [[150, 1010], [140, 1420], [950, 1440], [930, 1650]];
+  if (p.limpia) return (
+    <AbsoluteFill style={{ background: "#0A0503", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, top: -120, width: 1080, height: 1920, transform: "scale(1.25)", transformOrigin: "540px 0" }}>
+        <OutfitProvider vestimenta={p.vestimenta}>
+          {ent === "neon" ? <StudioNeon pose={pose} frame={30} energia={0.4} />
+            : ent === "atardecer" ? <StudioSunset pose={pose} frame={30} energia={0.4} />
+            : ent === "cafe" ? <StudioCafe pose={pose} frame={30} energia={0.4} />
+            : ent === "escenario" ? <StudioEscenario pose={pose} frame={30} energia={0.4} />
+            : ent === "boutique" ? <StudioBoutique pose={pose} frame={30} energia={0.4} />
+            : <Studio pose={pose} glow={1} />}
+        </OutfitProvider>
+      </div>
+    </AbsoluteFill>
+  );
   return (
     <AbsoluteFill style={{ background: "#0A0503", fontFamily, color: "#fff", overflow: "hidden" }}>
       {/* estudio + caricatura, más abajo y más grande para que se vea la cara en la cuadrícula */}
