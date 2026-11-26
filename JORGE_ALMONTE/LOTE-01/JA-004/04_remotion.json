@@ -1,0 +1,280 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-004.wav",
+  "lineas": [
+    {
+      "text": "¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola?",
+      "start": 0.0,
+      "duration": 5.486
+    },
+    {
+      "text": "Contestar la misma pregunta todo el día. Copiar pedidos a mano. Recordarle la cita a cada cliente.",
+      "start": 5.766,
+      "duration": 8.046
+    },
+    {
+      "text": "Mucho de eso se puede automatizar, y no tienes que ser programador.",
+      "start": 14.091,
+      "duration": 4.598
+    },
+    {
+      "text": "WhatsApp Business ya trae mensajes de bienvenida, mensajes de ausencia y respuestas rápidas.",
+      "start": 18.969,
+      "duration": 6.191
+    },
+    {
+      "text": "Un formulario de Google guarda cada pedido solo en una hoja de cálculo. Y herramientas como Zapier o n8n conectan tus aplicaciones entre sí.",
+      "start": 25.44,
+      "duration": 10.266
+    },
+    {
+      "text": "Empieza por una sola tarea: la que más se repite. Y el tiempo que recuperes, úsalo para vender.",
+      "start": 35.986,
+      "duration": 7.314
+    },
+    {
+      "text": "Sígueme, que te voy a enseñar a automatizar tu negocio paso a paso.",
+      "start": 43.58,
+      "duration": 4.676
+    }
+  ],
+  "fin": 49.74,
+  "resaltar": [
+    "tiempo",
+    "pierde",
+    "automatización",
+    "sola",
+    "misma",
+    "pregunta",
+    "pedidos",
+    "mano",
+    "cita",
+    "automatizar",
+    "programador",
+    "WhatsApp",
+    "Business",
+    "bienvenida",
+    "ausencia",
+    "rápidas",
+    "formulario",
+    "Google",
+    "hoja",
+    "Zapier",
+    "n8n",
+    "conectan",
+    "una",
+    "sola",
+    "tarea",
+    "vender",
+    "Sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "¿CUÁNTO TIEMPO?"
+    },
+    {
+      "tipo": "papeles",
+      "palabra": "A MANO"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "⚙️",
+      "etiqueta": "Se automatiza",
+      "badge": "SIN PROGRAMAR"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Mensaje de bienvenida",
+        "Mensaje de ausencia",
+        "Respuestas rápidas"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📝",
+        "📊",
+        "🔗"
+      ],
+      "letras": [
+        "FORMULARIO",
+        "HOJA",
+        "CONECTA"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Todo a la vez",
+      "despues": "Una tarea primero",
+      "badge": "EMPIEZA ASÍ"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "medio",
+    "primer",
+    "general"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "tired"
+    },
+    {
+      "start": 1.92,
+      "pose": "facepalm"
+    },
+    {
+      "start": 3.84,
+      "pose": "worried"
+    },
+    {
+      "start": 5.77,
+      "pose": "phone"
+    },
+    {
+      "start": 8.58,
+      "pose": "tired"
+    },
+    {
+      "start": 11.4,
+      "pose": "facepalm"
+    },
+    {
+      "start": 14.09,
+      "pose": "idea"
+    },
+    {
+      "start": 15.7,
+      "pose": "explain"
+    },
+    {
+      "start": 17.31,
+      "pose": "smile"
+    },
+    {
+      "start": 18.97,
+      "pose": "phone"
+    },
+    {
+      "start": 21.14,
+      "pose": "explain"
+    },
+    {
+      "start": 23.3,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 25.44,
+      "pose": "explain"
+    },
+    {
+      "start": 29.03,
+      "pose": "presentRight"
+    },
+    {
+      "start": 32.63,
+      "pose": "smart"
+    },
+    {
+      "start": 35.99,
+      "pose": "one"
+    },
+    {
+      "start": 38.55,
+      "pose": "ok"
+    },
+    {
+      "start": 41.11,
+      "pose": "proud"
+    },
+    {
+      "start": 43.58,
+      "pose": "celebrate"
+    },
+    {
+      "start": 45.22,
+      "pose": "heart"
+    },
+    {
+      "start": 46.85,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 20.83,
+      "texto": "💬 WhatsApp Business",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 27.49,
+      "texto": "📝 Google Forms",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 32.11,
+      "texto": "🔗 Zapier · n8n",
+      "lado": "der",
+      "color": "#FF8A3D"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.74,
+      "emoji": "😩"
+    },
+    {
+      "start": 15.93,
+      "emoji": "⚙️"
+    },
+    {
+      "start": 40.37,
+      "emoji": "⏰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Deja de",
+      "hacerlo",
+      "todo a mano"
+    ],
+    "resaltar": 2,
+    "icono": "⚙️",
+    "satelites": [
+      "💬",
+      "📝",
+      "⏰"
+    ],
+    "badge": "AUTOMATIZA",
+    "pose": "tired",
+    "color": "#2BD576",
+    "fondo": "marino"
+  },
+  "entornos": [
+    "neon",
+    "neon",
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "atardecer"
+  ],
+  "cine": true
+}
