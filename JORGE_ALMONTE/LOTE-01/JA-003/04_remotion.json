@@ -1,0 +1,278 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-003.wav",
+  "lineas": [
+    {
+      "text": "Puedes tener miles de seguidores… y aun así no conseguir ni un solo cliente.",
+      "start": 0.0,
+      "duration": 5.642
+    },
+    {
+      "text": "Porque la atención no es lo mismo que una venta.",
+      "start": 5.922,
+      "duration": 3.709
+    },
+    {
+      "text": "Un video viral te trae miradas. Pero si nadie sabe qué vendes, cuánto cuesta y cómo comprarlo… esas miradas se van.",
+      "start": 9.912,
+      "duration": 9.247
+    },
+    {
+      "text": "Para convertir atención en clientes necesitas tres cosas.",
+      "start": 19.439,
+      "duration": 4.441
+    },
+    {
+      "text": "Una oferta clara. Una razón para comprar ahora. Y un camino fácil: un mensaje, un enlace o un botón.",
+      "start": 24.16,
+      "duration": 9.091
+    },
+    {
+      "text": "Los \"me gusta\" se sienten bien… pero los clientes son los que pagan las cuentas.",
+      "start": 33.531,
+      "duration": 5.878
+    },
+    {
+      "text": "Guarda este video y sígueme para más estrategias de ventas.",
+      "start": 39.688,
+      "duration": 4.049
+    }
+  ],
+  "fin": 45.22,
+  "resaltar": [
+    "miles",
+    "seguidores",
+    "cliente",
+    "atención",
+    "venta",
+    "viral",
+    "miradas",
+    "vendes",
+    "cuesta",
+    "comprarlo",
+    "convertir",
+    "tres",
+    "oferta",
+    "clara",
+    "ahora",
+    "camino",
+    "mensaje",
+    "enlace",
+    "botón",
+    "pagan",
+    "Guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "stat",
+      "valor": 12000,
+      "etiqueta": "seguidores · 0 clientes",
+      "icono": "👥",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Atención",
+      "despues": "Venta",
+      "badge": "NO ES LO MISMO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "❓",
+        "💲",
+        "🛒"
+      ],
+      "letras": [
+        "¿QUÉ ES?",
+        "¿CUÁNTO?",
+        "¿CÓMO?"
+      ]
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🔑",
+      "etiqueta": "3 cosas"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Oferta clara",
+        "Razón para comprar hoy",
+        "Camino fácil"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Me gusta",
+      "despues": "Clientes que pagan",
+      "badge": "LO QUE IMPORTA"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "medio",
+    "primer",
+    "medio",
+    "primer",
+    "general",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "phoneLook"
+    },
+    {
+      "start": 1.97,
+      "pose": "sad"
+    },
+    {
+      "start": 3.95,
+      "pose": "ohNo"
+    },
+    {
+      "start": 5.92,
+      "pose": "thinking"
+    },
+    {
+      "start": 7.22,
+      "pose": "doubt"
+    },
+    {
+      "start": 8.52,
+      "pose": "explain"
+    },
+    {
+      "start": 9.91,
+      "pose": "phone"
+    },
+    {
+      "start": 13.15,
+      "pose": "shrug"
+    },
+    {
+      "start": 16.38,
+      "pose": "worried"
+    },
+    {
+      "start": 19.44,
+      "pose": "one"
+    },
+    {
+      "start": 20.99,
+      "pose": "two"
+    },
+    {
+      "start": 22.55,
+      "pose": "three"
+    },
+    {
+      "start": 24.16,
+      "pose": "explain"
+    },
+    {
+      "start": 27.34,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 30.52,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 33.53,
+      "pose": "smile"
+    },
+    {
+      "start": 35.59,
+      "pose": "confident"
+    },
+    {
+      "start": 37.65,
+      "pose": "proud"
+    },
+    {
+      "start": 39.69,
+      "pose": "down"
+    },
+    {
+      "start": 41.11,
+      "pose": "heart"
+    },
+    {
+      "start": 42.52,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 24.61,
+      "texto": "🎯 Oferta clara",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 27.34,
+      "texto": "⏰ Comprar hoy",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 30.07,
+      "texto": "👉 Camino fácil",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.82,
+      "emoji": "😩"
+    },
+    {
+      "start": 14.54,
+      "emoji": "👀"
+    },
+    {
+      "start": 36.47,
+      "emoji": "💰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Miles de",
+      "seguidores",
+      "y 0 clientes"
+    ],
+    "resaltar": 2,
+    "icono": "📱",
+    "satelites": [
+      "❤️",
+      "👀",
+      "💸"
+    ],
+    "badge": "¿TE PASA?",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "boutique",
+    "boutique",
+    "neon",
+    "clasico",
+    "boutique",
+    "atardecer",
+    "boutique"
+  ],
+  "cine": true
+}
