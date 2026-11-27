@@ -1,0 +1,30 @@
+{
+  "total": 25.107,
+  "lines": [
+    {
+      "text": "Tu salón pierde clientas a las diez de la noche… y tú ni te enteras.",
+      "start": 0.0,
+      "duration": 5.068
+    },
+    {
+      "text": "Alguien te escribe para una cita mañana. Nadie contesta.",
+      "start": 5.288,
+      "duration": 4.284
+    },
+    {
+      "text": "A los cinco minutos le escribe a otro salón. Y ese sí le respondió.",
+      "start": 9.792,
+      "duration": 5.146
+    },
+    {
+      "text": "Un mensaje automático con tus horarios y un enlace para reservar puede contestar por ti mientras duermes.",
+      "start": 15.158,
+      "duration": 7.001
+    },
+    {
+      "text": "Compártelo con alguien que tenga un salón.",
+      "start": 22.379,
+      "duration": 2.508
+    }
+  ]
+}

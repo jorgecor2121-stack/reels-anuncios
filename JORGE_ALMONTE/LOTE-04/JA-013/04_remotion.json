@@ -1,0 +1,182 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-013.wav",
+  "lineas": [
+    {
+      "text": "Tu salón pierde clientas a las diez de la noche… y tú ni te enteras.",
+      "start": 0.0,
+      "duration": 5.068
+    },
+    {
+      "text": "Alguien te escribe para una cita mañana. Nadie contesta.",
+      "start": 5.288,
+      "duration": 4.284
+    },
+    {
+      "text": "A los cinco minutos le escribe a otro salón. Y ese sí le respondió.",
+      "start": 9.792,
+      "duration": 5.146
+    },
+    {
+      "text": "Un mensaje automático con tus horarios y un enlace para reservar puede contestar por ti mientras duermes.",
+      "start": 15.158,
+      "duration": 7.001
+    },
+    {
+      "text": "Compártelo con alguien que tenga un salón.",
+      "start": 22.379,
+      "duration": 2.508
+    }
+  ],
+  "fin": 26.31,
+  "resaltar": [
+    "salón",
+    "clientas",
+    "noche",
+    "cita",
+    "contesta",
+    "otro",
+    "respondió",
+    "automático",
+    "horarios",
+    "reservar",
+    "duermes",
+    "Compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "10:00 P. M."
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "📱",
+      "etiqueta": "Sin respuesta"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "SE FUE CON OTRO"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Horarios",
+        "Precios",
+        "Enlace para reservar"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien tenga un salón",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.77,
+      "pose": "ohNo"
+    },
+    {
+      "start": 3.55,
+      "pose": "you"
+    },
+    {
+      "start": 5.29,
+      "pose": "phoneLook"
+    },
+    {
+      "start": 6.79,
+      "pose": "worried"
+    },
+    {
+      "start": 8.29,
+      "pose": "sad"
+    },
+    {
+      "start": 9.79,
+      "pose": "ohNo"
+    },
+    {
+      "start": 11.59,
+      "pose": "facepalm"
+    },
+    {
+      "start": 13.39,
+      "pose": "sad"
+    },
+    {
+      "start": 15.16,
+      "pose": "idea"
+    },
+    {
+      "start": 17.61,
+      "pose": "explain"
+    },
+    {
+      "start": 20.06,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 22.38,
+      "pose": "pointFront"
+    },
+    {
+      "start": 23.26,
+      "pose": "heart"
+    },
+    {
+      "start": 24.13,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 3.04,
+      "emoji": "💇‍♀️"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Clientas",
+      "que pierdes",
+      "de noche"
+    ],
+    "resaltar": 2,
+    "icono": "💇‍♀️",
+    "satelites": [
+      "🌙",
+      "📱",
+      "⏰"
+    ],
+    "badge": "SALONES",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "neon",
+    "neon",
+    "neon",
+    "boutique",
+    "boutique"
+  ],
+  "cine": true
+}
