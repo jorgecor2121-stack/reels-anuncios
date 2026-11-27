@@ -1,0 +1,214 @@
+{
+  "modalidad": "protagonista (un día de grabación por lotes)",
+  "luz": "mañana en la cafetería, mediodía en el estudio, tarde al atardecer",
+  "cine": true,
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "entornos": [
+    "neon",
+    "neon",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "atardecer",
+    "escenario"
+  ],
+  "resaltar": [
+    "tiempo",
+    "contenido",
+    "días",
+    "lotes",
+    "día",
+    "semana",
+    "mañana",
+    "cinco",
+    "ideas",
+    "gancho",
+    "mediodía",
+    "grábalas",
+    "camisa",
+    "tarde",
+    "edita",
+    "descripciones",
+    "Instagram",
+    "programar",
+    "solos",
+    "enfocado",
+    "estrés",
+    "Guarda",
+    "sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "tired",
+        "facepalm",
+        "you"
+      ],
+      "escena": {
+        "tipo": "calendario",
+        "hasta": 7,
+        "palabra": "¿TODOS LOS DÍAS?"
+      },
+      "visual": "Noche: agotado de publicar a diario.",
+      "transicion": "corte"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "explain",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "📦",
+        "etiqueta": "Graba por lotes"
+      },
+      "visual": "Noche: la idea de grabar por lotes.",
+      "transicion": "fundido a negro, mañana en la cafetería"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "thinking",
+        "phone",
+        "idea"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "5 ideas",
+          "5 ganchos"
+        ]
+      },
+      "visual": "Mañana en la cafetería: escribe ideas.",
+      "transicion": "fundido a negro, estudio"
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "explain",
+        "listen",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🎥",
+          "🎥",
+          "👕"
+        ],
+        "letras": [
+          "GRABA",
+          "SIGUE",
+          "CAMBIA"
+        ]
+      },
+      "visual": "Mediodía en el estudio: graba una tras otra.",
+      "transicion": "fundido a negro, atardecer"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phone",
+        "explain",
+        "ok"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Reel programado ✅",
+        "sello": "SALE SOLO"
+      },
+      "visual": "Tarde: edita y programa en Instagram."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "smile",
+        "confident",
+        "celebrate"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Grabar a diario",
+        "despues": "1 día = 1 semana",
+        "badge": "EL RESULTADO"
+      },
+      "visual": "Atardecer: relajado."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Escenario, tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.2,
+      "texto": "☀️ Mañana: ideas",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "frase": 3,
+      "en": 0.2,
+      "texto": "🎥 Mediodía: graba",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.2,
+      "texto": "🌇 Tarde: edita",
+      "lado": "der",
+      "color": "#FF8A3D"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "😩"
+    },
+    {
+      "frase": 3,
+      "en": 0.6,
+      "emoji": "🎬"
+    },
+    {
+      "frase": 5,
+      "en": 0.5,
+      "emoji": "😎"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Graba 1 día,",
+      "publica",
+      "toda la semana"
+    ],
+    "resaltar": 2,
+    "icono": "📅",
+    "satelites": [
+      "🎥",
+      "✍️",
+      "⏰"
+    ],
+    "badge": "POR LOTES",
+    "pose": "proud",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  }
+}

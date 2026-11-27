@@ -1,0 +1,290 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-006.wav",
+  "lineas": [
+    {
+      "text": "En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.",
+      "start": 0.0,
+      "duration": 8.594
+    },
+    {
+      "text": "Era Dollar Shave Club, una tienda en línea de rasuradoras por suscripción. Su fundador salió en el video, con humor y hablando claro sobre el precio de las rasuradoras.",
+      "start": 8.874,
+      "duration": 11.076
+    },
+    {
+      "text": "Según la prensa y el propio fundador, llegaron unos doce mil pedidos en los primeros dos días.",
+      "start": 20.23,
+      "duration": 6.609
+    },
+    {
+      "text": "Y en 2016, según reportes de prensa, Unilever compró la empresa por alrededor de mil millones de dólares.",
+      "start": 27.119,
+      "duration": 8.124
+    },
+    {
+      "text": "¿La lección? No necesitas el presupuesto más grande. Necesitas una oferta clara y una personalidad que se recuerde.",
+      "start": 35.523,
+      "duration": 8.281
+    },
+    {
+      "text": "Ojo: no todo video se hace viral. Pero un mensaje claro, con tu propio estilo, te da ventaja.",
+      "start": 44.084,
+      "duration": 7.706
+    },
+    {
+      "text": "Sígueme para más casos de negocios que puedes aplicar al tuyo.",
+      "start": 52.07,
+      "duration": 4.049
+    }
+  ],
+  "fin": 57.6,
+  "resaltar": [
+    "2012",
+    "pequeña",
+    "video",
+    "dólares",
+    "historia",
+    "Dollar",
+    "Shave",
+    "Club",
+    "suscripción",
+    "humor",
+    "claro",
+    "precio",
+    "doce",
+    "mil",
+    "pedidos",
+    "días",
+    "2016",
+    "Unilever",
+    "millones",
+    "lección",
+    "presupuesto",
+    "oferta",
+    "personalidad",
+    "viral",
+    "estilo",
+    "ventaja",
+    "Sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "stat",
+      "valor": 4500,
+      "prefijo": "US$",
+      "etiqueta": "costó el video (2012)",
+      "icono": "🎬",
+      "badge": "CASO REAL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🪒",
+        "📦",
+        "😂"
+      ],
+      "letras": [
+        "RASURADORAS",
+        "SUSCRIPCIÓN",
+        "HUMOR"
+      ]
+    },
+    {
+      "tipo": "stat",
+      "valor": 12000,
+      "etiqueta": "pedidos en 2 días",
+      "icono": "📈",
+      "sube": true,
+      "badge": "SEGÚN LA PRENSA"
+    },
+    {
+      "tipo": "stat",
+      "valor": 1000,
+      "prefijo": "US$",
+      "sufijo": " millones",
+      "etiqueta": "compra de Unilever (2016)",
+      "icono": "🤝",
+      "badge": "SEGÚN LA PRENSA"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Presupuesto grande",
+      "despues": "Oferta clara + personalidad",
+      "badge": "LA LECCIÓN"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Mensaje claro",
+        "Tu propio estilo",
+        "Sin copiar a nadie"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio",
+    "primer",
+    "medio",
+    "general"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 3.01,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 6.02,
+      "pose": "explain"
+    },
+    {
+      "start": 8.87,
+      "pose": "explain"
+    },
+    {
+      "start": 12.75,
+      "pose": "laugh"
+    },
+    {
+      "start": 16.63,
+      "pose": "smart"
+    },
+    {
+      "start": 20.23,
+      "pose": "surprised"
+    },
+    {
+      "start": 22.54,
+      "pose": "excited"
+    },
+    {
+      "start": 24.86,
+      "pose": "fistPump"
+    },
+    {
+      "start": 27.12,
+      "pose": "ohNo"
+    },
+    {
+      "start": 29.96,
+      "pose": "surprised"
+    },
+    {
+      "start": 32.81,
+      "pose": "proud"
+    },
+    {
+      "start": 35.52,
+      "pose": "one"
+    },
+    {
+      "start": 38.42,
+      "pose": "explain"
+    },
+    {
+      "start": 41.32,
+      "pose": "confident"
+    },
+    {
+      "start": 44.08,
+      "pose": "wagNo"
+    },
+    {
+      "start": 46.78,
+      "pose": "smart"
+    },
+    {
+      "start": 49.48,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 52.07,
+      "pose": "pointFront"
+    },
+    {
+      "start": 53.49,
+      "pose": "heart"
+    },
+    {
+      "start": 54.9,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 5.16,
+      "texto": "🎬 US$4,500",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 22.87,
+      "texto": "📦 12,000 pedidos",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 30.37,
+      "texto": "🤝 ~US$1,000 M",
+      "lado": "der",
+      "color": "#22D3EE"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 6.02,
+      "emoji": "🎬"
+    },
+    {
+      "start": 24.2,
+      "emoji": "🚀"
+    },
+    {
+      "start": 31.99,
+      "emoji": "💰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "El video",
+      "de US$4,500",
+      "que valió millones"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🪒",
+      "📈",
+      "💰"
+    ],
+    "badge": "CASO REAL",
+    "pose": "surprised",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "clasico",
+    "cafe",
+    "neon",
+    "atardecer",
+    "escenario",
+    "cafe",
+    "escenario"
+  ],
+  "cine": true
+}

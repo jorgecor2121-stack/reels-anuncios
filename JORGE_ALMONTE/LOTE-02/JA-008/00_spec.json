@@ -1,0 +1,217 @@
+{
+  "modalidad": "presentador (cálculo de precio con ejemplo)",
+  "luz": "estudio clásico cálido",
+  "entorno": "clasico",
+  "vestimenta": "polo",
+  "resaltar": [
+    "precio",
+    "copiando",
+    "vecino",
+    "perdiendo",
+    "dinero",
+    "costos",
+    "cuenta",
+    "cuesta",
+    "gastos",
+    "fijos",
+    "alquiler",
+    "luz",
+    "internet",
+    "publicidad",
+    "ganar",
+    "doscientos",
+    "cincuenta",
+    "treinta",
+    "ciento",
+    "trescientos",
+    "veinticinco",
+    "mercado",
+    "ciegas",
+    "valor",
+    "Guarda",
+    "sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "ohNo",
+        "skeptic",
+        "you"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "COPIAR PRECIO"
+      },
+      "visual": "Primer plano: el error de copiar precios.",
+      "transicion": "corte"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "wagNo",
+        "explain",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🧾",
+        "etiqueta": "Tus costos son tuyos"
+      },
+      "visual": "Plano medio."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "one",
+        "explain",
+        "thinkUp"
+      ],
+      "escena": {
+        "tipo": "stat",
+        "valor": 200,
+        "prefijo": "RD$",
+        "etiqueta": "costo del producto",
+        "icono": "📦",
+        "badge": "EJEMPLO"
+      },
+      "visual": "Plano medio: paso 1."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "two",
+        "three",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🏠",
+          "💡",
+          "📣"
+        ],
+        "letras": [
+          "ALQUILER",
+          "LUZ",
+          "PUBLICIDAD"
+        ]
+      },
+      "visual": "Plano general: gastos fijos y margen."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "countOnHand",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "embudo",
+        "pasos": [
+          {
+            "etiqueta": "Costo",
+            "valor": 200
+          },
+          {
+            "etiqueta": "+ gastos",
+            "valor": 250
+          },
+          {
+            "etiqueta": "+ 30 %",
+            "valor": 325
+          }
+        ],
+        "badge": "EJEMPLO RD$"
+      },
+      "visual": "Plano medio: la cuenta del ejemplo."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "stop",
+        "smart",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Bajar a ciegas",
+        "despues": "Ajustar costos o agregar valor",
+        "badge": "SI QUEDAS ALTO"
+      },
+      "visual": "Primer plano: qué hacer si el precio queda alto."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "down",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.5,
+      "texto": "📦 RD$200",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.35,
+      "texto": "➕ RD$50 gastos",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "frase": 4,
+      "en": 0.75,
+      "texto": "✅ ≈ RD$325",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "😬"
+    },
+    {
+      "frase": 4,
+      "en": 0.8,
+      "emoji": "🧮"
+    },
+    {
+      "frase": 5,
+      "en": 0.6,
+      "emoji": "💡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "No copies",
+      "el precio",
+      "del vecino"
+    ],
+    "resaltar": 1,
+    "icono": "🧮",
+    "satelites": [
+      "💰",
+      "📦",
+      "🏷️"
+    ],
+    "badge": "HAZ ESTA CUENTA",
+    "pose": "skeptic",
+    "color": "#2BD576",
+    "fondo": "morado"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "modalidad": "protagonista (Jorge narra y vive el caso en distintos lugares)",
+  "luz": "cine: noche de estudio, oficina al atardecer, escenario",
+  "cine": true,
+  "entorno": "clasico",
+  "vestimenta": "hoodie",
+  "entornos": [
+    "clasico",
+    "cafe",
+    "neon",
+    "atardecer",
+    "escenario",
+    "cafe",
+    "escenario"
+  ],
+  "resaltar": [
+    "2012",
+    "pequeña",
+    "video",
+    "dólares",
+    "historia",
+    "Dollar",
+    "Shave",
+    "Club",
+    "suscripción",
+    "humor",
+    "claro",
+    "precio",
+    "doce",
+    "mil",
+    "pedidos",
+    "días",
+    "2016",
+    "Unilever",
+    "millones",
+    "lección",
+    "presupuesto",
+    "oferta",
+    "personalidad",
+    "viral",
+    "estilo",
+    "ventaja",
+    "Sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "thinkUp",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "stat",
+        "valor": 4500,
+        "prefijo": "US$",
+        "etiqueta": "costó el video (2012)",
+        "icono": "🎬",
+        "badge": "CASO REAL"
+      },
+      "visual": "Estudio de noche. Primer plano: la cifra del video.",
+      "transicion": "fundido a negro, cafetería"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "laugh",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🪒",
+          "📦",
+          "😂"
+        ],
+        "letras": [
+          "RASURADORAS",
+          "SUSCRIPCIÓN",
+          "HUMOR"
+        ]
+      },
+      "visual": "Cafetería: qué era la empresa y cómo era el video.",
+      "transicion": "fundido a negro, noche"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "surprised",
+        "excited",
+        "fistPump"
+      ],
+      "escena": {
+        "tipo": "stat",
+        "valor": 12000,
+        "etiqueta": "pedidos en 2 días",
+        "icono": "📈",
+        "sube": true,
+        "badge": "SEGÚN LA PRENSA"
+      },
+      "visual": "Noche con neón: la avalancha de pedidos.",
+      "transicion": "fundido a negro, atardecer"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ohNo",
+        "surprised",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "stat",
+        "valor": 1000,
+        "prefijo": "US$",
+        "sufijo": " millones",
+        "etiqueta": "compra de Unilever (2016)",
+        "icono": "🤝",
+        "badge": "SEGÚN LA PRENSA"
+      },
+      "visual": "Atardecer en la oficina: la venta a Unilever.",
+      "transicion": "fundido a negro, escenario"
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "one",
+        "explain",
+        "confident"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Presupuesto grande",
+        "despues": "Oferta clara + personalidad",
+        "badge": "LA LECCIÓN"
+      },
+      "visual": "Escenario azul. Primer plano: la lección.",
+      "transicion": "fundido a negro, cafetería"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "wagNo",
+        "smart",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Mensaje claro",
+          "Tu propio estilo",
+          "Sin copiar a nadie"
+        ]
+      },
+      "visual": "Cafetería: la advertencia honesta."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Escenario, tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "texto": "🎬 US$4,500",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "frase": 2,
+      "en": 0.4,
+      "texto": "📦 12,000 pedidos",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "frase": 3,
+      "en": 0.4,
+      "texto": "🤝 ~US$1,000 M",
+      "lado": "der",
+      "color": "#22D3EE"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.7,
+      "emoji": "🎬"
+    },
+    {
+      "frase": 2,
+      "en": 0.6,
+      "emoji": "🚀"
+    },
+    {
+      "frase": 3,
+      "en": 0.6,
+      "emoji": "💰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "El video",
+      "de US$4,500",
+      "que valió millones"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🪒",
+      "📈",
+      "💰"
+    ],
+    "badge": "CASO REAL",
+    "pose": "surprised",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  }
+}

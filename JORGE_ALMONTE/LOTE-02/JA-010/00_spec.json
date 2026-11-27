@@ -1,0 +1,201 @@
+{
+  "modalidad": "protagonista (Jorge en una repostería de ejemplo)",
+  "luz": "tienda cálida y cafetería",
+  "cine": true,
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "entornos": [
+    "boutique",
+    "clasico",
+    "cafe",
+    "cafe",
+    "boutique",
+    "atardecer",
+    "boutique"
+  ],
+  "resaltar": [
+    "cliente",
+    "compra",
+    "vendes",
+    "resuelve",
+    "frase",
+    "famosa",
+    "taladro",
+    "hueco",
+    "pared",
+    "diferencia",
+    "pasteles",
+    "personalizados",
+    "cumpleaños",
+    "recuerden",
+    "anuncio",
+    "sirve",
+    "respuesta",
+    "titular",
+    "Sígueme",
+    "vende"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "smart",
+        "you",
+        "idea"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Lo que vendes",
+        "despues": "Lo que resuelves",
+        "badge": "LA CLAVE"
+      },
+      "visual": "Tienda, primer plano.",
+      "transicion": "fundido a negro, estudio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "laugh",
+        "thinkUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Un taladro",
+        "despues": "El hueco en la pared",
+        "badge": "FRASE FAMOSA"
+      },
+      "visual": "Estudio: la frase del taladro.",
+      "transicion": "fundido a negro, cafetería"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "presentLeft",
+        "explain",
+        "skeptic"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Hacemos pasteles personalizados",
+        "sello": "LO QUE VENDES"
+      },
+      "visual": "Cafetería: el anuncio típico."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "presentRight",
+        "love",
+        "excited"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Que tu cumpleaños sea el que todos recuerden 🎂",
+        "sello": "LO QUE RESUELVES"
+      },
+      "visual": "Cafetería: el anuncio que vende.",
+      "transicion": "fundido a negro, tienda"
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "thinking",
+        "thinkUp",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "❓",
+        "etiqueta": "¿Para qué le sirve?"
+      },
+      "visual": "Tienda, primer plano: la pregunta."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "proud",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "📰",
+        "etiqueta": "Es tu titular"
+      },
+      "visual": "Atardecer: la respuesta es el titular."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "down",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Tienda, tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.5,
+      "texto": "🧁 Lo que vendes",
+      "lado": "izq",
+      "color": "#FF3B5C"
+    },
+    {
+      "frase": 3,
+      "en": 0.4,
+      "texto": "🎉 Lo que resuelves",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "frase": 5,
+      "en": 0.3,
+      "texto": "📰 Tu titular",
+      "lado": "izq",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "💡"
+    },
+    {
+      "frase": 3,
+      "en": 0.6,
+      "emoji": "🎂"
+    },
+    {
+      "frase": 5,
+      "en": 0.6,
+      "emoji": "🚀"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Tu cliente",
+      "no compra",
+      "lo que vendes"
+    ],
+    "resaltar": 2,
+    "icono": "🎂",
+    "satelites": [
+      "🛠️",
+      "💡",
+      "🎯"
+    ],
+    "badge": "MARKETING",
+    "pose": "smart",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  }
+}

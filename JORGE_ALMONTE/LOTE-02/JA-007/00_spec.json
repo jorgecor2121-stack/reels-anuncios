@@ -1,0 +1,204 @@
+{
+  "modalidad": "presentador (técnica de instrucciones para IA)",
+  "luz": "estudio neón morado",
+  "entorno": "neon",
+  "vestimenta": "denim",
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "genéricas",
+    "problema",
+    "escribes",
+    "fórmula",
+    "cuatro",
+    "rol",
+    "experto",
+    "ventas",
+    "contexto",
+    "vendes",
+    "quién",
+    "dónde",
+    "precio",
+    "tarea",
+    "formato",
+    "cinco",
+    "lista",
+    "clara",
+    "útil",
+    "Guarda",
+    "ChatGPT",
+    "sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "skeptic",
+        "wagNo",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "La IA es mala",
+        "despues": "Le escribo mal",
+        "badge": "EL PROBLEMA"
+      },
+      "visual": "Primer plano en el estudio neón.",
+      "transicion": "corte a plano medio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "four",
+        "explain",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🧩",
+        "etiqueta": "Fórmula de 4 partes"
+      },
+      "visual": "Plano medio: presenta la fórmula."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "one",
+        "explain",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Actúa como experto en ventas…",
+        "sello": "1 · ROL"
+      },
+      "visual": "Plano medio: ejemplo del rol."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "two",
+        "three",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🛍️",
+          "👥",
+          "🎯"
+        ],
+        "letras": [
+          "QUÉ VENDES",
+          "A QUIÉN",
+          "LA TAREA"
+        ]
+      },
+      "visual": "Plano general: contexto y tarea."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "four",
+        "ok",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "telefono",
+        "texto": "Dame 5 opciones cortas en lista",
+        "sello": "4 · FORMATO"
+      },
+      "visual": "Plano medio: ejemplo del formato."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "countOnHand",
+        "idea",
+        "confident"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Rol",
+          "Contexto",
+          "Tarea",
+          "Formato"
+        ]
+      },
+      "visual": "Primer plano: resumen de la fórmula."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "down",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.2,
+      "texto": "1️⃣ Rol",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 3,
+      "en": 0.1,
+      "texto": "2️⃣ Contexto",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "frase": 3,
+      "en": 0.65,
+      "texto": "3️⃣ Tarea",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🤖"
+    },
+    {
+      "frase": 4,
+      "en": 0.6,
+      "emoji": "✅"
+    },
+    {
+      "frase": 5,
+      "en": 0.6,
+      "emoji": "💡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Escríbele",
+      "así a la IA",
+      "(4 partes)"
+    ],
+    "resaltar": 1,
+    "icono": "🧩",
+    "satelites": [
+      "🤖",
+      "✍️",
+      "✅"
+    ],
+    "badge": "FÓRMULA",
+    "pose": "four",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  }
+}
