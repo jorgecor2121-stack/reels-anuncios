@@ -151,9 +151,11 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Tu lista para automatizar esta semana",
+        "accion": "guardar"
       },
-      "visual": "Atardecer, Jorge relajado. Tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Tu lista para automatizar esta semana",
       "transicion": "fin"
     }
   ],

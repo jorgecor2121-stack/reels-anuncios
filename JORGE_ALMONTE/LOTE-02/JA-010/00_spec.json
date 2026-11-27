@@ -136,9 +136,10 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Anuncios que hablan de lo que tu cliente gana"
       },
-      "visual": "Tienda, tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Anuncios que hablan de lo que tu cliente gana",
       "transicion": "fin"
     }
   ],

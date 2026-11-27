@@ -144,15 +144,21 @@
     {
       "plano": "medio",
       "poses": [
-        "down",
-        "heart",
-        "waveBoth"
+        "pointFront",
+        "explain",
+        "smile"
       ],
       "escena": {
-        "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "tipo": "comentar",
+        "pregunta": "¿Cómo pones tus precios hoy?",
+        "opciones": [
+          "Calculando",
+          "Copiando",
+          "A ojo"
+        ],
+        "nota": "Cuéntamelo en los comentarios 👇"
       },
-      "visual": "Tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: ¿Cómo pones tus precios hoy?",
       "transicion": "fin"
     }
   ],

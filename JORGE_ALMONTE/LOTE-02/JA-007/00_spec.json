@@ -139,9 +139,11 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Rol · Contexto · Tarea · Formato",
+        "accion": "guardar"
       },
-      "visual": "Tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Rol · Contexto · Tarea · Formato",
       "transicion": "fin"
     }
   ],

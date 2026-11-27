@@ -163,9 +163,10 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Casos reales para aplicar a tu negocio"
       },
-      "visual": "Escenario, tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Casos reales para aplicar a tu negocio",
       "transicion": "fin"
     }
   ],

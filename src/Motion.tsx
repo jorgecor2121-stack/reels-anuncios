@@ -16,7 +16,7 @@ export type Escena =
   | { tipo: "movimiento"; badge?: string; etiqueta: string }
   | { tipo: "sorpresa"; emoji: string; etiqueta: string; badge?: string }
   | { tipo: "checklist"; items: string[] }
-  | { tipo: "seguir"; usuario: string; titulo?: string }
+  | { tipo: "seguir"; usuario: string; titulo?: string; accion?: "seguir" | "guardar" | "compartir" }
   | { tipo: "comentar"; pregunta: string; opciones: string[]; nota?: string }
   | { tipo: "grafica"; titulo: string; barras: { etiqueta: string; valor: number; destacar?: boolean }[]; sufijo?: string; badge?: string; nota?: string }
   | { tipo: "stat"; valor: number; etiqueta: string; icono?: string; prefijo?: string; sufijo?: string; decimales?: number; sube?: boolean; badge?: string }
@@ -239,13 +239,13 @@ const EscSeguir: React.FC<{ e: Extract<Escena, { tipo: "seguir" }> }> = ({ e }) 
   const press = clicked ? interpolate(frame - clickT, [0, 3, 8], [1, 0.9, 1], { extrapolateRight: "clamp" }) : 1;
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 50, transform: `scale(${inP})` }}>
-      <div style={{ fontSize: 210, transform: `scale(${save}) rotate(${interpolate(save, [0, 1], [-30, 0])}deg)` }}>{e.titulo ? "🚀" : "🔖"}</div>
+      <div style={{ fontSize: 210, transform: `scale(${save}) rotate(${interpolate(save, [0, 1], [-30, 0])}deg)` }}>{e.accion === "compartir" ? "📤" : e.accion === "guardar" ? "🔖" : e.titulo ? "🚀" : "🔖"}</div>
       <div style={{ fontSize: e.titulo ? 56 : 64, fontWeight: 900, textAlign: "center", maxWidth: 900, lineHeight: 1.15 }}>{e.titulo ?? "Guarda este video"}</div>
       <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 26, background: C.card, border: `3px solid ${C.line}`, borderRadius: 36, padding: "26px 34px" }}>
         <div style={{ width: 96, height: 96, borderRadius: "50%", background: `linear-gradient(135deg, ${C.o}, ${C.y})` }} />
         <div style={{ fontSize: 44, fontWeight: 800 }}>{e.usuario}</div>
         <div style={{ marginLeft: 20, background: clicked ? C.line : C.o, color: clicked ? C.t : "#1A0A00", fontSize: 40, fontWeight: 900, padding: "16px 34px", borderRadius: 18, transform: `scale(${press})` }}>
-          {clicked ? "Siguiendo ✓" : "Seguir"}
+          {e.accion === "guardar" ? (clicked ? "Guardado ✓" : "Guardar") : e.accion === "compartir" ? (clicked ? "Enviado ✓" : "Enviar") : clicked ? "Siguiendo ✓" : "Seguir"}
         </div>
         <div style={{ position: "absolute", right: 40 - cx, bottom: -40 - cy, fontSize: 90, opacity: frame > S(1.3) ? 1 : 0 }}>👆</div>
       </div>

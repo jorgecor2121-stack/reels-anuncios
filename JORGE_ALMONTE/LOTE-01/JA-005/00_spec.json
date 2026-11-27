@@ -146,9 +146,11 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien quiere trabajar más rápido",
+        "accion": "compartir"
       },
-      "visual": "Plano medio, tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Envíaselo a quien quiere trabajar más rápido",
       "transicion": "fin"
     }
   ],

@@ -150,9 +150,11 @@
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien no tiene tiempo para publicar",
+        "accion": "compartir"
       },
-      "visual": "Escenario, tarjeta de seguir.",
+      "visual": "Cierre con el CTA principal: Envíaselo a quien no tiene tiempo para publicar",
       "transicion": "fin"
     }
   ],
