@@ -9,40 +9,40 @@
     {
       "text": "Si le pones precio a tu producto copiando al vecino… puedes estar vendiendo y perdiendo dinero al mismo tiempo.",
       "start": 0.0,
-      "duration": 7.236
+      "duration": 7.393
     },
     {
       "text": "Porque el vecino no paga tus costos.",
-      "start": 7.516,
-      "duration": 3.004
+      "start": 7.673,
+      "duration": 2.926
     },
     {
       "text": "Haz esta cuenta. Uno: lo que te cuesta hacer o comprar el producto.",
-      "start": 10.8,
-      "duration": 5.642
+      "start": 10.878,
+      "duration": 5.407
     },
     {
       "text": "Dos: tu parte de los gastos fijos, como alquiler, luz, internet y publicidad. Tres: lo que quieres ganar.",
-      "start": 16.722,
-      "duration": 8.751
+      "start": 16.566,
+      "duration": 9.169
     },
     {
       "text": "Ejemplo: si te cuesta doscientos pesos, le sumas cincuenta de gastos, y quieres ganar un treinta por ciento sobre eso… tu precio ronda los trescientos veinticinco.",
-      "start": 25.753,
-      "duration": 11.233
+      "start": 26.015,
+      "duration": 11.311
     },
     {
       "text": "Después compáralo con el mercado. Y si quedas muy alto, no bajes a ciegas: ajusta costos o agrega valor.",
-      "start": 37.266,
-      "duration": 8.359
+      "start": 37.606,
+      "duration": 8.673
     },
     {
-      "text": "Guarda este video y sígueme para más finanzas fáciles para tu negocio.",
-      "start": 45.905,
-      "duration": 4.598
+      "text": "Y cuéntame en los comentarios: ¿hoy pones tus precios calculando, copiando… o a ojo? Sin pena, que a todos nos ha pasado.",
+      "start": 46.558,
+      "duration": 9.639
     }
   ],
-  "fin": 51.98,
+  "fin": 57.68,
   "resaltar": [
     "precio",
     "copiando",
@@ -127,8 +127,14 @@
       "badge": "SI QUEDAS ALTO"
     },
     {
-      "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "tipo": "comentar",
+      "pregunta": "¿Cómo pones tus precios hoy?",
+      "opciones": [
+        "Calculando",
+        "Copiando",
+        "A ojo"
+      ],
+      "nota": "Cuéntamelo en los comentarios 👇"
     }
   ],
   "planos": [
@@ -146,27 +152,27 @@
       "pose": "ohNo"
     },
     {
-      "start": 2.53,
+      "start": 2.59,
       "pose": "skeptic"
     },
     {
-      "start": 5.07,
+      "start": 5.18,
       "pose": "you"
     },
     {
-      "start": 7.52,
+      "start": 7.67,
       "pose": "wagNo"
     },
     {
-      "start": 8.57,
+      "start": 8.7,
       "pose": "explain"
     },
     {
-      "start": 9.62,
+      "start": 9.72,
       "pose": "smart"
     },
     {
-      "start": 10.8,
+      "start": 10.88,
       "pose": "one"
     },
     {
@@ -174,11 +180,11 @@
       "pose": "explain"
     },
     {
-      "start": 14.75,
+      "start": 14.66,
       "pose": "thinkUp"
     },
     {
-      "start": 16.72,
+      "start": 16.57,
       "pose": "two"
     },
     {
@@ -186,61 +192,61 @@
       "pose": "three"
     },
     {
-      "start": 22.85,
+      "start": 22.98,
       "pose": "explain"
     },
     {
-      "start": 25.75,
+      "start": 26.02,
       "pose": "idea"
     },
     {
-      "start": 29.68,
+      "start": 29.97,
       "pose": "countOnHand"
     },
     {
-      "start": 33.62,
+      "start": 33.93,
       "pose": "proud"
     },
     {
-      "start": 37.27,
+      "start": 37.61,
       "pose": "stop"
     },
     {
-      "start": 40.19,
+      "start": 40.64,
       "pose": "smart"
     },
     {
-      "start": 43.12,
+      "start": 43.68,
       "pose": "thumbsUp"
     },
     {
-      "start": 45.91,
-      "pose": "down"
+      "start": 46.56,
+      "pose": "pointFront"
     },
     {
-      "start": 47.51,
-      "pose": "heart"
+      "start": 49.93,
+      "pose": "explain"
     },
     {
-      "start": 49.12,
-      "pose": "waveBoth"
+      "start": 53.31,
+      "pose": "smile"
     }
   ],
   "chips": [
     {
-      "start": 13.62,
+      "start": 13.58,
       "texto": "📦 RD$200",
       "lado": "der",
       "color": "#22D3EE"
     },
     {
-      "start": 29.68,
+      "start": 29.97,
       "texto": "➕ RD$50 gastos",
       "lado": "izq",
       "color": "#FFD23F"
     },
     {
-      "start": 34.18,
+      "start": 34.5,
       "texto": "✅ ≈ RD$325",
       "lado": "der",
       "color": "#2BD576"
@@ -248,15 +254,15 @@
   ],
   "reacciones": [
     {
-      "start": 4.34,
+      "start": 4.44,
       "emoji": "😬"
     },
     {
-      "start": 34.74,
+      "start": 35.06,
       "emoji": "🧮"
     },
     {
-      "start": 42.28,
+      "start": 42.81,
       "emoji": "💡"
     }
   ],
