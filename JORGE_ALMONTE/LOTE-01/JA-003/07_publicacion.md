@@ -2,6 +2,7 @@
 Título: Miles de seguidores y ningún cliente
 Tipo: Reel · protagonista · pilar marketing y ventas
 Gancho: Puedes tener miles de seguidores… y aun así no conseguir ni un solo cliente.
+Destacada: Anuncios (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 Puedes tener miles de seguidores… y aun así no conseguir ni un solo cliente 📱

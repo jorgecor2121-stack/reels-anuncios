@@ -35,3 +35,8 @@ creación de contenido y crecimiento de negocios. Aplica a todos los Reels desde
 | JA-008 | Precio sin copiar | COMENTAR |
 | JA-009 | Grabar por lotes | COMPARTIR |
 | JA-010 | Vende vs. resuelve | SEGUIR |
+
+## Historias destacadas
+Cada `07_publicacion.md` lleva `Destacada: <sección>` (Sobre mí, Anuncios, Números, Casos, Prosperidad, IA, Tips, Servicios).
+Jorge comparte el reel a su historia desde la app (así las vistas suman al reel) y lo agrega a esa destacada.
+No se sube el video duplicado como historia por la API.

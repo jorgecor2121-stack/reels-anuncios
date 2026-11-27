@@ -2,6 +2,7 @@
 Título: Cómo ponerle precio sin copiar al vecino
 Tipo: Reel · presentador · pilar negocios
 Gancho: Si le pones precio a tu producto copiando al vecino… puedes estar vendiendo y perdiendo dinero al mismo tiempo.
+Destacada: Números (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 Si le pones precio copiando al vecino… puedes estar vendiendo y perdiendo dinero al mismo tiempo 🧮

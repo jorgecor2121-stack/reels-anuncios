@@ -2,6 +2,7 @@
 Título: Graba un día, publica toda la semana
 Tipo: Reel · protagonista (cine) · pilar contenido
 Gancho: ¿No tienes tiempo de crear contenido todos los días? Entonces no lo hagas todos los días.
+Destacada: Tips (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 ¿No tienes tiempo de crear contenido todos los días? Entonces no lo hagas todos los días 📅
