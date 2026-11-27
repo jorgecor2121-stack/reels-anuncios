@@ -9,40 +9,40 @@
     {
       "text": "Tres herramientas de inteligencia artificial que pueden cambiar la forma en que trabajas.",
       "start": 0.0,
-      "duration": 5.146
+      "duration": 5.068
     },
     {
       "text": "Y no tienes que saber de tecnología para usarlas.",
-      "start": 5.426,
+      "start": 5.348,
       "duration": 3.318
     },
     {
       "text": "Uno: ChatGPT. Te ayuda a escribir textos, ideas y respuestas para tus clientes. Y le puedes subir fotos para que las analice.",
-      "start": 9.024,
-      "duration": 9.718
+      "start": 8.945,
+      "duration": 9.326
     },
     {
       "text": "Dos: Canva. Tiene funciones de inteligencia artificial para crear diseños y editar imágenes. Algunas son gratis y otras de pago.",
-      "start": 19.021,
-      "duration": 9.953
+      "start": 18.551,
+      "duration": 9.561
     },
     {
       "text": "Tres: CapCut. Genera los subtítulos de tus videos de forma automática.",
-      "start": 29.254,
-      "duration": 5.721
+      "start": 28.392,
+      "duration": 5.799
     },
     {
       "text": "Escritura, diseño y video. Con esas tres cubres gran parte del contenido de un negocio pequeño.",
-      "start": 35.255,
-      "duration": 7.393
+      "start": 34.471,
+      "duration": 7.236
     },
     {
-      "text": "Guarda este video para probarlas, y compártelo con alguien que las necesite.",
-      "start": 42.927,
-      "duration": 4.833
+      "text": "Si conoces a alguien que quiere trabajar más rápido con inteligencia artificial, envíaselo. Le puede ahorrar mucho tiempo.",
+      "start": 41.987,
+      "duration": 7.628
     }
   ],
-  "fin": 49.24,
+  "fin": 51.1,
   "resaltar": [
     "Tres",
     "herramientas",
@@ -124,7 +124,9 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien quiere trabajar más rápido",
+      "accion": "compartir"
     }
   ],
   "planos": [
@@ -142,101 +144,101 @@
       "pose": "three"
     },
     {
-      "start": 1.8,
+      "start": 1.77,
       "pose": "excited"
     },
     {
-      "start": 3.6,
+      "start": 3.55,
       "pose": "you"
     },
     {
-      "start": 5.43,
+      "start": 5.35,
       "pose": "stop"
     },
     {
-      "start": 6.59,
+      "start": 6.51,
       "pose": "smile"
     },
     {
-      "start": 7.75,
+      "start": 7.67,
       "pose": "thumbsUp"
     },
     {
-      "start": 9.02,
+      "start": 8.95,
       "pose": "one"
     },
     {
-      "start": 12.43,
+      "start": 12.21,
       "pose": "explain"
     },
     {
-      "start": 15.83,
+      "start": 15.47,
       "pose": "phone"
     },
     {
-      "start": 19.02,
+      "start": 18.55,
       "pose": "two"
     },
     {
-      "start": 22.5,
+      "start": 21.9,
       "pose": "presentRight"
     },
     {
-      "start": 25.99,
+      "start": 25.24,
       "pose": "smart"
     },
     {
-      "start": 29.25,
+      "start": 28.39,
       "pose": "three"
     },
     {
-      "start": 31.26,
+      "start": 30.42,
       "pose": "explain"
     },
     {
-      "start": 33.26,
+      "start": 32.45,
       "pose": "thumbsUp"
     },
     {
-      "start": 35.26,
+      "start": 34.47,
       "pose": "countOnHand"
     },
     {
-      "start": 37.84,
+      "start": 37.0,
       "pose": "proud"
     },
     {
-      "start": 40.43,
+      "start": 39.54,
       "pose": "confident"
     },
     {
-      "start": 42.93,
+      "start": 41.99,
       "pose": "down"
     },
     {
-      "start": 44.62,
+      "start": 44.66,
       "pose": "heart"
     },
     {
-      "start": 46.31,
+      "start": 47.33,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 10.0,
+      "start": 9.88,
       "texto": "1️⃣ ChatGPT",
       "lado": "der",
       "color": "#2BD576"
     },
     {
-      "start": 20.02,
+      "start": 19.51,
       "texto": "2️⃣ Canva",
       "lado": "izq",
       "color": "#22D3EE"
     },
     {
-      "start": 29.83,
+      "start": 28.97,
       "texto": "3️⃣ CapCut",
       "lado": "der",
       "color": "#FFD23F"
@@ -244,15 +246,15 @@
   ],
   "reacciones": [
     {
-      "start": 2.57,
+      "start": 2.53,
       "emoji": "🧰"
     },
     {
-      "start": 24.0,
+      "start": 23.33,
       "emoji": "🎨"
     },
     {
-      "start": 38.95,
+      "start": 38.09,
       "emoji": "🔥"
     }
   ],
