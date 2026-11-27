@@ -105,9 +105,10 @@
       ]
     },
     {
-      "tipo": "telefono",
-      "texto": "Subtítulos automáticos",
-      "sello": "CAPCUT ✅"
+      "tipo": "antesDespues",
+      "antes": "Subtitular a mano",
+      "despues": "Subtítulos automáticos",
+      "badge": "3 · CAPCUT"
     },
     {
       "tipo": "trio",

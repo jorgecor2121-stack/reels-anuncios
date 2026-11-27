@@ -44,7 +44,7 @@ Modalidad: presentador (lista de herramientas, valor práctico). Iluminación: c
 - Personaje: three, explain, thumbsUp (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: cafe
 - Cámara: plano primer con empuje lento
-- Gráfico: `telefono`
+- Gráfico: `antesDespues`
 - Transición: corte con fundido de la escena superior
 
 ## Escena 6 · 34.5–41.7 s
