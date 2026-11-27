@@ -1,0 +1,216 @@
+{
+  "modalidad": "protagonista (Jorge vive la escena de un negocio con muchos seguidores y pocas ventas)",
+  "luz": "tienda cálida rosada; noche fría cuando no llegan ventas",
+  "cine": true,
+  "entorno": "boutique",
+  "vestimenta": "denim",
+  "entornos": [
+    "boutique",
+    "boutique",
+    "neon",
+    "clasico",
+    "boutique",
+    "atardecer",
+    "boutique"
+  ],
+  "resaltar": [
+    "miles",
+    "seguidores",
+    "cliente",
+    "atención",
+    "venta",
+    "viral",
+    "miradas",
+    "vendes",
+    "cuesta",
+    "comprarlo",
+    "convertir",
+    "tres",
+    "oferta",
+    "clara",
+    "ahora",
+    "camino",
+    "mensaje",
+    "enlace",
+    "botón",
+    "pagan",
+    "Guarda",
+    "sígueme"
+  ],
+  "tomas": [
+    {
+      "plano": "medio",
+      "poses": [
+        "phoneLook",
+        "sad",
+        "ohNo"
+      ],
+      "escena": {
+        "tipo": "stat",
+        "valor": 12000,
+        "etiqueta": "seguidores · 0 clientes",
+        "icono": "👥",
+        "badge": "EJEMPLO"
+      },
+      "visual": "Tienda. Jorge mira el celular: muchos seguidores, cero ventas.",
+      "transicion": "corte a primer plano"
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "thinking",
+        "doubt",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Atención",
+        "despues": "Venta",
+        "badge": "NO ES LO MISMO"
+      },
+      "visual": "Primer plano en la tienda: atención ≠ venta.",
+      "transicion": "fundido a negro, noche"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phone",
+        "shrug",
+        "worried"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "❓",
+          "💲",
+          "🛒"
+        ],
+        "letras": [
+          "¿QUÉ ES?",
+          "¿CUÁNTO?",
+          "¿CÓMO?"
+        ]
+      },
+      "visual": "Noche: el video viral sin información; las preguntas que nadie responde.",
+      "transicion": "fundido a negro, estudio"
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "one",
+        "two",
+        "three"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🔑",
+        "etiqueta": "3 cosas"
+      },
+      "visual": "Estudio. Primer plano: Jorge cuenta con los dedos."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Oferta clara",
+          "Razón para comprar hoy",
+          "Camino fácil"
+        ]
+      },
+      "visual": "Vuelta a la tienda, plano general: checklist de las 3 cosas."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "smile",
+        "confident",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Me gusta",
+        "despues": "Clientes que pagan",
+        "badge": "LO QUE IMPORTA"
+      },
+      "visual": "Atardecer: likes vs. clientes."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "down",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia"
+      },
+      "visual": "Tienda, tarjeta de seguir.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 4,
+      "en": 0.05,
+      "texto": "🎯 Oferta clara",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 4,
+      "en": 0.35,
+      "texto": "⏰ Comprar hoy",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "frase": 4,
+      "en": 0.65,
+      "texto": "👉 Camino fácil",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.5,
+      "emoji": "😩"
+    },
+    {
+      "frase": 2,
+      "en": 0.5,
+      "emoji": "👀"
+    },
+    {
+      "frase": 5,
+      "en": 0.5,
+      "emoji": "💰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Miles de",
+      "seguidores",
+      "y 0 clientes"
+    ],
+    "resaltar": 2,
+    "icono": "📱",
+    "satelites": [
+      "❤️",
+      "👀",
+      "💸"
+    ],
+    "badge": "¿TE PASA?",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  }
+}
