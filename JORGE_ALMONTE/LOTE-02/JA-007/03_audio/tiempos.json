@@ -1,5 +1,5 @@
 {
-  "total": 46.76,
+  "total": 49.79,
   "lines": [
     {
       "text": "Si la inteligencia artificial te responde cosas genéricas… el problema no es la IA. Es cómo le escribes.",
@@ -9,32 +9,32 @@
     {
       "text": "Usa esta fórmula de cuatro partes.",
       "start": 8.091,
-      "duration": 2.769
+      "duration": 2.847
     },
     {
       "text": "Uno: el rol. \"Actúa como experto en ventas para negocios pequeños.\"",
-      "start": 11.14,
-      "duration": 5.799
+      "start": 11.218,
+      "duration": 5.564
     },
     {
       "text": "Dos: el contexto. Qué vendes, a quién, dónde y a qué precio. Tres: la tarea. Qué quieres exactamente.",
-      "start": 17.219,
-      "duration": 9.796
+      "start": 17.062,
+      "duration": 10.109
     },
     {
       "text": "Y cuatro: el formato. \"Dame cinco opciones cortas, en una lista.\"",
-      "start": 27.295,
-      "duration": 5.486
+      "start": 27.451,
+      "duration": 5.564
     },
     {
       "text": "Rol, contexto, tarea y formato. Mientras más clara la instrucción, más útil la respuesta.",
-      "start": 33.06,
-      "duration": 7.811
+      "start": 33.296,
+      "duration": 7.889
     },
     {
-      "text": "Guarda este video para la próxima vez que abras ChatGPT, y sígueme para más.",
-      "start": 41.151,
-      "duration": 5.329
+      "text": "Guarda este video y tenlo a mano: la próxima vez que abras ChatGPT, copia la fórmula y compara la diferencia.",
+      "start": 41.464,
+      "duration": 8.046
     }
   ]
 }

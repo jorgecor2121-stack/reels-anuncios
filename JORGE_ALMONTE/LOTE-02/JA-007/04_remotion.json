@@ -14,35 +14,35 @@
     {
       "text": "Usa esta fórmula de cuatro partes.",
       "start": 8.091,
-      "duration": 2.769
+      "duration": 2.847
     },
     {
       "text": "Uno: el rol. \"Actúa como experto en ventas para negocios pequeños.\"",
-      "start": 11.14,
-      "duration": 5.799
+      "start": 11.218,
+      "duration": 5.564
     },
     {
       "text": "Dos: el contexto. Qué vendes, a quién, dónde y a qué precio. Tres: la tarea. Qué quieres exactamente.",
-      "start": 17.219,
-      "duration": 9.796
+      "start": 17.062,
+      "duration": 10.109
     },
     {
       "text": "Y cuatro: el formato. \"Dame cinco opciones cortas, en una lista.\"",
-      "start": 27.295,
-      "duration": 5.486
+      "start": 27.451,
+      "duration": 5.564
     },
     {
       "text": "Rol, contexto, tarea y formato. Mientras más clara la instrucción, más útil la respuesta.",
-      "start": 33.06,
-      "duration": 7.811
+      "start": 33.296,
+      "duration": 7.889
     },
     {
-      "text": "Guarda este video para la próxima vez que abras ChatGPT, y sígueme para más.",
-      "start": 41.151,
-      "duration": 5.329
+      "text": "Guarda este video y tenlo a mano: la próxima vez que abras ChatGPT, copia la fórmula y compara la diferencia.",
+      "start": 41.464,
+      "duration": 8.046
     }
   ],
-  "fin": 47.96,
+  "fin": 50.99,
   "resaltar": [
     "inteligencia",
     "artificial",
@@ -82,9 +82,10 @@
       "etiqueta": "Fórmula de 4 partes"
     },
     {
-      "tipo": "telefono",
-      "texto": "Actúa como experto en ventas…",
-      "sello": "1 · ROL"
+      "tipo": "antesDespues",
+      "antes": "Escríbeme un anuncio",
+      "despues": "Actúa como experto en ventas",
+      "badge": "1 · ROL"
     },
     {
       "tipo": "trio",
@@ -100,9 +101,10 @@
       ]
     },
     {
-      "tipo": "telefono",
-      "texto": "Dame 5 opciones cortas en lista",
-      "sello": "4 · FORMATO"
+      "tipo": "antesDespues",
+      "antes": "Dame ideas",
+      "despues": "Dame 5 opciones cortas en lista",
+      "badge": "4 · FORMATO"
     },
     {
       "tipo": "checklist",
@@ -115,7 +117,9 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "usuario": "jorgealmonteia",
+      "titulo": "Rol · Contexto · Tarea · Formato",
+      "accion": "guardar"
     }
   ],
   "planos": [
@@ -145,15 +149,15 @@
       "pose": "four"
     },
     {
-      "start": 9.06,
+      "start": 9.09,
       "pose": "explain"
     },
     {
-      "start": 10.03,
+      "start": 10.08,
       "pose": "smart"
     },
     {
-      "start": 11.14,
+      "start": 11.22,
       "pose": "one"
     },
     {
@@ -161,73 +165,73 @@
       "pose": "explain"
     },
     {
-      "start": 15.2,
+      "start": 15.11,
       "pose": "proud"
     },
     {
-      "start": 17.22,
+      "start": 17.06,
       "pose": "two"
     },
     {
-      "start": 20.65,
+      "start": 20.6,
       "pose": "three"
     },
     {
-      "start": 24.08,
+      "start": 24.14,
       "pose": "explain"
     },
     {
-      "start": 27.3,
+      "start": 27.45,
       "pose": "four"
     },
     {
-      "start": 29.22,
+      "start": 29.4,
       "pose": "ok"
     },
     {
-      "start": 31.14,
+      "start": 31.35,
       "pose": "thumbsUp"
     },
     {
-      "start": 33.06,
+      "start": 33.3,
       "pose": "countOnHand"
     },
     {
-      "start": 35.79,
+      "start": 36.06,
       "pose": "idea"
     },
     {
-      "start": 38.53,
+      "start": 38.82,
       "pose": "confident"
     },
     {
-      "start": 41.15,
+      "start": 41.46,
       "pose": "down"
     },
     {
-      "start": 43.02,
+      "start": 44.28,
       "pose": "heart"
     },
     {
-      "start": 44.88,
+      "start": 47.1,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 12.3,
+      "start": 12.33,
       "texto": "1️⃣ Rol",
       "lado": "der",
       "color": "#22D3EE"
     },
     {
-      "start": 18.2,
+      "start": 18.07,
       "texto": "2️⃣ Contexto",
       "lado": "izq",
       "color": "#2BD576"
     },
     {
-      "start": 23.59,
+      "start": 23.63,
       "texto": "3️⃣ Tarea",
       "lado": "der",
       "color": "#FFD23F"
@@ -239,11 +243,11 @@
       "emoji": "🤖"
     },
     {
-      "start": 30.59,
+      "start": 30.79,
       "emoji": "✅"
     },
     {
-      "start": 37.75,
+      "start": 38.03,
       "emoji": "💡"
     }
   ],
