@@ -1,0 +1,118 @@
+{
+  "modalidad": "presentador",
+  "entorno": "escenario",
+  "vestimenta": "polo",
+  "resaltar": [
+    "videos",
+    "marca",
+    "semana",
+    "tiempo",
+    "grabarlos",
+    "inteligencia",
+    "guion",
+    "voz",
+    "animación",
+    "subtítulos",
+    "apruebas",
+    "programados",
+    "CONTENIDO"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "tired",
+        "you",
+        "skeptic"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "SIN TIEMPO"
+      },
+      "visual": "Problema."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "proud",
+        "presentRight",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "GUION",
+          "TU VOZ",
+          "VIDEO"
+        ]
+      },
+      "visual": "Servicio."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "thumbsUp",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Revisas",
+          "Apruebas",
+          "Quedan programados"
+        ]
+      },
+      "visual": "Proceso."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Quieres ver ejemplos?",
+        "opciones": [
+          "CONTENIDO"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos con",
+      "tu voz,",
+      "sin grabarte"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🎙️",
+      "✍️",
+      "📅"
+    ],
+    "badge": "SERVICIO",
+    "pose": "tired",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🎬"
+    }
+  ],
+  "luz": "según el set"
+}

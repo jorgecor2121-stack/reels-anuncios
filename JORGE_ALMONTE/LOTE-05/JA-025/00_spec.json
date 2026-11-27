@@ -1,0 +1,122 @@
+{
+  "modalidad": "presentador",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "foto",
+    "anuncio",
+    "inteligencia",
+    "bizcocho",
+    "precio",
+    "sabor",
+    "pedir",
+    "texto",
+    "voz",
+    "video",
+    "subtítulos",
+    "Compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "presentRight",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Una foto",
+        "despues": "Un anuncio en video",
+        "badge": "EJEMPLO"
+      },
+      "visual": "Antes/después."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "💵",
+          "🍫",
+          "📲"
+        ],
+        "letras": [
+          "PRECIO",
+          "SABOR",
+          "CÓMO PEDIR"
+        ]
+      },
+      "visual": "Los datos."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "excited",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "TEXTO",
+          "VOZ",
+          "VIDEO"
+        ]
+      },
+      "visual": "Resultado."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien hace sus anuncios a mano",
+        "accion": "compartir"
+      },
+      "visual": "Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "De una foto",
+      "a un",
+      "anuncio"
+    ],
+    "resaltar": 2,
+    "icono": "🎂",
+    "satelites": [
+      "📸",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "EJEMPLO",
+    "pose": "surprised",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🎂"
+    }
+  ],
+  "luz": "según el set"
+}

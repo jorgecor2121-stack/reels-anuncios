@@ -1,0 +1,140 @@
+{
+  "modalidad": "protagonista",
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "resaltar": [
+    "salón",
+    "lindos",
+    "Instagram",
+    "abandonado",
+    "fotos",
+    "antes",
+    "después",
+    "videos",
+    "voz",
+    "música",
+    "marca",
+    "perfil",
+    "CONTENIDO"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "sad",
+        "ohNo",
+        "you"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "PERFIL ABANDONADO"
+      },
+      "visual": "Problema."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "presentRight",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Fotos guardadas en el celular",
+        "despues": "Videos para tu Instagram",
+        "badge": "YA TIENES EL MATERIAL"
+      },
+      "visual": "Material."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "📸",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "FOTOS",
+          "VOZ",
+          "VIDEO"
+        ]
+      },
+      "visual": "Proceso."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "thumbsUp",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Tú trabajas",
+          "Tu perfil publica"
+        ]
+      },
+      "visual": "Resultado."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Un ejemplo con tus fotos?",
+        "opciones": [
+          "CONTENIDO"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Trabajos lindos,",
+      "Instagram",
+      "abandonado"
+    ],
+    "resaltar": 2,
+    "icono": "💅",
+    "satelites": [
+      "📸",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "SALONES",
+    "pose": "sad",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "💅"
+    }
+  ],
+  "luz": "según el set",
+  "cine": true,
+  "entornos": [
+    "boutique",
+    "neon",
+    "boutique",
+    "boutique",
+    "boutique"
+  ]
+}

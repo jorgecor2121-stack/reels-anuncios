@@ -1,0 +1,5 @@
+Así toma reservas un restaurante sin contestar el teléfono.
+El cliente escribe "reservar". El asistente le pregunta el día, la hora y cuántas personas.
+Revisa si hay espacio y le confirma.
+Y el restaurante ve todas las reservas en una sola lista.
+Guárdalo si tienes un restaurante o conoces a alguien que tenga uno.

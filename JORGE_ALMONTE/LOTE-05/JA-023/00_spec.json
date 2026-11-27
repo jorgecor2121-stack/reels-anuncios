@@ -1,0 +1,113 @@
+{
+  "modalidad": "presentador",
+  "entorno": "escenario",
+  "vestimenta": "polo",
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "clientes",
+    "negocio",
+    "rápido",
+    "publica",
+    "herramientas",
+    "usar",
+    "Compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "wagNo",
+        "skeptic",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "La IA te quita clientes",
+        "despues": "Tu competencia más rápida, sí",
+        "badge": "OPINIÓN"
+      },
+      "visual": "Opinión."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "smart",
+        "ohNo"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "⚡",
+          "📅",
+          "🛒"
+        ],
+        "letras": [
+          "CONTESTA",
+          "PUBLICA",
+          "VENDE"
+        ]
+      },
+      "visual": "La competencia."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "presentRight",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Las mismas herramientas",
+          "Al alcance de tu negocio"
+        ]
+      },
+      "visual": "Oportunidad."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien dice que la IA no es para él",
+        "accion": "compartir"
+      },
+      "visual": "Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "La IA no",
+      "te quita",
+      "clientes"
+    ],
+    "resaltar": 2,
+    "icono": "🤖",
+    "satelites": [
+      "⚡",
+      "🏪",
+      "🛒"
+    ],
+    "badge": "OPINIÓN",
+    "pose": "wagNo",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🤖"
+    }
+  ],
+  "luz": "según el set"
+}

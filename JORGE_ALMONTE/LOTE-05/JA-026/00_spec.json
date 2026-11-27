@@ -1,0 +1,151 @@
+{
+  "modalidad": "protagonista",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "resaltar": [
+    "reservas",
+    "restaurante",
+    "teléfono",
+    "reservar",
+    "día",
+    "hora",
+    "personas",
+    "confirma",
+    "lista",
+    "Guárdalo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "smart",
+        "presentRight",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "📵",
+        "etiqueta": "Reservas sin teléfono",
+        "badge": "EJEMPLO DE FLUJO"
+      },
+      "visual": "Gancho."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "phone"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "📅",
+          "🕗",
+          "👥"
+        ],
+        "letras": [
+          "DÍA",
+          "HORA",
+          "PERSONAS"
+        ]
+      },
+      "visual": "Preguntas."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "thumbsUp",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Revisa el espacio",
+          "Confirma la reserva"
+        ]
+      },
+      "visual": "Confirmación."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "proud",
+        "presentRight",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "grafica",
+        "titulo": "Reservas de la semana",
+        "barras": [
+          {
+            "etiqueta": "Vie",
+            "valor": 12
+          },
+          {
+            "etiqueta": "Sáb",
+            "valor": 18,
+            "destacar": true
+          },
+          {
+            "etiqueta": "Dom",
+            "valor": 9
+          }
+        ],
+        "nota": "Ejemplo"
+      },
+      "visual": "Lista."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Guárdalo si tienes un restaurante",
+        "accion": "guardar"
+      },
+      "visual": "Guardar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Reservas",
+      "sin",
+      "teléfono"
+    ],
+    "resaltar": 2,
+    "icono": "🍽️",
+    "satelites": [
+      "📅",
+      "👥",
+      "✅"
+    ],
+    "badge": "RESTAURANTES",
+    "pose": "smart",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🍽️"
+    }
+  ],
+  "luz": "según el set",
+  "cine": true,
+  "entornos": [
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "cafe"
+  ]
+}

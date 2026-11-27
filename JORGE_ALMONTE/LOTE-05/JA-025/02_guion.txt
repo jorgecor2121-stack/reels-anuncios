@@ -1,0 +1,4 @@
+Esto era una foto. Ahora es un anuncio.
+Le di a la inteligencia artificial la foto de un bizcocho y tres datos: precio, sabor y cómo pedir.
+Me devolvió el texto, la voz y el video con subtítulos.
+Compártelo con alguien que todavía hace sus anuncios a mano.

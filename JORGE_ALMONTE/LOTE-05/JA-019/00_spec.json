@@ -1,0 +1,130 @@
+{
+  "modalidad": "presentador",
+  "entorno": "atardecer",
+  "vestimenta": "polo",
+  "resaltar": [
+    "casa",
+    "nueve",
+    "noche",
+    "contesta",
+    "anuncio",
+    "asistente",
+    "zona",
+    "presupuesto",
+    "filtrado",
+    "agendar",
+    "AUTOMATIZAR",
+    "propiedades"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "thinkUp",
+        "you",
+        "surprised"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🏡",
+        "etiqueta": "\"¿Todavía está disponible?\" · 9 p. m.",
+        "badge": "INMOBILIARIAS"
+      },
+      "visual": "Noche."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "sad",
+        "ohNo",
+        "shrug"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "LE ESCRIBE A OTRO"
+      },
+      "visual": "Se va."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "📍",
+          "💵",
+          "📅"
+        ],
+        "letras": [
+          "ZONA",
+          "PRESUPUESTO",
+          "CITA"
+        ]
+      },
+      "visual": "Filtro automático."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "proud",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Contestar a todos",
+        "despues": "Recibir interesados filtrados",
+        "badge": "AUTOMATIZADO"
+      },
+      "visual": "Resultado."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Lo quieres con tus propiedades?",
+        "opciones": [
+          "AUTOMATIZAR"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "El cliente",
+      "de las",
+      "9 p. m."
+    ],
+    "resaltar": 2,
+    "icono": "🏡",
+    "satelites": [
+      "🌙",
+      "📍",
+      "📅"
+    ],
+    "badge": "INMOBILIARIAS",
+    "pose": "thinkUp",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🏡"
+    }
+  ],
+  "luz": "según el set"
+}

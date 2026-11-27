@@ -1,0 +1,139 @@
+{
+  "modalidad": "presentador",
+  "entorno": "escenario",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "cliente",
+    "mensaje",
+    "diferencia",
+    "mano",
+    "espera",
+    "enfría",
+    "automático",
+    "momento",
+    "precio",
+    "opciones",
+    "conversación",
+    "Guarda"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "you",
+        "smart",
+        "explain"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "A mano",
+        "despues": "Automático",
+        "badge": "SIMULACIÓN"
+      },
+      "visual": "Comparación."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "tired",
+        "worried",
+        "ohNo"
+      ],
+      "escena": {
+        "tipo": "carrera",
+        "a": {
+          "etiqueta": "A mano: espera",
+          "valor": 80
+        },
+        "b": {
+          "etiqueta": "Automático: espera",
+          "valor": 5
+        },
+        "titulo": "Tiempo de espera",
+        "nota": "Ilustrativo"
+      },
+      "visual": "Espera."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Precio",
+          "Opciones",
+          "Una pregunta para entenderlo"
+        ]
+      },
+      "visual": "Respuesta automática."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "presentRight",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "👤",
+          "⚙️",
+          "🙋‍♂️"
+        ],
+        "letras": [
+          "CLIENTE",
+          "AUTOMÁTICO",
+          "TÚ"
+        ]
+      },
+      "visual": "Paso a la persona."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Compáralo con cómo atiendes hoy",
+        "accion": "guardar"
+      },
+      "visual": "Guardar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Manual",
+      "vs.",
+      "automático"
+    ],
+    "resaltar": 2,
+    "icono": "⚡",
+    "satelites": [
+      "💬",
+      "⏰",
+      "⚙️"
+    ],
+    "badge": "MISMO CLIENTE",
+    "pose": "you",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "⚡"
+    }
+  ],
+  "luz": "según el set"
+}

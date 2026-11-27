@@ -1,0 +1,128 @@
+{
+  "modalidad": "presentador",
+  "entorno": "cafe",
+  "vestimenta": "denim",
+  "resaltar": [
+    "pena",
+    "grabarte",
+    "animada",
+    "voz",
+    "reconoce",
+    "cara",
+    "mensaje",
+    "perfecto",
+    "cámara",
+    "días",
+    "Compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "shrug",
+        "laugh",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "😳",
+        "etiqueta": "¿Te da pena grabarte?"
+      },
+      "visual": "Confesión."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "proud",
+        "presentRight",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🧑",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "MI CARA",
+          "MI VOZ",
+          "ANIMADO"
+        ]
+      },
+      "visual": "La solución."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "smart",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Te reconocen",
+          "El mensaje llega igual"
+        ]
+      },
+      "visual": "Resultado."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "wagNo",
+        "smile",
+        "confident"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Ser perfecto en cámara",
+        "despues": "Publicar con constancia",
+        "badge": "LO QUE IMPORTA"
+      },
+      "visual": "Mensaje."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien no se atreve a grabarse",
+        "accion": "compartir"
+      },
+      "visual": "Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Te da pena",
+      "grabarte?"
+    ],
+    "resaltar": 1,
+    "icono": "😳",
+    "satelites": [
+      "🎙️",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "YO TAMBIÉN",
+    "pose": "shrug",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "😳"
+    }
+  ],
+  "luz": "según el set"
+}

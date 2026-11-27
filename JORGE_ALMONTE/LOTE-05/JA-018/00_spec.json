@@ -1,0 +1,132 @@
+{
+  "modalidad": "protagonista",
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "resaltar": [
+    "talla",
+    "once",
+    "noche",
+    "contestaste",
+    "otra",
+    "tienda",
+    "primero",
+    "venta",
+    "automática",
+    "tallas",
+    "precios",
+    "dormida",
+    "Compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "phoneLook",
+        "ohNo"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "👗",
+        "etiqueta": "\"¿Tienes talla M?\" · 11 p. m.",
+        "badge": "TIENDAS DE ROPA"
+      },
+      "visual": "Noche."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "sad",
+        "facepalm",
+        "ohNo"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "YA COMPRÓ EN OTRA"
+      },
+      "visual": "Venta perdida."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "smart",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Contestar al otro día",
+        "despues": "Contestar al momento",
+        "badge": "EN ROPA"
+      },
+      "visual": "La regla."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Tallas",
+          "Precios",
+          "Cómo pedir"
+        ]
+      },
+      "visual": "Respuesta automática."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien venda ropa",
+        "accion": "compartir"
+      },
+      "visual": "Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Tienes",
+      "talla M?",
+      "(11 p. m.)"
+    ],
+    "resaltar": 1,
+    "icono": "👗",
+    "satelites": [
+      "🌙",
+      "📱",
+      "🛍️"
+    ],
+    "badge": "TIENDAS",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "👗"
+    }
+  ],
+  "luz": "según el set",
+  "cine": true,
+  "entornos": [
+    "neon",
+    "neon",
+    "boutique",
+    "boutique",
+    "boutique"
+  ]
+}

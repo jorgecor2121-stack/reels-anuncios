@@ -1,0 +1,101 @@
+{
+  "modalidad": "presentador",
+  "entorno": "atardecer",
+  "vestimenta": "denim",
+  "resaltar": [
+    "seis",
+    "horas",
+    "cliente",
+    "importa",
+    "teléfono",
+    "contesta",
+    "Compártelo",
+    "tarde"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "ohNo",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "⏰",
+        "etiqueta": "6 horas después…"
+      },
+      "visual": "Gancho."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "sad",
+        "shrug",
+        "facepalm"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "\"NO ME IMPORTA\""
+      },
+      "visual": "Percepción."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Pegado al teléfono",
+        "despues": "Algo contesta por ti",
+        "badge": "LA SOLUCIÓN"
+      },
+      "visual": "Solución."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien siempre contesta tarde",
+        "accion": "compartir"
+      },
+      "visual": "Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "6 horas",
+      "=",
+      "\"no me importa\""
+    ],
+    "resaltar": 2,
+    "icono": "⏰",
+    "satelites": [
+      "💬",
+      "😒",
+      "📱"
+    ],
+    "badge": "ATENCIÓN",
+    "pose": "surprised",
+    "color": "#FF8A3D",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "⏰"
+    }
+  ],
+  "luz": "según el set"
+}
