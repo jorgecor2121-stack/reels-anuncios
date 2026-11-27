@@ -1,0 +1,30 @@
+{
+  "total": 22.729,
+  "lines": [
+    {
+      "text": "\"¿Tienes en talla M?\" Te lo escribieron a las once de la noche.",
+      "start": 0.0,
+      "duration": 3.866
+    },
+    {
+      "text": "Contestaste al otro día… y ya había comprado en otra tienda.",
+      "start": 4.086,
+      "duration": 4.362
+    },
+    {
+      "text": "En ropa, el que contesta primero muchas veces se lleva la venta.",
+      "start": 8.669,
+      "duration": 4.441
+    },
+    {
+      "text": "Una respuesta automática con tallas, precios y cómo pedir trabaja aunque estés dormida.",
+      "start": 13.329,
+      "duration": 6.609
+    },
+    {
+      "text": "Compártelo con alguien que venda ropa.",
+      "start": 20.158,
+      "duration": 2.351
+    }
+  ]
+}

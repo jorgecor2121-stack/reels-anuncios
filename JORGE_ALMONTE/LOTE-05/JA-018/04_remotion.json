@@ -1,0 +1,185 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-018.wav",
+  "lineas": [
+    {
+      "text": "\"¿Tienes en talla M?\" Te lo escribieron a las once de la noche.",
+      "start": 0.0,
+      "duration": 3.866
+    },
+    {
+      "text": "Contestaste al otro día… y ya había comprado en otra tienda.",
+      "start": 4.086,
+      "duration": 4.362
+    },
+    {
+      "text": "En ropa, el que contesta primero muchas veces se lleva la venta.",
+      "start": 8.669,
+      "duration": 4.441
+    },
+    {
+      "text": "Una respuesta automática con tallas, precios y cómo pedir trabaja aunque estés dormida.",
+      "start": 13.329,
+      "duration": 6.609
+    },
+    {
+      "text": "Compártelo con alguien que venda ropa.",
+      "start": 20.158,
+      "duration": 2.351
+    }
+  ],
+  "fin": 23.93,
+  "resaltar": [
+    "talla",
+    "once",
+    "noche",
+    "contestaste",
+    "otra",
+    "tienda",
+    "primero",
+    "venta",
+    "automática",
+    "tallas",
+    "precios",
+    "dormida",
+    "Compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "👗",
+      "etiqueta": "\"¿Tienes talla M?\" · 11 p. m.",
+      "badge": "TIENDAS DE ROPA"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "YA COMPRÓ EN OTRA"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Contestar al otro día",
+      "despues": "Contestar al momento",
+      "badge": "EN ROPA"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Tallas",
+        "Precios",
+        "Cómo pedir"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien venda ropa",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.35,
+      "pose": "phoneLook"
+    },
+    {
+      "start": 2.71,
+      "pose": "ohNo"
+    },
+    {
+      "start": 4.09,
+      "pose": "sad"
+    },
+    {
+      "start": 5.61,
+      "pose": "facepalm"
+    },
+    {
+      "start": 7.14,
+      "pose": "ohNo"
+    },
+    {
+      "start": 8.67,
+      "pose": "explain"
+    },
+    {
+      "start": 10.22,
+      "pose": "smart"
+    },
+    {
+      "start": 11.78,
+      "pose": "you"
+    },
+    {
+      "start": 13.33,
+      "pose": "idea"
+    },
+    {
+      "start": 15.64,
+      "pose": "explain"
+    },
+    {
+      "start": 17.96,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 20.16,
+      "pose": "pointFront"
+    },
+    {
+      "start": 20.98,
+      "pose": "heart"
+    },
+    {
+      "start": 21.8,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.32,
+      "emoji": "👗"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Tienes",
+      "talla M?",
+      "(11 p. m.)"
+    ],
+    "resaltar": 1,
+    "icono": "👗",
+    "satelites": [
+      "🌙",
+      "📱",
+      "🛍️"
+    ],
+    "badge": "TIENDAS",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "neon",
+    "neon",
+    "boutique",
+    "boutique",
+    "boutique"
+  ],
+  "cine": true
+}
