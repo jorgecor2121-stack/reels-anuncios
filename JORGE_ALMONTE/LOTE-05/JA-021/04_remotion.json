@@ -1,0 +1,192 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-021.wav",
+  "lineas": [
+    {
+      "text": "Mismo cliente, mismo mensaje. Mira la diferencia.",
+      "start": 0.0,
+      "duration": 3.866
+    },
+    {
+      "text": "A mano: el cliente pregunta, espera, vuelve a preguntar… y se enfría.",
+      "start": 4.086,
+      "duration": 6.426
+    },
+    {
+      "text": "Automático: recibe al momento el precio, las opciones y una pregunta para entender qué necesita.",
+      "start": 10.732,
+      "duration": 7.236
+    },
+    {
+      "text": "Y cuando está listo, te pasa la conversación a ti.",
+      "start": 18.188,
+      "duration": 3.396
+    },
+    {
+      "text": "Guarda este video y compáralo con cómo atiendes hoy.",
+      "start": 21.804,
+      "duration": 3.631
+    }
+  ],
+  "fin": 26.86,
+  "resaltar": [
+    "cliente",
+    "mensaje",
+    "diferencia",
+    "mano",
+    "espera",
+    "enfría",
+    "automático",
+    "momento",
+    "precio",
+    "opciones",
+    "conversación",
+    "Guarda"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "A mano",
+      "despues": "Automático",
+      "badge": "SIMULACIÓN"
+    },
+    {
+      "tipo": "carrera",
+      "a": {
+        "etiqueta": "A mano: espera",
+        "valor": 80
+      },
+      "b": {
+        "etiqueta": "Automático: espera",
+        "valor": 5
+      },
+      "titulo": "Tiempo de espera",
+      "nota": "Ilustrativo"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Precio",
+        "Opciones",
+        "Una pregunta para entenderlo"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "👤",
+        "⚙️",
+        "🙋‍♂️"
+      ],
+      "letras": [
+        "CLIENTE",
+        "AUTOMÁTICO",
+        "TÚ"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Compáralo con cómo atiendes hoy",
+      "accion": "guardar"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "you"
+    },
+    {
+      "start": 1.35,
+      "pose": "smart"
+    },
+    {
+      "start": 2.71,
+      "pose": "explain"
+    },
+    {
+      "start": 4.09,
+      "pose": "tired"
+    },
+    {
+      "start": 6.34,
+      "pose": "worried"
+    },
+    {
+      "start": 8.58,
+      "pose": "ohNo"
+    },
+    {
+      "start": 10.73,
+      "pose": "idea"
+    },
+    {
+      "start": 13.26,
+      "pose": "explain"
+    },
+    {
+      "start": 15.8,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 18.19,
+      "pose": "ok"
+    },
+    {
+      "start": 19.38,
+      "pose": "presentRight"
+    },
+    {
+      "start": 20.57,
+      "pose": "proud"
+    },
+    {
+      "start": 21.8,
+      "pose": "pointFront"
+    },
+    {
+      "start": 23.07,
+      "pose": "heart"
+    },
+    {
+      "start": 24.35,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.32,
+      "emoji": "⚡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Manual",
+      "vs.",
+      "automático"
+    ],
+    "resaltar": 2,
+    "icono": "⚡",
+    "satelites": [
+      "💬",
+      "⏰",
+      "⚙️"
+    ],
+    "badge": "MISMO CLIENTE",
+    "pose": "you",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-020.wav",
+  "lineas": [
+    {
+      "text": "¿Te da pena grabarte? A mí también me daba.",
+      "start": 0.0,
+      "duration": 3.239
+    },
+    {
+      "text": "Por eso hice una versión animada de mí, con mi propia voz.",
+      "start": 3.459,
+      "duration": 4.206
+    },
+    {
+      "text": "La gente reconoce la cara, la voz… y el mensaje llega igual.",
+      "start": 7.885,
+      "duration": 4.833
+    },
+    {
+      "text": "No tienes que ser perfecto frente a la cámara para publicar todos los días.",
+      "start": 12.938,
+      "duration": 4.754
+    },
+    {
+      "text": "Compártelo con alguien que no se atreve a grabarse.",
+      "start": 17.912,
+      "duration": 3.161
+    }
+  ],
+  "fin": 22.49,
+  "resaltar": [
+    "pena",
+    "grabarte",
+    "animada",
+    "voz",
+    "reconoce",
+    "cara",
+    "mensaje",
+    "perfecto",
+    "cámara",
+    "días",
+    "Compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "😳",
+      "etiqueta": "¿Te da pena grabarte?"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🧑",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "MI CARA",
+        "MI VOZ",
+        "ANIMADO"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Te reconocen",
+        "El mensaje llega igual"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Ser perfecto en cámara",
+      "despues": "Publicar con constancia",
+      "badge": "LO QUE IMPORTA"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien no se atreve a grabarse",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "primer",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "shrug"
+    },
+    {
+      "start": 1.13,
+      "pose": "laugh"
+    },
+    {
+      "start": 2.27,
+      "pose": "you"
+    },
+    {
+      "start": 3.46,
+      "pose": "proud"
+    },
+    {
+      "start": 4.93,
+      "pose": "presentRight"
+    },
+    {
+      "start": 6.4,
+      "pose": "smile"
+    },
+    {
+      "start": 7.88,
+      "pose": "explain"
+    },
+    {
+      "start": 9.58,
+      "pose": "smart"
+    },
+    {
+      "start": 11.27,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 12.94,
+      "pose": "wagNo"
+    },
+    {
+      "start": 14.6,
+      "pose": "smile"
+    },
+    {
+      "start": 16.27,
+      "pose": "confident"
+    },
+    {
+      "start": 17.91,
+      "pose": "pointFront"
+    },
+    {
+      "start": 19.02,
+      "pose": "heart"
+    },
+    {
+      "start": 20.12,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 1.94,
+      "emoji": "😳"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Te da pena",
+      "grabarte?"
+    ],
+    "resaltar": 1,
+    "icono": "😳",
+    "satelites": [
+      "🎙️",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "YO TAMBIÉN",
+    "pose": "shrug",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  }
+}

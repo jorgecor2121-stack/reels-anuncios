@@ -1,0 +1,183 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-019.wav",
+  "lineas": [
+    {
+      "text": "Alguien pregunta por una casa a las nueve de la noche.",
+      "start": 0.0,
+      "duration": 3.239
+    },
+    {
+      "text": "Si nadie le contesta… le escribe al próximo anuncio.",
+      "start": 3.459,
+      "duration": 3.866
+    },
+    {
+      "text": "Un asistente automático puede preguntarle la zona, el presupuesto y cuándo quiere verla.",
+      "start": 7.545,
+      "duration": 5.799
+    },
+    {
+      "text": "Y tú recibes al interesado ya filtrado, listo para agendar.",
+      "start": 13.564,
+      "duration": 4.441
+    },
+    {
+      "text": "Escríbeme AUTOMATIZAR y te enseño cómo funcionaría con tus propiedades.",
+      "start": 18.225,
+      "duration": 4.911
+    }
+  ],
+  "fin": 24.56,
+  "resaltar": [
+    "casa",
+    "nueve",
+    "noche",
+    "contesta",
+    "anuncio",
+    "asistente",
+    "zona",
+    "presupuesto",
+    "filtrado",
+    "agendar",
+    "AUTOMATIZAR",
+    "propiedades"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🏡",
+      "etiqueta": "\"¿Todavía está disponible?\" · 9 p. m.",
+      "badge": "INMOBILIARIAS"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "LE ESCRIBE A OTRO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📍",
+        "💵",
+        "📅"
+      ],
+      "letras": [
+        "ZONA",
+        "PRESUPUESTO",
+        "CITA"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Contestar a todos",
+      "despues": "Recibir interesados filtrados",
+      "badge": "AUTOMATIZADO"
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Lo quieres con tus propiedades?",
+      "opciones": [
+        "AUTOMATIZAR"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 1.13,
+      "pose": "you"
+    },
+    {
+      "start": 2.27,
+      "pose": "surprised"
+    },
+    {
+      "start": 3.46,
+      "pose": "sad"
+    },
+    {
+      "start": 4.81,
+      "pose": "ohNo"
+    },
+    {
+      "start": 6.17,
+      "pose": "shrug"
+    },
+    {
+      "start": 7.54,
+      "pose": "explain"
+    },
+    {
+      "start": 9.57,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 11.6,
+      "pose": "smart"
+    },
+    {
+      "start": 13.56,
+      "pose": "ok"
+    },
+    {
+      "start": 15.12,
+      "pose": "proud"
+    },
+    {
+      "start": 16.67,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 18.23,
+      "pose": "pointFront"
+    },
+    {
+      "start": 19.94,
+      "pose": "explain"
+    },
+    {
+      "start": 21.66,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 1.94,
+      "emoji": "🏡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "El cliente",
+      "de las",
+      "9 p. m."
+    ],
+    "resaltar": 2,
+    "icono": "🏡",
+    "satelites": [
+      "🌙",
+      "📍",
+      "📅"
+    ],
+    "badge": "INMOBILIARIAS",
+    "pose": "thinkUp",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  }
+}

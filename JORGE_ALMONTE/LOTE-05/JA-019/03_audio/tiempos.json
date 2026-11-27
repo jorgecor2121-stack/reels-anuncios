@@ -1,0 +1,30 @@
+{
+  "total": 23.356,
+  "lines": [
+    {
+      "text": "Alguien pregunta por una casa a las nueve de la noche.",
+      "start": 0.0,
+      "duration": 3.239
+    },
+    {
+      "text": "Si nadie le contesta… le escribe al próximo anuncio.",
+      "start": 3.459,
+      "duration": 3.866
+    },
+    {
+      "text": "Un asistente automático puede preguntarle la zona, el presupuesto y cuándo quiere verla.",
+      "start": 7.545,
+      "duration": 5.799
+    },
+    {
+      "text": "Y tú recibes al interesado ya filtrado, listo para agendar.",
+      "start": 13.564,
+      "duration": 4.441
+    },
+    {
+      "text": "Escríbeme AUTOMATIZAR y te enseño cómo funcionaría con tus propiedades.",
+      "start": 18.225,
+      "duration": 4.911
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "total": 25.655,
+  "lines": [
+    {
+      "text": "Mismo cliente, mismo mensaje. Mira la diferencia.",
+      "start": 0.0,
+      "duration": 3.866
+    },
+    {
+      "text": "A mano: el cliente pregunta, espera, vuelve a preguntar… y se enfría.",
+      "start": 4.086,
+      "duration": 6.426
+    },
+    {
+      "text": "Automático: recibe al momento el precio, las opciones y una pregunta para entender qué necesita.",
+      "start": 10.732,
+      "duration": 7.236
+    },
+    {
+      "text": "Y cuando está listo, te pasa la conversación a ti.",
+      "start": 18.188,
+      "duration": 3.396
+    },
+    {
+      "text": "Guarda este video y compáralo con cómo atiendes hoy.",
+      "start": 21.804,
+      "duration": 3.631
+    }
+  ]
+}

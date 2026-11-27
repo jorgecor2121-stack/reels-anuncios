@@ -1,0 +1,193 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-022.wav",
+  "lineas": [
+    {
+      "text": "Tu salón hace trabajos lindos… y tu Instagram parece abandonado.",
+      "start": 0.0,
+      "duration": 5.407
+    },
+    {
+      "text": "Ya tienes el material: las fotos del antes y después de tus clientas.",
+      "start": 5.627,
+      "duration": 4.911
+    },
+    {
+      "text": "Con inteligencia artificial las convierto en videos con voz, música y tu marca.",
+      "start": 10.758,
+      "duration": 5.642
+    },
+    {
+      "text": "Tú sigues trabajando, y tu perfil sigue publicando.",
+      "start": 16.621,
+      "duration": 3.631
+    },
+    {
+      "text": "Escríbeme CONTENIDO y te muestro un ejemplo con tus fotos.",
+      "start": 20.472,
+      "duration": 3.866
+    }
+  ],
+  "fin": 25.76,
+  "resaltar": [
+    "salón",
+    "lindos",
+    "Instagram",
+    "abandonado",
+    "fotos",
+    "antes",
+    "después",
+    "videos",
+    "voz",
+    "música",
+    "marca",
+    "perfil",
+    "CONTENIDO"
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "PERFIL ABANDONADO"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Fotos guardadas en el celular",
+      "despues": "Videos para tu Instagram",
+      "badge": "YA TIENES EL MATERIAL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📸",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "FOTOS",
+        "VOZ",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Tú trabajas",
+        "Tu perfil publica"
+      ]
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Un ejemplo con tus fotos?",
+      "opciones": [
+        "CONTENIDO"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "sad"
+    },
+    {
+      "start": 1.89,
+      "pose": "ohNo"
+    },
+    {
+      "start": 3.78,
+      "pose": "you"
+    },
+    {
+      "start": 5.63,
+      "pose": "idea"
+    },
+    {
+      "start": 7.35,
+      "pose": "presentRight"
+    },
+    {
+      "start": 9.06,
+      "pose": "smile"
+    },
+    {
+      "start": 10.76,
+      "pose": "explain"
+    },
+    {
+      "start": 12.73,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 14.71,
+      "pose": "proud"
+    },
+    {
+      "start": 16.62,
+      "pose": "ok"
+    },
+    {
+      "start": 17.89,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 19.16,
+      "pose": "proud"
+    },
+    {
+      "start": 20.47,
+      "pose": "pointFront"
+    },
+    {
+      "start": 21.83,
+      "pose": "explain"
+    },
+    {
+      "start": 23.18,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 3.24,
+      "emoji": "💅"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Trabajos lindos,",
+      "Instagram",
+      "abandonado"
+    ],
+    "resaltar": 2,
+    "icono": "💅",
+    "satelites": [
+      "📸",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "SALONES",
+    "pose": "sad",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "boutique",
+    "neon",
+    "boutique",
+    "boutique",
+    "boutique"
+  ],
+  "cine": true
+}
