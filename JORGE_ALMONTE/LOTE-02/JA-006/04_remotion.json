@@ -9,40 +9,40 @@
     {
       "text": "En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.",
       "start": 0.0,
-      "duration": 8.516
+      "duration": 8.281
     },
     {
-      "text": "Era Dollar Shave Club, una tienda en línea de rasuradoras por suscripción. Su fundador salió en el video, con humor y hablando claro sobre el precio de las rasuradoras.",
-      "start": 8.796,
-      "duration": 11.154
+      "text": "Era Dollar Shave Club, una tienda en línea de rasuradoras por suscripción. Su fundador salió en el video, con humor y hablando claro.",
+      "start": 8.561,
+      "duration": 9.326
     },
     {
       "text": "Según la prensa y el propio fundador, llegaron unos doce mil pedidos en los primeros dos días.",
-      "start": 20.23,
-      "duration": 6.609
+      "start": 18.167,
+      "duration": 6.531
     },
     {
       "text": "Y en 2016, según reportes de prensa, Unilever compró la empresa por alrededor de mil millones de dólares.",
-      "start": 27.119,
-      "duration": 8.046
+      "start": 24.977,
+      "duration": 8.281
     },
     {
       "text": "¿La lección? No necesitas el presupuesto más grande. Necesitas una oferta clara y una personalidad que se recuerde.",
-      "start": 35.445,
-      "duration": 8.516
+      "start": 33.538,
+      "duration": 8.281
     },
     {
       "text": "Ojo: no todo video se hace viral. Pero un mensaje claro, con tu propio estilo, te da ventaja.",
-      "start": 44.241,
-      "duration": 7.549
+      "start": 42.099,
+      "duration": 7.393
     },
     {
       "text": "Aquí analizo casos reales de negocio y lo que puedes aplicar al tuyo. Sígueme para no perderte el próximo.",
-      "start": 52.07,
-      "duration": 7.158
+      "start": 49.771,
+      "duration": 7.079
     }
   ],
-  "fin": 60.71,
+  "fin": 58.33,
   "resaltar": [
     "2012",
     "pequeña",
@@ -146,101 +146,101 @@
       "pose": "surprised"
     },
     {
-      "start": 2.98,
+      "start": 2.9,
       "pose": "thinkUp"
     },
     {
-      "start": 5.96,
+      "start": 5.8,
       "pose": "explain"
     },
     {
-      "start": 8.8,
+      "start": 8.56,
       "pose": "explain"
     },
     {
-      "start": 12.7,
+      "start": 11.83,
       "pose": "laugh"
     },
     {
-      "start": 16.6,
+      "start": 15.09,
       "pose": "smart"
     },
     {
-      "start": 20.23,
+      "start": 18.17,
       "pose": "surprised"
     },
     {
-      "start": 22.54,
+      "start": 20.45,
       "pose": "excited"
     },
     {
-      "start": 24.86,
+      "start": 22.74,
       "pose": "fistPump"
     },
     {
-      "start": 27.12,
+      "start": 24.98,
       "pose": "ohNo"
     },
     {
-      "start": 29.94,
+      "start": 27.88,
       "pose": "surprised"
     },
     {
-      "start": 32.75,
+      "start": 30.77,
       "pose": "proud"
     },
     {
-      "start": 35.45,
+      "start": 33.54,
       "pose": "one"
     },
     {
-      "start": 38.43,
+      "start": 36.44,
       "pose": "explain"
     },
     {
-      "start": 41.41,
+      "start": 39.33,
       "pose": "confident"
     },
     {
-      "start": 44.24,
+      "start": 42.1,
       "pose": "wagNo"
     },
     {
-      "start": 46.88,
+      "start": 44.69,
       "pose": "smart"
     },
     {
-      "start": 49.53,
+      "start": 47.27,
       "pose": "thumbsUp"
     },
     {
-      "start": 52.07,
+      "start": 49.77,
       "pose": "pointFront"
     },
     {
-      "start": 54.58,
+      "start": 52.25,
       "pose": "heart"
     },
     {
-      "start": 57.08,
+      "start": 54.73,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 5.11,
+      "start": 4.97,
       "texto": "🎬 US$4,500",
       "lado": "der",
       "color": "#FFD23F"
     },
     {
-      "start": 22.87,
+      "start": 20.78,
       "texto": "📦 12,000 pedidos",
       "lado": "izq",
       "color": "#2BD576"
     },
     {
-      "start": 30.34,
+      "start": 28.29,
       "texto": "🤝 ~US$1,000 M",
       "lado": "der",
       "color": "#22D3EE"
@@ -248,15 +248,15 @@
   ],
   "reacciones": [
     {
-      "start": 5.96,
+      "start": 5.8,
       "emoji": "🎬"
     },
     {
-      "start": 24.2,
+      "start": 22.09,
       "emoji": "🚀"
     },
     {
-      "start": 31.95,
+      "start": 29.95,
       "emoji": "💰"
     }
   ],
