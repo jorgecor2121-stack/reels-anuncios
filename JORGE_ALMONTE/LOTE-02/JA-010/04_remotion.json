@@ -1,0 +1,265 @@
+{
+  "tipo": "avatar",
+  "entorno": "boutique",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-010.wav",
+  "lineas": [
+    {
+      "text": "Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.",
+      "start": 0.0,
+      "duration": 5.251
+    },
+    {
+      "text": "Hay una frase famosa en marketing: nadie quiere un taladro… quiere el hueco en la pared.",
+      "start": 5.531,
+      "duration": 6.113
+    },
+    {
+      "text": "Mira la diferencia. \"Hacemos pasteles personalizados.\" Eso es lo que vendes.",
+      "start": 11.923,
+      "duration": 5.956
+    },
+    {
+      "text": "\"Que tu cumpleaños sea el que todos recuerden.\" Eso es lo que resuelves.",
+      "start": 18.159,
+      "duration": 5.564
+    },
+    {
+      "text": "Antes de escribir tu próximo anuncio, pregúntate: ¿y eso, para qué le sirve a mi cliente?",
+      "start": 24.003,
+      "duration": 6.766
+    },
+    {
+      "text": "La respuesta a esa pregunta… es tu titular.",
+      "start": 31.049,
+      "duration": 3.474
+    },
+    {
+      "text": "Sígueme para más marketing que vende.",
+      "start": 34.803,
+      "duration": 2.508
+    }
+  ],
+  "fin": 38.79,
+  "resaltar": [
+    "cliente",
+    "compra",
+    "vendes",
+    "resuelve",
+    "frase",
+    "famosa",
+    "taladro",
+    "hueco",
+    "pared",
+    "diferencia",
+    "pasteles",
+    "personalizados",
+    "cumpleaños",
+    "recuerden",
+    "anuncio",
+    "sirve",
+    "respuesta",
+    "titular",
+    "Sígueme",
+    "vende"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "Lo que vendes",
+      "despues": "Lo que resuelves",
+      "badge": "LA CLAVE"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Un taladro",
+      "despues": "El hueco en la pared",
+      "badge": "FRASE FAMOSA"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧁",
+      "etiqueta": "Lo que vendes",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Hacemos pasteles personalizados",
+      "despues": "Que tu cumpleaños sea el que todos recuerden",
+      "badge": "LO QUE RESUELVES"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "❓",
+      "etiqueta": "¿Para qué le sirve?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "📰",
+      "etiqueta": "Es tu titular"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio",
+    "primer",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "smart"
+    },
+    {
+      "start": 1.84,
+      "pose": "you"
+    },
+    {
+      "start": 3.68,
+      "pose": "idea"
+    },
+    {
+      "start": 5.53,
+      "pose": "explain"
+    },
+    {
+      "start": 7.67,
+      "pose": "laugh"
+    },
+    {
+      "start": 9.81,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 11.92,
+      "pose": "presentLeft"
+    },
+    {
+      "start": 14.01,
+      "pose": "explain"
+    },
+    {
+      "start": 16.09,
+      "pose": "skeptic"
+    },
+    {
+      "start": 18.16,
+      "pose": "presentRight"
+    },
+    {
+      "start": 20.11,
+      "pose": "love"
+    },
+    {
+      "start": 22.05,
+      "pose": "excited"
+    },
+    {
+      "start": 24.0,
+      "pose": "thinking"
+    },
+    {
+      "start": 26.37,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 28.74,
+      "pose": "you"
+    },
+    {
+      "start": 31.05,
+      "pose": "idea"
+    },
+    {
+      "start": 32.26,
+      "pose": "proud"
+    },
+    {
+      "start": 33.48,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 34.8,
+      "pose": "down"
+    },
+    {
+      "start": 35.68,
+      "pose": "heart"
+    },
+    {
+      "start": 36.56,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 14.9,
+      "texto": "🧁 Lo que vendes",
+      "lado": "izq",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 20.38,
+      "texto": "🎉 Lo que resuelves",
+      "lado": "der",
+      "color": "#2BD576"
+    },
+    {
+      "start": 32.09,
+      "texto": "📰 Tu titular",
+      "lado": "izq",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 3.15,
+      "emoji": "💡"
+    },
+    {
+      "start": 21.5,
+      "emoji": "🎂"
+    },
+    {
+      "start": 33.13,
+      "emoji": "🚀"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Tu cliente",
+      "no compra",
+      "lo que vendes"
+    ],
+    "resaltar": 2,
+    "icono": "🎂",
+    "satelites": [
+      "🛠️",
+      "💡",
+      "🎯"
+    ],
+    "badge": "MARKETING",
+    "pose": "smart",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "boutique",
+    "clasico",
+    "cafe",
+    "cafe",
+    "boutique",
+    "atardecer",
+    "boutique"
+  ],
+  "cine": true
+}
