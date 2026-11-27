@@ -67,9 +67,10 @@
         "you"
       ],
       "escena": {
-        "tipo": "calendario",
-        "hasta": 7,
-        "palabra": "¿CUÁNTO TIEMPO?"
+        "tipo": "sorpresa",
+        "emoji": "⏳",
+        "etiqueta": "¿Cuánto tiempo pierdes?",
+        "badge": "PIÉNSALO"
       },
       "visual": "Pregunta."
     },

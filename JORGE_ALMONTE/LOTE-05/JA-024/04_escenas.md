@@ -35,7 +35,7 @@ Modalidad: presentador. Iluminación: según el set.
 - Personaje: thinkUp, skeptic, you (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: clasico
 - Cámara: plano primer con empuje lento
-- Gráfico: `calendario`
+- Gráfico: `sorpresa`
 - Transición: corte con fundido de la escena superior
 
 ## Escena 5 · 23.8–27.2 s
