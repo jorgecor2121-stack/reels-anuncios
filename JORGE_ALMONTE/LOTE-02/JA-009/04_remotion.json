@@ -1,0 +1,278 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-009.wav",
+  "lineas": [
+    {
+      "text": "¿No tienes tiempo de crear contenido todos los días? Entonces no lo hagas todos los días.",
+      "start": 0.0,
+      "duration": 5.721
+    },
+    {
+      "text": "Graba por lotes: en un solo día, el contenido de toda la semana.",
+      "start": 6.001,
+      "duration": 4.833
+    },
+    {
+      "text": "Por la mañana, escribe cinco ideas con su gancho.",
+      "start": 11.113,
+      "duration": 3.474
+    },
+    {
+      "text": "Al mediodía, grábalas una detrás de otra… y cambia de camisa entre video y video.",
+      "start": 14.868,
+      "duration": 6.687
+    },
+    {
+      "text": "Por la tarde, edita y escribe las descripciones. Y desde la app de Instagram puedes programar tus reels para que salgan solos.",
+      "start": 21.835,
+      "duration": 8.516
+    },
+    {
+      "text": "Un día de trabajo enfocado… y una semana entera publicando sin estrés.",
+      "start": 30.631,
+      "duration": 5.564
+    },
+    {
+      "text": "Guarda este video y sígueme para más estrategias de contenido.",
+      "start": 36.475,
+      "duration": 4.127
+    }
+  ],
+  "fin": 42.08,
+  "resaltar": [
+    "tiempo",
+    "contenido",
+    "días",
+    "lotes",
+    "día",
+    "semana",
+    "mañana",
+    "cinco",
+    "ideas",
+    "gancho",
+    "mediodía",
+    "grábalas",
+    "camisa",
+    "tarde",
+    "edita",
+    "descripciones",
+    "Instagram",
+    "programar",
+    "solos",
+    "enfocado",
+    "estrés",
+    "Guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "¿TODOS LOS DÍAS?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "📦",
+      "etiqueta": "Graba por lotes"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "5 ideas",
+        "5 ganchos"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🎥",
+        "🎥",
+        "👕"
+      ],
+      "letras": [
+        "GRABA",
+        "SIGUE",
+        "CAMBIA"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Edita",
+        "Escribe descripciones",
+        "Programa en Instagram"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Grabar a diario",
+      "despues": "1 día = 1 semana",
+      "badge": "EL RESULTADO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio",
+    "primer",
+    "general"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "tired"
+    },
+    {
+      "start": 2.0,
+      "pose": "facepalm"
+    },
+    {
+      "start": 4.0,
+      "pose": "you"
+    },
+    {
+      "start": 6.0,
+      "pose": "idea"
+    },
+    {
+      "start": 7.69,
+      "pose": "explain"
+    },
+    {
+      "start": 9.38,
+      "pose": "proud"
+    },
+    {
+      "start": 11.11,
+      "pose": "thinking"
+    },
+    {
+      "start": 12.33,
+      "pose": "phone"
+    },
+    {
+      "start": 13.54,
+      "pose": "idea"
+    },
+    {
+      "start": 14.87,
+      "pose": "explain"
+    },
+    {
+      "start": 17.21,
+      "pose": "listen"
+    },
+    {
+      "start": 19.55,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 21.84,
+      "pose": "phone"
+    },
+    {
+      "start": 24.82,
+      "pose": "explain"
+    },
+    {
+      "start": 27.8,
+      "pose": "ok"
+    },
+    {
+      "start": 30.63,
+      "pose": "smile"
+    },
+    {
+      "start": 32.58,
+      "pose": "confident"
+    },
+    {
+      "start": 34.53,
+      "pose": "celebrate"
+    },
+    {
+      "start": 36.48,
+      "pose": "pointFront"
+    },
+    {
+      "start": 37.92,
+      "pose": "heart"
+    },
+    {
+      "start": 39.36,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 11.81,
+      "texto": "☀️ Mañana: ideas",
+      "lado": "der",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 16.21,
+      "texto": "🎥 Mediodía: graba",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 23.54,
+      "texto": "🌇 Tarde: edita",
+      "lado": "der",
+      "color": "#FF8A3D"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 3.43,
+      "emoji": "😩"
+    },
+    {
+      "start": 18.88,
+      "emoji": "🎬"
+    },
+    {
+      "start": 33.41,
+      "emoji": "😎"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Graba 1 día,",
+      "publica",
+      "toda la semana"
+    ],
+    "resaltar": 2,
+    "icono": "📅",
+    "satelites": [
+      "🎥",
+      "✍️",
+      "⏰"
+    ],
+    "badge": "POR LOTES",
+    "pose": "proud",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  },
+  "entornos": [
+    "neon",
+    "neon",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "atardecer",
+    "escenario"
+  ],
+  "cine": true
+}
