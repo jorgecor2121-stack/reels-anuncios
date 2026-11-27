@@ -76,8 +76,8 @@
           "😂"
         ],
         "letras": [
-          "RASURADORAS",
-          "SUSCRIPCIÓN",
+          "RASURADORA",
+          "MENSUAL",
           "HUMOR"
         ]
       },
@@ -113,8 +113,8 @@
         "tipo": "stat",
         "valor": 1000,
         "prefijo": "US$",
-        "sufijo": " millones",
-        "etiqueta": "compra de Unilever (2016)",
+        "sufijo": "M",
+        "etiqueta": "millones · Unilever (2016)",
         "icono": "🤝",
         "badge": "SEGÚN LA PRENSA"
       },
