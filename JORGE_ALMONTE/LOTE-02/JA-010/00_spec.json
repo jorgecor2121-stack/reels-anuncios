@@ -76,9 +76,10 @@
         "skeptic"
       ],
       "escena": {
-        "tipo": "telefono",
-        "texto": "Hacemos pasteles personalizados",
-        "sello": "LO QUE VENDES"
+        "tipo": "sorpresa",
+        "emoji": "🧁",
+        "etiqueta": "Lo que vendes",
+        "badge": "EJEMPLO"
       },
       "visual": "Cafetería: el anuncio típico."
     },
@@ -90,9 +91,10 @@
         "excited"
       ],
       "escena": {
-        "tipo": "telefono",
-        "texto": "Que tu cumpleaños sea el que todos recuerden 🎂",
-        "sello": "LO QUE RESUELVES"
+        "tipo": "antesDespues",
+        "antes": "Hacemos pasteles personalizados",
+        "despues": "Que tu cumpleaños sea el que todos recuerden",
+        "badge": "LO QUE RESUELVES"
       },
       "visual": "Cafetería: el anuncio que vende.",
       "transicion": "fundido a negro, tienda"

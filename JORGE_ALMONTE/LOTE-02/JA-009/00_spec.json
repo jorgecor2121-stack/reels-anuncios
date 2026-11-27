@@ -117,9 +117,12 @@
         "ok"
       ],
       "escena": {
-        "tipo": "telefono",
-        "texto": "Reel programado ✅",
-        "sello": "SALE SOLO"
+        "tipo": "checklist",
+        "items": [
+          "Edita",
+          "Escribe descripciones",
+          "Programa en Instagram"
+        ]
       },
       "visual": "Tarde: edita y programa en Instagram."
     },

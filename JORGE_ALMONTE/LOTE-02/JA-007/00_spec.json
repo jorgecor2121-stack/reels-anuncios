@@ -68,9 +68,10 @@
         "proud"
       ],
       "escena": {
-        "tipo": "telefono",
-        "texto": "Actúa como experto en ventas…",
-        "sello": "1 · ROL"
+        "tipo": "antesDespues",
+        "antes": "Escríbeme un anuncio",
+        "despues": "Actúa como experto en ventas",
+        "badge": "1 · ROL"
       },
       "visual": "Plano medio: ejemplo del rol."
     },
@@ -104,9 +105,10 @@
         "thumbsUp"
       ],
       "escena": {
-        "tipo": "telefono",
-        "texto": "Dame 5 opciones cortas en lista",
-        "sello": "4 · FORMATO"
+        "tipo": "antesDespues",
+        "antes": "Dame ideas",
+        "despues": "Dame 5 opciones cortas en lista",
+        "badge": "4 · FORMATO"
       },
       "visual": "Plano medio: ejemplo del formato."
     },
