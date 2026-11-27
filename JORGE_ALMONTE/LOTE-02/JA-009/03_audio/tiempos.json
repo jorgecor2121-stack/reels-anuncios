@@ -1,5 +1,5 @@
 {
-  "total": 40.882,
+  "total": 43.495,
   "lines": [
     {
       "text": "¿No tienes tiempo de crear contenido todos los días? Entonces no lo hagas todos los días.",
@@ -14,27 +14,27 @@
     {
       "text": "Por la mañana, escribe cinco ideas con su gancho.",
       "start": 11.113,
-      "duration": 3.474
+      "duration": 3.396
     },
     {
       "text": "Al mediodía, grábalas una detrás de otra… y cambia de camisa entre video y video.",
-      "start": 14.868,
-      "duration": 6.687
+      "start": 14.789,
+      "duration": 6.269
     },
     {
       "text": "Por la tarde, edita y escribe las descripciones. Y desde la app de Instagram puedes programar tus reels para que salgan solos.",
-      "start": 21.835,
-      "duration": 8.516
+      "start": 21.339,
+      "duration": 8.359
     },
     {
       "text": "Un día de trabajo enfocado… y una semana entera publicando sin estrés.",
-      "start": 30.631,
+      "start": 29.978,
       "duration": 5.564
     },
     {
-      "text": "Guarda este video y sígueme para más estrategias de contenido.",
-      "start": 36.475,
-      "duration": 4.127
+      "text": "Compártelo con ese amigo que siempre dice que no tiene tiempo para publicar. Esto le puede organizar la semana.",
+      "start": 35.822,
+      "duration": 7.393
     }
   ]
 }

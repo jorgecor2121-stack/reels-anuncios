@@ -1,5 +1,5 @@
 # JA-009 — Hoja de escenas
-Formato 1080x1920 · 30 fps · duración 42.08 s · entorno `cafe` · vestuario `blazer`
+Formato 1080x1920 · 30 fps · duración 44.7 s · entorno `cafe` · vestuario `blazer`
 Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana en la cafetería, mediodía en el estudio, tarde al atardecer.
 
 ## Escena 1 · 0.0–5.7 s
@@ -20,7 +20,7 @@ Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana
 - Gráfico: `sorpresa`
 - Transición: fundido a negro, mañana en la cafetería
 
-## Escena 3 · 11.1–14.6 s
+## Escena 3 · 11.1–14.5 s
 - Voz: «Por la mañana, escribe cinco ideas con su gancho.»
 - Visual: Mañana en la cafetería: escribe ideas.
 - Personaje: thinking, phone, idea (gestos al 0 %, 35 % y 70 % de la frase)
@@ -29,7 +29,7 @@ Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana
 - Gráfico: `checklist`
 - Transición: fundido a negro, estudio
 
-## Escena 4 · 14.9–21.6 s
+## Escena 4 · 14.8–21.1 s
 - Voz: «Al mediodía, grábalas una detrás de otra… y cambia de camisa entre video y video.»
 - Visual: Mediodía en el estudio: graba una tras otra.
 - Personaje: explain, listen, thumbsUp (gestos al 0 %, 35 % y 70 % de la frase)
@@ -38,7 +38,7 @@ Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana
 - Gráfico: `trio`
 - Transición: fundido a negro, atardecer
 
-## Escena 5 · 21.8–30.4 s
+## Escena 5 · 21.3–29.7 s
 - Voz: «Por la tarde, edita y escribe las descripciones. Y desde la app de Instagram puedes programar tus reels para que salgan solos.»
 - Visual: Tarde: edita y programa en Instagram.
 - Personaje: phone, explain, ok (gestos al 0 %, 35 % y 70 % de la frase)
@@ -47,7 +47,7 @@ Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana
 - Gráfico: `checklist`
 - Transición: corte con fundido de la escena superior
 
-## Escena 6 · 30.6–36.2 s
+## Escena 6 · 30.0–35.5 s
 - Voz: «Un día de trabajo enfocado… y una semana entera publicando sin estrés.»
 - Visual: Atardecer: relajado.
 - Personaje: smile, confident, celebrate (gestos al 0 %, 35 % y 70 % de la frase)
@@ -56,9 +56,9 @@ Modalidad: protagonista (un día de grabación por lotes). Iluminación: mañana
 - Gráfico: `antesDespues`
 - Transición: corte con fundido de la escena superior
 
-## Escena 7 · 36.5–40.6 s
-- Voz: «Guarda este video y sígueme para más estrategias de contenido.»
-- Visual: Escenario, tarjeta de seguir.
+## Escena 7 · 35.8–43.2 s
+- Voz: «Compártelo con ese amigo que siempre dice que no tiene tiempo para publicar. Esto le puede organizar la semana.»
+- Visual: Cierre con el CTA principal: Envíaselo a quien no tiene tiempo para publicar
 - Personaje: pointFront, heart, waveBoth (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: escenario
 - Cámara: plano general con empuje lento
