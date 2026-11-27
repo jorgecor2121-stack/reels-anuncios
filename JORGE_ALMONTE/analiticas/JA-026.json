@@ -1,0 +1,24 @@
+{
+  "id": "JA-026",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Reservas sin teléfono",
+    "tipo": "Reel 2 · AUTORIDAD · pilar automatización (caso práctico — ejemplo)",
+    "gancho": "Así toma reservas un restaurante sin contestar el teléfono.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "GUARDAR",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "cafe",
+      "cafe",
+      "clasico",
+      "atardecer",
+      "cafe"
+    ],
+    "duracion_s": 24.43,
+    "lote": "LOTE-05",
+    "carpeta": "JORGE_ALMONTE/LOTE-05/JA-026"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

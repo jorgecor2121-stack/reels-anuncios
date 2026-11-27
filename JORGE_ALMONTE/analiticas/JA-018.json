@@ -1,0 +1,24 @@
+{
+  "id": "JA-018",
+  "mediciones": {},
+  "reel": {
+    "titulo": "¿Tienes talla M? (11 p. m.)",
+    "tipo": "Reel 1 · ALCANCE · pilar automatización",
+    "gancho": "\"¿Tienes en talla M?\" Te lo escribieron a las once de la noche.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "COMPARTIR",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "neon",
+      "neon",
+      "boutique",
+      "boutique",
+      "boutique"
+    ],
+    "duracion_s": 23.93,
+    "lote": "LOTE-05",
+    "carpeta": "JORGE_ALMONTE/LOTE-05/JA-018"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

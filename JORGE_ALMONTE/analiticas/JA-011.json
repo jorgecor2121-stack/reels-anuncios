@@ -1,0 +1,25 @@
+{
+  "id": "JA-011",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Este video se publicó solo",
+    "tipo": "Reel 2 · AUTORIDAD / DEMOSTRACIÓN · pilar creación de contenido con IA",
+    "gancho": "Este video se publicó solo. Nadie agarró el celular.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "polo",
+    "entornos": [
+      "neon",
+      "cafe",
+      "clasico",
+      "atardecer",
+      "escenario",
+      "escenario"
+    ],
+    "duracion_s": 36.06,
+    "lote": "LOTE-03",
+    "carpeta": "JORGE_ALMONTE/LOTE-03/JA-011"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

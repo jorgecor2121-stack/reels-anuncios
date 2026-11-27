@@ -1,0 +1,20 @@
+{
+  "id": "JA-016",
+  "mediciones": {},
+  "reel": {
+    "titulo": "No es mi voz grabada (es IA)",
+    "tipo": "Reel 2 · AUTORIDAD · pilar creación de contenido con IA (demostración)",
+    "gancho": "Esta no es mi voz grabada. Es mi voz clonada con inteligencia artificial.",
+    "modalidad": "presentador",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "denim",
+    "entornos": [
+      "neon"
+    ],
+    "duracion_s": 29.31,
+    "lote": "LOTE-04",
+    "carpeta": "JORGE_ALMONTE/LOTE-04/JA-016"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

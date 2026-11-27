@@ -1,0 +1,20 @@
+{
+  "id": "JA-014",
+  "mediciones": {},
+  "reel": {
+    "titulo": "¿Tienen para hoy? (todo el día)",
+    "tipo": "Reel 3 · CONVERSIÓN · pilar automatización",
+    "gancho": "¿Tu repostería contesta \"¿tienen para hoy?\" todo el santo día?",
+    "modalidad": "presentador",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "cafe"
+    ],
+    "duracion_s": 24.48,
+    "lote": "LOTE-04",
+    "carpeta": "JORGE_ALMONTE/LOTE-04/JA-014"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

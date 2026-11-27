@@ -1,0 +1,20 @@
+{
+  "id": "JA-021",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Manual vs. automático",
+    "tipo": "Reel 2 · AUTORIDAD · pilar automatización (demostración — simulación hasta tener demo real)",
+    "gancho": "Mismo cliente, mismo mensaje. Mira la diferencia.",
+    "modalidad": "presentador",
+    "cta_accion": "GUARDAR",
+    "vestimenta": "blazer",
+    "entornos": [
+      "escenario"
+    ],
+    "duracion_s": 26.86,
+    "lote": "LOTE-05",
+    "carpeta": "JORGE_ALMONTE/LOTE-05/JA-021"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

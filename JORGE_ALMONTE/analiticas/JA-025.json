@@ -1,0 +1,20 @@
+{
+  "id": "JA-025",
+  "mediciones": {},
+  "reel": {
+    "titulo": "De una foto a un anuncio",
+    "tipo": "Reel 1 · ALCANCE · pilar creación de contenido con IA (demostración con ejemplo)",
+    "gancho": "Esto era una foto. Ahora es un anuncio.",
+    "modalidad": "presentador",
+    "cta_accion": "COMPARTIR",
+    "vestimenta": "blazer",
+    "entornos": [
+      "cafe"
+    ],
+    "duracion_s": 21.33,
+    "lote": "LOTE-05",
+    "carpeta": "JORGE_ALMONTE/LOTE-05/JA-025"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "JA-019",
+  "mediciones": {},
+  "reel": {
+    "titulo": "El cliente de las 9 p. m.",
+    "tipo": "Reel 3 · CONVERSIÓN · pilar automatización",
+    "gancho": "Alguien pregunta por una casa a las nueve de la noche.",
+    "modalidad": "presentador",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "polo",
+    "entornos": [
+      "atardecer"
+    ],
+    "duracion_s": 24.56,
+    "lote": "LOTE-05",
+    "carpeta": "JORGE_ALMONTE/LOTE-05/JA-019"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

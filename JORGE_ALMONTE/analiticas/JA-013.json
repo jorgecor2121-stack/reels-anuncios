@@ -1,0 +1,24 @@
+{
+  "id": "JA-013",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Clientas que pierdes de noche",
+    "tipo": "Reel 1 · ALCANCE · pilar automatización",
+    "gancho": "Tu salón pierde clientas a las diez de la noche… y tú ni te enteras.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "COMPARTIR",
+    "vestimenta": "blazer",
+    "entornos": [
+      "neon",
+      "neon",
+      "neon",
+      "boutique",
+      "boutique"
+    ],
+    "duracion_s": 26.31,
+    "lote": "LOTE-04",
+    "carpeta": "JORGE_ALMONTE/LOTE-04/JA-013"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

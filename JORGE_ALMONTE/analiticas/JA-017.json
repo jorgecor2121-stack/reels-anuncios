@@ -1,0 +1,24 @@
+{
+  "id": "JA-017",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Videos de tu menú sin grabar",
+    "tipo": "Reel 3 · CONVERSIÓN · pilar creación de contenido con IA",
+    "gancho": "Tu restaurante necesita videos cada semana… y tú no tienes ni tiempo de comer.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "blazer",
+    "entornos": [
+      "cafe",
+      "cafe",
+      "clasico",
+      "atardecer",
+      "cafe"
+    ],
+    "duracion_s": 25.71,
+    "lote": "LOTE-04",
+    "carpeta": "JORGE_ALMONTE/LOTE-04/JA-017"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

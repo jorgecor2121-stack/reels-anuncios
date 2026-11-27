@@ -1,0 +1,20 @@
+{
+  "id": "JA-012",
+  "mediciones": {},
+  "reel": {
+    "titulo": "¿Otra vez te preguntan el precio?",
+    "tipo": "Reel 3 · CONVERSIÓN · pilar automatización para negocios",
+    "gancho": "¿Cuántas veces al día te escriben solo para preguntar el precio?",
+    "modalidad": "presentador",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "denim",
+    "entornos": [
+      "clasico"
+    ],
+    "duracion_s": 29.13,
+    "lote": "LOTE-03",
+    "carpeta": "JORGE_ALMONTE/LOTE-03/JA-012"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}
