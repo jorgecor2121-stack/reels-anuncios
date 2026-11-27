@@ -1,40 +1,40 @@
 {
-  "total": 48.536,
+  "total": 49.581,
   "lines": [
     {
       "text": "¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola?",
       "start": 0.0,
-      "duration": 5.486
+      "duration": 5.564
     },
     {
       "text": "Contestar la misma pregunta todo el día. Copiar pedidos a mano. Recordarle la cita a cada cliente.",
-      "start": 5.766,
-      "duration": 8.046
+      "start": 5.844,
+      "duration": 7.967
     },
     {
       "text": "Mucho de eso se puede automatizar, y no tienes que ser programador.",
       "start": 14.091,
-      "duration": 4.598
+      "duration": 4.754
     },
     {
       "text": "WhatsApp Business ya trae mensajes de bienvenida, mensajes de ausencia y respuestas rápidas.",
-      "start": 18.969,
+      "start": 19.126,
       "duration": 6.191
     },
     {
       "text": "Un formulario de Google guarda cada pedido solo en una hoja de cálculo. Y herramientas como Zapier o n8n conectan tus aplicaciones entre sí.",
-      "start": 25.44,
-      "duration": 10.266
+      "start": 25.597,
+      "duration": 10.031
     },
     {
       "text": "Empieza por una sola tarea: la que más se repite. Y el tiempo que recuperes, úsalo para vender.",
-      "start": 35.986,
-      "duration": 7.314
+      "start": 35.908,
+      "duration": 7.236
     },
     {
-      "text": "Sígueme, que te voy a enseñar a automatizar tu negocio paso a paso.",
-      "start": 43.58,
-      "duration": 4.676
+      "text": "Guarda este video: es tu lista para automatizar esta semana, una tarea a la vez.",
+      "start": 43.424,
+      "duration": 5.878
     }
   ]
 }

@@ -9,40 +9,40 @@
     {
       "text": "¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola?",
       "start": 0.0,
-      "duration": 5.486
+      "duration": 5.564
     },
     {
       "text": "Contestar la misma pregunta todo el día. Copiar pedidos a mano. Recordarle la cita a cada cliente.",
-      "start": 5.766,
-      "duration": 8.046
+      "start": 5.844,
+      "duration": 7.967
     },
     {
       "text": "Mucho de eso se puede automatizar, y no tienes que ser programador.",
       "start": 14.091,
-      "duration": 4.598
+      "duration": 4.754
     },
     {
       "text": "WhatsApp Business ya trae mensajes de bienvenida, mensajes de ausencia y respuestas rápidas.",
-      "start": 18.969,
+      "start": 19.126,
       "duration": 6.191
     },
     {
       "text": "Un formulario de Google guarda cada pedido solo en una hoja de cálculo. Y herramientas como Zapier o n8n conectan tus aplicaciones entre sí.",
-      "start": 25.44,
-      "duration": 10.266
+      "start": 25.597,
+      "duration": 10.031
     },
     {
       "text": "Empieza por una sola tarea: la que más se repite. Y el tiempo que recuperes, úsalo para vender.",
-      "start": 35.986,
-      "duration": 7.314
+      "start": 35.908,
+      "duration": 7.236
     },
     {
-      "text": "Sígueme, que te voy a enseñar a automatizar tu negocio paso a paso.",
-      "start": 43.58,
-      "duration": 4.676
+      "text": "Guarda este video: es tu lista para automatizar esta semana, una tarea a la vez.",
+      "start": 43.424,
+      "duration": 5.878
     }
   ],
-  "fin": 49.74,
+  "fin": 50.78,
   "resaltar": [
     "tiempo",
     "pierde",
@@ -117,7 +117,9 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "usuario": "jorgealmonteia",
+      "titulo": "Tu lista para automatizar esta semana",
+      "accion": "guardar"
     }
   ],
   "planos": [
@@ -135,23 +137,23 @@
       "pose": "tired"
     },
     {
-      "start": 1.92,
+      "start": 1.95,
       "pose": "facepalm"
     },
     {
-      "start": 3.84,
+      "start": 3.89,
       "pose": "worried"
     },
     {
-      "start": 5.77,
+      "start": 5.84,
       "pose": "phone"
     },
     {
-      "start": 8.58,
+      "start": 8.63,
       "pose": "tired"
     },
     {
-      "start": 11.4,
+      "start": 11.42,
       "pose": "facepalm"
     },
     {
@@ -159,77 +161,77 @@
       "pose": "idea"
     },
     {
-      "start": 15.7,
+      "start": 15.75,
       "pose": "explain"
     },
     {
-      "start": 17.31,
+      "start": 17.42,
       "pose": "smile"
     },
     {
-      "start": 18.97,
+      "start": 19.13,
       "pose": "phone"
     },
     {
-      "start": 21.14,
+      "start": 21.29,
       "pose": "explain"
     },
     {
-      "start": 23.3,
+      "start": 23.46,
       "pose": "thumbsUp"
     },
     {
-      "start": 25.44,
+      "start": 25.6,
       "pose": "explain"
     },
     {
-      "start": 29.03,
+      "start": 29.11,
       "pose": "presentRight"
     },
     {
-      "start": 32.63,
+      "start": 32.62,
       "pose": "smart"
     },
     {
-      "start": 35.99,
+      "start": 35.91,
       "pose": "one"
     },
     {
-      "start": 38.55,
+      "start": 38.44,
       "pose": "ok"
     },
     {
-      "start": 41.11,
+      "start": 40.97,
       "pose": "proud"
     },
     {
-      "start": 43.58,
+      "start": 43.42,
       "pose": "celebrate"
     },
     {
-      "start": 45.22,
+      "start": 45.48,
       "pose": "heart"
     },
     {
-      "start": 46.85,
+      "start": 47.54,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 20.83,
+      "start": 20.98,
       "texto": "💬 WhatsApp Business",
       "lado": "der",
       "color": "#2BD576"
     },
     {
-      "start": 27.49,
+      "start": 27.6,
       "texto": "📝 Google Forms",
       "lado": "izq",
       "color": "#22D3EE"
     },
     {
-      "start": 32.11,
+      "start": 32.12,
       "texto": "🔗 Zapier · n8n",
       "lado": "der",
       "color": "#FF8A3D"
@@ -237,15 +239,15 @@
   ],
   "reacciones": [
     {
-      "start": 2.74,
+      "start": 2.78,
       "emoji": "😩"
     },
     {
-      "start": 15.93,
+      "start": 15.99,
       "emoji": "⚙️"
     },
     {
-      "start": 40.37,
+      "start": 40.25,
       "emoji": "⏰"
     }
   ],
