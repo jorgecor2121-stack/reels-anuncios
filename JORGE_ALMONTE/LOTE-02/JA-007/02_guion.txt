@@ -4,4 +4,4 @@ Uno: el rol. "Actúa como experto en ventas para negocios pequeños."
 Dos: el contexto. Qué vendes, a quién, dónde y a qué precio. Tres: la tarea. Qué quieres exactamente.
 Y cuatro: el formato. "Dame cinco opciones cortas, en una lista."
 Rol, contexto, tarea y formato. Mientras más clara la instrucción, más útil la respuesta.
-Guarda este video para la próxima vez que abras ChatGPT, y sígueme para más.
+Guarda este video y tenlo a mano: la próxima vez que abras ChatGPT, copia la fórmula y compara la diferencia.

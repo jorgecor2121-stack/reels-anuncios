@@ -8,8 +8,8 @@
     "boutique",
     "boutique",
     "neon",
-    "clasico",
     "boutique",
+    "clasico",
     "atardecer",
     "boutique"
   ],
@@ -24,18 +24,19 @@
     "vendes",
     "cuesta",
     "comprarlo",
-    "convertir",
     "tres",
     "oferta",
     "clara",
+    "razón",
     "ahora",
     "camino",
-    "mensaje",
-    "enlace",
-    "botón",
-    "pagan",
-    "Guarda",
-    "sígueme"
+    "fácil",
+    "perfil",
+    "faltando",
+    "comentarios",
+    "empezar",
+    "clientes",
+    "semana"
   ],
   "tomas": [
     {
@@ -95,25 +96,11 @@
       "transicion": "fundido a negro, estudio"
     },
     {
-      "plano": "primer",
+      "plano": "general",
       "poses": [
         "one",
         "two",
         "three"
-      ],
-      "escena": {
-        "tipo": "sorpresa",
-        "emoji": "🔑",
-        "etiqueta": "3 cosas"
-      },
-      "visual": "Estudio. Primer plano: Jorge cuenta con los dedos."
-    },
-    {
-      "plano": "general",
-      "poses": [
-        "explain",
-        "countOnHand",
-        "thumbsUp"
       ],
       "escena": {
         "tipo": "checklist",
@@ -123,56 +110,85 @@
           "Camino fácil"
         ]
       },
-      "visual": "Vuelta a la tienda, plano general: checklist de las 3 cosas."
+      "visual": "Vuelta a la tienda, plano general: las 3 cosas aparecen una a una con check, Jorge las cuenta con los dedos."
     },
     {
-      "plano": "medio",
+      "plano": "primer",
       "poses": [
-        "smile",
-        "confident",
-        "proud"
+        "thinking",
+        "thinkUp",
+        "you"
       ],
       "escena": {
-        "tipo": "antesDespues",
-        "antes": "Me gusta",
-        "despues": "Clientes que pagan",
-        "badge": "LO QUE IMPORTA"
+        "tipo": "trio",
+        "iconos": [
+          "🎯",
+          "⏰",
+          "👉"
+        ],
+        "letras": [
+          "OFERTA",
+          "RAZÓN",
+          "CAMINO"
+        ]
       },
-      "visual": "Atardecer: likes vs. clientes."
+      "visual": "Estudio, primer plano: Jorge le pregunta directo al espectador cuál le falta.",
+      "transicion": "fundido a negro, atardecer"
     },
     {
       "plano": "medio",
       "poses": [
-        "down",
+        "pointFront",
+        "explain",
+        "smile"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Cuál le falta a tu perfil?",
+        "opciones": [
+          "Oferta",
+          "Razón",
+          "Camino"
+        ],
+        "nota": "Escríbelo en los comentarios 👇"
+      },
+      "visual": "Atardecer: caja de comentario con las 3 opciones y la palabra escribiéndose sola.",
+      "transicion": "fundido a negro, tienda"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "welcome",
         "heart",
         "waveBoth"
       ],
       "escena": {
         "tipo": "seguir",
-        "usuario": "jorgealmonteia"
+        "usuario": "jorgealmonteia",
+        "titulo": "Aprende a convertir seguidores en clientes"
       },
-      "visual": "Tienda, tarjeta de seguir.",
+      "visual": "Tienda: Jorge invita a quedarse para aprender a convertir seguidores en clientes. Tarjeta de seguir.",
       "transicion": "fin"
     }
   ],
   "chips": [
     {
-      "frase": 4,
-      "en": 0.05,
+      "frase": 3,
+      "en": 0.15,
       "texto": "🎯 Oferta clara",
       "lado": "der",
       "color": "#22D3EE"
     },
     {
-      "frase": 4,
-      "en": 0.35,
+      "frase": 3,
+      "en": 0.45,
       "texto": "⏰ Comprar hoy",
       "lado": "izq",
       "color": "#FFD23F"
     },
     {
-      "frase": 4,
-      "en": 0.65,
+      "frase": 3,
+      "en": 0.75,
       "texto": "👉 Camino fácil",
       "lado": "der",
       "color": "#2BD576"
@@ -192,7 +208,7 @@
     {
       "frase": 5,
       "en": 0.5,
-      "emoji": "💰"
+      "emoji": "💬"
     }
   ],
   "portada": {

@@ -16,7 +16,8 @@ export type Escena =
   | { tipo: "movimiento"; badge?: string; etiqueta: string }
   | { tipo: "sorpresa"; emoji: string; etiqueta: string; badge?: string }
   | { tipo: "checklist"; items: string[] }
-  | { tipo: "seguir"; usuario: string }
+  | { tipo: "seguir"; usuario: string; titulo?: string }
+  | { tipo: "comentar"; pregunta: string; opciones: string[]; nota?: string }
   | { tipo: "grafica"; titulo: string; barras: { etiqueta: string; valor: number; destacar?: boolean }[]; sufijo?: string; badge?: string; nota?: string }
   | { tipo: "stat"; valor: number; etiqueta: string; icono?: string; prefijo?: string; sufijo?: string; decimales?: number; sube?: boolean; badge?: string }
   | { tipo: "embudo"; pasos: { etiqueta: string; valor: number }[]; badge?: string }
@@ -201,6 +202,32 @@ const CheckItem: React.FC<{ text: string; delay: number }> = ({ text, delay }) =
   );
 };
 
+
+// CTA de comentarios: pregunta + opciones para responder + caja de comentario que se escribe sola.
+const EscComentar: React.FC<{ e: Extract<Escena, { tipo: "comentar" }> }> = ({ e }) => {
+  const frame = useCurrentFrame();
+  const inP = useSpring(0);
+  const escrito = e.opciones[0] ?? "";
+  const n = Math.max(0, Math.min(escrito.length, Math.floor((frame - S(1.6)) / 2)));
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 34, transform: `scale(${inP})`, width: 980 }}>
+      <div style={{ fontSize: 120 }}>💬</div>
+      <div style={{ fontSize: 60, fontWeight: 900, textAlign: "center", lineHeight: 1.15 }}>{e.pregunta}</div>
+      <div style={{ display: "flex", gap: 22, justifyContent: "center", flexWrap: "wrap" }}>
+        {e.opciones.map((o, i) => {
+          const p = interpolate(frame - S(0.5 + i * 0.25), [0, 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          return <div key={o} style={{ opacity: p, transform: `translateY(${(1 - p) * 30}px)`, background: C.card, border: `4px solid ${[C.y, C.o, "#2BD576"][i % 3]}`, borderRadius: 999, padding: "16px 40px", fontSize: 54, fontWeight: 900 }}>{o}</div>;
+        })}
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 20, width: 900, background: "rgba(255,255,255,.08)", border: `3px solid ${C.line}`, borderRadius: 40, padding: "22px 30px" }}>
+        <div style={{ width: 70, height: 70, borderRadius: "50%", background: `linear-gradient(135deg, ${C.o}, ${C.y})` }} />
+        <div style={{ fontSize: 46, fontWeight: 700, color: n ? "#fff" : "rgba(255,255,255,.45)" }}>{n ? escrito.slice(0, n) : "Añade un comentario…"}<span style={{ opacity: frame % 20 < 10 ? 1 : 0 }}>|</span></div>
+      </div>
+      {e.nota ? <div style={{ fontSize: 40, fontWeight: 800, color: C.y, textAlign: "center" }}>{e.nota}</div> : null}
+    </div>
+  );
+};
+
 const EscSeguir: React.FC<{ e: Extract<Escena, { tipo: "seguir" }> }> = ({ e }) => {
   const frame = useCurrentFrame();
   const inP = useSpring(0);
@@ -212,8 +239,8 @@ const EscSeguir: React.FC<{ e: Extract<Escena, { tipo: "seguir" }> }> = ({ e }) 
   const press = clicked ? interpolate(frame - clickT, [0, 3, 8], [1, 0.9, 1], { extrapolateRight: "clamp" }) : 1;
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 50, transform: `scale(${inP})` }}>
-      <div style={{ fontSize: 210, transform: `scale(${save}) rotate(${interpolate(save, [0, 1], [-30, 0])}deg)` }}>🔖</div>
-      <div style={{ fontSize: 64, fontWeight: 900 }}>Guarda este video</div>
+      <div style={{ fontSize: 210, transform: `scale(${save}) rotate(${interpolate(save, [0, 1], [-30, 0])}deg)` }}>{e.titulo ? "🚀" : "🔖"}</div>
+      <div style={{ fontSize: e.titulo ? 56 : 64, fontWeight: 900, textAlign: "center", maxWidth: 900, lineHeight: 1.15 }}>{e.titulo ?? "Guarda este video"}</div>
       <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 26, background: C.card, border: `3px solid ${C.line}`, borderRadius: 36, padding: "26px 34px" }}>
         <div style={{ width: 96, height: 96, borderRadius: "50%", background: `linear-gradient(135deg, ${C.o}, ${C.y})` }} />
         <div style={{ fontSize: 44, fontWeight: 800 }}>{e.usuario}</div>
@@ -502,6 +529,7 @@ export const Esc: React.FC<{ e: Escena }> = ({ e }) => {
     case "sorpresa": return <EscSorpresa e={e} />;
     case "checklist": return <EscChecklist e={e} />;
     case "seguir": return <EscSeguir e={e} />;
+    case "comentar": return <EscComentar e={e} />;
     case "grafica": return <EscGrafica e={e} />;
     case "stat": return <EscStat e={e} />;
     case "embudo": return <EscEmbudo e={e} />;

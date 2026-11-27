@@ -3,6 +3,15 @@
 Este repositorio produce y publica reels animados en Instagram, narrados con la voz clonada del dueño de la cuenta.
 Idioma de trabajo con el usuario: español.
 
+## SISTEMA MAESTRO JA (manda sobre todo lo de abajo; desde 26/27-nov-2026)
+- Guía obligatoria: `JORGE_ALMONTE/SISTEMA-MAESTRO.md` (identidad, línea editorial, estructura, portadas, verificación, QC).
+- **CTA obligatorio: `JORGE_ALMONTE/REGLAS-CTA.md`** — una sola acción principal por Reel (comentar/seguir/guardar/compartir),
+  integrada en el guion, con beneficio concreto; `07_publicacion.md` lleva sección `## CTA` (hablado, pantalla, comentario fijado, respuestas).
+- Publicaciones con ID `JA-NNN` en `JORGE_ALMONTE/LOTE-XX/JA-NNN/` (00_spec, 01_investigacion, 02_guion, 03_audio, 04_escenas/04_remotion,
+  05_render.mp4, 06_portada.jpg, 07_publicacion.md, 08_qc.md). Props con `python3 scripts/ja_props.py <carpeta>`.
+- Personaje maestro: `JORGE_ALMONTE/personaje/personaje-maestro.jpg` (no modificar `src/avatar2d`).
+- Publicación: el usuario autorizó publicar en automático los reels que pasen MI control de calidad (`08_qc.md` con "APROBADO"), que incluye verificar el CTA.
+
 ## Archivos
 - `GUIA-MARCA.md` — estilo, tono, fórmula de cada reel.
 - `LISTADO-VIDEOS.md` — banco de 40 temas, cada uno con su palabra clave.

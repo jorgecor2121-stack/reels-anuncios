@@ -16,6 +16,16 @@ Ejemplo: costo RD$200 + RD$50 de gastos = RD$250. Con 30 % de ganancia sobre eso
 
 Si quedas muy alto, no bajes a ciegas: ajusta costos o agrega valor.
 
-📌 Guárdalo y sígueme para más finanzas fáciles para tu negocio.
+💬 ¿Cómo pones tus precios hoy: calculando, copiando o a ojo? Cuéntamelo en los comentarios, sin pena.
 
 #finanzas #precios #emprendimiento #negocios #pymes #emprendedores #ventas #republicadominicana
+
+## CTA
+- Acción principal: **COMENTAR** — Pregunta honesta y fácil de responder (3 opciones) sobre un tema que a todos les pasa; abre conversación real.
+- CTA hablado: «Y cuéntame en los comentarios: ¿hoy pones tus precios calculando, copiando… o a ojo? Sin pena, que a todos nos ha pasado.»
+- CTA en pantalla: 💬 ¿Cómo pones tus precios? [Calculando] [Copiando] [A ojo]
+- Comentario para fijar (lo publica y fija Jorge desde la app): Sin pena 😅 ¿Cómo pones tus precios hoy: CALCULANDO, COPIANDO o A OJO? 👇
+- Respuestas preparadas:
+  - CALCULANDO → «¡Bien! Revisa cada 3 meses: los costos cambian.»
+  - COPIANDO → «Úsalo como referencia, pero haz tu cuenta: tus costos no son los del vecino.»
+  - A OJO → «Empieza por anotar lo que te cuesta cada producto esta semana. Con eso ya sabes tu mínimo.»

@@ -14,6 +14,16 @@ Usa esta fórmula de 4 partes:
 
 Mientras más clara la instrucción, más útil la respuesta.
 
-📌 Guárdalo para la próxima vez que abras ChatGPT, y sígueme para más.
+🔖 Guárdalo y tenlo a mano: la próxima vez que abras ChatGPT, copia la fórmula y compara la diferencia.
 
 #inteligenciaartificial #chatgpt #prompts #ia #emprendimiento #productividad #emprendedores #republicadominicana
+
+## CTA
+- Acción principal: **GUARDAR** — Es una fórmula para usar cada vez que abre la IA: guardarla es útil de verdad.
+- CTA hablado: «Guarda este video y tenlo a mano: la próxima vez que abras ChatGPT, copia la fórmula y compara la diferencia.»
+- CTA en pantalla: 🔖 «Rol · Contexto · Tarea · Formato» + botón Guardar
+- Comentario para fijar (lo publica y fija Jorge desde la app): 📌 Plantilla para copiar: «Actúa como [ROL]. Vendo [PRODUCTO] a [CLIENTE] en [CIUDAD] a [PRECIO]. Necesito [TAREA]. Dame [FORMATO].»
+- Respuestas preparadas:
+  - «¿Sirve en otras IA?» → «Sí, la fórmula funciona igual en ChatGPT, Gemini o Claude.»
+  - «No me sale bien» → «Agrega más contexto: a quién le vendes y qué te diferencia.»
+  - «¿Formato?» → «Lista, tabla, 5 opciones cortas o un texto de 50 palabras: tú decides.»
