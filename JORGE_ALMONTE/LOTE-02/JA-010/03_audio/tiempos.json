@@ -1,40 +1,40 @@
 {
-  "total": 37.591,
+  "total": 40.856,
   "lines": [
     {
       "text": "Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.",
       "start": 0.0,
-      "duration": 5.251
+      "duration": 5.068
     },
     {
       "text": "Hay una frase famosa en marketing: nadie quiere un taladro… quiere el hueco en la pared.",
-      "start": 5.531,
-      "duration": 6.113
+      "start": 5.348,
+      "duration": 6.269
     },
     {
       "text": "Mira la diferencia. \"Hacemos pasteles personalizados.\" Eso es lo que vendes.",
-      "start": 11.923,
-      "duration": 5.956
+      "start": 11.897,
+      "duration": 5.799
     },
     {
       "text": "\"Que tu cumpleaños sea el que todos recuerden.\" Eso es lo que resuelves.",
-      "start": 18.159,
-      "duration": 5.564
+      "start": 17.976,
+      "duration": 5.407
     },
     {
       "text": "Antes de escribir tu próximo anuncio, pregúntate: ¿y eso, para qué le sirve a mi cliente?",
-      "start": 24.003,
-      "duration": 6.766
+      "start": 23.664,
+      "duration": 6.531
     },
     {
       "text": "La respuesta a esa pregunta… es tu titular.",
-      "start": 31.049,
-      "duration": 3.474
+      "start": 30.474,
+      "duration": 3.396
     },
     {
-      "text": "Sígueme para más marketing que vende.",
-      "start": 34.803,
-      "duration": 2.508
+      "text": "Si quieres que tus anuncios hablen de lo que tu cliente gana, sígueme: aquí te enseño a escribirlos.",
+      "start": 34.15,
+      "duration": 6.426
     }
   ]
 }

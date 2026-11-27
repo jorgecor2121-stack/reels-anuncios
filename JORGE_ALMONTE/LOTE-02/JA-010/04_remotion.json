@@ -9,40 +9,40 @@
     {
       "text": "Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.",
       "start": 0.0,
-      "duration": 5.251
+      "duration": 5.068
     },
     {
       "text": "Hay una frase famosa en marketing: nadie quiere un taladro… quiere el hueco en la pared.",
-      "start": 5.531,
-      "duration": 6.113
+      "start": 5.348,
+      "duration": 6.269
     },
     {
       "text": "Mira la diferencia. \"Hacemos pasteles personalizados.\" Eso es lo que vendes.",
-      "start": 11.923,
-      "duration": 5.956
+      "start": 11.897,
+      "duration": 5.799
     },
     {
       "text": "\"Que tu cumpleaños sea el que todos recuerden.\" Eso es lo que resuelves.",
-      "start": 18.159,
-      "duration": 5.564
+      "start": 17.976,
+      "duration": 5.407
     },
     {
       "text": "Antes de escribir tu próximo anuncio, pregúntate: ¿y eso, para qué le sirve a mi cliente?",
-      "start": 24.003,
-      "duration": 6.766
+      "start": 23.664,
+      "duration": 6.531
     },
     {
       "text": "La respuesta a esa pregunta… es tu titular.",
-      "start": 31.049,
-      "duration": 3.474
+      "start": 30.474,
+      "duration": 3.396
     },
     {
-      "text": "Sígueme para más marketing que vende.",
-      "start": 34.803,
-      "duration": 2.508
+      "text": "Si quieres que tus anuncios hablen de lo que tu cliente gana, sígueme: aquí te enseño a escribirlos.",
+      "start": 34.15,
+      "duration": 6.426
     }
   ],
-  "fin": 38.79,
+  "fin": 42.06,
   "resaltar": [
     "cliente",
     "compra",
@@ -102,7 +102,8 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "usuario": "jorgealmonteia",
+      "titulo": "Anuncios que hablan de lo que tu cliente gana"
     }
   ],
   "planos": [
@@ -120,101 +121,101 @@
       "pose": "smart"
     },
     {
-      "start": 1.84,
+      "start": 1.77,
       "pose": "you"
     },
     {
-      "start": 3.68,
+      "start": 3.55,
       "pose": "idea"
     },
     {
-      "start": 5.53,
+      "start": 5.35,
       "pose": "explain"
     },
     {
-      "start": 7.67,
+      "start": 7.54,
       "pose": "laugh"
     },
     {
-      "start": 9.81,
+      "start": 9.74,
       "pose": "thinkUp"
     },
     {
-      "start": 11.92,
+      "start": 11.9,
       "pose": "presentLeft"
     },
     {
-      "start": 14.01,
+      "start": 13.93,
       "pose": "explain"
     },
     {
-      "start": 16.09,
+      "start": 15.96,
       "pose": "skeptic"
     },
     {
-      "start": 18.16,
+      "start": 17.98,
       "pose": "presentRight"
     },
     {
-      "start": 20.11,
+      "start": 19.87,
       "pose": "love"
     },
     {
-      "start": 22.05,
+      "start": 21.76,
       "pose": "excited"
     },
     {
-      "start": 24.0,
+      "start": 23.66,
       "pose": "thinking"
     },
     {
-      "start": 26.37,
+      "start": 25.95,
       "pose": "thinkUp"
     },
     {
-      "start": 28.74,
+      "start": 28.24,
       "pose": "you"
     },
     {
-      "start": 31.05,
+      "start": 30.47,
       "pose": "idea"
     },
     {
-      "start": 32.26,
+      "start": 31.66,
       "pose": "proud"
     },
     {
-      "start": 33.48,
+      "start": 32.85,
       "pose": "thumbsUp"
     },
     {
-      "start": 34.8,
+      "start": 34.15,
       "pose": "down"
     },
     {
-      "start": 35.68,
+      "start": 36.4,
       "pose": "heart"
     },
     {
-      "start": 36.56,
+      "start": 38.65,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 14.9,
+      "start": 14.8,
       "texto": "🧁 Lo que vendes",
       "lado": "izq",
       "color": "#FF3B5C"
     },
     {
-      "start": 20.38,
+      "start": 20.14,
       "texto": "🎉 Lo que resuelves",
       "lado": "der",
       "color": "#2BD576"
     },
     {
-      "start": 32.09,
+      "start": 31.49,
       "texto": "📰 Tu titular",
       "lado": "izq",
       "color": "#FFD23F"
@@ -222,15 +223,15 @@
   ],
   "reacciones": [
     {
-      "start": 3.15,
+      "start": 3.04,
       "emoji": "💡"
     },
     {
-      "start": 21.5,
+      "start": 21.22,
       "emoji": "🎂"
     },
     {
-      "start": 33.13,
+      "start": 32.51,
       "emoji": "🚀"
     }
   ],

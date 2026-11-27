@@ -1,8 +1,8 @@
 # JA-010 — Hoja de escenas
-Formato 1080x1920 · 30 fps · duración 38.79 s · entorno `boutique` · vestuario `hoodie`
+Formato 1080x1920 · 30 fps · duración 42.06 s · entorno `boutique` · vestuario `hoodie`
 Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tienda cálida y cafetería.
 
-## Escena 1 · 0.0–5.3 s
+## Escena 1 · 0.0–5.1 s
 - Voz: «Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.»
 - Visual: Tienda, primer plano.
 - Personaje: smart, you, idea (gestos al 0 %, 35 % y 70 % de la frase)
@@ -11,7 +11,7 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `antesDespues`
 - Transición: fundido a negro, estudio
 
-## Escena 2 · 5.5–11.6 s
+## Escena 2 · 5.3–11.6 s
 - Voz: «Hay una frase famosa en marketing: nadie quiere un taladro… quiere el hueco en la pared.»
 - Visual: Estudio: la frase del taladro.
 - Personaje: explain, laugh, thinkUp (gestos al 0 %, 35 % y 70 % de la frase)
@@ -20,7 +20,7 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `antesDespues`
 - Transición: fundido a negro, cafetería
 
-## Escena 3 · 11.9–17.9 s
+## Escena 3 · 11.9–17.7 s
 - Voz: «Mira la diferencia. "Hacemos pasteles personalizados." Eso es lo que vendes.»
 - Visual: Cafetería: el anuncio típico.
 - Personaje: presentLeft, explain, skeptic (gestos al 0 %, 35 % y 70 % de la frase)
@@ -29,7 +29,7 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `sorpresa`
 - Transición: corte con fundido de la escena superior
 
-## Escena 4 · 18.2–23.7 s
+## Escena 4 · 18.0–23.4 s
 - Voz: «"Que tu cumpleaños sea el que todos recuerden." Eso es lo que resuelves.»
 - Visual: Cafetería: el anuncio que vende.
 - Personaje: presentRight, love, excited (gestos al 0 %, 35 % y 70 % de la frase)
@@ -38,7 +38,7 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `antesDespues`
 - Transición: fundido a negro, tienda
 
-## Escena 5 · 24.0–30.8 s
+## Escena 5 · 23.7–30.2 s
 - Voz: «Antes de escribir tu próximo anuncio, pregúntate: ¿y eso, para qué le sirve a mi cliente?»
 - Visual: Tienda, primer plano: la pregunta.
 - Personaje: thinking, thinkUp, you (gestos al 0 %, 35 % y 70 % de la frase)
@@ -47,7 +47,7 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `sorpresa`
 - Transición: corte con fundido de la escena superior
 
-## Escena 6 · 31.0–34.5 s
+## Escena 6 · 30.5–33.9 s
 - Voz: «La respuesta a esa pregunta… es tu titular.»
 - Visual: Atardecer: la respuesta es el titular.
 - Personaje: idea, proud, thumbsUp (gestos al 0 %, 35 % y 70 % de la frase)
@@ -56,9 +56,9 @@ Modalidad: protagonista (Jorge en una repostería de ejemplo). Iluminación: tie
 - Gráfico: `sorpresa`
 - Transición: corte con fundido de la escena superior
 
-## Escena 7 · 34.8–37.3 s
-- Voz: «Sígueme para más marketing que vende.»
-- Visual: Tienda, tarjeta de seguir.
+## Escena 7 · 34.1–40.6 s
+- Voz: «Si quieres que tus anuncios hablen de lo que tu cliente gana, sígueme: aquí te enseño a escribirlos.»
+- Visual: Cierre con el CTA principal: Anuncios que hablan de lo que tu cliente gana
 - Personaje: down, heart, waveBoth (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: boutique
 - Cámara: plano medio con empuje lento
