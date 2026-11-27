@@ -9,12 +9,12 @@
     {
       "text": "En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.",
       "start": 0.0,
-      "duration": 8.594
+      "duration": 8.516
     },
     {
       "text": "Era Dollar Shave Club, una tienda en línea de rasuradoras por suscripción. Su fundador salió en el video, con humor y hablando claro sobre el precio de las rasuradoras.",
-      "start": 8.874,
-      "duration": 11.076
+      "start": 8.796,
+      "duration": 11.154
     },
     {
       "text": "Según la prensa y el propio fundador, llegaron unos doce mil pedidos en los primeros dos días.",
@@ -24,25 +24,25 @@
     {
       "text": "Y en 2016, según reportes de prensa, Unilever compró la empresa por alrededor de mil millones de dólares.",
       "start": 27.119,
-      "duration": 8.124
+      "duration": 8.046
     },
     {
       "text": "¿La lección? No necesitas el presupuesto más grande. Necesitas una oferta clara y una personalidad que se recuerde.",
-      "start": 35.523,
-      "duration": 8.281
+      "start": 35.445,
+      "duration": 8.516
     },
     {
       "text": "Ojo: no todo video se hace viral. Pero un mensaje claro, con tu propio estilo, te da ventaja.",
-      "start": 44.084,
-      "duration": 7.706
+      "start": 44.241,
+      "duration": 7.549
     },
     {
-      "text": "Sígueme para más casos de negocios que puedes aplicar al tuyo.",
+      "text": "Aquí analizo casos reales de negocio y lo que puedes aplicar al tuyo. Sígueme para no perderte el próximo.",
       "start": 52.07,
-      "duration": 4.049
+      "duration": 7.158
     }
   ],
-  "fin": 57.6,
+  "fin": 60.71,
   "resaltar": [
     "2012",
     "pequeña",
@@ -89,8 +89,8 @@
         "😂"
       ],
       "letras": [
-        "RASURADORAS",
-        "SUSCRIPCIÓN",
+        "RASURADORA",
+        "MENSUAL",
         "HUMOR"
       ]
     },
@@ -106,8 +106,8 @@
       "tipo": "stat",
       "valor": 1000,
       "prefijo": "US$",
-      "sufijo": " millones",
-      "etiqueta": "compra de Unilever (2016)",
+      "sufijo": "M",
+      "etiqueta": "millones · Unilever (2016)",
       "icono": "🤝",
       "badge": "SEGÚN LA PRENSA"
     },
@@ -127,7 +127,8 @@
     },
     {
       "tipo": "seguir",
-      "usuario": "jorgealmonteia"
+      "usuario": "jorgealmonteia",
+      "titulo": "Casos reales para aplicar a tu negocio"
     }
   ],
   "planos": [
@@ -145,23 +146,23 @@
       "pose": "surprised"
     },
     {
-      "start": 3.01,
+      "start": 2.98,
       "pose": "thinkUp"
     },
     {
-      "start": 6.02,
+      "start": 5.96,
       "pose": "explain"
     },
     {
-      "start": 8.87,
+      "start": 8.8,
       "pose": "explain"
     },
     {
-      "start": 12.75,
+      "start": 12.7,
       "pose": "laugh"
     },
     {
-      "start": 16.63,
+      "start": 16.6,
       "pose": "smart"
     },
     {
@@ -181,35 +182,35 @@
       "pose": "ohNo"
     },
     {
-      "start": 29.96,
+      "start": 29.94,
       "pose": "surprised"
     },
     {
-      "start": 32.81,
+      "start": 32.75,
       "pose": "proud"
     },
     {
-      "start": 35.52,
+      "start": 35.45,
       "pose": "one"
     },
     {
-      "start": 38.42,
+      "start": 38.43,
       "pose": "explain"
     },
     {
-      "start": 41.32,
+      "start": 41.41,
       "pose": "confident"
     },
     {
-      "start": 44.08,
+      "start": 44.24,
       "pose": "wagNo"
     },
     {
-      "start": 46.78,
+      "start": 46.88,
       "pose": "smart"
     },
     {
-      "start": 49.48,
+      "start": 49.53,
       "pose": "thumbsUp"
     },
     {
@@ -217,17 +218,17 @@
       "pose": "pointFront"
     },
     {
-      "start": 53.49,
+      "start": 54.58,
       "pose": "heart"
     },
     {
-      "start": 54.9,
+      "start": 57.08,
       "pose": "waveBoth"
     }
   ],
   "chips": [
     {
-      "start": 5.16,
+      "start": 5.11,
       "texto": "🎬 US$4,500",
       "lado": "der",
       "color": "#FFD23F"
@@ -239,7 +240,7 @@
       "color": "#2BD576"
     },
     {
-      "start": 30.37,
+      "start": 30.34,
       "texto": "🤝 ~US$1,000 M",
       "lado": "der",
       "color": "#22D3EE"
@@ -247,7 +248,7 @@
   ],
   "reacciones": [
     {
-      "start": 6.02,
+      "start": 5.96,
       "emoji": "🎬"
     },
     {
@@ -255,7 +256,7 @@
       "emoji": "🚀"
     },
     {
-      "start": 31.99,
+      "start": 31.95,
       "emoji": "💰"
     }
   ],

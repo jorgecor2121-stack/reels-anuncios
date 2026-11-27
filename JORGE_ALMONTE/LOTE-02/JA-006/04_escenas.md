@@ -1,8 +1,8 @@
 # JA-006 — Hoja de escenas
-Formato 1080x1920 · 30 fps · duración 57.6 s · entorno `clasico` · vestuario `hoodie`
+Formato 1080x1920 · 30 fps · duración 60.71 s · entorno `clasico` · vestuario `hoodie`
 Modalidad: protagonista (Jorge narra y vive el caso en distintos lugares). Iluminación: cine: noche de estudio, oficina al atardecer, escenario.
 
-## Escena 1 · 0.0–8.6 s
+## Escena 1 · 0.0–8.5 s
 - Voz: «En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.»
 - Visual: Estudio de noche. Primer plano: la cifra del video.
 - Personaje: surprised, thinkUp, explain (gestos al 0 %, 35 % y 70 % de la frase)
@@ -11,7 +11,7 @@ Modalidad: protagonista (Jorge narra y vive el caso en distintos lugares). Ilumi
 - Gráfico: `stat`
 - Transición: fundido a negro, cafetería
 
-## Escena 2 · 8.9–20.0 s
+## Escena 2 · 8.8–19.9 s
 - Voz: «Era Dollar Shave Club, una tienda en línea de rasuradoras por suscripción. Su fundador salió en el video, con humor y hablando claro sobre el precio de las rasuradoras.»
 - Visual: Cafetería: qué era la empresa y cómo era el video.
 - Personaje: explain, laugh, smart (gestos al 0 %, 35 % y 70 % de la frase)
@@ -38,7 +38,7 @@ Modalidad: protagonista (Jorge narra y vive el caso en distintos lugares). Ilumi
 - Gráfico: `stat`
 - Transición: fundido a negro, escenario
 
-## Escena 5 · 35.5–43.8 s
+## Escena 5 · 35.4–44.0 s
 - Voz: «¿La lección? No necesitas el presupuesto más grande. Necesitas una oferta clara y una personalidad que se recuerde.»
 - Visual: Escenario azul. Primer plano: la lección.
 - Personaje: one, explain, confident (gestos al 0 %, 35 % y 70 % de la frase)
@@ -47,7 +47,7 @@ Modalidad: protagonista (Jorge narra y vive el caso en distintos lugares). Ilumi
 - Gráfico: `antesDespues`
 - Transición: fundido a negro, cafetería
 
-## Escena 6 · 44.1–51.8 s
+## Escena 6 · 44.2–51.8 s
 - Voz: «Ojo: no todo video se hace viral. Pero un mensaje claro, con tu propio estilo, te da ventaja.»
 - Visual: Cafetería: la advertencia honesta.
 - Personaje: wagNo, smart, thumbsUp (gestos al 0 %, 35 % y 70 % de la frase)
@@ -56,9 +56,9 @@ Modalidad: protagonista (Jorge narra y vive el caso en distintos lugares). Ilumi
 - Gráfico: `checklist`
 - Transición: corte con fundido de la escena superior
 
-## Escena 7 · 52.1–56.1 s
-- Voz: «Sígueme para más casos de negocios que puedes aplicar al tuyo.»
-- Visual: Escenario, tarjeta de seguir.
+## Escena 7 · 52.1–59.2 s
+- Voz: «Aquí analizo casos reales de negocio y lo que puedes aplicar al tuyo. Sígueme para no perderte el próximo.»
+- Visual: Cierre con el CTA principal: Casos reales para aplicar a tu negocio
 - Personaje: pointFront, heart, waveBoth (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: escenario
 - Cámara: plano general con empuje lento
