@@ -1,0 +1,268 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-007.wav",
+  "lineas": [
+    {
+      "text": "Si la inteligencia artificial te responde cosas genéricas… el problema no es la IA. Es cómo le escribes.",
+      "start": 0.0,
+      "duration": 7.811
+    },
+    {
+      "text": "Usa esta fórmula de cuatro partes.",
+      "start": 8.091,
+      "duration": 2.769
+    },
+    {
+      "text": "Uno: el rol. \"Actúa como experto en ventas para negocios pequeños.\"",
+      "start": 11.14,
+      "duration": 5.799
+    },
+    {
+      "text": "Dos: el contexto. Qué vendes, a quién, dónde y a qué precio. Tres: la tarea. Qué quieres exactamente.",
+      "start": 17.219,
+      "duration": 9.796
+    },
+    {
+      "text": "Y cuatro: el formato. \"Dame cinco opciones cortas, en una lista.\"",
+      "start": 27.295,
+      "duration": 5.486
+    },
+    {
+      "text": "Rol, contexto, tarea y formato. Mientras más clara la instrucción, más útil la respuesta.",
+      "start": 33.06,
+      "duration": 7.811
+    },
+    {
+      "text": "Guarda este video para la próxima vez que abras ChatGPT, y sígueme para más.",
+      "start": 41.151,
+      "duration": 5.329
+    }
+  ],
+  "fin": 47.96,
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "genéricas",
+    "problema",
+    "escribes",
+    "fórmula",
+    "cuatro",
+    "rol",
+    "experto",
+    "ventas",
+    "contexto",
+    "vendes",
+    "quién",
+    "dónde",
+    "precio",
+    "tarea",
+    "formato",
+    "cinco",
+    "lista",
+    "clara",
+    "útil",
+    "Guarda",
+    "ChatGPT",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "La IA es mala",
+      "despues": "Le escribo mal",
+      "badge": "EL PROBLEMA"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧩",
+      "etiqueta": "Fórmula de 4 partes"
+    },
+    {
+      "tipo": "telefono",
+      "texto": "Actúa como experto en ventas…",
+      "sello": "1 · ROL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🛍️",
+        "👥",
+        "🎯"
+      ],
+      "letras": [
+        "QUÉ VENDES",
+        "A QUIÉN",
+        "LA TAREA"
+      ]
+    },
+    {
+      "tipo": "telefono",
+      "texto": "Dame 5 opciones cortas en lista",
+      "sello": "4 · FORMATO"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Rol",
+        "Contexto",
+        "Tarea",
+        "Formato"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio",
+    "primer",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.73,
+      "pose": "wagNo"
+    },
+    {
+      "start": 5.47,
+      "pose": "you"
+    },
+    {
+      "start": 8.09,
+      "pose": "four"
+    },
+    {
+      "start": 9.06,
+      "pose": "explain"
+    },
+    {
+      "start": 10.03,
+      "pose": "smart"
+    },
+    {
+      "start": 11.14,
+      "pose": "one"
+    },
+    {
+      "start": 13.17,
+      "pose": "explain"
+    },
+    {
+      "start": 15.2,
+      "pose": "proud"
+    },
+    {
+      "start": 17.22,
+      "pose": "two"
+    },
+    {
+      "start": 20.65,
+      "pose": "three"
+    },
+    {
+      "start": 24.08,
+      "pose": "explain"
+    },
+    {
+      "start": 27.3,
+      "pose": "four"
+    },
+    {
+      "start": 29.22,
+      "pose": "ok"
+    },
+    {
+      "start": 31.14,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 33.06,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 35.79,
+      "pose": "idea"
+    },
+    {
+      "start": 38.53,
+      "pose": "confident"
+    },
+    {
+      "start": 41.15,
+      "pose": "down"
+    },
+    {
+      "start": 43.02,
+      "pose": "heart"
+    },
+    {
+      "start": 44.88,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 12.3,
+      "texto": "1️⃣ Rol",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 18.2,
+      "texto": "2️⃣ Contexto",
+      "lado": "izq",
+      "color": "#2BD576"
+    },
+    {
+      "start": 23.59,
+      "texto": "3️⃣ Tarea",
+      "lado": "der",
+      "color": "#FFD23F"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 4.69,
+      "emoji": "🤖"
+    },
+    {
+      "start": 30.59,
+      "emoji": "✅"
+    },
+    {
+      "start": 37.75,
+      "emoji": "💡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Escríbele",
+      "así a la IA",
+      "(4 partes)"
+    ],
+    "resaltar": 1,
+    "icono": "🧩",
+    "satelites": [
+      "🤖",
+      "✍️",
+      "✅"
+    ],
+    "badge": "FÓRMULA",
+    "pose": "four",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  }
+}
