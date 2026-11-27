@@ -1,0 +1,141 @@
+{
+  "modalidad": "protagonista",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "restaurante",
+    "videos",
+    "semana",
+    "tiempo",
+    "fotos",
+    "platos",
+    "voz",
+    "música",
+    "subtítulos",
+    "especial",
+    "combo",
+    "apruebas",
+    "publica",
+    "CONTENIDO",
+    "menú"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "tired",
+        "facepalm",
+        "you"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "SIN TIEMPO"
+      },
+      "visual": "Restaurante, agotado."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "explain",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "📸",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "FOTOS",
+          "VOZ",
+          "VIDEO"
+        ]
+      },
+      "visual": "Cómo se hace."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "explain",
+        "countOnHand",
+        "excited"
+      ],
+      "escena": {
+        "tipo": "calendario",
+        "hasta": 7,
+        "palabra": "CADA SEMANA"
+      },
+      "visual": "Calendario de videos."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "thumbsUp",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Tú apruebas",
+          "Se publica"
+        ]
+      },
+      "visual": "Aprobación."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Un ejemplo con tu menú?",
+        "opciones": [
+          "CONTENIDO"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA a mensaje."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos de",
+      "tu menú",
+      "sin grabar"
+    ],
+    "resaltar": 1,
+    "icono": "🍽️",
+    "satelites": [
+      "📸",
+      "🎙️",
+      "🎞️"
+    ],
+    "badge": "RESTAURANTES",
+    "pose": "tired",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🍽️"
+    }
+  ],
+  "luz": "según el set",
+  "cine": true,
+  "entornos": [
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "cafe"
+  ]
+}

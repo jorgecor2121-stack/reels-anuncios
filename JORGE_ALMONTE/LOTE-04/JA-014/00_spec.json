@@ -1,0 +1,124 @@
+{
+  "modalidad": "presentador",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "resaltar": [
+    "repostería",
+    "hoy",
+    "bizcocho",
+    "mensajes",
+    "automática",
+    "disponible",
+    "precios",
+    "encargar",
+    "pedido",
+    "confirmar",
+    "AUTOMATIZAR"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "skeptic",
+        "tired",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🎂",
+        "etiqueta": "\"¿Tienen para hoy?\"",
+        "badge": "OTRA VEZ"
+      },
+      "visual": "Repostería, cansado."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "worried",
+        "ohNo",
+        "facepalm"
+      ],
+      "escena": {
+        "tipo": "papeles",
+        "palabra": "MENSAJES"
+      },
+      "visual": "Mensajes acumulados."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Disponible hoy",
+          "Precios",
+          "Cómo encargar"
+        ]
+      },
+      "visual": "Respuesta automática."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "smart",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Contestar todo",
+        "despues": "Solo confirmar el pedido",
+        "badge": "AUTOMATIZADO"
+      },
+      "visual": "Solo confirmar."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Lo quieres en tu repostería?",
+        "opciones": [
+          "AUTOMATIZAR"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA a mensaje."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Tienen",
+      "para hoy?",
+      "(todo el día)"
+    ],
+    "resaltar": 1,
+    "icono": "🎂",
+    "satelites": [
+      "💬",
+      "⚡",
+      "📦"
+    ],
+    "badge": "REPOSTERÍAS",
+    "pose": "tired",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🎂"
+    }
+  ],
+  "luz": "según el set"
+}

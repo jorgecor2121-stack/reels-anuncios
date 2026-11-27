@@ -1,0 +1,129 @@
+{
+  "modalidad": "protagonista",
+  "entorno": "boutique",
+  "vestimenta": "blazer",
+  "resaltar": [
+    "salón",
+    "clientas",
+    "noche",
+    "cita",
+    "contesta",
+    "otro",
+    "respondió",
+    "automático",
+    "horarios",
+    "reservar",
+    "duermes",
+    "Compártelo"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "ohNo",
+        "you"
+      ],
+      "escena": {
+        "tipo": "calendario",
+        "hasta": 7,
+        "palabra": "10:00 P. M."
+      },
+      "visual": "Noche, reloj."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phoneLook",
+        "worried",
+        "sad"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "📱",
+        "etiqueta": "Sin respuesta"
+      },
+      "visual": "Celular con mensaje sin leer."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ohNo",
+        "facepalm",
+        "sad"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "SE FUE CON OTRO"
+      },
+      "visual": "La clienta se va."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Horarios",
+          "Precios",
+          "Enlace para reservar"
+        ]
+      },
+      "visual": "Salón de día: respuesta automática."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "pointFront",
+        "heart",
+        "waveBoth"
+      ],
+      "escena": {
+        "tipo": "seguir",
+        "usuario": "jorgealmonteia",
+        "titulo": "Envíaselo a quien tenga un salón",
+        "accion": "compartir"
+      },
+      "visual": "Tarjeta Enviar."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Clientas",
+      "que pierdes",
+      "de noche"
+    ],
+    "resaltar": 2,
+    "icono": "💇‍♀️",
+    "satelites": [
+      "🌙",
+      "📱",
+      "⏰"
+    ],
+    "badge": "SALONES",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "💇‍♀️"
+    }
+  ],
+  "luz": "según el set",
+  "cine": true,
+  "entornos": [
+    "neon",
+    "neon",
+    "neon",
+    "boutique",
+    "boutique"
+  ]
+}

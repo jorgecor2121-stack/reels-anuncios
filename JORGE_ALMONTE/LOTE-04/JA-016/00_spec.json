@@ -1,0 +1,132 @@
+{
+  "modalidad": "presentador",
+  "entorno": "neon",
+  "vestimenta": "denim",
+  "resaltar": [
+    "voz",
+    "grabada",
+    "clonada",
+    "inteligencia",
+    "artificial",
+    "audios",
+    "texto",
+    "narraciones",
+    "micrófono",
+    "permiso",
+    "CONTENIDO"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "smart",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "🎙️",
+        "etiqueta": "Voz clonada con IA",
+        "badge": "DEMOSTRACIÓN REAL"
+      },
+      "visual": "Revelación."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "explain",
+        "listen",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "🎧",
+          "🧠",
+          "🗣️"
+        ],
+        "letras": [
+          "AUDIOS",
+          "ENTRENA",
+          "TEXTO A VOZ"
+        ]
+      },
+      "visual": "Cómo se hace."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Grabar 10 tomas",
+        "despues": "Escribir y listo",
+        "badge": "SIN MICRÓFONO"
+      },
+      "visual": "Ventaja."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "stop",
+        "wagNo",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Solo tu propia voz",
+          "O una voz con permiso"
+        ]
+      },
+      "visual": "Ética."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Quieres videos con tu voz?",
+        "opciones": [
+          "CONTENIDO"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "CTA a mensaje."
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "No es mi voz",
+      "grabada",
+      "(es IA)"
+    ],
+    "resaltar": 1,
+    "icono": "🎙️",
+    "satelites": [
+      "🧠",
+      "🗣️",
+      "✨"
+    ],
+    "badge": "DEMOSTRACIÓN",
+    "pose": "surprised",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  },
+  "chips": [],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "🎙️"
+    }
+  ],
+  "luz": "según el set"
+}
