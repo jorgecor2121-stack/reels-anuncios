@@ -1,0 +1,203 @@
+{
+  "modalidad": "protagonista (demostración real del sistema de contenido de Jorge)",
+  "luz": "noche con neón → estudio → atardecer",
+  "cine": true,
+  "entorno": "neon",
+  "vestimenta": "polo",
+  "entornos": [
+    "neon",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "escenario",
+    "escenario"
+  ],
+  "resaltar": [
+    "solo",
+    "celular",
+    "idea",
+    "guion",
+    "voz",
+    "video",
+    "programa",
+    "publica",
+    "números",
+    "vio",
+    "quedó",
+    "marca",
+    "editando",
+    "CONTENIDO",
+    "funciona"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "surprised",
+        "you",
+        "smart"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "📲",
+        "etiqueta": "Se publicó solo",
+        "badge": "DEMOSTRACIÓN REAL"
+      },
+      "visual": "Noche: el celular sobre la mesa, Jorge sin tocarlo.",
+      "transicion": "corte"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "idea",
+        "explain",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "trio",
+        "iconos": [
+          "✍️",
+          "🎙️",
+          "🎞️"
+        ],
+        "letras": [
+          "GUION",
+          "MI VOZ",
+          "VIDEO"
+        ]
+      },
+      "visual": "Cafetería: idea → guion, voz y video con IA.",
+      "transicion": "fundido a negro, estudio"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "phone",
+        "explain",
+        "ok"
+      ],
+      "escena": {
+        "tipo": "calendario",
+        "hasta": 7,
+        "palabra": "SE PUBLICA SOLO"
+      },
+      "visual": "Estudio: programación automática.",
+      "transicion": "fundido a negro, atardecer"
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "thinkUp",
+        "smart",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "grafica",
+        "titulo": "Al otro día: los números",
+        "barras": [
+          {
+            "etiqueta": "Vistas",
+            "valor": 3
+          },
+          {
+            "etiqueta": "Alcance",
+            "valor": 2
+          },
+          {
+            "etiqueta": "Tiempo",
+            "valor": 4,
+            "destacar": true
+          }
+        ],
+        "nota": "Ilustrativo"
+      },
+      "visual": "Atardecer: el informe de métricas."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "presentRight",
+        "confident",
+        "you"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Pasarte el día editando",
+        "despues": "Contenido con tu voz, en automático",
+        "badge": "PARA TU MARCA"
+      },
+      "visual": "Escenario: lo que puede tener su negocio."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Quieres videos así para tu marca?",
+        "opciones": [
+          "CONTENIDO"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "Escenario: CTA a mensaje con la palabra CONTENIDO.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 1,
+      "en": 0.35,
+      "texto": "✍️ Guion con IA",
+      "lado": "der",
+      "color": "#FF8A3D"
+    },
+    {
+      "frase": 1,
+      "en": 0.65,
+      "texto": "🎙️ Mi voz clonada",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "frase": 2,
+      "en": 0.4,
+      "texto": "📅 Programado",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "😮"
+    },
+    {
+      "frase": 3,
+      "en": 0.5,
+      "emoji": "📈"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Este video",
+      "se publicó",
+      "solo"
+    ],
+    "resaltar": 2,
+    "icono": "📲",
+    "satelites": [
+      "🎙️",
+      "🎞️",
+      "⏰"
+    ],
+    "badge": "DEMOSTRACIÓN",
+    "pose": "surprised",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "nota": "Calendario de publicación por franja (hora RD). Las tareas programadas publican el JA de la fecha y franja, solo si su 08_qc.md dice 'Control de calidad: APROBADO'.",
+  "franjas": {
+    "alcance": "08:16",
+    "autoridad": "12:46",
+    "conversion": "19:46"
+  },
+  "dias": {
+    "2026-11-27": {
+      "extra_hoy": [
+        [
+          "18:46",
+          "JA-003"
+        ],
+        [
+          "19:46",
+          "JA-011"
+        ],
+        [
+          "21:16",
+          "JA-012"
+        ]
+      ]
+    },
+    "2026-11-28": {
+      "alcance": "JA-013",
+      "autoridad": "JA-004",
+      "conversion": "JA-014"
+    },
+    "2026-11-29": {
+      "alcance": "JA-015",
+      "autoridad": "JA-016",
+      "conversion": "JA-017"
+    },
+    "2026-11-30": {
+      "alcance": "JA-018",
+      "autoridad": "JA-005",
+      "conversion": "JA-019"
+    },
+    "2026-12-01": {
+      "alcance": "JA-020",
+      "autoridad": "JA-021",
+      "conversion": "JA-022"
+    },
+    "2026-12-02": {
+      "alcance": "JA-023",
+      "autoridad": "JA-007",
+      "conversion": "JA-024"
+    },
+    "2026-12-03": {
+      "alcance": "JA-025",
+      "autoridad": "JA-026",
+      "conversion": "JA-027"
+    },
+    "2026-12-04": {
+      "alcance": "JA-028",
+      "autoridad": "JA-009",
+      "conversion": "JA-029"
+    }
+  }
+}

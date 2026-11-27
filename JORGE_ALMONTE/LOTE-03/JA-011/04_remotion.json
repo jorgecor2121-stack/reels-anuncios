@@ -1,0 +1,257 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-011.wav",
+  "lineas": [
+    {
+      "text": "Este video se publicó solo. Nadie agarró el celular.",
+      "start": 0.0,
+      "duration": 3.971
+    },
+    {
+      "text": "Yo pongo la idea. La inteligencia artificial escribe el guion, pone mi voz y arma el video.",
+      "start": 4.191,
+      "duration": 6.531
+    },
+    {
+      "text": "Después, un sistema lo programa y lo publica a la hora que yo le digo.",
+      "start": 10.941,
+      "duration": 5.068
+    },
+    {
+      "text": "Y al otro día me trae los números: cuánta gente lo vio y cuánto tiempo se quedó.",
+      "start": 16.229,
+      "duration": 5.486
+    },
+    {
+      "text": "Eso mismo se puede montar para tu marca: contenido con tu voz, sin pasarte el día editando.",
+      "start": 21.935,
+      "duration": 6.531
+    },
+    {
+      "text": "Si quieres videos así para tu negocio, escríbeme CONTENIDO y te enseño cómo funciona.",
+      "start": 28.685,
+      "duration": 5.956
+    }
+  ],
+  "fin": 36.06,
+  "resaltar": [
+    "solo",
+    "celular",
+    "idea",
+    "guion",
+    "voz",
+    "video",
+    "programa",
+    "publica",
+    "números",
+    "vio",
+    "quedó",
+    "marca",
+    "editando",
+    "CONTENIDO",
+    "funciona"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "📲",
+      "etiqueta": "Se publicó solo",
+      "badge": "DEMOSTRACIÓN REAL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "GUION",
+        "MI VOZ",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "SE PUBLICA SOLO"
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Al otro día: los números",
+      "barras": [
+        {
+          "etiqueta": "Vistas",
+          "valor": 3
+        },
+        {
+          "etiqueta": "Alcance",
+          "valor": 2
+        },
+        {
+          "etiqueta": "Tiempo",
+          "valor": 4,
+          "destacar": true
+        }
+      ],
+      "nota": "Ilustrativo"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Pasarte el día editando",
+      "despues": "Contenido con tu voz, en automático",
+      "badge": "PARA TU MARCA"
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Quieres videos así para tu marca?",
+      "opciones": [
+        "CONTENIDO"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.39,
+      "pose": "you"
+    },
+    {
+      "start": 2.78,
+      "pose": "smart"
+    },
+    {
+      "start": 4.19,
+      "pose": "idea"
+    },
+    {
+      "start": 6.48,
+      "pose": "explain"
+    },
+    {
+      "start": 8.76,
+      "pose": "proud"
+    },
+    {
+      "start": 10.94,
+      "pose": "phone"
+    },
+    {
+      "start": 12.71,
+      "pose": "explain"
+    },
+    {
+      "start": 14.49,
+      "pose": "ok"
+    },
+    {
+      "start": 16.23,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 18.15,
+      "pose": "smart"
+    },
+    {
+      "start": 20.07,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 21.93,
+      "pose": "presentRight"
+    },
+    {
+      "start": 24.22,
+      "pose": "confident"
+    },
+    {
+      "start": 26.51,
+      "pose": "you"
+    },
+    {
+      "start": 28.68,
+      "pose": "pointFront"
+    },
+    {
+      "start": 30.77,
+      "pose": "explain"
+    },
+    {
+      "start": 32.85,
+      "pose": "heart"
+    }
+  ],
+  "chips": [
+    {
+      "start": 6.48,
+      "texto": "✍️ Guion con IA",
+      "lado": "der",
+      "color": "#FF8A3D"
+    },
+    {
+      "start": 8.44,
+      "texto": "🎙️ Mi voz clonada",
+      "lado": "izq",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 12.97,
+      "texto": "📅 Programado",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.38,
+      "emoji": "😮"
+    },
+    {
+      "start": 18.97,
+      "emoji": "📈"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Este video",
+      "se publicó",
+      "solo"
+    ],
+    "resaltar": 2,
+    "icono": "📲",
+    "satelites": [
+      "🎙️",
+      "🎞️",
+      "⏰"
+    ],
+    "badge": "DEMOSTRACIÓN",
+    "pose": "surprised",
+    "color": "#22D3EE",
+    "fondo": "marino"
+  },
+  "entornos": [
+    "neon",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "escenario",
+    "escenario"
+  ],
+  "cine": true
+}

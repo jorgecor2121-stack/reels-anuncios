@@ -1,0 +1,198 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-012.wav",
+  "lineas": [
+    {
+      "text": "¿Cuántas veces al día te escriben solo para preguntar el precio?",
+      "start": 0.0,
+      "duration": 3.971
+    },
+    {
+      "text": "Y mientras contestas uno por uno, otros clientes se cansan de esperar.",
+      "start": 4.191,
+      "duration": 4.833
+    },
+    {
+      "text": "Con respuestas automáticas, tu Instagram o tu WhatsApp contesta al momento: precio, horario, ubicación y cómo pedir.",
+      "start": 9.243,
+      "duration": 8.751
+    },
+    {
+      "text": "Y tú entras cuando la conversación de verdad necesita a una persona.",
+      "start": 18.214,
+      "duration": 4.676
+    },
+    {
+      "text": "Escríbeme AUTOMATIZAR y te muestro cómo se vería en tu negocio.",
+      "start": 23.11,
+      "duration": 4.598
+    }
+  ],
+  "fin": 29.13,
+  "resaltar": [
+    "veces",
+    "precio",
+    "contestas",
+    "esperar",
+    "automáticas",
+    "Instagram",
+    "WhatsApp",
+    "momento",
+    "horario",
+    "ubicación",
+    "pedir",
+    "persona",
+    "AUTOMATIZAR",
+    "negocio"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "💬",
+      "etiqueta": "\"¿Precio?\"",
+      "badge": "OTRA VEZ"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "CLIENTES ESPERANDO"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Precio",
+        "Horario",
+        "Ubicación",
+        "Cómo pedir"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Contestar todo a mano",
+      "despues": "Tú entras cuando hace falta",
+      "badge": "AUTOMATIZADO"
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Lo quieres en tu negocio?",
+      "opciones": [
+        "AUTOMATIZAR"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 1.39,
+      "pose": "tired"
+    },
+    {
+      "start": 2.78,
+      "pose": "you"
+    },
+    {
+      "start": 4.19,
+      "pose": "worried"
+    },
+    {
+      "start": 5.88,
+      "pose": "ohNo"
+    },
+    {
+      "start": 7.57,
+      "pose": "facepalm"
+    },
+    {
+      "start": 9.24,
+      "pose": "idea"
+    },
+    {
+      "start": 12.31,
+      "pose": "explain"
+    },
+    {
+      "start": 15.37,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 18.21,
+      "pose": "ok"
+    },
+    {
+      "start": 19.85,
+      "pose": "smart"
+    },
+    {
+      "start": 21.49,
+      "pose": "proud"
+    },
+    {
+      "start": 23.11,
+      "pose": "pointFront"
+    },
+    {
+      "start": 24.72,
+      "pose": "explain"
+    },
+    {
+      "start": 26.33,
+      "pose": "heart"
+    }
+  ],
+  "chips": [
+    {
+      "start": 11.87,
+      "texto": "💬 Instagram",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "start": 13.62,
+      "texto": "📱 WhatsApp",
+      "lado": "izq",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 2.38,
+      "emoji": "😩"
+    },
+    {
+      "start": 16.24,
+      "emoji": "⚡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Otra vez",
+      "te preguntan",
+      "el precio?"
+    ],
+    "resaltar": 2,
+    "icono": "💬",
+    "satelites": [
+      "⚡",
+      "📱",
+      "⏰"
+    ],
+    "badge": "AUTOMATIZA",
+    "pose": "tired",
+    "color": "#2BD576",
+    "fondo": "morado"
+  }
+}

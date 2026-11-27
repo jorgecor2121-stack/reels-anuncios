@@ -1,0 +1,150 @@
+{
+  "modalidad": "presentador (venta directa del servicio de automatización)",
+  "luz": "estudio clásico cálido",
+  "entorno": "clasico",
+  "vestimenta": "denim",
+  "resaltar": [
+    "veces",
+    "precio",
+    "contestas",
+    "esperar",
+    "automáticas",
+    "Instagram",
+    "WhatsApp",
+    "momento",
+    "horario",
+    "ubicación",
+    "pedir",
+    "persona",
+    "AUTOMATIZAR",
+    "negocio"
+  ],
+  "tomas": [
+    {
+      "plano": "primer",
+      "poses": [
+        "skeptic",
+        "tired",
+        "you"
+      ],
+      "escena": {
+        "tipo": "sorpresa",
+        "emoji": "💬",
+        "etiqueta": "\"¿Precio?\"",
+        "badge": "OTRA VEZ"
+      },
+      "visual": "Primer plano, cansado de contestar lo mismo.",
+      "transicion": "corte"
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "worried",
+        "ohNo",
+        "facepalm"
+      ],
+      "escena": {
+        "tipo": "dolor",
+        "palabra": "CLIENTES ESPERANDO"
+      },
+      "visual": "Plano medio: clientes que se van."
+    },
+    {
+      "plano": "general",
+      "poses": [
+        "idea",
+        "explain",
+        "thumbsUp"
+      ],
+      "escena": {
+        "tipo": "checklist",
+        "items": [
+          "Precio",
+          "Horario",
+          "Ubicación",
+          "Cómo pedir"
+        ]
+      },
+      "visual": "Plano general: lo que responde la automatización."
+    },
+    {
+      "plano": "medio",
+      "poses": [
+        "ok",
+        "smart",
+        "proud"
+      ],
+      "escena": {
+        "tipo": "antesDespues",
+        "antes": "Contestar todo a mano",
+        "despues": "Tú entras cuando hace falta",
+        "badge": "AUTOMATIZADO"
+      },
+      "visual": "Plano medio: el reparto humano + automático."
+    },
+    {
+      "plano": "primer",
+      "poses": [
+        "pointFront",
+        "explain",
+        "heart"
+      ],
+      "escena": {
+        "tipo": "comentar",
+        "pregunta": "¿Lo quieres en tu negocio?",
+        "opciones": [
+          "AUTOMATIZAR"
+        ],
+        "nota": "Escríbeme por mensaje 📩"
+      },
+      "visual": "Primer plano: CTA a mensaje.",
+      "transicion": "fin"
+    }
+  ],
+  "chips": [
+    {
+      "frase": 2,
+      "en": 0.3,
+      "texto": "💬 Instagram",
+      "lado": "der",
+      "color": "#FF3B5C"
+    },
+    {
+      "frase": 2,
+      "en": 0.5,
+      "texto": "📱 WhatsApp",
+      "lado": "izq",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "frase": 0,
+      "en": 0.6,
+      "emoji": "😩"
+    },
+    {
+      "frase": 2,
+      "en": 0.8,
+      "emoji": "⚡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Otra vez",
+      "te preguntan",
+      "el precio?"
+    ],
+    "resaltar": 2,
+    "icono": "💬",
+    "satelites": [
+      "⚡",
+      "📱",
+      "⏰"
+    ],
+    "badge": "AUTOMATIZA",
+    "pose": "tired",
+    "color": "#2BD576",
+    "fondo": "morado"
+  }
+}
