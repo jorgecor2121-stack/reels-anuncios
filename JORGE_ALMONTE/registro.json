@@ -16,5 +16,23 @@
     "visitas_perfil": null,
     "seguidores": null,
     "consultas": null
+  },
+  {
+    "id": "JA-002",
+    "fecha": "2026-11-26T21:09:51-04:00",
+    "tema": "Videos profesionales sin aparecer frente a una cámara",
+    "tipo": "Reel · protagonista (cine)",
+    "pilar": "Creación de contenido / IA",
+    "gancho": "¿Y si pudieras producir videos profesionales sin tener que aparecer frente a una cámara?",
+    "duracion_s": 42.24,
+    "enlace": "https://www.instagram.com/reel/DgOdzyvykwG/",
+    "media_id": "18039457064851969",
+    "reproducciones": null,
+    "retencion": null,
+    "compartidos": null,
+    "guardados": null,
+    "visitas_perfil": null,
+    "seguidores": null,
+    "consultas": null
   }
 ]
