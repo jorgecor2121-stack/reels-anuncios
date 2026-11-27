@@ -1,0 +1,194 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-017.wav",
+  "lineas": [
+    {
+      "text": "Tu restaurante necesita videos cada semana… y tú no tienes ni tiempo de comer.",
+      "start": 0.0,
+      "duration": 5.486
+    },
+    {
+      "text": "Con fotos de tus platos y un texto, la IA arma el video con voz, música y subtítulos.",
+      "start": 5.706,
+      "duration": 6.844
+    },
+    {
+      "text": "El especial del día, el combo del fin de semana, la promoción de los martes.",
+      "start": 12.77,
+      "duration": 5.329
+    },
+    {
+      "text": "Tú apruebas, y se publica.",
+      "start": 18.319,
+      "duration": 2.116
+    },
+    {
+      "text": "Escríbeme CONTENIDO y te muestro un ejemplo con tu menú.",
+      "start": 20.655,
+      "duration": 3.631
+    }
+  ],
+  "fin": 25.71,
+  "resaltar": [
+    "restaurante",
+    "videos",
+    "semana",
+    "tiempo",
+    "fotos",
+    "platos",
+    "voz",
+    "música",
+    "subtítulos",
+    "especial",
+    "combo",
+    "apruebas",
+    "publica",
+    "CONTENIDO",
+    "menú"
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "SIN TIEMPO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📸",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "FOTOS",
+        "VOZ",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "CADA SEMANA"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Tú apruebas",
+        "Se publica"
+      ]
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Un ejemplo con tu menú?",
+      "opciones": [
+        "CONTENIDO"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "tired"
+    },
+    {
+      "start": 1.92,
+      "pose": "facepalm"
+    },
+    {
+      "start": 3.84,
+      "pose": "you"
+    },
+    {
+      "start": 5.71,
+      "pose": "idea"
+    },
+    {
+      "start": 8.1,
+      "pose": "explain"
+    },
+    {
+      "start": 10.5,
+      "pose": "proud"
+    },
+    {
+      "start": 12.77,
+      "pose": "explain"
+    },
+    {
+      "start": 14.64,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 16.5,
+      "pose": "excited"
+    },
+    {
+      "start": 18.32,
+      "pose": "ok"
+    },
+    {
+      "start": 19.06,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 19.8,
+      "pose": "proud"
+    },
+    {
+      "start": 20.66,
+      "pose": "pointFront"
+    },
+    {
+      "start": 21.93,
+      "pose": "explain"
+    },
+    {
+      "start": 23.2,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 3.29,
+      "emoji": "🍽️"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos de",
+      "tu menú",
+      "sin grabar"
+    ],
+    "resaltar": 1,
+    "icono": "🍽️",
+    "satelites": [
+      "📸",
+      "🎙️",
+      "🎞️"
+    ],
+    "badge": "RESTAURANTES",
+    "pose": "tired",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "cafe"
+  ],
+  "cine": true
+}

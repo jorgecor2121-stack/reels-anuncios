@@ -1,0 +1,177 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-014.wav",
+  "lineas": [
+    {
+      "text": "¿Tu repostería contesta \"¿tienen para hoy?\" todo el santo día?",
+      "start": 0.0,
+      "duration": 4.284
+    },
+    {
+      "text": "Mientras sacas un bizcocho del horno, se te acumulan los mensajes.",
+      "start": 4.504,
+      "duration": 3.866
+    },
+    {
+      "text": "Una respuesta automática puede mandar lo disponible hoy, los precios y cómo encargar.",
+      "start": 8.59,
+      "duration": 6.034
+    },
+    {
+      "text": "Y a ti te llega el pedido ya listo para confirmar.",
+      "start": 14.844,
+      "duration": 3.396
+    },
+    {
+      "text": "Escríbeme AUTOMATIZAR y te muestro cómo quedaría en tu negocio.",
+      "start": 18.46,
+      "duration": 4.598
+    }
+  ],
+  "fin": 24.48,
+  "resaltar": [
+    "repostería",
+    "hoy",
+    "bizcocho",
+    "mensajes",
+    "automática",
+    "disponible",
+    "precios",
+    "encargar",
+    "pedido",
+    "confirmar",
+    "AUTOMATIZAR"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🎂",
+      "etiqueta": "\"¿Tienen para hoy?\"",
+      "badge": "OTRA VEZ"
+    },
+    {
+      "tipo": "papeles",
+      "palabra": "MENSAJES"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Disponible hoy",
+        "Precios",
+        "Cómo encargar"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Contestar todo",
+      "despues": "Solo confirmar el pedido",
+      "badge": "AUTOMATIZADO"
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Lo quieres en tu repostería?",
+      "opciones": [
+        "AUTOMATIZAR"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "general",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "skeptic"
+    },
+    {
+      "start": 1.5,
+      "pose": "tired"
+    },
+    {
+      "start": 3.0,
+      "pose": "you"
+    },
+    {
+      "start": 4.5,
+      "pose": "worried"
+    },
+    {
+      "start": 5.86,
+      "pose": "ohNo"
+    },
+    {
+      "start": 7.21,
+      "pose": "facepalm"
+    },
+    {
+      "start": 8.59,
+      "pose": "idea"
+    },
+    {
+      "start": 10.7,
+      "pose": "explain"
+    },
+    {
+      "start": 12.81,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 14.84,
+      "pose": "ok"
+    },
+    {
+      "start": 16.03,
+      "pose": "smart"
+    },
+    {
+      "start": 17.22,
+      "pose": "proud"
+    },
+    {
+      "start": 18.46,
+      "pose": "pointFront"
+    },
+    {
+      "start": 20.07,
+      "pose": "explain"
+    },
+    {
+      "start": 21.68,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.57,
+      "emoji": "🎂"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "¿Tienen",
+      "para hoy?",
+      "(todo el día)"
+    ],
+    "resaltar": 1,
+    "icono": "🎂",
+    "satelites": [
+      "💬",
+      "⚡",
+      "📦"
+    ],
+    "badge": "REPOSTERÍAS",
+    "pose": "tired",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  }
+}

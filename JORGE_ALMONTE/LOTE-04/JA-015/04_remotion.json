@@ -1,0 +1,186 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-015.wav",
+  "lineas": [
+    {
+      "text": "La mitad de la gente se fue de mi video en los primeros tres segundos.",
+      "start": 0.0,
+      "duration": 4.049
+    },
+    {
+      "text": "No lo digo yo: lo dicen las estadísticas de mi cuenta.",
+      "start": 4.269,
+      "duration": 3.866
+    },
+    {
+      "text": "El error: arranqué con una frase larga, sin nada que ver en pantalla.",
+      "start": 8.355,
+      "duration": 5.329
+    },
+    {
+      "text": "Ahora arranco con el problema y algo moviéndose desde el segundo cero.",
+      "start": 13.904,
+      "duration": 4.989
+    },
+    {
+      "text": "Guárdalo antes de grabar tu próximo video.",
+      "start": 19.113,
+      "duration": 2.926
+    }
+  ],
+  "fin": 23.46,
+  "resaltar": [
+    "mitad",
+    "tres",
+    "segundos",
+    "estadísticas",
+    "error",
+    "frase",
+    "larga",
+    "pantalla",
+    "problema",
+    "cero",
+    "Guárdalo"
+  ],
+  "escenas": [
+    {
+      "tipo": "stat",
+      "valor": 51.8,
+      "decimales": 1,
+      "sufijo": " %",
+      "etiqueta": "se fue en 3 segundos",
+      "icono": "🏃",
+      "badge": "DATO REAL DE MI CUENTA"
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Mi video (dato real)",
+      "barras": [
+        {
+          "etiqueta": "0–3 s",
+          "valor": 100
+        },
+        {
+          "etiqueta": "después",
+          "valor": 48,
+          "destacar": true
+        }
+      ],
+      "sufijo": " %"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "FRASE LARGA"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Frase larga, nada en pantalla",
+      "despues": "Problema + movimiento en el segundo 0",
+      "badge": "LA CORRECCIÓN"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Guárdalo antes de grabar tu próximo video",
+      "accion": "guardar"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.42,
+      "pose": "ohNo"
+    },
+    {
+      "start": 2.83,
+      "pose": "you"
+    },
+    {
+      "start": 4.27,
+      "pose": "phoneLook"
+    },
+    {
+      "start": 5.62,
+      "pose": "explain"
+    },
+    {
+      "start": 6.98,
+      "pose": "smart"
+    },
+    {
+      "start": 8.36,
+      "pose": "facepalm"
+    },
+    {
+      "start": 10.22,
+      "pose": "wagNo"
+    },
+    {
+      "start": 12.09,
+      "pose": "explain"
+    },
+    {
+      "start": 13.9,
+      "pose": "idea"
+    },
+    {
+      "start": 15.65,
+      "pose": "explain"
+    },
+    {
+      "start": 17.4,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 19.11,
+      "pose": "pointFront"
+    },
+    {
+      "start": 20.14,
+      "pose": "heart"
+    },
+    {
+      "start": 21.16,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.43,
+      "emoji": "🏃"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Perdí a la mitad",
+      "en 3",
+      "segundos"
+    ],
+    "resaltar": 1,
+    "icono": "🏃",
+    "satelites": [
+      "📉",
+      "⏱️",
+      "🎬"
+    ],
+    "badge": "DATO REAL",
+    "pose": "ohNo",
+    "color": "#FF3B5C",
+    "fondo": "morado"
+  }
+}

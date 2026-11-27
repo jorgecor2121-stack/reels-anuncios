@@ -1,0 +1,185 @@
+{
+  "tipo": "avatar",
+  "entorno": "neon",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-016.wav",
+  "lineas": [
+    {
+      "text": "Esta no es mi voz grabada. Es mi voz clonada con inteligencia artificial.",
+      "start": 0.0,
+      "duration": 5.068
+    },
+    {
+      "text": "La entrené una vez con audios míos, y ahora escribo un texto y la IA lo dice con mi voz.",
+      "start": 5.288,
+      "duration": 6.766
+    },
+    {
+      "text": "Así hago las narraciones de mis videos, sin micrófono y sin repetir tomas.",
+      "start": 12.273,
+      "duration": 5.407
+    },
+    {
+      "text": "Lo importante: se clona solo tu propia voz, o una voz con permiso.",
+      "start": 17.901,
+      "duration": 5.251
+    },
+    {
+      "text": "Si quieres videos con tu voz para tu marca, escríbeme CONTENIDO.",
+      "start": 23.371,
+      "duration": 4.519
+    }
+  ],
+  "fin": 29.31,
+  "resaltar": [
+    "voz",
+    "grabada",
+    "clonada",
+    "inteligencia",
+    "artificial",
+    "audios",
+    "texto",
+    "narraciones",
+    "micrófono",
+    "permiso",
+    "CONTENIDO"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🎙️",
+      "etiqueta": "Voz clonada con IA",
+      "badge": "DEMOSTRACIÓN REAL"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🎧",
+        "🧠",
+        "🗣️"
+      ],
+      "letras": [
+        "AUDIOS",
+        "ENTRENA",
+        "TEXTO A VOZ"
+      ]
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Grabar 10 tomas",
+      "despues": "Escribir y listo",
+      "badge": "SIN MICRÓFONO"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Solo tu propia voz",
+        "O una voz con permiso"
+      ]
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Quieres videos con tu voz?",
+      "opciones": [
+        "CONTENIDO"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "primer",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.77,
+      "pose": "smart"
+    },
+    {
+      "start": 3.55,
+      "pose": "you"
+    },
+    {
+      "start": 5.29,
+      "pose": "explain"
+    },
+    {
+      "start": 7.66,
+      "pose": "listen"
+    },
+    {
+      "start": 10.02,
+      "pose": "proud"
+    },
+    {
+      "start": 12.27,
+      "pose": "ok"
+    },
+    {
+      "start": 14.17,
+      "pose": "explain"
+    },
+    {
+      "start": 16.06,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 17.9,
+      "pose": "stop"
+    },
+    {
+      "start": 19.74,
+      "pose": "wagNo"
+    },
+    {
+      "start": 21.58,
+      "pose": "smart"
+    },
+    {
+      "start": 23.37,
+      "pose": "pointFront"
+    },
+    {
+      "start": 24.95,
+      "pose": "explain"
+    },
+    {
+      "start": 26.53,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 3.04,
+      "emoji": "🎙️"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "No es mi voz",
+      "grabada",
+      "(es IA)"
+    ],
+    "resaltar": 1,
+    "icono": "🎙️",
+    "satelites": [
+      "🧠",
+      "🗣️",
+      "✨"
+    ],
+    "badge": "DEMOSTRACIÓN",
+    "pose": "surprised",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  }
+}

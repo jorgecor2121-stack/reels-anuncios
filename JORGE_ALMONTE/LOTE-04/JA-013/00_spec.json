@@ -25,9 +25,10 @@
         "you"
       ],
       "escena": {
-        "tipo": "calendario",
-        "hasta": 7,
-        "palabra": "10:00 P. M."
+        "tipo": "sorpresa",
+        "emoji": "🌙",
+        "etiqueta": "10:00 p. m.",
+        "badge": "TU SALÓN, DE NOCHE"
       },
       "visual": "Noche, reloj."
     },
