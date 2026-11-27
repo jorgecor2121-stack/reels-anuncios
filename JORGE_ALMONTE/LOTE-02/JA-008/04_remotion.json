@@ -1,0 +1,281 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-008.wav",
+  "lineas": [
+    {
+      "text": "Si le pones precio a tu producto copiando al vecino… puedes estar vendiendo y perdiendo dinero al mismo tiempo.",
+      "start": 0.0,
+      "duration": 7.236
+    },
+    {
+      "text": "Porque el vecino no paga tus costos.",
+      "start": 7.516,
+      "duration": 3.004
+    },
+    {
+      "text": "Haz esta cuenta. Uno: lo que te cuesta hacer o comprar el producto.",
+      "start": 10.8,
+      "duration": 5.642
+    },
+    {
+      "text": "Dos: tu parte de los gastos fijos, como alquiler, luz, internet y publicidad. Tres: lo que quieres ganar.",
+      "start": 16.722,
+      "duration": 8.751
+    },
+    {
+      "text": "Ejemplo: si te cuesta doscientos pesos, le sumas cincuenta de gastos, y quieres ganar un treinta por ciento sobre eso… tu precio ronda los trescientos veinticinco.",
+      "start": 25.753,
+      "duration": 11.233
+    },
+    {
+      "text": "Después compáralo con el mercado. Y si quedas muy alto, no bajes a ciegas: ajusta costos o agrega valor.",
+      "start": 37.266,
+      "duration": 8.359
+    },
+    {
+      "text": "Guarda este video y sígueme para más finanzas fáciles para tu negocio.",
+      "start": 45.905,
+      "duration": 4.598
+    }
+  ],
+  "fin": 51.98,
+  "resaltar": [
+    "precio",
+    "copiando",
+    "vecino",
+    "perdiendo",
+    "dinero",
+    "costos",
+    "cuenta",
+    "cuesta",
+    "gastos",
+    "fijos",
+    "alquiler",
+    "luz",
+    "internet",
+    "publicidad",
+    "ganar",
+    "doscientos",
+    "cincuenta",
+    "treinta",
+    "ciento",
+    "trescientos",
+    "veinticinco",
+    "mercado",
+    "ciegas",
+    "valor",
+    "Guarda",
+    "sígueme"
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "COPIAR PRECIO"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🧾",
+      "etiqueta": "Tus costos son tuyos"
+    },
+    {
+      "tipo": "stat",
+      "valor": 200,
+      "prefijo": "RD$",
+      "etiqueta": "costo del producto",
+      "icono": "📦",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "🏠",
+        "💡",
+        "📣"
+      ],
+      "letras": [
+        "ALQUILER",
+        "LUZ",
+        "PUBLICIDAD"
+      ]
+    },
+    {
+      "tipo": "embudo",
+      "pasos": [
+        {
+          "etiqueta": "Costo",
+          "valor": 200
+        },
+        {
+          "etiqueta": "+ gastos",
+          "valor": 250
+        },
+        {
+          "etiqueta": "+ 30 %",
+          "valor": 325
+        }
+      ],
+      "badge": "EJEMPLO RD$"
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Bajar a ciegas",
+      "despues": "Ajustar costos o agregar valor",
+      "badge": "SI QUEDAS ALTO"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio",
+    "primer",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "ohNo"
+    },
+    {
+      "start": 2.53,
+      "pose": "skeptic"
+    },
+    {
+      "start": 5.07,
+      "pose": "you"
+    },
+    {
+      "start": 7.52,
+      "pose": "wagNo"
+    },
+    {
+      "start": 8.57,
+      "pose": "explain"
+    },
+    {
+      "start": 9.62,
+      "pose": "smart"
+    },
+    {
+      "start": 10.8,
+      "pose": "one"
+    },
+    {
+      "start": 12.77,
+      "pose": "explain"
+    },
+    {
+      "start": 14.75,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 16.72,
+      "pose": "two"
+    },
+    {
+      "start": 19.78,
+      "pose": "three"
+    },
+    {
+      "start": 22.85,
+      "pose": "explain"
+    },
+    {
+      "start": 25.75,
+      "pose": "idea"
+    },
+    {
+      "start": 29.68,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 33.62,
+      "pose": "proud"
+    },
+    {
+      "start": 37.27,
+      "pose": "stop"
+    },
+    {
+      "start": 40.19,
+      "pose": "smart"
+    },
+    {
+      "start": 43.12,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 45.91,
+      "pose": "down"
+    },
+    {
+      "start": 47.51,
+      "pose": "heart"
+    },
+    {
+      "start": 49.12,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [
+    {
+      "start": 13.62,
+      "texto": "📦 RD$200",
+      "lado": "der",
+      "color": "#22D3EE"
+    },
+    {
+      "start": 29.68,
+      "texto": "➕ RD$50 gastos",
+      "lado": "izq",
+      "color": "#FFD23F"
+    },
+    {
+      "start": 34.18,
+      "texto": "✅ ≈ RD$325",
+      "lado": "der",
+      "color": "#2BD576"
+    }
+  ],
+  "reacciones": [
+    {
+      "start": 4.34,
+      "emoji": "😬"
+    },
+    {
+      "start": 34.74,
+      "emoji": "🧮"
+    },
+    {
+      "start": 42.28,
+      "emoji": "💡"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "No copies",
+      "el precio",
+      "del vecino"
+    ],
+    "resaltar": 1,
+    "icono": "🧮",
+    "satelites": [
+      "💰",
+      "📦",
+      "🏷️"
+    ],
+    "badge": "HAZ ESTA CUENTA",
+    "pose": "skeptic",
+    "color": "#2BD576",
+    "fondo": "morado"
+  }
+}
