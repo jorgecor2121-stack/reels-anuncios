@@ -2,7 +2,7 @@
 Título: Deja de hacerlo todo a mano
 Tipo: Reel · protagonista · pilar automatización
 Gancho: ¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola?
-Destacada: Tips (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Herramientas IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 ¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola? ⚙️

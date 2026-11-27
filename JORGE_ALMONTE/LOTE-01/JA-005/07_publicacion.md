@@ -2,7 +2,7 @@
 Título: 3 herramientas de IA para trabajar mejor
 Tipo: Reel · presentador · pilar IA / herramientas
 Gancho: Tres herramientas de inteligencia artificial que pueden cambiar la forma en que trabajas.
-Destacada: IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Herramientas IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 3 herramientas de inteligencia artificial que pueden cambiar la forma en que trabajas 🧰

@@ -2,7 +2,7 @@
 Título: Videos profesionales sin aparecer frente a una cámara
 Tipo: Reel · protagonista cinematográfico · pilar contenido/IA
 Gancho: ¿Y si pudieras producir videos profesionales sin tener que aparecer frente a una cámara?
-Destacada: IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Herramientas IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 ¿Y si pudieras producir videos profesionales… sin tener que aparecer frente a una cámara? 🎬

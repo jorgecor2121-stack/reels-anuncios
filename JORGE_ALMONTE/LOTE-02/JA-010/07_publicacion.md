@@ -2,7 +2,7 @@
 Título: Tu cliente no compra lo que vendes
 Tipo: Reel · protagonista (cine) · pilar marketing
 Gancho: Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.
-Destacada: Anuncios (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Marketing (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 Tu cliente no compra lo que vendes. Compra lo que eso le resuelve 🎂

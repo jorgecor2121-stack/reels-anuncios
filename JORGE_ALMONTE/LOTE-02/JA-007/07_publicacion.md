@@ -2,7 +2,7 @@
 Título: La fórmula para escribirle a la IA
 Tipo: Reel · presentador · pilar IA
 Gancho: Si la inteligencia artificial te responde cosas genéricas… el problema no es la IA. Es cómo le escribes.
-Destacada: IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Herramientas IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 Si la IA te responde cosas genéricas… el problema no es la IA. Es cómo le escribes 🤖

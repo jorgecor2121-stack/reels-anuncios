@@ -2,7 +2,7 @@
 Título: La inteligencia artificial no es el futuro
 Tipo: Reel · presentador · pilar IA
 Gancho: La inteligencia artificial no viene a reemplazar a todos… pero sí puede dejar atrás a quienes no aprendan a usarla.
-Destacada: IA (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Empieza aquí (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 La inteligencia artificial no viene a reemplazar a todos… pero sí puede dejar atrás a quienes no aprendan a usarla 🤖

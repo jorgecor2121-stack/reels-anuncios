@@ -2,7 +2,7 @@
 Título: El video de US$4,500 que cambió una empresa
 Tipo: Reel · protagonista (cine) · pilar casos
 Gancho: En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.
-Destacada: Casos (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
+Destacada: Resultados (Jorge comparte el reel a su historia desde la app y lo agrega a esa destacada)
 
 ## Caption
 En 2012, una empresa pequeña subió un video que costó unos US$4,500… y le cambió la historia 🎬
