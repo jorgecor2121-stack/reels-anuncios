@@ -1,0 +1,204 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "hoodie",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-026.wav",
+  "lineas": [
+    {
+      "text": "Así toma reservas un restaurante sin contestar el teléfono.",
+      "start": 0.0,
+      "duration": 3.709
+    },
+    {
+      "text": "El cliente escribe \"reservar\". El asistente le pregunta el día, la hora y cuántas personas.",
+      "start": 3.929,
+      "duration": 7.079
+    },
+    {
+      "text": "Revisa si hay espacio y le confirma.",
+      "start": 11.229,
+      "duration": 3.004
+    },
+    {
+      "text": "Y el restaurante ve todas las reservas en una sola lista.",
+      "start": 14.453,
+      "duration": 3.971
+    },
+    {
+      "text": "Guárdalo si tienes un restaurante o conoces a alguien que tenga uno.",
+      "start": 18.643,
+      "duration": 4.362
+    }
+  ],
+  "fin": 24.43,
+  "resaltar": [
+    "reservas",
+    "restaurante",
+    "teléfono",
+    "reservar",
+    "día",
+    "hora",
+    "personas",
+    "confirma",
+    "lista",
+    "Guárdalo"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "📵",
+      "etiqueta": "Reservas sin teléfono",
+      "badge": "EJEMPLO DE FLUJO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "📅",
+        "🕗",
+        "👥"
+      ],
+      "letras": [
+        "DÍA",
+        "HORA",
+        "PERSONAS"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Revisa el espacio",
+        "Confirma la reserva"
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "titulo": "Reservas de la semana",
+      "barras": [
+        {
+          "etiqueta": "Vie",
+          "valor": 12
+        },
+        {
+          "etiqueta": "Sáb",
+          "valor": 18,
+          "destacar": true
+        },
+        {
+          "etiqueta": "Dom",
+          "valor": 9
+        }
+      ],
+      "nota": "Ejemplo"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Guárdalo si tienes un restaurante",
+      "accion": "guardar"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "general",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "smart"
+    },
+    {
+      "start": 1.3,
+      "pose": "presentRight"
+    },
+    {
+      "start": 2.6,
+      "pose": "you"
+    },
+    {
+      "start": 3.93,
+      "pose": "explain"
+    },
+    {
+      "start": 6.41,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 8.88,
+      "pose": "phone"
+    },
+    {
+      "start": 11.23,
+      "pose": "ok"
+    },
+    {
+      "start": 12.28,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 13.33,
+      "pose": "smile"
+    },
+    {
+      "start": 14.45,
+      "pose": "proud"
+    },
+    {
+      "start": 15.84,
+      "pose": "presentRight"
+    },
+    {
+      "start": 17.23,
+      "pose": "explain"
+    },
+    {
+      "start": 18.64,
+      "pose": "pointFront"
+    },
+    {
+      "start": 20.17,
+      "pose": "heart"
+    },
+    {
+      "start": 21.7,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.23,
+      "emoji": "🍽️"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Reservas",
+      "sin",
+      "teléfono"
+    ],
+    "resaltar": 2,
+    "icono": "🍽️",
+    "satelites": [
+      "📅",
+      "👥",
+      "✅"
+    ],
+    "badge": "RESTAURANTES",
+    "pose": "smart",
+    "color": "#FFD23F",
+    "fondo": "morado"
+  },
+  "entornos": [
+    "cafe",
+    "cafe",
+    "clasico",
+    "atardecer",
+    "cafe"
+  ],
+  "cine": true
+}

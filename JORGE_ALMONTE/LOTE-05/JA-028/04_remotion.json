@@ -1,0 +1,145 @@
+{
+  "tipo": "avatar",
+  "entorno": "atardecer",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-028.wav",
+  "lineas": [
+    {
+      "text": "Respondiste seis horas después.",
+      "start": 0.0,
+      "duration": 2.586
+    },
+    {
+      "text": "Para el cliente, eso se sintió como un \"no me importa\".",
+      "start": 2.806,
+      "duration": 4.284
+    },
+    {
+      "text": "No necesitas estar pegado al teléfono: necesitas que algo conteste por ti mientras tanto.",
+      "start": 7.31,
+      "duration": 6.269
+    },
+    {
+      "text": "Compártelo con alguien que siempre contesta tarde.",
+      "start": 13.8,
+      "duration": 3.239
+    }
+  ],
+  "fin": 18.46,
+  "resaltar": [
+    "seis",
+    "horas",
+    "cliente",
+    "importa",
+    "teléfono",
+    "contesta",
+    "Compártelo",
+    "tarde"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "⏰",
+      "etiqueta": "6 horas después…"
+    },
+    {
+      "tipo": "dolor",
+      "palabra": "\"NO ME IMPORTA\""
+    },
+    {
+      "tipo": "antesDespues",
+      "antes": "Pegado al teléfono",
+      "despues": "Algo contesta por ti",
+      "badge": "LA SOLUCIÓN"
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien siempre contesta tarde",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 0.91,
+      "pose": "ohNo"
+    },
+    {
+      "start": 1.81,
+      "pose": "you"
+    },
+    {
+      "start": 2.81,
+      "pose": "sad"
+    },
+    {
+      "start": 4.31,
+      "pose": "shrug"
+    },
+    {
+      "start": 5.8,
+      "pose": "facepalm"
+    },
+    {
+      "start": 7.31,
+      "pose": "idea"
+    },
+    {
+      "start": 9.5,
+      "pose": "explain"
+    },
+    {
+      "start": 11.7,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 13.8,
+      "pose": "pointFront"
+    },
+    {
+      "start": 14.93,
+      "pose": "heart"
+    },
+    {
+      "start": 16.07,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 1.55,
+      "emoji": "⏰"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "6 horas",
+      "=",
+      "\"no me importa\""
+    ],
+    "resaltar": 2,
+    "icono": "⏰",
+    "satelites": [
+      "💬",
+      "😒",
+      "📱"
+    ],
+    "badge": "ATENCIÓN",
+    "pose": "surprised",
+    "color": "#FF8A3D",
+    "fondo": "morado"
+  }
+}

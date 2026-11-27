@@ -1,0 +1,30 @@
+{
+  "total": 23.226,
+  "lines": [
+    {
+      "text": "Así toma reservas un restaurante sin contestar el teléfono.",
+      "start": 0.0,
+      "duration": 3.709
+    },
+    {
+      "text": "El cliente escribe \"reservar\". El asistente le pregunta el día, la hora y cuántas personas.",
+      "start": 3.929,
+      "duration": 7.079
+    },
+    {
+      "text": "Revisa si hay espacio y le confirma.",
+      "start": 11.229,
+      "duration": 3.004
+    },
+    {
+      "text": "Y el restaurante ve todas las reservas en una sola lista.",
+      "start": 14.453,
+      "duration": 3.971
+    },
+    {
+      "text": "Guárdalo si tienes un restaurante o conoces a alguien que tenga uno.",
+      "start": 18.643,
+      "duration": 4.362
+    }
+  ]
+}

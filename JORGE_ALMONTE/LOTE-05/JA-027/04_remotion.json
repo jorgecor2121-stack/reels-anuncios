@@ -1,0 +1,162 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-027.wav",
+  "lineas": [
+    {
+      "text": "¿Necesitas videos para tu marca cada semana y no tienes tiempo de grabarlos?",
+      "start": 0.0,
+      "duration": 4.833
+    },
+    {
+      "text": "Yo los hago con inteligencia artificial: guion, tu voz, animación y subtítulos.",
+      "start": 5.053,
+      "duration": 6.426
+    },
+    {
+      "text": "Tú revisas, apruebas, y quedan programados.",
+      "start": 11.699,
+      "duration": 3.318
+    },
+    {
+      "text": "Escríbeme CONTENIDO y te enseño ejemplos.",
+      "start": 15.236,
+      "duration": 2.847
+    }
+  ],
+  "fin": 19.5,
+  "resaltar": [
+    "videos",
+    "marca",
+    "semana",
+    "tiempo",
+    "grabarlos",
+    "inteligencia",
+    "guion",
+    "voz",
+    "animación",
+    "subtítulos",
+    "apruebas",
+    "programados",
+    "CONTENIDO"
+  ],
+  "escenas": [
+    {
+      "tipo": "dolor",
+      "palabra": "SIN TIEMPO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "GUION",
+        "TU VOZ",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Revisas",
+        "Apruebas",
+        "Quedan programados"
+      ]
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Quieres ver ejemplos?",
+      "opciones": [
+        "CONTENIDO"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "tired"
+    },
+    {
+      "start": 1.69,
+      "pose": "you"
+    },
+    {
+      "start": 3.38,
+      "pose": "skeptic"
+    },
+    {
+      "start": 5.05,
+      "pose": "proud"
+    },
+    {
+      "start": 7.3,
+      "pose": "presentRight"
+    },
+    {
+      "start": 9.55,
+      "pose": "explain"
+    },
+    {
+      "start": 11.7,
+      "pose": "ok"
+    },
+    {
+      "start": 12.86,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 14.02,
+      "pose": "smile"
+    },
+    {
+      "start": 15.24,
+      "pose": "pointFront"
+    },
+    {
+      "start": 16.23,
+      "pose": "explain"
+    },
+    {
+      "start": 17.23,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.9,
+      "emoji": "🎬"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "Videos con",
+      "tu voz,",
+      "sin grabarte"
+    ],
+    "resaltar": 1,
+    "icono": "🎬",
+    "satelites": [
+      "🎙️",
+      "✍️",
+      "📅"
+    ],
+    "badge": "SERVICIO",
+    "pose": "tired",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  }
+}

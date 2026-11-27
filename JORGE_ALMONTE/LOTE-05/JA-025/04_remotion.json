@@ -1,0 +1,166 @@
+{
+  "tipo": "avatar",
+  "entorno": "cafe",
+  "vestimenta": "blazer",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-025.wav",
+  "lineas": [
+    {
+      "text": "Esto era una foto. Ahora es un anuncio.",
+      "start": 0.0,
+      "duration": 3.396
+    },
+    {
+      "text": "Le di a la inteligencia artificial la foto de un bizcocho y tres datos: precio, sabor y cómo pedir.",
+      "start": 3.616,
+      "duration": 7.706
+    },
+    {
+      "text": "Me devolvió el texto, la voz y el video con subtítulos.",
+      "start": 11.542,
+      "duration": 4.441
+    },
+    {
+      "text": "Compártelo con alguien que todavía hace sus anuncios a mano.",
+      "start": 16.203,
+      "duration": 3.709
+    }
+  ],
+  "fin": 21.33,
+  "resaltar": [
+    "foto",
+    "anuncio",
+    "inteligencia",
+    "bizcocho",
+    "precio",
+    "sabor",
+    "pedir",
+    "texto",
+    "voz",
+    "video",
+    "subtítulos",
+    "Compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "Una foto",
+      "despues": "Un anuncio en video",
+      "badge": "EJEMPLO"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "💵",
+        "🍫",
+        "📲"
+      ],
+      "letras": [
+        "PRECIO",
+        "SABOR",
+        "CÓMO PEDIR"
+      ]
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "✍️",
+        "🎙️",
+        "🎞️"
+      ],
+      "letras": [
+        "TEXTO",
+        "VOZ",
+        "VIDEO"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien hace sus anuncios a mano",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "surprised"
+    },
+    {
+      "start": 1.19,
+      "pose": "presentRight"
+    },
+    {
+      "start": 2.38,
+      "pose": "proud"
+    },
+    {
+      "start": 3.62,
+      "pose": "explain"
+    },
+    {
+      "start": 6.31,
+      "pose": "countOnHand"
+    },
+    {
+      "start": 9.01,
+      "pose": "smart"
+    },
+    {
+      "start": 11.54,
+      "pose": "ok"
+    },
+    {
+      "start": 13.1,
+      "pose": "excited"
+    },
+    {
+      "start": 14.65,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 16.2,
+      "pose": "pointFront"
+    },
+    {
+      "start": 17.5,
+      "pose": "heart"
+    },
+    {
+      "start": 18.8,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.04,
+      "emoji": "🎂"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "De una foto",
+      "a un",
+      "anuncio"
+    ],
+    "resaltar": 2,
+    "icono": "🎂",
+    "satelites": [
+      "📸",
+      "🎞️",
+      "✨"
+    ],
+    "badge": "EJEMPLO",
+    "pose": "surprised",
+    "color": "#FF8A3D",
+    "fondo": "marino"
+  }
+}

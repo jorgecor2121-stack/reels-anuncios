@@ -1,0 +1,174 @@
+{
+  "tipo": "avatar",
+  "entorno": "clasico",
+  "vestimenta": "denim",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-024.wav",
+  "lineas": [
+    {
+      "text": "Si te pasa una de estas tres cosas, tu negocio ya necesita respuestas automáticas.",
+      "start": 0.0,
+      "duration": 5.799
+    },
+    {
+      "text": "Uno: contestas lo mismo muchas veces al día.",
+      "start": 6.019,
+      "duration": 4.049
+    },
+    {
+      "text": "Dos: te llegan mensajes de noche que nadie responde. Y tres: no sabes cuántas personas te escribieron esta semana.",
+      "start": 10.288,
+      "duration": 8.829
+    },
+    {
+      "text": "¿Cuánto tiempo pierde tu negocio respondiendo las mismas preguntas?",
+      "start": 19.338,
+      "duration": 4.206
+    },
+    {
+      "text": "Escríbeme AUTOMATIZAR y lo vemos juntos.",
+      "start": 23.763,
+      "duration": 3.396
+    }
+  ],
+  "fin": 28.58,
+  "resaltar": [
+    "tres",
+    "automáticas",
+    "mismo",
+    "noche",
+    "responde",
+    "semana",
+    "tiempo",
+    "preguntas",
+    "AUTOMATIZAR"
+  ],
+  "escenas": [
+    {
+      "tipo": "sorpresa",
+      "emoji": "🚨",
+      "etiqueta": "3 señales",
+      "badge": "¿TE PASA?"
+    },
+    {
+      "tipo": "sorpresa",
+      "emoji": "🔁",
+      "etiqueta": "Contestas lo mismo"
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Mensajes de noche sin respuesta",
+        "No sabes cuántos te escribieron"
+      ]
+    },
+    {
+      "tipo": "calendario",
+      "hasta": 7,
+      "palabra": "¿CUÁNTO TIEMPO?"
+    },
+    {
+      "tipo": "comentar",
+      "pregunta": "¿Lo vemos juntos?",
+      "opciones": [
+        "AUTOMATIZAR"
+      ],
+      "nota": "Escríbeme por mensaje 📩"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "primer",
+    "primer"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "three"
+    },
+    {
+      "start": 2.03,
+      "pose": "you"
+    },
+    {
+      "start": 4.06,
+      "pose": "smart"
+    },
+    {
+      "start": 6.02,
+      "pose": "one"
+    },
+    {
+      "start": 7.44,
+      "pose": "tired"
+    },
+    {
+      "start": 8.85,
+      "pose": "explain"
+    },
+    {
+      "start": 10.29,
+      "pose": "two"
+    },
+    {
+      "start": 13.38,
+      "pose": "three"
+    },
+    {
+      "start": 16.47,
+      "pose": "ohNo"
+    },
+    {
+      "start": 19.34,
+      "pose": "thinkUp"
+    },
+    {
+      "start": 20.81,
+      "pose": "skeptic"
+    },
+    {
+      "start": 22.28,
+      "pose": "you"
+    },
+    {
+      "start": 23.76,
+      "pose": "pointFront"
+    },
+    {
+      "start": 24.95,
+      "pose": "explain"
+    },
+    {
+      "start": 26.14,
+      "pose": "heart"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 3.48,
+      "emoji": "🚨"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "3 señales",
+      "para",
+      "automatizar"
+    ],
+    "resaltar": 2,
+    "icono": "🚨",
+    "satelites": [
+      "🔁",
+      "🌙",
+      "📊"
+    ],
+    "badge": "¿TE PASA?",
+    "pose": "three",
+    "color": "#2BD576",
+    "fondo": "morado"
+  }
+}

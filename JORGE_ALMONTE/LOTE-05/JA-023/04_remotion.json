@@ -1,0 +1,157 @@
+{
+  "tipo": "avatar",
+  "entorno": "escenario",
+  "vestimenta": "polo",
+  "escalaEscena": 0.78,
+  "marca": "@jorgealmonteia",
+  "audio": "ja/JA-023.wav",
+  "lineas": [
+    {
+      "text": "La inteligencia artificial no te va a quitar los clientes.",
+      "start": 0.0,
+      "duration": 3.474
+    },
+    {
+      "text": "Te los va a quitar el negocio de al lado que contesta más rápido y publica todos los días.",
+      "start": 3.694,
+      "duration": 5.878
+    },
+    {
+      "text": "Y muchas veces lo logra con herramientas que tú también puedes usar.",
+      "start": 9.792,
+      "duration": 4.598
+    },
+    {
+      "text": "Compártelo con alguien que todavía dice que eso de la IA no es para él.",
+      "start": 14.609,
+      "duration": 4.989
+    }
+  ],
+  "fin": 21.02,
+  "resaltar": [
+    "inteligencia",
+    "artificial",
+    "clientes",
+    "negocio",
+    "rápido",
+    "publica",
+    "herramientas",
+    "usar",
+    "Compártelo"
+  ],
+  "escenas": [
+    {
+      "tipo": "antesDespues",
+      "antes": "La IA te quita clientes",
+      "despues": "Tu competencia más rápida, sí",
+      "badge": "OPINIÓN"
+    },
+    {
+      "tipo": "trio",
+      "iconos": [
+        "⚡",
+        "📅",
+        "🛒"
+      ],
+      "letras": [
+        "CONTESTA",
+        "PUBLICA",
+        "VENDE"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "items": [
+        "Las mismas herramientas",
+        "Al alcance de tu negocio"
+      ]
+    },
+    {
+      "tipo": "seguir",
+      "usuario": "jorgealmonteia",
+      "titulo": "Envíaselo a quien dice que la IA no es para él",
+      "accion": "compartir"
+    }
+  ],
+  "planos": [
+    "primer",
+    "medio",
+    "medio",
+    "medio"
+  ],
+  "gestos": [
+    {
+      "start": 0.0,
+      "pose": "wagNo"
+    },
+    {
+      "start": 1.22,
+      "pose": "skeptic"
+    },
+    {
+      "start": 2.43,
+      "pose": "you"
+    },
+    {
+      "start": 3.69,
+      "pose": "explain"
+    },
+    {
+      "start": 5.75,
+      "pose": "smart"
+    },
+    {
+      "start": 7.81,
+      "pose": "ohNo"
+    },
+    {
+      "start": 9.79,
+      "pose": "idea"
+    },
+    {
+      "start": 11.4,
+      "pose": "presentRight"
+    },
+    {
+      "start": 13.01,
+      "pose": "thumbsUp"
+    },
+    {
+      "start": 14.61,
+      "pose": "pointFront"
+    },
+    {
+      "start": 16.36,
+      "pose": "heart"
+    },
+    {
+      "start": 18.1,
+      "pose": "waveBoth"
+    }
+  ],
+  "chips": [],
+  "reacciones": [
+    {
+      "start": 2.08,
+      "emoji": "🤖"
+    }
+  ],
+  "portada": {
+    "lineas": [
+      "La IA no",
+      "te quita",
+      "clientes"
+    ],
+    "resaltar": 2,
+    "icono": "🤖",
+    "satelites": [
+      "⚡",
+      "🏪",
+      "🛒"
+    ],
+    "badge": "OPINIÓN",
+    "pose": "wagNo",
+    "color": "#A78BFA",
+    "fondo": "marino"
+  }
+}

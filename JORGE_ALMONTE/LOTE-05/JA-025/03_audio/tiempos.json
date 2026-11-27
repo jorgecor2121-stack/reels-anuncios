@@ -1,0 +1,25 @@
+{
+  "total": 20.132,
+  "lines": [
+    {
+      "text": "Esto era una foto. Ahora es un anuncio.",
+      "start": 0.0,
+      "duration": 3.396
+    },
+    {
+      "text": "Le di a la inteligencia artificial la foto de un bizcocho y tres datos: precio, sabor y cómo pedir.",
+      "start": 3.616,
+      "duration": 7.706
+    },
+    {
+      "text": "Me devolvió el texto, la voz y el video con subtítulos.",
+      "start": 11.542,
+      "duration": 4.441
+    },
+    {
+      "text": "Compártelo con alguien que todavía hace sus anuncios a mano.",
+      "start": 16.203,
+      "duration": 3.709
+    }
+  ]
+}
