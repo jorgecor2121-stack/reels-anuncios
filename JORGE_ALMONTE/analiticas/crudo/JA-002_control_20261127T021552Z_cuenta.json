@@ -1,0 +1,39 @@
+{
+ "data": {
+  "data": [
+   {
+    "name": "profile_views",
+    "period": "day",
+    "total_value": {
+     "value": 6
+    }
+   },
+   {
+    "name": "reach",
+    "period": "day",
+    "total_value": {
+     "value": 300
+    }
+   },
+   {
+    "name": "views",
+    "period": "day",
+    "total_value": {
+     "value": 485
+    }
+   },
+   {
+    "name": "follower_count",
+    "period": "day",
+    "values": [
+     {
+      "end_time": "2026-11-26T08:00:00+0000",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ "consulta": "INSTAGRAM_GET_USER_INSIGHTS since=2026-11-26 until=2026-11-27",
+ "log_id": "log_Is-AdcEopnNW"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "JA-006",
+  "mediciones": {},
+  "reel": {
+    "titulo": "El video de US$4,500 que cambió una empresa",
+    "tipo": "Reel · protagonista (cine) · pilar casos",
+    "gancho": "En 2012, una empresa pequeña subió un video que costó unos cuatro mil quinientos dólares… y le cambió la historia.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "SEGUIR",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "clasico",
+      "cafe",
+      "neon",
+      "atardecer",
+      "escenario",
+      "cafe",
+      "escenario"
+    ],
+    "duracion_s": 60.71,
+    "lote": "LOTE-02",
+    "carpeta": "JORGE_ALMONTE/LOTE-02/JA-006"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

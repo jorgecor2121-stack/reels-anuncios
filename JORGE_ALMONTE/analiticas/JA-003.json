@@ -1,0 +1,26 @@
+{
+  "id": "JA-003",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Miles de seguidores y ningún cliente",
+    "tipo": "Reel · protagonista · pilar marketing y ventas",
+    "gancho": "Puedes tener miles de seguidores… y aun así no conseguir ni un solo cliente.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "COMENTAR",
+    "vestimenta": "denim",
+    "entornos": [
+      "boutique",
+      "boutique",
+      "neon",
+      "boutique",
+      "clasico",
+      "atardecer",
+      "boutique"
+    ],
+    "duracion_s": 53.45,
+    "lote": "LOTE-01",
+    "carpeta": "JORGE_ALMONTE/LOTE-01/JA-003"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

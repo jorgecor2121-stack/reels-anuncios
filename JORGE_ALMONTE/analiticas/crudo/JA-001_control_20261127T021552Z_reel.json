@@ -1,0 +1,108 @@
+{
+ "data": {
+  "data": [
+   {
+    "id": "18139127881679960/insights/views/lifetime",
+    "name": "views",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 97
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/reach/lifetime",
+    "name": "reach",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 80
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/likes/lifetime",
+    "name": "likes",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 2
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/comments/lifetime",
+    "name": "comments",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 0
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/shares/lifetime",
+    "name": "shares",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 0
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/saved/lifetime",
+    "name": "saved",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 0
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/total_interactions/lifetime",
+    "name": "total_interactions",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 2
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/ig_reels_avg_watch_time/lifetime",
+    "name": "ig_reels_avg_watch_time",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 6588
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/ig_reels_video_view_total_time/lifetime",
+    "name": "ig_reels_video_view_total_time",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 573242
+     }
+    ]
+   },
+   {
+    "id": "18139127881679960/insights/reels_skip_rate/lifetime",
+    "name": "reels_skip_rate",
+    "period": "lifetime",
+    "values": [
+     {
+      "value": 51.8
+     }
+    ]
+   }
+  ]
+ },
+ "tool_slug": "INSTAGRAM_GET_IG_MEDIA_INSIGHTS",
+ "log_id": "log_Is-AdcEopnNW"
+}

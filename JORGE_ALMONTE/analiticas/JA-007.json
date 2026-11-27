@@ -1,0 +1,20 @@
+{
+  "id": "JA-007",
+  "mediciones": {},
+  "reel": {
+    "titulo": "La fórmula para escribirle a la IA",
+    "tipo": "Reel · presentador · pilar IA",
+    "gancho": "Si la inteligencia artificial te responde cosas genéricas… el problema no es la IA. Es cómo le escribes.",
+    "modalidad": "presentador",
+    "cta_accion": "GUARDAR",
+    "vestimenta": "denim",
+    "entornos": [
+      "neon"
+    ],
+    "duracion_s": 50.99,
+    "lote": "LOTE-02",
+    "carpeta": "JORGE_ALMONTE/LOTE-02/JA-007"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

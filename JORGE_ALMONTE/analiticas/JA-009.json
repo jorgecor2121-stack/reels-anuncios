@@ -1,0 +1,26 @@
+{
+  "id": "JA-009",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Graba un día, publica toda la semana",
+    "tipo": "Reel · protagonista (cine) · pilar contenido",
+    "gancho": "¿No tienes tiempo de crear contenido todos los días? Entonces no lo hagas todos los días.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "COMPARTIR",
+    "vestimenta": "blazer",
+    "entornos": [
+      "neon",
+      "neon",
+      "cafe",
+      "clasico",
+      "atardecer",
+      "atardecer",
+      "escenario"
+    ],
+    "duracion_s": 44.7,
+    "lote": "LOTE-02",
+    "carpeta": "JORGE_ALMONTE/LOTE-02/JA-009"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

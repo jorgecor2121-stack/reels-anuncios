@@ -1,0 +1,72 @@
+{
+  "id": "JA-002",
+  "mediciones": {
+    "control": {
+      "consultado_utc": "2026-11-27T02:15:52Z",
+      "horas_desde_publicacion": 1.1,
+      "reales": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_IG_MEDIA_INSIGHTS (period=lifetime)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-002_control_20261127T021552Z_reel.json",
+        "reproducciones": 68,
+        "alcance": 31,
+        "me_gusta": 2,
+        "comentarios": 0,
+        "compartidos": 0,
+        "guardados": 0,
+        "interacciones_totales": 2,
+        "tiempo_promedio_visto_s": 9.09,
+        "tiempo_total_visto_s": 281.9,
+        "saltos_primeros_3s_pct": 23.2
+      },
+      "calculados": {
+        "nota": "Calculados por este script a partir de los datos reales; no vienen de Instagram.",
+        "retencion_promedio_pct": 21.5,
+        "guardados_por_1000_alcance": 0.0,
+        "compartidos_por_1000_alcance": 0.0,
+        "comentarios_por_1000_alcance": 0.0,
+        "interacciones_por_1000_alcance": 64.5
+      },
+      "no_disponible": {
+        "curva_de_retencion": "La API no la ofrece; se usa retención promedio = tiempo promedio / duración.",
+        "visitas_al_perfil_por_reel": "La API no la ofrece para reels.",
+        "seguidores_por_reel": "La API no la ofrece para reels."
+      },
+      "cuenta_no_atribuible": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_USER_INSIGHTS (period=day)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-002_control_20261127T021552Z_cuenta.json",
+        "nota": "Métrica de TODA la cuenta en ese periodo. La API no permite atribuir visitas al perfil ni seguidores nuevos a un reel individual: NO es un resultado de este reel.",
+        "visitas_al_perfil": 6,
+        "seguidores_nuevos": 0,
+        "alcance_cuenta": 300,
+        "reproducciones_cuenta": 485
+      }
+    }
+  },
+  "reel": {
+    "titulo": "Videos profesionales sin aparecer frente a una cámara",
+    "tipo": "Reel · protagonista cinematográfico · pilar contenido/IA",
+    "gancho": "¿Y si pudieras producir videos profesionales sin tener que aparecer frente a una cámara?",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "neon",
+      "cafe",
+      "cafe",
+      "clasico",
+      "neon",
+      "atardecer",
+      "escenario"
+    ],
+    "duracion_s": 42.24,
+    "lote": "LOTE-01",
+    "carpeta": "JORGE_ALMONTE/LOTE-01/JA-002"
+  },
+  "publicacion": {
+    "media_id": "18039457064851969",
+    "enlace": "https://www.instagram.com/reel/DgOdzyvykwG/",
+    "publicado_utc": "2026-11-27T01:09:51Z"
+  },
+  "duracion_publicada": 42.24,
+  "estado": "publicado"
+}

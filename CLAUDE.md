@@ -131,3 +131,9 @@ y su portada para la tarjeta del mensaje: `node scripts/portada_guia.js TEMA` �
 (usar `NODE_PATH=$(npm root -g)` para encontrar playwright). Copiar el diseño de `guias/src/gancho.html`: 7 páginas
 1080x1350 — portada, lo básico, los errores (incluido el secreto del reel), plantillas, ejemplos antes/después, checklist, "tu turno".
 Al producir un reel nuevo, crear también su guía y anotarla en `publicados.json` (campo `guia`).
+
+## Análisis de Instagram (desde 27-nov-2026, SOLO LECTURA)
+- `scripts/ja_analisis.py` (sync · pendientes · registrar · informe). Historial por código en `JORGE_ALMONTE/analiticas/JA-NNN.json`
+  (mediciones 24h/48h/7d; "control" = prueba), respuestas originales en `analiticas/crudo/`, `INFORME.md`, `RESUMENES-SEMANALES.md`.
+- Fuente: Instagram vía Composio. Datos reales vs calculados vs métricas de cuenta (no atribuibles) siempre separados.
+- Tarea diaria "Medir reels JA (24h · 48h · 7d)" a las 7:16 p. m. RD. Nunca publica ni edita.

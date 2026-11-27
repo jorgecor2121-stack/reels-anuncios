@@ -1,0 +1,26 @@
+{
+  "id": "JA-004",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Deja de hacerlo todo a mano",
+    "tipo": "Reel · protagonista · pilar automatización",
+    "gancho": "¿Cuánto tiempo pierde tu negocio haciendo tareas que una automatización podría hacer sola?",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "GUARDAR",
+    "vestimenta": "polo",
+    "entornos": [
+      "neon",
+      "neon",
+      "cafe",
+      "cafe",
+      "clasico",
+      "atardecer",
+      "atardecer"
+    ],
+    "duracion_s": 50.78,
+    "lote": "LOTE-01",
+    "carpeta": "JORGE_ALMONTE/LOTE-01/JA-004"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

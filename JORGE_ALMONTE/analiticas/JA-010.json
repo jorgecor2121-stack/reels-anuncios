@@ -1,0 +1,26 @@
+{
+  "id": "JA-010",
+  "mediciones": {},
+  "reel": {
+    "titulo": "Tu cliente no compra lo que vendes",
+    "tipo": "Reel · protagonista (cine) · pilar marketing",
+    "gancho": "Tu cliente no compra lo que vendes. Compra lo que eso le resuelve.",
+    "modalidad": "cine/protagonista",
+    "cta_accion": "SEGUIR",
+    "vestimenta": "hoodie",
+    "entornos": [
+      "boutique",
+      "clasico",
+      "cafe",
+      "cafe",
+      "boutique",
+      "atardecer",
+      "boutique"
+    ],
+    "duracion_s": 42.06,
+    "lote": "LOTE-02",
+    "carpeta": "JORGE_ALMONTE/LOTE-02/JA-010"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

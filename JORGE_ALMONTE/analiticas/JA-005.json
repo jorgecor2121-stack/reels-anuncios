@@ -1,0 +1,20 @@
+{
+  "id": "JA-005",
+  "mediciones": {},
+  "reel": {
+    "titulo": "3 herramientas de IA para trabajar mejor",
+    "tipo": "Reel · presentador · pilar IA / herramientas",
+    "gancho": "Tres herramientas de inteligencia artificial que pueden cambiar la forma en que trabajas.",
+    "modalidad": "presentador",
+    "cta_accion": "COMPARTIR",
+    "vestimenta": "blazer",
+    "entornos": [
+      "cafe"
+    ],
+    "duracion_s": 51.1,
+    "lote": "LOTE-01",
+    "carpeta": "JORGE_ALMONTE/LOTE-01/JA-005"
+  },
+  "publicacion": null,
+  "estado": "pendiente de publicar"
+}

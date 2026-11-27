@@ -1,0 +1,66 @@
+{
+  "id": "JA-001",
+  "mediciones": {
+    "control": {
+      "consultado_utc": "2026-11-27T02:15:52Z",
+      "horas_desde_publicacion": 8.3,
+      "reales": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_IG_MEDIA_INSIGHTS (period=lifetime)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-001_control_20261127T021552Z_reel.json",
+        "reproducciones": 97,
+        "alcance": 80,
+        "me_gusta": 2,
+        "comentarios": 0,
+        "compartidos": 0,
+        "guardados": 0,
+        "interacciones_totales": 2,
+        "tiempo_promedio_visto_s": 6.59,
+        "tiempo_total_visto_s": 573.2,
+        "saltos_primeros_3s_pct": 51.8
+      },
+      "calculados": {
+        "nota": "Calculados por este script a partir de los datos reales; no vienen de Instagram.",
+        "retencion_promedio_pct": 13.2,
+        "guardados_por_1000_alcance": 0.0,
+        "compartidos_por_1000_alcance": 0.0,
+        "comentarios_por_1000_alcance": 0.0,
+        "interacciones_por_1000_alcance": 25.0
+      },
+      "no_disponible": {
+        "curva_de_retencion": "La API no la ofrece; se usa retención promedio = tiempo promedio / duración.",
+        "visitas_al_perfil_por_reel": "La API no la ofrece para reels.",
+        "seguidores_por_reel": "La API no la ofrece para reels."
+      },
+      "cuenta_no_atribuible": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_USER_INSIGHTS (period=day)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-001_control_20261127T021552Z_cuenta.json",
+        "nota": "Métrica de TODA la cuenta en ese periodo. La API no permite atribuir visitas al perfil ni seguidores nuevos a un reel individual: NO es un resultado de este reel.",
+        "visitas_al_perfil": 6,
+        "seguidores_nuevos": 0,
+        "alcance_cuenta": 300,
+        "reproducciones_cuenta": 485
+      }
+    }
+  },
+  "reel": {
+    "titulo": "La inteligencia artificial no es el futuro",
+    "tipo": "Reel · presentador · pilar IA",
+    "gancho": "La inteligencia artificial no viene a reemplazar a todos… pero sí puede dejar atrás a quienes no aprendan a usarla.",
+    "modalidad": "presentador",
+    "cta_accion": "SEGUIR (genérico, antes de la regla de CTA)",
+    "vestimenta": "blazer",
+    "entornos": [
+      "escenario"
+    ],
+    "duracion_s": 49.89,
+    "lote": "LOTE-01",
+    "carpeta": "JORGE_ALMONTE/LOTE-01/JA-001"
+  },
+  "publicacion": {
+    "media_id": "18139127881679960",
+    "enlace": "https://www.instagram.com/reel/DgNsppFvA4h/",
+    "publicado_utc": "2026-11-26T18:00:20Z"
+  },
+  "duracion_publicada": 49.89,
+  "estado": "publicado"
+}
