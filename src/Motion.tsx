@@ -179,7 +179,7 @@ const EscSorpresa: React.FC<{ e: Extract<Escena, { tipo: "sorpresa" }> }> = ({ e
         <div style={{ fontSize: 300, transform: `scale(${boom}) rotate(${Math.sin(frame / 8) * 6}deg)` }}>{e.emoji}</div>
       </div>
       <div style={{ display: "flex", gap: 20, alignItems: "center", fontSize: 50, fontWeight: 900 }}>
-        <span style={{ fontSize: 70 }}>🔇</span><span>{e.etiqueta}</span>
+        <span>{e.etiqueta}</span>
       </div>
     </div>
   );

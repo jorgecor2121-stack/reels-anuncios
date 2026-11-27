@@ -8,7 +8,7 @@ Modalidad: protagonista. Iluminación: según el set.
 - Personaje: surprised, ohNo, you (gestos al 0 %, 35 % y 70 % de la frase)
 - Lugar: neon
 - Cámara: plano primer con empuje lento
-- Gráfico: `calendario`
+- Gráfico: `sorpresa`
 - Transición: corte con fundido de la escena superior
 
 ## Escena 2 · 5.3–9.6 s
