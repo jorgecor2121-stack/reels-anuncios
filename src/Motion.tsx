@@ -564,9 +564,12 @@ export const Subs: React.FC<{ p: MotionProps; t: number; ws: Pal[] }> = ({ p, t,
   const lw = ws.filter((x) => x.line === ws[i].line);
   const g0 = Math.floor(lw.indexOf(ws[i]) / 3) * 3;
   const hl = new Set(p.resaltar.map(norm));
+  const grupo = lw.slice(g0, g0 + 3);
+  const largo = grupo.reduce((a, x) => a + x.w.length + 1, 0);
+  const fs = largo > 24 ? Math.max(44, Math.floor(64 * 24 / largo)) : 64; // los grupos largos se achican para no salirse
   return (
-    <div style={{ fontSize: 64, fontWeight: 900, textShadow: "0 6px 24px rgba(0,0,0,.8)", whiteSpace: "nowrap" }}>
-      {lw.slice(g0, g0 + 3).map((x, j) => {
+    <div style={{ fontSize: fs, fontWeight: 900, textShadow: "0 6px 24px rgba(0,0,0,.8)", whiteSpace: "nowrap" }}>
+      {grupo.map((x, j) => {
         const pop = spring({ frame: frame - S(x.start), fps, config: { damping: 11, stiffness: 220 } });
         const on = t >= x.start;
         return <span key={j} style={{ display: "inline-block", margin: "0 9px", color: hl.has(norm(x.w)) ? C.o : C.t, opacity: on ? 1 : 0.2,
