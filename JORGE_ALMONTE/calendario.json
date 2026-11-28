@@ -57,5 +57,9 @@
       "autoridad": "JA-009",
       "conversion": "JA-029"
     }
+  },
+  "pendientes_reubicar": {
+    "JA-003": "no salió el 27-nov (aprobación trabada) — reubicar en semana 2",
+    "JA-011": "no salió el 27-nov (aprobación trabada) — reubicar en semana 2"
   }
 }
