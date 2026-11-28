@@ -84,6 +84,11 @@ música `scripts/musica_cine.py`. Úsala cuando el usuario pida un reel "cinemat
 
 Caption: primera línea = gancho; 2–3 líneas de valor sin revelar el secreto; "👉 Comenta PALABRA y te lo envío por mensaje"; 5–10 hashtags de `GUIA-MARCA.md`.
 
+## Mensajes directos (desde 28-nov-2026)
+Jorge autorizó que Claude responda los MENSAJES COMERCIALES (palabras AUTOMATIZAR / CONTENIDO) siguiendo
+`JORGE_ALMONTE/mensajes/GUIA-RESPUESTAS.md` (tarea programada cada hora, 8:07 a. m.–10:07 p. m. RD). Nunca tocar conversaciones personales,
+no dar precios, escalar a Jorge, no guardar datos de clientes en el repo. Lo de abajo (comentarios/guías PDF) sigue desactivado.
+
 ## Responder comentarios (estilo botones, como pidió el usuario)
 **DESACTIVADO desde el 18-nov-2026:** los comentarios y mensajes los responde ManyChat. No revisar ni responder comentarios o mensajes desde aquí
 (el usuario no quiere gastar uso de Claude en eso). Lo de abajo queda solo como referencia.
