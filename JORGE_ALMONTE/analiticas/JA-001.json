@@ -40,6 +40,46 @@
         "alcance_cuenta": 300,
         "reproducciones_cuenta": 485
       }
+    },
+    "24h": {
+      "consultado_utc": "2026-11-28T04:19:41Z",
+      "horas_desde_publicacion": 34.3,
+      "reales": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_IG_MEDIA_INSIGHTS (period=lifetime)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-001_24h_20261128T041941Z_reel.json",
+        "reproducciones": 143,
+        "alcance": 121,
+        "me_gusta": 3,
+        "comentarios": 0,
+        "compartidos": 0,
+        "guardados": 0,
+        "interacciones_totales": 3,
+        "tiempo_promedio_visto_s": 6.2,
+        "tiempo_total_visto_s": 818.4,
+        "saltos_primeros_3s_pct": 54.8
+      },
+      "calculados": {
+        "nota": "Calculados por este script a partir de los datos reales; no vienen de Instagram.",
+        "retencion_promedio_pct": 12.4,
+        "guardados_por_1000_alcance": 0.0,
+        "compartidos_por_1000_alcance": 0.0,
+        "comentarios_por_1000_alcance": 0.0,
+        "interacciones_por_1000_alcance": 24.8
+      },
+      "no_disponible": {
+        "curva_de_retencion": "La API no la ofrece; se usa retención promedio = tiempo promedio / duración.",
+        "visitas_al_perfil_por_reel": "La API no la ofrece para reels.",
+        "seguidores_por_reel": "La API no la ofrece para reels."
+      },
+      "cuenta_no_atribuible": {
+        "fuente": "Instagram Graph API vía Composio · INSTAGRAM_GET_USER_INSIGHTS (period=day)",
+        "crudo": "JORGE_ALMONTE/analiticas/crudo/JA-001_24h_20261128T041941Z_cuenta.json",
+        "nota": "Métrica de TODA la cuenta en ese periodo. La API no permite atribuir visitas al perfil ni seguidores nuevos a un reel individual: NO es un resultado de este reel.",
+        "visitas_al_perfil": 4,
+        "seguidores_nuevos": 0,
+        "alcance_cuenta": 46,
+        "reproducciones_cuenta": 140
+      }
     }
   },
   "reel": {
